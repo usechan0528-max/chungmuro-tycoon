@@ -1,0 +1,73 @@
+[
+  {
+    "id": "event_casting_conflict",
+    "stage": "casting",
+    "title": "캐스팅을 둘러싼 줄다리기",
+    "description": "배급사는 인지도 높은 배우를 원하고, 연출팀은 배역에 더 맞는 신인을 원한다. 어느 쪽을 선택하든 영화의 얼굴이 달라진다.",
+    "trigger": {},
+    "choices": [
+      {
+        "id": "choose_star",
+        "text": "흥행력이 검증된 배우를 선택한다",
+        "description": "사전 관심도와 예약률이 오르지만 캐릭터 적합도는 흔들릴 수 있다.",
+        "effects": {
+          "stats": {
+            "pre_release_interest": 9,
+            "reservation_rate": 7,
+            "casting_fit": -3,
+            "acting_quality": 2
+          },
+          "reputation": {
+            "investor_reputation": 3,
+            "public_reputation": 2
+          },
+          "network": {
+            "actor_network": 2,
+            "distribution_network": 2
+          }
+        }
+      },
+      {
+        "id": "choose_fit",
+        "text": "배역에 가장 맞는 배우를 선택한다",
+        "description": "작품의 설득력이 오르고 현장 집중도가 좋아진다.",
+        "effects": {
+          "stats": {
+            "casting_fit": 8,
+            "acting_quality": 5,
+            "word_of_mouth": 4,
+            "pre_release_interest": -2
+          },
+          "reputation": {
+            "creative_reputation": 4,
+            "industry_reputation": 2
+          },
+          "network": {
+            "actor_network": 4,
+            "director_network": 2
+          }
+        }
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다",
+        "description": "캐스팅 회의가 중단된다. 주도권은 보일 수 있지만 관계가 손상된다.",
+        "effects": {
+          "stats": {
+            "casting_fit": -4,
+            "schedule_delay_risk": 7,
+            "on_set_conflict_risk": 5
+          },
+          "reputation": {
+            "industry_reputation": -4,
+            "creative_reputation": 2
+          },
+          "network": {
+            "actor_network": -5,
+            "production_network": -3
+          }
+        }
+      }
+    ]
+  }
+]

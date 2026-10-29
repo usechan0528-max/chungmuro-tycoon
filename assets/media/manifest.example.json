@@ -1,0 +1,26 @@
+{
+  "people": {
+    "player": "people/directors/player.jpg",
+    "actor_song_kang_ho": "people/actors/actor_song_kang_ho.jpg",
+    "director_bong_joon_ho": "people/directors/director_bong_joon_ho.jpg",
+    "critic_lee_dongjin": "people/critics/critic_lee_dongjin.jpg"
+  },
+  "posters": {
+    "film_2003_memories_of_murder": "posters/historical/film_2003_memories_of_murder.jpg",
+    "film_2019_parasite": "posters/historical/film_2019_parasite.jpg",
+    "foreign_2009_avatar": "posters/historical/foreign_2009_avatar.jpg",
+    "player_sample": "posters/player/player_sample.png"
+  },
+  "organizations": {
+    "org_cgv": "logos/organizations/org_cgv.png",
+    "org_lotte_cinema": "logos/organizations/org_lotte_cinema.png",
+    "org_megabox": "logos/organizations/org_megabox.png",
+    "org_cj_enm": "logos/organizations/org_cj_enm.png"
+  },
+  "awards": {
+    "award_blue_dragon": "logos/awards/award_blue_dragon.png",
+    "award_baeksang": "logos/awards/award_baeksang.png",
+    "award_cannes": "logos/awards/award_cannes.png",
+    "award_academy": "logos/awards/award_academy.png"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "year": 2009,
+    "averageTicketPrice": 7365,
+    "perceivedTicketPrice": 8000,
+    "premiumFormatMultiplier": 1.2,
+    "audiencePriceSensitivity": 35,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2016,
+    "averageTicketPrice": 8000,
+    "perceivedTicketPrice": 10000,
+    "premiumFormatMultiplier": 1.4,
+    "audiencePriceSensitivity": 50,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2022,
+    "averageTicketPrice": 10285,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 80,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2024,
+    "averageTicketPrice": 9702,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 75,
+    "sourceType": "historical"
+  }
+]

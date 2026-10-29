@@ -1,0 +1,507 @@
+[
+  {
+    "id": "initial_actor_roster",
+    "targetType": "seed_roster",
+    "startsYear": 9999,
+    "weight": 100,
+    "description": "초기 DB에 배우 150명을 채우는 결정적 seed 보강 규칙.",
+    "rule": {
+      "type": "actor",
+      "seedCount": 150,
+      "idPrefix": "actor_seed",
+      "englishPrefix": "Actor",
+      "protectionLevel": "fictional",
+      "birthYearRange": [1946, 2004],
+      "availableFromRange": [1980, 2026],
+      "careerStartAge": 22,
+      "careerStartSpread": 11,
+      "familyNames": [
+        "강",
+        "고",
+        "구",
+        "권",
+        "김",
+        "남",
+        "문",
+        "박",
+        "배",
+        "서",
+        "성",
+        "손",
+        "송",
+        "신",
+        "안",
+        "오",
+        "유",
+        "윤",
+        "이",
+        "임",
+        "장",
+        "전",
+        "정",
+        "조",
+        "차",
+        "최",
+        "한",
+        "허",
+        "홍",
+        "황"
+      ],
+      "givenNames": [
+        "가은",
+        "건우",
+        "나래",
+        "다빈",
+        "도겸",
+        "도윤",
+        "라온",
+        "민재",
+        "민서",
+        "서연",
+        "서우",
+        "서준",
+        "서하",
+        "선우",
+        "소율",
+        "수민",
+        "수아",
+        "시온",
+        "아린",
+        "연우",
+        "예린",
+        "유나",
+        "유준",
+        "은서",
+        "이안",
+        "재민",
+        "재하",
+        "준서",
+        "지민",
+        "지안",
+        "지우",
+        "지호",
+        "채원",
+        "태오",
+        "하린",
+        "하준",
+        "해준",
+        "현서",
+        "현우",
+        "혜린"
+      ],
+      "archetypes": [
+        {
+          "id": "boxoffice_lead",
+          "currentStats": {
+            "acting_quality": 72,
+            "casting_fit": 74,
+            "public_reputation": 76,
+            "pre_release_interest": 72,
+            "fandom_index": 64
+          },
+          "potentialStats": {
+            "acting_quality": 84,
+            "public_reputation": 86,
+            "global_reputation": 68,
+            "fandom_index": 78
+          },
+          "publicProfile": {
+            "oneLine": "상업영화에서 관객의 첫 관심을 끌어오는 주연형 배우.",
+            "currentAbilityText": "대중적인 장르와 감정선이 분명한 역할에서 안정적인 존재감을 보인다.",
+            "potentialText": "대표작을 만나면 흥행 배우로 한 단계 더 올라설 수 있다.",
+            "fameText": "대중 인지도와 업계 기대치가 모두 높은 편이다.",
+            "brandText": "투자자와 배급사가 선호하는 신뢰형 브랜드를 갖고 있다."
+          }
+        },
+        {
+          "id": "acting_powerhouse",
+          "currentStats": {
+            "acting_quality": 82,
+            "casting_fit": 70,
+            "public_reputation": 58,
+            "critic_reputation": 72,
+            "genre_satisfaction": 66
+          },
+          "potentialStats": {
+            "acting_quality": 92,
+            "critic_reputation": 86,
+            "creative_reputation": 78
+          },
+          "publicProfile": {
+            "oneLine": "연기 밀도와 캐릭터 해석으로 작품의 무게를 세우는 배우.",
+            "currentAbilityText": "복잡한 인물과 장면의 침묵을 설득력 있게 끌고 간다.",
+            "potentialText": "작가주의 작품이나 사회극에서 평론가 반응을 크게 끌어올릴 수 있다.",
+            "fameText": "대중성보다 연기력으로 먼저 언급되는 편이다.",
+            "brandText": "감독과 동료 배우가 신뢰하는 연기파 이미지가 강하다."
+          }
+        },
+        {
+          "id": "genre_specialist",
+          "currentStats": {
+            "acting_quality": 68,
+            "casting_fit": 80,
+            "public_reputation": 54,
+            "action_stunt_quality": 72,
+            "genre_satisfaction": 76
+          },
+          "potentialStats": {
+            "acting_quality": 80,
+            "casting_fit": 88,
+            "action_stunt_quality": 86,
+            "cult_potential": 78
+          },
+          "publicProfile": {
+            "oneLine": "액션, 스릴러, 공포 같은 장르영화에서 얼굴이 또렷한 배우.",
+            "currentAbilityText": "장르의 리듬과 신체성을 이해하고 캐릭터의 기능을 정확히 수행한다.",
+            "potentialText": "강한 콘셉트의 영화에서 컬트 팬덤을 만들 가능성이 있다.",
+            "fameText": "장르 팬들 사이에서 점점 이름이 알려지는 중이다.",
+            "brandText": "작지만 선명한 장르 브랜드를 쌓고 있다."
+          }
+        },
+        {
+          "id": "rising_newcomer",
+          "currentStats": {
+            "acting_quality": 56,
+            "casting_fit": 66,
+            "public_reputation": 42,
+            "fandom_index": 58,
+            "learning_ability": 76
+          },
+          "potentialStats": {
+            "acting_quality": 84,
+            "casting_fit": 82,
+            "public_reputation": 74,
+            "fandom_index": 82
+          },
+          "publicProfile": {
+            "oneLine": "아직 완성형은 아니지만 성장 곡선이 가파른 신예 배우.",
+            "currentAbilityText": "캐릭터가 잘 맞으면 신선한 인상을 주지만 경험 부족이 드러날 때도 있다.",
+            "potentialText": "좋은 감독과 긴 호흡의 작품을 만나면 빠르게 성장할 수 있다.",
+            "fameText": "젊은 관객층과 온라인 반응에서 먼저 움직임이 보인다.",
+            "brandText": "가능성과 신선함이 브랜드의 핵심이다."
+          }
+        },
+        {
+          "id": "character_actor",
+          "currentStats": {
+            "acting_quality": 76,
+            "casting_fit": 78,
+            "public_reputation": 50,
+            "industry_reputation": 70,
+            "word_of_mouth": 62
+          },
+          "potentialStats": {
+            "acting_quality": 86,
+            "casting_fit": 86,
+            "industry_reputation": 82
+          },
+          "publicProfile": {
+            "oneLine": "조연과 앙상블에서 영화의 질감을 살리는 캐릭터 배우.",
+            "currentAbilityText": "작은 장면에서도 인물의 생활감과 긴장을 만들어낸다.",
+            "potentialText": "강한 조연 역할 하나로 대중적 인지도를 크게 높일 수 있다.",
+            "fameText": "업계 평판이 대중 인지도보다 앞서 있다.",
+            "brandText": "작품의 빈틈을 메우는 안정적인 현장형 배우로 평가된다."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "initial_director_roster",
+    "targetType": "seed_roster",
+    "startsYear": 9999,
+    "weight": 100,
+    "description": "초기 DB에 감독 70명을 채우는 결정적 seed 보강 규칙.",
+    "rule": {
+      "type": "director",
+      "seedCount": 70,
+      "idPrefix": "director_seed",
+      "englishPrefix": "Director",
+      "protectionLevel": "fictional",
+      "birthYearRange": [1942, 1998],
+      "availableFromRange": [1980, 2026],
+      "careerStartAge": 27,
+      "careerStartSpread": 12,
+      "familyNames": [
+        "강",
+        "고",
+        "권",
+        "김",
+        "류",
+        "문",
+        "민",
+        "박",
+        "백",
+        "서",
+        "신",
+        "양",
+        "오",
+        "유",
+        "윤",
+        "이",
+        "임",
+        "장",
+        "전",
+        "정",
+        "조",
+        "차",
+        "최",
+        "하",
+        "한",
+        "허",
+        "홍"
+      ],
+      "givenNames": [
+        "건",
+        "규민",
+        "기현",
+        "다원",
+        "도하",
+        "동윤",
+        "민기",
+        "민재",
+        "서림",
+        "서윤",
+        "성준",
+        "소영",
+        "수현",
+        "시우",
+        "연재",
+        "예준",
+        "우진",
+        "유경",
+        "은호",
+        "재원",
+        "정민",
+        "지율",
+        "진우",
+        "태경",
+        "하람",
+        "현"
+      ],
+      "archetypes": [
+        {
+          "id": "commercial_craftsman",
+          "currentStats": {
+            "directing_quality": 72,
+            "field_control": 76,
+            "commercial_sense": 78,
+            "market_analysis": 66,
+            "production_network": 68
+          },
+          "potentialStats": {
+            "directing_quality": 84,
+            "field_control": 86,
+            "commercial_sense": 88
+          },
+          "publicProfile": {
+            "oneLine": "상업영화의 구조와 현장 리듬을 안정적으로 관리하는 감독.",
+            "currentAbilityText": "장면 설계와 제작 일정 관리가 탄탄하고 투자자 설득에도 강점이 있다.",
+            "potentialText": "중간예산 이상 프로젝트에서 흥행 안정성을 높일 수 있다.",
+            "fameText": "업계에서는 믿고 맡길 수 있는 연출자로 통한다.",
+            "brandText": "완성도와 납기를 동시에 지키는 실무형 브랜드가 강하다."
+          }
+        },
+        {
+          "id": "auteur",
+          "currentStats": {
+            "directing_quality": 82,
+            "screenplay_sense": 78,
+            "artistic_sense": 86,
+            "critic_reputation": 70,
+            "commercial_sense": 48
+          },
+          "potentialStats": {
+            "directing_quality": 92,
+            "artistic_sense": 94,
+            "critic_reputation": 88,
+            "festival_network": 76
+          },
+          "publicProfile": {
+            "oneLine": "뚜렷한 세계관과 이미지로 평론가 반응을 끌어내는 작가형 감독.",
+            "currentAbilityText": "주제 의식과 미장센은 강하지만 대중적 리듬은 프로젝트에 따라 흔들린다.",
+            "potentialText": "영화제나 예술영화 시장에서 강한 존재감을 만들 수 있다.",
+            "fameText": "평단과 영화 팬들 사이에서 먼저 이름이 언급된다.",
+            "brandText": "작품 색이 강해 투자자에게는 기대와 위험이 함께 읽힌다."
+          }
+        },
+        {
+          "id": "genre_engineer",
+          "currentStats": {
+            "directing_quality": 74,
+            "field_control": 70,
+            "genre_satisfaction": 80,
+            "editing_quality": 72,
+            "commercial_sense": 64
+          },
+          "potentialStats": {
+            "directing_quality": 86,
+            "genre_satisfaction": 90,
+            "cult_potential": 78
+          },
+          "publicProfile": {
+            "oneLine": "장르 공식과 관객 쾌감을 잘 다루는 장르 특화 감독.",
+            "currentAbilityText": "스릴, 코미디 타이밍, 공포의 긴장처럼 장르별 장치를 정확히 이해한다.",
+            "potentialText": "저예산과 중간예산 사이에서 높은 효율을 낼 수 있다.",
+            "fameText": "장르 팬덤과 제작자 사이에서 실속 있는 선택지로 평가된다.",
+            "brandText": "작품 규모보다 콘셉트가 맞을 때 강한 브랜드를 보인다."
+          }
+        },
+        {
+          "id": "rookie_visionary",
+          "currentStats": {
+            "directing_quality": 58,
+            "screenplay_sense": 66,
+            "artistic_sense": 72,
+            "field_control": 48,
+            "learning_ability": 80
+          },
+          "potentialStats": {
+            "directing_quality": 86,
+            "screenplay_sense": 84,
+            "artistic_sense": 88,
+            "field_control": 72
+          },
+          "publicProfile": {
+            "oneLine": "아직 경험은 부족하지만 아이디어와 감각이 뚜렷한 신예 감독.",
+            "currentAbilityText": "좋은 장면을 떠올리는 힘은 있으나 현장 통제 경험은 더 필요하다.",
+            "potentialText": "멘토, 제작자, 배우와의 조합에 따라 빠르게 성장할 수 있다.",
+            "fameText": "단편과 독립영화 주변에서 먼저 주목받는 단계다.",
+            "brandText": "불확실하지만 발견의 재미가 있는 신인 브랜드를 가진다."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "initial_critic_roster",
+    "targetType": "seed_roster",
+    "startsYear": 9999,
+    "weight": 100,
+    "description": "초기 DB에 평론가 20명을 채우는 결정적 seed 보강 규칙.",
+    "rule": {
+      "type": "critic",
+      "seedCount": 20,
+      "idPrefix": "critic_seed",
+      "familyNames": ["강", "권", "김", "문", "박", "서", "송", "안", "유", "윤", "이", "임", "정", "최", "한"],
+      "givenNames": ["나경", "다정", "도현", "라희", "민석", "서림", "수안", "여준", "유진", "은재", "재겸", "지수", "태린", "하나", "현준"],
+      "focuses": [
+        {
+          "focus": "scenario",
+          "tone": "balanced",
+          "reviewStyle": "longform",
+          "tasteProfile": {
+            "scenario_quality": 82,
+            "directing_quality": 70,
+            "genre_satisfaction": 48
+          },
+          "influence": {
+            "critic_reputation": 72,
+            "online_buzz": 42
+          },
+          "publicDescription": "각본의 구조와 시대 감각을 중시하는 평론가."
+        },
+        {
+          "focus": "directing",
+          "tone": "strict",
+          "reviewStyle": "festival",
+          "tasteProfile": {
+            "directing_quality": 84,
+            "artistic_sense": 80,
+            "commercial_sense": 38
+          },
+          "influence": {
+            "critic_reputation": 82,
+            "festival_network": 66
+          },
+          "publicDescription": "연출의 시선과 형식적 성취를 엄격하게 보는 평론가."
+        },
+        {
+          "focus": "genre",
+          "tone": "popular",
+          "reviewStyle": "column",
+          "tasteProfile": {
+            "genre_satisfaction": 82,
+            "editing_quality": 70,
+            "audience_score": 62
+          },
+          "influence": {
+            "online_buzz": 76,
+            "public_reputation": 58
+          },
+          "publicDescription": "장르적 재미와 관객 반응을 빠르게 읽는 대중 친화형 평론가."
+        },
+        {
+          "focus": "acting",
+          "tone": "warm",
+          "reviewStyle": "interview",
+          "tasteProfile": {
+            "acting_quality": 84,
+            "casting_fit": 76,
+            "scenario_quality": 64
+          },
+          "influence": {
+            "critic_reputation": 68,
+            "press_network": 62
+          },
+          "publicDescription": "배우의 해석과 캐스팅의 설득력을 중심으로 평가하는 평론가."
+        },
+        {
+          "focus": "industry",
+          "tone": "analytical",
+          "reviewStyle": "industry_report",
+          "tasteProfile": {
+            "market_analysis": 82,
+            "commercial_sense": 74,
+            "final_quality": 58
+          },
+          "influence": {
+            "investor_reputation": 58,
+            "industry_reputation": 74
+          },
+          "publicDescription": "작품성뿐 아니라 제작 환경과 시장 맥락을 함께 분석하는 평론가."
+        }
+      ]
+    }
+  },
+  {
+    "id": "future_actor_wave",
+    "targetType": "person",
+    "startsYear": 2030,
+    "weight": 100,
+    "description": "2030년 이후 신인 배우 후보를 자동 생성한다.",
+    "rule": {
+      "type": "actor",
+      "namePool": ["도윤", "서하", "지후", "하린", "민서", "이준"],
+      "statRange": [38, 76],
+      "potentialRange": [55, 92]
+    }
+  },
+  {
+    "id": "future_director_wave",
+    "targetType": "person",
+    "startsYear": 2030,
+    "weight": 80,
+    "description": "2030년 이후 신인 감독 후보를 자동 생성한다.",
+    "rule": {
+      "type": "director",
+      "namePool": ["강", "윤", "백", "서", "문", "한"],
+      "statRange": [35, 72],
+      "potentialRange": [60, 95]
+    }
+  },
+  {
+    "id": "future_market_shift",
+    "targetType": "market_event",
+    "startsYear": 2030,
+    "weight": 70,
+    "description": "역사 seed 이후 극장, OTT, 외화 경쟁의 변화를 만든다.",
+    "rule": {
+      "marketDeltas": {
+        "theater_demand": [-8, 10],
+        "ott_power": [-4, 8],
+        "foreign_competition": [-5, 7]
+      }
+    }
+  }
+]

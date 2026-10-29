@@ -1,0 +1,280 @@
+{
+  "event_1999_shiri_blockbuster_boom": {
+    "filmId": "film_1999_shiri",
+    "title": "쉬리",
+    "releaseDay": 13,
+    "genreId": "genre_action",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 6200000,
+    "directorName": "강제규",
+    "actorNames": [
+      "한석규",
+      "최민식",
+      "송강호"
+    ],
+    "description": "한국형 블록버스터의 가능성을 증명하며 투자자와 관객의 기대 기준을 바꾼 작품입니다."
+  },
+  "event_2001_my_sassy_girl": {
+    "filmId": "film_2001_my_sassy_girl",
+    "title": "엽기적인 그녀",
+    "releaseDay": 27,
+    "genreId": "genre_romance_melodrama",
+    "scaleId": "scale_mid_commercial",
+    "expectedAudience": 4800000,
+    "directorName": "곽재용",
+    "actorNames": [
+      "전지현",
+      "차태현"
+    ],
+    "description": "로맨틱 코미디와 한류 가능성을 동시에 키운 2000년대 초반 대표 흥행작입니다."
+  },
+  "event_2004_taegukgi": {
+    "filmId": "film_2004_taegukgi",
+    "title": "태극기 휘날리며",
+    "releaseDay": 5,
+    "genreId": "genre_action",
+    "scaleId": "scale_tentpole",
+    "expectedAudience": 11700000,
+    "directorName": "강제규",
+    "actorNames": [
+      "장동건",
+      "원빈"
+    ],
+    "description": "대형 전쟁영화와 한국형 블록버스터 제작비 감각을 크게 끌어올린 작품입니다."
+  },
+  "event_2009_haeundae": {
+    "filmId": "film_2009_haeundae",
+    "title": "해운대",
+    "releaseDay": 22,
+    "genreId": "genre_sf_disaster_monster",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 11300000,
+    "directorName": "윤제균",
+    "actorNames": [
+      "설경구",
+      "하지원",
+      "박중훈"
+    ],
+    "description": "한국형 재난영화가 대중 상업영화로 통할 수 있음을 보여준 흥행작입니다."
+  },
+  "event_2009_take_off": {
+    "filmId": "film_2009_take_off",
+    "title": "국가대표",
+    "releaseDay": 29,
+    "genreId": "genre_family_human_drama",
+    "scaleId": "scale_mid_commercial",
+    "expectedAudience": 8000000,
+    "directorName": "김용화",
+    "actorNames": [
+      "하정우",
+      "성동일"
+    ],
+    "description": "스포츠와 휴먼드라마의 입소문 흥행 가능성을 확인시킨 작품입니다."
+  },
+  "event_2011_dogani": {
+    "filmId": "film_2011_silenced",
+    "title": "도가니",
+    "releaseDay": 22,
+    "genreId": "genre_social_true_story",
+    "scaleId": "scale_mid_commercial",
+    "expectedAudience": 4600000,
+    "directorName": "황동혁",
+    "actorNames": [
+      "공유",
+      "정유미"
+    ],
+    "description": "사회고발 영화가 여론과 제도 변화까지 이끌 수 있음을 각인시킨 작품입니다."
+  },
+  "event_2012_masquerade": {
+    "filmId": "film_2012_masquerade",
+    "title": "광해, 왕이 된 남자",
+    "releaseDay": 13,
+    "genreId": "genre_period_historical",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 12300000,
+    "directorName": "추창민",
+    "actorNames": [
+      "이병헌",
+      "류승룡",
+      "한효주"
+    ],
+    "description": "사극과 대중드라마의 결합이 천만 관객 전략으로 이어진 대표작입니다."
+  },
+  "event_2013_miracle_cell_no7": {
+    "filmId": "film_2013_miracle_cell_no7",
+    "title": "7번방의 선물",
+    "releaseDay": 23,
+    "genreId": "genre_family_human_drama",
+    "scaleId": "scale_mid_commercial",
+    "expectedAudience": 12800000,
+    "directorName": "이환경",
+    "actorNames": [
+      "류승룡",
+      "박신혜"
+    ],
+    "description": "가족 휴먼드라마의 관객 확장성과 입소문 폭발력을 보여준 작품입니다."
+  },
+  "event_2013_the_attorney": {
+    "filmId": "film_2013_the_attorney",
+    "title": "변호인",
+    "releaseDay": 18,
+    "genreId": "genre_social_true_story",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 11300000,
+    "directorName": "양우석",
+    "actorNames": [
+      "송강호",
+      "김영애",
+      "오달수"
+    ],
+    "description": "현대사 소재와 대중 흥행이 강하게 결합한 2010년대 대표 사회극입니다."
+  },
+  "event_2014_roaring_currents": {
+    "filmId": "film_2014_roaring_currents",
+    "title": "명량",
+    "releaseDay": 30,
+    "genreId": "genre_period_historical",
+    "scaleId": "scale_tentpole",
+    "expectedAudience": 17600000,
+    "directorName": "김한민",
+    "actorNames": [
+      "최민식",
+      "류승룡",
+      "조진웅"
+    ],
+    "description": "한국영화 박스오피스 상한선에 대한 시장의 감각을 바꾼 초대형 흥행작입니다."
+  },
+  "event_2015_veteran": {
+    "filmId": "film_2015_veteran",
+    "title": "베테랑",
+    "releaseDay": 5,
+    "genreId": "genre_action",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 13400000,
+    "directorName": "류승완",
+    "actorNames": [
+      "황정민",
+      "유아인",
+      "유해진"
+    ],
+    "description": "범죄오락 액션과 사회풍자가 결합한 2010년대 대표 흥행작입니다."
+  },
+  "event_2016_train_to_busan": {
+    "filmId": "film_2016_train_to_busan",
+    "title": "부산행",
+    "releaseDay": 20,
+    "genreId": "genre_sf_disaster_monster",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 11500000,
+    "directorName": "연상호",
+    "actorNames": [
+      "공유",
+      "정유미",
+      "마동석"
+    ],
+    "description": "좀비·재난 장르의 대중성과 해외 판매 가능성을 동시에 증명한 작품입니다."
+  },
+  "event_2017_taxi_driver": {
+    "filmId": "film_2017_a_taxi_driver",
+    "title": "택시운전사",
+    "releaseDay": 2,
+    "genreId": "genre_social_true_story",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 12100000,
+    "directorName": "장훈",
+    "actorNames": [
+      "송강호",
+      "토마스 크레취만",
+      "유해진"
+    ],
+    "description": "현대사 소재가 대중적 공감과 결합해 장기 흥행한 작품입니다."
+  },
+  "event_2017_outlaws": {
+    "filmId": "film_2017_the_outlaws",
+    "title": "범죄도시",
+    "releaseDay": 3,
+    "genreId": "genre_action",
+    "scaleId": "scale_mid_commercial",
+    "expectedAudience": 6800000,
+    "directorName": "강윤성",
+    "actorNames": [
+      "마동석",
+      "윤계상"
+    ],
+    "description": "범죄액션 프랜차이즈의 씨앗이 된 강한 캐릭터 중심 흥행작입니다."
+  },
+  "event_2018_along_with_the_gods_series": {
+    "filmId": "film_2018_along_with_the_gods_2",
+    "title": "신과함께-인과 연",
+    "releaseDay": 1,
+    "genreId": "genre_fantasy",
+    "scaleId": "scale_tentpole",
+    "expectedAudience": 12200000,
+    "directorName": "김용화",
+    "actorNames": [
+      "하정우",
+      "주지훈",
+      "김향기"
+    ],
+    "description": "웹툰/IP, VFX, 시리즈 전략이 한국형 텐트폴 모델로 자리 잡는 계기가 된 작품입니다."
+  },
+  "event_2022_the_roundup": {
+    "filmId": "film_2022_the_roundup",
+    "title": "범죄도시2",
+    "releaseDay": 18,
+    "genreId": "genre_action",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 12600000,
+    "directorName": "이상용",
+    "actorNames": [
+      "마동석",
+      "손석구"
+    ],
+    "description": "팬데믹 이후 극장 회복 신호와 범죄액션 프랜차이즈 파워를 동시에 보여준 작품입니다."
+  },
+  "event_2023_12_12_the_day": {
+    "filmId": "film_2023_12_12_the_day",
+    "title": "서울의 봄",
+    "releaseDay": 22,
+    "genreId": "genre_social_true_story",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 13100000,
+    "directorName": "김성수",
+    "actorNames": [
+      "황정민",
+      "정우성",
+      "이성민"
+    ],
+    "description": "현대사 소재와 앙상블 연기가 2020년대 극장 관객을 다시 끌어낸 작품입니다."
+  },
+  "event_2024_exhuma": {
+    "filmId": "film_2024_exhuma",
+    "title": "파묘",
+    "releaseDay": 22,
+    "genreId": "genre_horror_occult",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 11900000,
+    "directorName": "장재현",
+    "actorNames": [
+      "최민식",
+      "김고은",
+      "유해진"
+    ],
+    "description": "오컬트 장르가 2020년대 극장 대중영화의 중심으로 올라설 수 있음을 보여준 작품입니다."
+  },
+  "event_2024_the_roundup_punishment": {
+    "filmId": "film_2024_the_roundup_punishment",
+    "title": "범죄도시4",
+    "releaseDay": 24,
+    "genreId": "genre_action",
+    "scaleId": "scale_large_commercial",
+    "expectedAudience": 11500000,
+    "directorName": "허명행",
+    "actorNames": [
+      "마동석",
+      "김무열",
+      "박지환"
+    ],
+    "description": "범죄액션 프랜차이즈가 팬데믹 이후에도 강한 극장 동원력을 유지함을 보여준 작품입니다."
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "critic_sample_01",
+    "nameKo": "윤서림",
+    "criticType": {
+      "tone": "balanced",
+      "focus": "scenario"
+    },
+    "tasteProfile": {
+      "scenario_quality": 80,
+      "directing_quality": 70,
+      "genre_satisfaction": 45
+    },
+    "influence": {
+      "critic_reputation": 70,
+      "online_buzz": 40
+    },
+    "publicDescription": "각본의 구조와 시대 감각을 중시하는 평론가."
+  }
+]
+

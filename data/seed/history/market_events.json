@@ -1,0 +1,159 @@
+[
+  {
+    "id": "event_1997_imf_crisis",
+    "year": 1997,
+    "month": 12,
+    "title": "IMF 외환위기",
+    "type": "market_crisis",
+    "fixedLevel": "fixed",
+    "description": "투자가 급격히 위축되고 제작 취소 위험이 커지며 저예산·효율형 프로젝트 선호가 강해집니다.",
+    "effects": {
+      "investment_amount": -20,
+      "production_shutdown_risk": 18,
+      "low_budget_preference": 15,
+      "financial_risk": 20
+    }
+  },
+  {
+    "id": "event_2020_covid_theater_crisis",
+    "year": 2020,
+    "month": 3,
+    "title": "코로나19 극장 위기",
+    "type": "market_crisis",
+    "fixedLevel": "absoluteFixed",
+    "description": "감염병 확산으로 극장 관객이 급감하고 개봉 예정작들이 줄줄이 연기됩니다.",
+    "effects": {
+      "theater_demand": -60,
+      "ott_power": 40,
+      "release_delay_cost": 30,
+      "production_shutdown_risk": 25
+    }
+  },
+  {
+    "id": "event_2018_commercial_film_profitability_drop",
+    "year": 2018,
+    "month": 12,
+    "title": "상업영화 평균 수익률 급락",
+    "type": "market_risk",
+    "fixedLevel": "fixed",
+    "description": "2018년 결산 자료에서 한국 상업영화 평균 추정수익률이 큰 폭으로 악화되며 제작비 상승과 흥행 양극화 위험이 선명해집니다.",
+    "effects": {
+      "financial_risk": 12,
+      "middle_budget_risk": 14,
+      "investor_reputation_pressure": 8,
+      "major_distributor_power": 6
+    }
+  },
+  {
+    "id": "event_2021_ott_original_investment",
+    "year": 2021,
+    "month": 9,
+    "title": "OTT 오리지널 투자 확대",
+    "type": "market_shift",
+    "fixedLevel": "semiFixed",
+    "description": "OTT 오리지널과 플랫폼 선판매가 확대되며 극장 개봉 외의 제작·회수 루트가 강해집니다.",
+    "effects": {
+      "ott_power": 25,
+      "global_streaming_sale": 20,
+      "secondary_market_fit": 15,
+      "theater_demand": -5
+    },
+    "unlocks": [
+      "ott_original",
+      "global_streaming_sale"
+    ]
+  },
+  {
+    "id": "event_2021_ticket_price_jump",
+    "year": 2021,
+    "month": 7,
+    "title": "평균 관람요금 9천 원대 후반 진입",
+    "type": "market_price",
+    "fixedLevel": "fixed",
+    "description": "멀티플렉스 관람료 인상과 특수상영 비중 변화로 평균 관람요금이 크게 오르며 관객의 극장 선택이 더 신중해집니다.",
+    "effects": {
+      "ticket_price_burden": 16,
+      "audience_price_sensitivity": 12,
+      "second_week_drop_risk": 8,
+      "middle_budget_risk": 8
+    }
+  },
+  {
+    "id": "event_2022_average_ticket_price_over_10000",
+    "year": 2022,
+    "month": 12,
+    "title": "평균 관람요금 1만 원 돌파",
+    "type": "market_price",
+    "fixedLevel": "fixed",
+    "description": "2022년 평균 관람요금이 처음으로 1만 원을 넘어서며 극장영화의 가격 대비 만족도와 관객 평점의 중요성이 커집니다.",
+    "effects": {
+      "ticket_price_burden": 20,
+      "audience_score_importance": 14,
+      "second_week_drop_risk": 10,
+      "middle_budget_risk": 10
+    }
+  },
+  {
+    "id": "event_2023_japanese_animation_boxoffice",
+    "year": 2023,
+    "month": 3,
+    "title": "일본 애니메이션 극장 흥행 강화",
+    "type": "market_shift",
+    "fixedLevel": "fixed",
+    "description": "수입 일본 애니메이션이 추억 마케팅과 N차 관람을 통해 극장 시장에서 강한 존재감을 보입니다.",
+    "effects": {
+      "foreign_competition": 12,
+      "animation_trend": 18,
+      "rewatch_index": 12,
+      "nostalgia_marketing_value": 12
+    }
+  },
+  {
+    "id": "event_mid_budget_crisis_2020s",
+    "year": 2025,
+    "month": 1,
+    "title": "2020년대 중반 중간예산 영화 위기",
+    "type": "market_shift",
+    "fixedLevel": "semiFixed",
+    "description": "극장 관객 회복이 양극화되며 30억~100억 규모의 중간예산 극장영화 위험이 커집니다.",
+    "effects": {
+      "middle_budget_risk": 25,
+      "major_distributor_power": 10,
+      "ott_power": 8,
+      "financial_risk": 12
+    }
+  },
+  {
+    "id": "event_2025_korean_film_supply_contraction",
+    "year": 2025,
+    "month": 12,
+    "title": "한국영화 개봉 공급 위축과 할인권 의존",
+    "type": "market_shift",
+    "fixedLevel": "fixed",
+    "description": "2025년 결산 흐름에서 한국영화 개봉 편수와 시장 점유율이 약해지고, 할인권·프로모션이 극장 수요 방어 수단으로 중요해집니다.",
+    "effects": {
+      "korean_film_trust": -8,
+      "theater_demand": -5,
+      "middle_budget_risk": 16,
+      "ticket_price_burden": 6,
+      "discount_promotion_value": 12
+    }
+  },
+  {
+    "id": "event_2030_future_generation_start",
+    "year": 2030,
+    "month": 1,
+    "title": "미래 자동 생성 구간 진입",
+    "type": "future_generation",
+    "fixedLevel": "semiFixed",
+    "description": "실제 고정 역사 이후의 구간에 진입하며 신인 인물, 시장 변화, 가상 흥행 사건이 자동 생성될 수 있습니다.",
+    "effects": {
+      "future_generation_power": 20,
+      "market_uncertainty": 15,
+      "newcomer_supply": 10
+    },
+    "unlocks": [
+      "future_generation"
+    ]
+  }
+]

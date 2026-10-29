@@ -1,0 +1,110 @@
+[
+  {
+    "id": "late_cult_following",
+    "title": "뒤늦은 회자",
+    "category": "post_release",
+    "fixedLevel": "dynamic",
+    "description": "개봉 당시보다 시간이 지난 뒤 특정 세대와 온라인 커뮤니티에서 대사와 분위기가 회자되기 시작했습니다.",
+    "trigger": {
+      "minYearsAfterRelease": 3,
+      "minCultPotential": 65,
+      "minMemePotential": 50
+    },
+    "effects": {
+      "cult_potential": 10,
+      "online_buzz": 15,
+      "secondary_market_revenue": 100000000,
+      "public_reputation": 3
+    }
+  },
+  {
+    "id": "ott_rediscovery",
+    "title": "OTT 재발견",
+    "category": "post_release",
+    "fixedLevel": "dynamic",
+    "description": "OTT 공개 이후 영화가 플랫폼 인기 순위에 오르며 뒤늦게 관객을 얻고 있습니다.",
+    "trigger": {
+      "availableOnOtt": true,
+      "minSecondaryMarketFit": 60
+    },
+    "effects": {
+      "secondary_market_revenue": 300000000,
+      "public_reputation": 5,
+      "ip_value": 5
+    }
+  },
+  {
+    "id": "event_kim_ki_young_retrospective",
+    "title": "김기영 회고전과 재평가",
+    "category": "post_release",
+    "fixedLevel": "semiFixed",
+    "yearRange": [1997, 2026],
+    "description": "고전영화, 기괴한 심리극, 작가주의 영향이 회고전과 비평을 통해 다시 조명됩니다.",
+    "trigger": {
+      "minAuteurPower": 70,
+      "classicFilmContext": true
+    },
+    "effects": {
+      "reevaluation_potential": 25,
+      "auteur_power": 15,
+      "cult_potential": 15,
+      "festival_network": 10
+    }
+  },
+  {
+    "id": "event_late_cult_wish",
+    "title": "바람 뒤늦은 회자",
+    "category": "post_release",
+    "fixedLevel": "semiFixed",
+    "yearRange": [2012, 2020],
+    "description": "개봉 당시보다 시간이 지나며 특정 세대와 온라인 커뮤니티에서 대사와 분위기가 회자됩니다.",
+    "trigger": {
+      "minYearsAfterRelease": 3,
+      "minCultPotential": 55,
+      "youthSchoolTone": true
+    },
+    "effects": {
+      "cult_potential": 25,
+      "meme_potential": 20,
+      "secondary_market_fit": 15
+    }
+  },
+  {
+    "id": "event_save_the_green_planet_reevaluation",
+    "title": "지구를 지켜라! 재평가",
+    "category": "post_release",
+    "fixedLevel": "semiFixed",
+    "yearRange": [2010, 2026],
+    "description": "컬트 SF와 블랙코미디의 가치가 시간이 지나며 평론가와 영화 팬들 사이에서 다시 평가됩니다.",
+    "trigger": {
+      "minYearsAfterRelease": 5,
+      "minReevaluationPotential": 60,
+      "genreTags": ["sf", "black_comedy"]
+    },
+    "effects": {
+      "reevaluation_potential": 25,
+      "cult_potential": 25,
+      "critic_reputation": 10,
+      "secondary_market_fit": 10
+    }
+  },
+  {
+    "id": "event_the_merciless_fandom_reevaluation",
+    "title": "불한당 팬덤형 재평가",
+    "category": "post_release",
+    "fixedLevel": "semiFixed",
+    "yearRange": [2017, 2026],
+    "description": "팬덤형 N차 관람과 온라인 회자가 배우, 감독, 장르 이미지를 다시 끌어올립니다.",
+    "trigger": {
+      "minFandomIndex": 60,
+      "minOnlineBuzz": 50,
+      "crimeNoirTone": true
+    },
+    "effects": {
+      "fandom_index": 25,
+      "online_buzz": 20,
+      "reevaluation_potential": 15,
+      "actor_brand_power": 10
+    }
+  }
+]

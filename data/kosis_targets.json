@@ -1,0 +1,110 @@
+{
+  "targets": [
+    {
+      "id": "cpi_city_monthly",
+      "nameKo": "소비자물가지수 CPI",
+      "category": "price",
+      "status": "needs_validation",
+      "orgId": "101",
+      "tblId": "DT_1J22003",
+      "prdSe": "M",
+      "params": {
+        "itmId": "T",
+        "objL1": "ALL"
+      },
+      "gameUses": [
+        "연도별 물가 보정",
+        "제작비 체감 보정",
+        "티켓값 부담 계산 보조",
+        "미래 자동 생성 시 경제 변수",
+        "극장 수요 보정"
+      ],
+      "notes": "KOSIS 소비자물가지수(2020=100) 계열. 월별 데이터를 수집한 뒤 연평균 또는 기준연도 대비 지수로 게임용 보정값을 만든다."
+    },
+    {
+      "id": "regional_population_yearly",
+      "nameKo": "지역별 인구",
+      "category": "population",
+      "status": "target_search_required",
+      "searchKeywords": [
+        "시도별 주민등록인구",
+        "장래인구추계 시도",
+        "지역별 인구"
+      ],
+      "gameUses": [
+        "지역별 극장 수요",
+        "지역 무대인사 효율",
+        "미래 자동 생성 시 지역 시장 규모"
+      ]
+    },
+    {
+      "id": "youth_population_yearly",
+      "nameKo": "청년 인구/연령대 인구",
+      "category": "population",
+      "status": "target_search_required",
+      "searchKeywords": [
+        "연령별 인구",
+        "연령 및 성별 인구",
+        "청년 인구"
+      ],
+      "gameUses": [
+        "청년 관객층 규모",
+        "대학생 루트 시대 보정",
+        "장르별 세대 수요",
+        "미래 관객층 변화"
+      ]
+    },
+    {
+      "id": "household_consumption_conditions",
+      "nameKo": "가계 소비 여건",
+      "category": "economy",
+      "status": "target_search_required",
+      "searchKeywords": [
+        "가계동향조사 소비지출",
+        "가계 소비지출",
+        "가구당 월평균 소비지출"
+      ],
+      "gameUses": [
+        "가계 소비 여건",
+        "티켓값 부담 보정",
+        "극장 수요 보정",
+        "중간예산 영화 위험도"
+      ]
+    },
+    {
+      "id": "business_cycle_conditions",
+      "nameKo": "경기 침체/호황 보정",
+      "category": "economy",
+      "status": "target_search_required",
+      "searchKeywords": [
+        "경기종합지수",
+        "소비자심리지수",
+        "경제성장률"
+      ],
+      "gameUses": [
+        "경기 침체/호황 보정",
+        "투자 유치 난이도",
+        "극장 수요",
+        "미래 시장 변수"
+      ]
+    },
+    {
+      "id": "culture_consumption_yearly",
+      "nameKo": "문화소비 지표",
+      "category": "culture",
+      "status": "target_search_required",
+      "searchKeywords": [
+        "문화예술행사 관람률",
+        "문화여가비",
+        "문화소비",
+        "영화 관람"
+      ],
+      "gameUses": [
+        "문화소비 지표",
+        "극장 수요 보정",
+        "OTT/극장 대체 관계",
+        "장기 관객 기반"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+[
+  {
+    "directorId": "director_bong_joon_ho",
+    "directorName": "봉준호",
+    "protectionLevel": "legendaryProtected",
+    "historicalFilmographyLocked": true,
+    "works": [
+      {
+        "filmId": "film_2000_barking_dogs_never_bite",
+        "title": "플란다스의 개",
+        "year": 2000,
+        "month": 2,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_comedy",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 110000,
+        "marketImpact": {
+          "korean_film_trust": 1
+        },
+        "protectedWindow": {
+          "startYear": 1999,
+          "startMonth": 8,
+          "endYear": 2000,
+          "endMonth": 3
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2003_memories_of_murder",
+        "title": "살인의 추억",
+        "year": 2003,
+        "month": 4,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 5250000,
+        "marketImpact": {
+          "korean_film_trust": 5,
+          "genre_crime_thriller_trend": 8
+        },
+        "protectedWindow": {
+          "startYear": 2002,
+          "startMonth": 7,
+          "endYear": 2003,
+          "endMonth": 6
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2006_the_host",
+        "title": "괴물",
+        "year": 2006,
+        "month": 7,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_large_commercial",
+        "expectedAudience": 13000000,
+        "marketImpact": {
+          "korean_film_trust": 7,
+          "theater_demand": 4,
+          "genre_sf_disaster_monster_trend": 10
+        },
+        "protectedWindow": {
+          "startYear": 2005,
+          "startMonth": 4,
+          "endYear": 2006,
+          "endMonth": 9
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2009_mother",
+        "title": "마더",
+        "year": 2009,
+        "month": 5,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 3000000,
+        "marketImpact": {
+          "critic_reputation": 4,
+          "genre_crime_thriller_trend": 4
+        },
+        "protectedWindow": {
+          "startYear": 2008,
+          "startMonth": 6,
+          "endYear": 2009,
+          "endMonth": 7
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2013_snowpiercer",
+        "title": "설국열차",
+        "year": 2013,
+        "month": 8,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_tentpole",
+        "expectedAudience": 9350000,
+        "marketImpact": {
+          "global_reputation": 6,
+          "special_format_demand": 4
+        },
+        "protectedWindow": {
+          "startYear": 2012,
+          "startMonth": 4,
+          "endYear": 2013,
+          "endMonth": 9
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2017_okja",
+        "title": "옥자",
+        "year": 2017,
+        "month": 6,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_large_commercial",
+        "expectedAudience": 320000,
+        "releaseType": "ott_theatrical_hybrid",
+        "marketImpact": {
+          "ott_power": 6,
+          "online_spread_power": 5
+        },
+        "protectedWindow": {
+          "startYear": 2016,
+          "startMonth": 4,
+          "endYear": 2017,
+          "endMonth": 7
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2019_parasite",
+        "title": "기생충",
+        "year": 2019,
+        "month": 5,
+        "protectionLevel": "absoluteProtected",
+        "genreId": "genre_social_true_story",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 10300000,
+        "marketImpact": {
+          "korean_film_trust": 8,
+          "global_reputation": 10,
+          "critic_reputation": 8
+        },
+        "protectedWindow": {
+          "startYear": 2018,
+          "startMonth": 5,
+          "endYear": 2019,
+          "endMonth": 7
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2025_mickey17",
+        "title": "미키 17",
+        "year": 2025,
+        "month": 3,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_tentpole",
+        "expectedAudience": 3000000,
+        "releaseType": "global_tentpole",
+        "marketImpact": {
+          "global_reputation": 5,
+          "foreign_competition": 3,
+          "special_format_demand": 3
+        },
+        "protectedWindow": {
+          "startYear": 2024,
+          "startMonth": 2,
+          "endYear": 2025,
+          "endMonth": 3
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      }
+    ]
+  },
+  {
+    "directorId": "director_park_chan_wook",
+    "directorName": "박찬욱",
+    "protectionLevel": "legendaryProtected",
+    "historicalFilmographyLocked": true,
+    "works": [
+      {
+        "filmId": "film_2000_joint_security_area_jsa",
+        "title": "공동경비구역 JSA",
+        "year": 2000,
+        "month": 9,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_social_true_story",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 5800000,
+        "marketImpact": {
+          "korean_film_trust": 5,
+          "theater_demand": 3
+        },
+        "protectedWindow": {
+          "startYear": 1999,
+          "startMonth": 10,
+          "endYear": 2000,
+          "endMonth": 10
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2002_sympathy_for_mr_vengeance",
+        "title": "복수는 나의 것",
+        "year": 2002,
+        "month": 3,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 370000,
+        "marketImpact": {
+          "critic_reputation": 3,
+          "cult_potential": 5
+        },
+        "protectedWindow": {
+          "startYear": 2001,
+          "startMonth": 5,
+          "endYear": 2002,
+          "endMonth": 4
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2003_oldboy",
+        "title": "올드보이",
+        "year": 2003,
+        "month": 11,
+        "protectionLevel": "absoluteProtected",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 3260000,
+        "marketImpact": {
+          "global_reputation": 7,
+          "critic_reputation": 6,
+          "genre_crime_thriller_trend": 6
+        },
+        "protectedWindow": {
+          "startYear": 2002,
+          "startMonth": 10,
+          "endYear": 2003,
+          "endMonth": 12
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2005_lady_vengeance",
+        "title": "친절한 금자씨",
+        "year": 2005,
+        "month": 7,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 3650000,
+        "marketImpact": {
+          "critic_reputation": 4,
+          "genre_crime_thriller_trend": 4
+        },
+        "protectedWindow": {
+          "startYear": 2004,
+          "startMonth": 7,
+          "endYear": 2005,
+          "endMonth": 8
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2009_thirst",
+        "title": "박쥐",
+        "year": 2009,
+        "month": 4,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_horror_occult",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 2200000,
+        "marketImpact": {
+          "critic_reputation": 5,
+          "genre_horror_occult_trend": 5
+        },
+        "protectedWindow": {
+          "startYear": 2008,
+          "startMonth": 5,
+          "endYear": 2009,
+          "endMonth": 5
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2016_the_handmaiden",
+        "title": "아가씨",
+        "year": 2016,
+        "month": 6,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_period_historical",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 4280000,
+        "marketImpact": {
+          "critic_reputation": 6,
+          "global_reputation": 5,
+          "genre_period_historical_trend": 5
+        },
+        "protectedWindow": {
+          "startYear": 2015,
+          "startMonth": 4,
+          "endYear": 2016,
+          "endMonth": 7
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2022_decision_to_leave",
+        "title": "헤어질 결심",
+        "year": 2022,
+        "month": 6,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_romance_melodrama",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 1900000,
+        "marketImpact": {
+          "critic_reputation": 7,
+          "global_reputation": 5
+        },
+        "protectedWindow": {
+          "startYear": 2021,
+          "startMonth": 9,
+          "endYear": 2022,
+          "endMonth": 7
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2025_no_other_choice",
+        "title": "어쩔수가없다",
+        "year": 2025,
+        "month": 9,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 2500000,
+        "marketImpact": {
+          "critic_reputation": 5,
+          "online_spread_power": 3
+        },
+        "protectedWindow": {
+          "startYear": 2024,
+          "startMonth": 8,
+          "endYear": 2025,
+          "endMonth": 10
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      }
+    ]
+  },
+  {
+    "directorId": "director_lee_chang_dong",
+    "directorName": "이창동",
+    "protectionLevel": "legendaryProtected",
+    "historicalFilmographyLocked": true,
+    "works": [
+      {
+        "filmId": "film_1997_green_fish",
+        "title": "초록물고기",
+        "year": 1997,
+        "month": 2,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 200000,
+        "marketImpact": {
+          "critic_reputation": 3
+        },
+        "protectedWindow": {
+          "startYear": 1996,
+          "startMonth": 6,
+          "endYear": 1997,
+          "endMonth": 3
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2000_peppermint_candy",
+        "title": "박하사탕",
+        "year": 2000,
+        "month": 1,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_social_true_story",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 310000,
+        "marketImpact": {
+          "critic_reputation": 5,
+          "genre_social_true_story_trend": 5
+        },
+        "protectedWindow": {
+          "startYear": 1999,
+          "startMonth": 5,
+          "endYear": 2000,
+          "endMonth": 2
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2002_oasis",
+        "title": "오아시스",
+        "year": 2002,
+        "month": 8,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_family_human_drama",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 900000,
+        "marketImpact": {
+          "critic_reputation": 6,
+          "festival_network": 5
+        },
+        "protectedWindow": {
+          "startYear": 2001,
+          "startMonth": 12,
+          "endYear": 2002,
+          "endMonth": 9
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2007_secret_sunshine",
+        "title": "밀양",
+        "year": 2007,
+        "month": 5,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_family_human_drama",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 1700000,
+        "marketImpact": {
+          "critic_reputation": 7,
+          "global_reputation": 4
+        },
+        "protectedWindow": {
+          "startYear": 2006,
+          "startMonth": 7,
+          "endYear": 2007,
+          "endMonth": 6
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2010_poetry",
+        "title": "시",
+        "year": 2010,
+        "month": 5,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_indie_art",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 220000,
+        "marketImpact": {
+          "critic_reputation": 7,
+          "festival_network": 5
+        },
+        "protectedWindow": {
+          "startYear": 2009,
+          "startMonth": 8,
+          "endYear": 2010,
+          "endMonth": 6
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2018_burning",
+        "title": "버닝",
+        "year": 2018,
+        "month": 5,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_indie_art",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 530000,
+        "marketImpact": {
+          "critic_reputation": 8,
+          "global_reputation": 5
+        },
+        "protectedWindow": {
+          "startYear": 2017,
+          "startMonth": 8,
+          "endYear": 2018,
+          "endMonth": 6
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      }
+    ]
+  },
+  {
+    "directorId": "director_kim_ki_young",
+    "directorName": "김기영",
+    "protectionLevel": "legacyProtected",
+    "historicalFilmographyLocked": true,
+    "works": [
+      {
+        "filmId": "film_1960_the_housemaid",
+        "title": "하녀",
+        "year": 1960,
+        "month": 11,
+        "protectionLevel": "absoluteProtected",
+        "genreId": "genre_horror_occult",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 0,
+        "releaseType": "legacy_history",
+        "marketImpact": {
+          "reevaluation_potential": 8,
+          "cult_potential": 8
+        },
+        "protectedWindow": {
+          "startYear": 1960,
+          "startMonth": 1,
+          "endYear": 1960,
+          "endMonth": 12
+        },
+        "allowedPlayerResponses": [
+          "ride_trend"
+        ]
+      },
+      {
+        "filmId": "film_1971_woman_of_fire",
+        "title": "화녀",
+        "year": 1971,
+        "month": 4,
+        "protectionLevel": "legacyFixed",
+        "genreId": "genre_horror_occult",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 0,
+        "releaseType": "legacy_history",
+        "marketImpact": {
+          "cult_potential": 5
+        },
+        "protectedWindow": {
+          "startYear": 1970,
+          "startMonth": 8,
+          "endYear": 1971,
+          "endMonth": 5
+        },
+        "allowedPlayerResponses": [
+          "ride_trend"
+        ]
+      },
+      {
+        "filmId": "film_1972_insect_woman",
+        "title": "충녀",
+        "year": 1972,
+        "month": 10,
+        "protectionLevel": "legacyFixed",
+        "genreId": "genre_horror_occult",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 0,
+        "releaseType": "legacy_history",
+        "marketImpact": {
+          "cult_potential": 4
+        },
+        "protectedWindow": {
+          "startYear": 1972,
+          "startMonth": 1,
+          "endYear": 1972,
+          "endMonth": 11
+        },
+        "allowedPlayerResponses": [
+          "ride_trend"
+        ]
+      },
+      {
+        "filmId": "film_1977_ieoh_island",
+        "title": "이어도",
+        "year": 1977,
+        "month": 9,
+        "protectionLevel": "legacyFixed",
+        "genreId": "genre_indie_art",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 0,
+        "releaseType": "legacy_history",
+        "marketImpact": {
+          "reevaluation_potential": 5
+        },
+        "protectedWindow": {
+          "startYear": 1976,
+          "startMonth": 12,
+          "endYear": 1977,
+          "endMonth": 10
+        },
+        "allowedPlayerResponses": [
+          "ride_trend"
+        ]
+      },
+      {
+        "filmId": "film_1985_carnivorous_animal",
+        "title": "육식동물",
+        "year": 1985,
+        "month": 3,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_horror_occult",
+        "scaleId": "scale_low_budget_genre",
+        "expectedAudience": 0,
+        "releaseType": "legacy_late_release",
+        "marketImpact": {
+          "cult_potential": 3,
+          "reevaluation_potential": 3
+        },
+        "protectedWindow": {
+          "startYear": 1984,
+          "startMonth": 6,
+          "endYear": 1985,
+          "endMonth": 4
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      }
+    ]
+  },
+  {
+    "directorId": "director_choi_dong_hoon",
+    "directorName": "최동훈",
+    "protectionLevel": "majorProtected",
+    "historicalFilmographyLocked": true,
+    "works": [
+      {
+        "filmId": "film_2004_the_big_swindle",
+        "title": "범죄의 재구성",
+        "year": 2004,
+        "month": 4,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 2100000,
+        "marketImpact": {
+          "genre_crime_thriller_trend": 5,
+          "commercial_sense": 3
+        },
+        "protectedWindow": {
+          "startYear": 2003,
+          "startMonth": 7,
+          "endYear": 2004,
+          "endMonth": 5
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2006_tazza_the_high_rollers",
+        "title": "타짜",
+        "year": 2006,
+        "month": 9,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_crime_thriller",
+        "scaleId": "scale_mid_commercial",
+        "expectedAudience": 6800000,
+        "marketImpact": {
+          "genre_crime_thriller_trend": 8,
+          "theater_demand": 3
+        },
+        "protectedWindow": {
+          "startYear": 2005,
+          "startMonth": 9,
+          "endYear": 2006,
+          "endMonth": 10
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2009_jeon_woochi",
+        "title": "전우치",
+        "year": 2009,
+        "month": 12,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_fantasy",
+        "scaleId": "scale_large_commercial",
+        "expectedAudience": 6100000,
+        "marketImpact": {
+          "genre_fantasy_trend": 7,
+          "special_format_demand": 2
+        },
+        "protectedWindow": {
+          "startYear": 2008,
+          "startMonth": 11,
+          "endYear": 2010,
+          "endMonth": 1
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2012_the_thieves",
+        "title": "도둑들",
+        "year": 2012,
+        "month": 7,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_action",
+        "scaleId": "scale_large_commercial",
+        "expectedAudience": 12980000,
+        "marketImpact": {
+          "theater_demand": 5,
+          "genre_action_trend": 9,
+          "commercial_sense": 5
+        },
+        "protectedWindow": {
+          "startYear": 2011,
+          "startMonth": 5,
+          "endYear": 2012,
+          "endMonth": 8
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2015_assassination",
+        "title": "암살",
+        "year": 2015,
+        "month": 7,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_period_historical",
+        "scaleId": "scale_large_commercial",
+        "expectedAudience": 12700000,
+        "marketImpact": {
+          "theater_demand": 5,
+          "genre_period_historical_trend": 8,
+          "korean_film_trust": 5
+        },
+        "protectedWindow": {
+          "startYear": 2014,
+          "startMonth": 4,
+          "endYear": 2015,
+          "endMonth": 8
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2022_alienoid_part_1",
+        "title": "외계+인 1부",
+        "year": 2022,
+        "month": 7,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_tentpole",
+        "expectedAudience": 1530000,
+        "marketImpact": {
+          "special_format_demand": 4,
+          "series_fatigue": 2
+        },
+        "protectedWindow": {
+          "startYear": 2021,
+          "startMonth": 3,
+          "endYear": 2022,
+          "endMonth": 8
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      },
+      {
+        "filmId": "film_2024_alienoid_part_2",
+        "title": "외계+인 2부",
+        "year": 2024,
+        "month": 1,
+        "protectionLevel": "protectedFixed",
+        "genreId": "genre_sf_disaster_monster",
+        "scaleId": "scale_tentpole",
+        "expectedAudience": 1430000,
+        "marketImpact": {
+          "special_format_demand": 3,
+          "series_fatigue": 3
+        },
+        "protectedWindow": {
+          "startYear": 2023,
+          "startMonth": 3,
+          "endYear": 2024,
+          "endMonth": 2
+        },
+        "allowedPlayerResponses": [
+          "compete",
+          "ride_trend",
+          "adjust_release_timing"
+        ]
+      }
+    ]
+  }
+]

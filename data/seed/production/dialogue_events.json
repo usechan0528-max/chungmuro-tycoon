@@ -1,0 +1,2220 @@
+[
+  {
+    "id": "dialogue_investor_budget_concern",
+    "stage": "fundraising",
+    "npcType": "investor",
+    "npcTraits": [
+      "보수적",
+      "수익중시",
+      "리스크회피형"
+    ],
+    "npcLine": "제작비가 적지 않습니다. 이 프로젝트의 핵심 경쟁력이 뭡니까?",
+    "canWalkOut": true,
+    "choices": [
+      {
+        "id": "explain_market_data",
+        "text": "장르 시장 데이터와 손익 구조를 설명한다.",
+        "check": {
+          "stat": "market_analysis",
+          "difficulty": 60
+        },
+        "successText": "투자사는 당신의 계산이 현실적이라고 판단했습니다.",
+        "failureText": "투자사는 근거가 빈약하다며 추가 자료를 요구했습니다.",
+        "effectsOnSuccess": {
+          "investment_amount": 500000000,
+          "investor_reputation": 3
+        },
+        "effectsOnFailure": {
+          "investor_reputation": -3
+        },
+        "spokenText": "이 장르는 지금 회수 구조가 분명합니다. 숫자로 먼저 보여드리겠습니다."
+      },
+      {
+        "id": "emphasize_script",
+        "text": "시나리오 완성도와 감독의 비전을 강조한다.",
+        "check": {
+          "stat": "screenplay_sense",
+          "difficulty": 55
+        },
+        "successText": "투자사는 작품성은 인정하지만 흥행성 검토가 필요하다고 말했습니다.",
+        "failureText": "투자사는 작품성만으로는 설득이 어렵다고 판단했습니다.",
+        "effectsOnSuccess": {
+          "critic_reputation": 2,
+          "creative_reputation": 2
+        },
+        "effectsOnFailure": {
+          "investment_amount": -100000000
+        },
+        "spokenText": "이 작품은 결국 시나리오와 감독의 시선으로 설득해야 합니다."
+      },
+      {
+        "id": "promise_star_casting",
+        "text": "A급 배우 캐스팅을 추진 중이라고 말한다.",
+        "check": {
+          "stat": "actor_network",
+          "difficulty": 60
+        },
+        "successText": "투자사는 캐스팅 확정 시 투자하겠다는 조건을 제시했습니다.",
+        "failureText": "투자사는 아직 확정되지 않은 캐스팅 약속을 신뢰하지 않았습니다.",
+        "effectsOnSuccess": {
+          "investment_amount": 700000000,
+          "schedule_delay_risk": 3
+        },
+        "effectsOnFailure": {
+          "investor_reputation": -5
+        },
+        "spokenText": "배우 패키지를 붙일 수 있습니다. 캐스팅이 성사되면 판이 달라집니다."
+      },
+      {
+        "id": "reduce_budget",
+        "text": "제작비를 낮춰 리스크를 줄이겠다고 제안한다.",
+        "successText": "투자사는 현실적인 조정안이라고 평가했습니다.",
+        "effects": {
+          "production_budget": -500000000,
+          "financial_risk": -8,
+          "final_quality": -2
+        },
+        "spokenText": "제작비를 한 단계 낮춰서 리스크부터 줄이겠습니다."
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 대화를 중단하고 자리에서 일어났습니다. 투자사 측은 불쾌한 표정을 감추지 않았습니다.",
+        "effects": {
+          "investor_network": -10,
+          "investor_reputation": -5,
+          "press_backlash_risk": 5
+        }
+      }
+    ],
+    "description": "투자 유치 미팅은 한 번의 대답으로 끝나지 않습니다. 프로젝트의 강점, 리스크 관리, 조건 협상에 대한 답변이 누적되어 최종 투자 조건을 만듭니다.",
+    "scoreLabels": {
+      "confidence": "확신",
+      "trust": "신뢰",
+      "control": "통제권",
+      "heat": "투자 열기",
+      "creative": "창작 신뢰"
+    },
+    "steps": [
+      {
+        "id": "core_edge",
+        "npcLine": "제작비가 적지 않습니다. 이 프로젝트의 핵심 경쟁력이 뭡니까?",
+        "choices": [
+          {
+            "id": "market_edge",
+            "text": "장르 시장 데이터와 손익 구조를 먼저 설명한다.",
+            "resultText": "투자자는 숫자로 된 근거에 고개를 끄덕였습니다.",
+            "scoreEffects": {
+              "confidence": 2,
+              "trust": 1,
+              "heat": 1
+            },
+            "effects": {
+              "market_analysis": 1,
+              "investor_reputation": 1
+            },
+            "spokenText": "손익분기점과 장르 데이터를 기준으로 보면, 이 프로젝트는 계산이 됩니다."
+          },
+          {
+            "id": "creative_edge",
+            "text": "시나리오와 감독의 비전을 강조한다.",
+            "resultText": "작품의 결은 전달됐지만 수익성 질문은 남았습니다.",
+            "scoreEffects": {
+              "creative": 2,
+              "trust": 1,
+              "confidence": -1
+            },
+            "effects": {
+              "creative_reputation": 1,
+              "critic_reputation": 1
+            },
+            "spokenText": "숫자만으로는 부족합니다. 감독의 비전과 각본의 힘이 이 영화의 핵심입니다."
+          },
+          {
+            "id": "casting_edge",
+            "text": "캐스팅과 관객 접점을 전면에 둔다.",
+            "resultText": "투자자는 패키지 가능성에는 관심을 보였지만 확정 여부를 물었습니다.",
+            "scoreEffects": {
+              "heat": 2,
+              "confidence": 1,
+              "control": 1
+            },
+            "effects": {
+              "pre_release_interest": 2,
+              "actor_network": 1
+            },
+            "spokenText": "관객이 들어올 접점은 캐스팅에서 만들겠습니다."
+          }
+        ]
+      },
+      {
+        "id": "risk_answer",
+        "npcLine": "그렇다면 실패했을 때 손실은 어디까지 막을 수 있습니까?",
+        "choices": [
+          {
+            "id": "recoupment_plan",
+            "text": "극장 이후 VOD/OTT/해외판권 회수 계획을 제시한다.",
+            "resultText": "투자자는 손실 방어 구조가 있다는 점을 긍정적으로 봤습니다.",
+            "scoreEffects": {
+              "confidence": 2,
+              "trust": 1
+            },
+            "effects": {
+              "secondary_market_fit": 3,
+              "financial_risk": -3,
+              "distribution_network": 1
+            },
+            "spokenText": "극장 이후 VOD, OTT, 해외판권까지 회수 계획을 같이 가져가겠습니다."
+          },
+          {
+            "id": "cut_budget_line",
+            "text": "일부 장면을 줄여 제작비 상한선을 낮춘다.",
+            "resultText": "리스크는 줄었지만 프로젝트의 스케일도 작아졌습니다.",
+            "scoreEffects": {
+              "confidence": 1,
+              "control": 1,
+              "creative": -1
+            },
+            "effects": {
+              "production_budget": -150000000,
+              "financial_risk": -4,
+              "final_quality": -1
+            },
+            "spokenText": "위험한 장면은 줄이고 제작비 상한을 먼저 닫겠습니다."
+          },
+          {
+            "id": "ask_for_bold_bet",
+            "text": "리스크를 인정하고 큰 수익 가능성을 강조한다.",
+            "resultText": "공격적인 답변이 투자자의 관심을 끌었지만 보수적 실무자는 불편해했습니다.",
+            "scoreEffects": {
+              "heat": 3,
+              "confidence": -1,
+              "trust": -1
+            },
+            "effects": {
+              "pre_release_interest": 3,
+              "game_over_risk": 2
+            },
+            "spokenText": "위험은 압니다. 대신 이 장르가 터졌을 때의 수익 폭도 분명합니다."
+          }
+        ]
+      },
+      {
+        "id": "term_close",
+        "npcLine": "투자를 검토한다면, 우리 쪽에서 캐스팅과 최종 편집에 일정 권한을 가져야 합니다. 받아들일 수 있습니까?",
+        "choices": [
+          {
+            "id": "accept_control",
+            "text": "일부 통제권을 넘기고 투자를 확정한다.",
+            "resultText": "투자자는 빠르게 움직일 수 있다고 답했습니다.",
+            "scoreEffects": {
+              "confidence": 2,
+              "control": 3,
+              "creative": -2
+            },
+            "effects": {
+              "investment_amount": 500000000,
+              "investor_reputation": 2,
+              "creative_reputation": -2
+            },
+            "spokenText": "일부 권한은 드리겠습니다. 대신 투자 확정은 빠르게 부탁드립니다."
+          },
+          {
+            "id": "counter_final_cut",
+            "text": "캐스팅 협의는 열되 최종 편집권은 지킨다.",
+            "resultText": "조건은 팽팽해졌지만 프로젝트의 중심은 지켰습니다.",
+            "scoreEffects": {
+              "trust": 1,
+              "creative": 2,
+              "control": -1
+            },
+            "effects": {
+              "creative_reputation": 3,
+              "investor_reputation": -1,
+              "schedule_delay_risk": 2
+            },
+            "spokenText": "캐스팅은 협의하겠습니다. 하지만 최종 편집권은 지켜야 합니다."
+          },
+          {
+            "id": "milestone_terms",
+            "text": "촬영 전·후반 완료 시점별 단계 투자를 제안한다.",
+            "resultText": "투자자는 관리 가능한 절충안이라며 세부 조건을 검토하기로 했습니다.",
+            "scoreEffects": {
+              "confidence": 2,
+              "trust": 2,
+              "control": 1
+            },
+            "effects": {
+              "investment_amount": 300000000,
+              "financial_risk": -2,
+              "market_analysis": 1
+            },
+            "spokenText": "단계별로 투자금을 나눠 집행하시죠. 저희도 결과로 증명하겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "strong_commitment",
+        "conditions": {
+          "minScores": {
+            "confidence": 5,
+            "trust": 2
+          }
+        },
+        "resultText": "투자사는 프로젝트를 현실적인 투자 대상으로 판단했습니다. 조건부가 아니라 실질 투자 제안이 들어왔습니다.",
+        "effects": {
+          "investment_amount": 1000000000,
+          "investor_reputation": 5,
+          "investor_network": 3,
+          "financial_risk": -8,
+          "creative_reputation": -1
+        }
+      },
+      {
+        "id": "hot_but_demanding",
+        "conditions": {
+          "minScores": {
+            "heat": 5
+          },
+          "maxScores": {
+            "trust": 2
+          }
+        },
+        "resultText": "투자자는 흥행 가능성에 끌렸지만 강한 통제 조건을 붙였습니다. 돈은 들어오지만 창작 압박이 커집니다.",
+        "effects": {
+          "investment_amount": 800000000,
+          "pre_release_interest": 4,
+          "investor_reputation": 2,
+          "creative_reputation": -5,
+          "on_set_conflict_risk": 4
+        }
+      },
+      {
+        "id": "creative_partial",
+        "conditions": {
+          "minScores": {
+            "creative": 3
+          }
+        },
+        "resultText": "투자사는 전액 투자에는 망설였지만 작품성 라인으로 작은 투자를 검토하기로 했습니다.",
+        "effects": {
+          "investment_amount": 350000000,
+          "critic_reputation": 3,
+          "creative_reputation": 3,
+          "financial_risk": 2
+        }
+      },
+      {
+        "id": "weak_followup",
+        "conditions": {
+          "maxScores": {
+            "confidence": 1
+          }
+        },
+        "resultText": "투자사는 확신을 얻지 못했습니다. 추가 자료 제출을 요구하며 결정을 미뤘습니다.",
+        "effects": {
+          "investment_amount": -100000000,
+          "investor_reputation": -4,
+          "delay_days": 10,
+          "financial_risk": 5
+        }
+      },
+      {
+        "id": "mixed_followup",
+        "default": true,
+        "resultText": "투자자는 가능성과 위험을 모두 봤습니다. 바로 확정은 아니지만 후속 미팅의 문은 열렸습니다.",
+        "effects": {
+          "investment_amount": 200000000,
+          "investor_network": 1,
+          "delay_days": 5,
+          "financial_risk": 1
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "투자금 추가 조건",
+      "priceLabel": "추가 투자 조건",
+      "initialAmount": 200000000,
+      "stepAmount": 150000000,
+      "minAmount": -100000000,
+      "maxAmount": 800000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 4,
+      "effectKey": "investment_amount",
+      "amountSign": 1,
+      "npcLine": "투자사는 조건표를 다시 펼칩니다. 추가 투자 조건을 두고 몇 차례 더 주고받을 여지가 있습니다.",
+      "effectsOnAgreement": {
+        "investor_reputation": 1,
+        "financial_risk": -1
+      },
+      "effectsOnStall": {
+        "delay_days": 7,
+        "investment_amount": -100000000,
+        "investor_reputation": -2,
+        "financial_risk": 3
+      },
+      "stalledText": "투자금 가격 협상은 결론 없이 보류되었습니다. 투자사는 다음 미팅 전까지 수정된 자료를 요구했습니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_actor_image_concern",
+    "stage": "casting",
+    "npcType": "actor_manager",
+    "npcTraits": [
+      "이미지관리형",
+      "작품성중시"
+    ],
+    "npcLine": "배우가 시나리오는 흥미롭게 봤습니다. 다만 이 장르가 배우 이미지에 어떤 영향을 줄지 걱정하고 있습니다.",
+    "canWalkOut": true,
+    "choices": [
+      {
+        "id": "new_image_pitch",
+        "text": "배우의 새로운 이미지를 보여줄 수 있는 작품이라고 설득한다.",
+        "check": {
+          "stat": "commercial_sense",
+          "difficulty": 55
+        },
+        "successText": "배우 측은 이미지 변신 가능성에 관심을 보였습니다.",
+        "failureText": "배우 측은 이미지 변신보다 위험이 더 크다고 판단했습니다.",
+        "effectsOnSuccess": {
+          "casting_fit": 5,
+          "actor_network": 3
+        },
+        "effectsOnFailure": {
+          "actor_network": -3
+        },
+        "spokenText": "이 작품은 배우님의 새 얼굴을 보여줄 기회가 될 겁니다."
+      },
+      {
+        "id": "increase_fee",
+        "text": "출연료를 올려 제안한다.",
+        "successText": "배우 측이 조건을 다시 검토하기로 했습니다.",
+        "effects": {
+          "cash": -300000000,
+          "pre_release_interest": 4,
+          "break_even_audience": 5
+        },
+        "spokenText": "조건을 올리겠습니다. 대신 이 배역은 꼭 함께하고 싶습니다."
+      },
+      {
+        "id": "strengthen_character",
+        "text": "캐릭터 비중과 서사를 강화하겠다고 제안한다.",
+        "successText": "배우 측은 캐릭터 수정 조건으로 긍정적으로 검토하겠다고 했습니다.",
+        "effects": {
+          "scenario_quality": 3,
+          "production_duration": 1,
+          "casting_fit": 6
+        },
+        "spokenText": "캐릭터의 비중과 감정선을 더 살리겠습니다."
+      },
+      {
+        "id": "shorter_schedule",
+        "text": "촬영 기간을 짧게 보장한다.",
+        "successText": "스케줄 부담은 줄었지만 제작 현장의 압박이 커졌습니다.",
+        "effects": {
+          "actor_commitment_duration": -1,
+          "schedule_delay_risk": 5,
+          "acting_quality": -2
+        },
+        "spokenText": "스케줄 부담은 제가 줄이겠습니다. 필요한 장면만 정확히 찍겠습니다."
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 협상장을 떠났고 배우 측과의 관계가 냉각됐습니다.",
+        "effects": {
+          "actor_network": -10,
+          "casting_fit": -5,
+          "schedule_delay_risk": 5
+        }
+      }
+    ],
+    "description": "배우 캐스팅 협상은 이미지, 배역의 깊이, 출연료와 일정 조건을 차례로 설득해야 합니다. 답변이 누적되어 캐스팅 적합도와 관계가 달라집니다.",
+    "scoreLabels": {
+      "interest": "흥미",
+      "trust": "신뢰",
+      "imageRisk": "이미지 리스크",
+      "cost": "조건 부담"
+    },
+    "steps": [
+      {
+        "id": "image_frame",
+        "npcLine": "배우가 이 장르를 하면 이미지가 너무 세게 굳어질까 걱정합니다. 이 작품이 배우에게 어떤 의미가 있습니까?",
+        "choices": [
+          {
+            "id": "image_expansion",
+            "text": "기존 이미지를 넓히는 전환점이라고 설명한다.",
+            "resultText": "배우 측은 이미지 확장이라는 말에 관심을 보였습니다.",
+            "scoreEffects": {
+              "interest": 2,
+              "trust": 1,
+              "imageRisk": -1
+            },
+            "effects": {
+              "casting_fit": 2,
+              "actor_network": 1
+            },
+            "spokenText": "기존 이미지에 갇히지 않고, 더 넓은 얼굴을 보여줄 수 있습니다."
+          },
+          {
+            "id": "award_angle",
+            "text": "연기 변신과 시상식 가능성을 강조한다.",
+            "resultText": "배우 측은 작품성 가능성을 검토하기 시작했습니다.",
+            "scoreEffects": {
+              "interest": 1,
+              "trust": 1,
+              "imageRisk": -1
+            },
+            "effects": {
+              "critic_reputation": 1,
+              "acting_quality": 1
+            },
+            "spokenText": "이건 단순한 장르물이 아니라 연기 변신으로 남을 수 있는 역할입니다."
+          },
+          {
+            "id": "publicity_angle",
+            "text": "제작 발표 화제성과 대중 노출을 강조한다.",
+            "resultText": "소속사는 홍보 효과에는 반응했지만 작품의 품격을 다시 물었습니다.",
+            "scoreEffects": {
+              "interest": 2,
+              "cost": 1,
+              "imageRisk": 1
+            },
+            "effects": {
+              "pre_release_interest": 3,
+              "press_backlash_risk": 1
+            },
+            "spokenText": "제작 발표부터 배우님의 이름이 관객의 관심을 만들 겁니다."
+          }
+        ]
+      },
+      {
+        "id": "role_depth",
+        "npcLine": "캐릭터가 단순한 장르 소모품처럼 보이지는 않을까요?",
+        "choices": [
+          {
+            "id": "add_character_arc",
+            "text": "인물의 전사와 감정선을 보강하겠다고 제안한다.",
+            "resultText": "배우 측은 캐릭터 수정안을 받아볼 수 있다고 했습니다.",
+            "scoreEffects": {
+              "trust": 2,
+              "interest": 1
+            },
+            "effects": {
+              "scenario_quality": 3,
+              "production_duration": 1,
+              "casting_fit": 3
+            },
+            "spokenText": "인물의 전사와 감정선을 보강해서 소모품처럼 보이지 않게 하겠습니다."
+          },
+          {
+            "id": "director_rehearsal",
+            "text": "감독과 리허설 시간을 보장한다.",
+            "resultText": "배우는 현장에서 장면을 함께 만들 수 있다는 점을 긍정적으로 봤습니다.",
+            "scoreEffects": {
+              "trust": 2,
+              "interest": 1,
+              "cost": 1
+            },
+            "effects": {
+              "acting_quality": 3,
+              "director_network": 1,
+              "delay_days": 3
+            },
+            "spokenText": "감독과 리허설 시간을 보장하겠습니다. 현장에서 같이 만들어가시죠."
+          },
+          {
+            "id": "keep_role_simple",
+            "text": "장르적 기능이 분명한 역할이라고 솔직히 말한다.",
+            "resultText": "솔직함은 전달됐지만 배우 측 흥미는 조금 낮아졌습니다.",
+            "scoreEffects": {
+              "trust": 1,
+              "interest": -1,
+              "imageRisk": 1
+            },
+            "effects": {
+              "schedule_delay_risk": -2,
+              "casting_fit": -2
+            },
+            "spokenText": "솔직히 말하면 기능이 분명한 역할입니다. 대신 그만큼 선명하게 남을 수 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "deal_terms",
+        "npcLine": "그렇다면 출연료와 촬영 기간은 어느 정도까지 조정 가능합니까?",
+        "choices": [
+          {
+            "id": "raise_fee",
+            "text": "출연료를 올려 확실히 붙잡는다.",
+            "resultText": "소속사는 조건을 긍정적으로 다시 검토하겠다고 했습니다.",
+            "scoreEffects": {
+              "interest": 2,
+              "cost": 3
+            },
+            "effects": {
+              "cash": -250000000,
+              "pre_release_interest": 3,
+              "actor_network": 1
+            },
+            "spokenText": "출연료 조건은 맞추겠습니다. 이 배역은 꼭 필요합니다."
+          },
+          {
+            "id": "short_schedule",
+            "text": "촬영 기간을 짧게 보장한다.",
+            "resultText": "스케줄 부담은 줄었지만 제작팀의 압박은 커졌습니다.",
+            "scoreEffects": {
+              "interest": 1,
+              "cost": 1,
+              "trust": -1
+            },
+            "effects": {
+              "actor_commitment_duration": -1,
+              "schedule_delay_risk": 5,
+              "acting_quality": -1
+            },
+            "spokenText": "촬영 기간을 짧게 가져가겠습니다. 배우님 일정을 우선하겠습니다."
+          },
+          {
+            "id": "profit_bonus",
+            "text": "낮은 기본 출연료와 흥행 보너스를 제안한다.",
+            "resultText": "당장 조건은 가벼워졌지만 흥행에 대한 기대가 계약에 묶였습니다.",
+            "scoreEffects": {
+              "trust": 1,
+              "interest": 1,
+              "cost": -1
+            },
+            "effects": {
+              "cash": -60000000,
+              "secondary_market_revenue": -50000000,
+              "actor_network": 2
+            },
+            "spokenText": "기본 조건은 낮추되 흥행 보너스로 보상하겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "actor_commits",
+        "conditions": {
+          "minScores": {
+            "interest": 5,
+            "trust": 3
+          }
+        },
+        "resultText": "배우 측은 프로젝트에 참여하기로 마음을 굳혔습니다. 배역과 작품 방향에 대한 신뢰가 생겼습니다.",
+        "effects": {
+          "casting_fit": 8,
+          "acting_quality": 5,
+          "pre_release_interest": 6,
+          "actor_network": 5,
+          "schedule_delay_risk": -3
+        }
+      },
+      {
+        "id": "expensive_commit",
+        "conditions": {
+          "minScores": {
+            "interest": 5,
+            "cost": 4
+          }
+        },
+        "resultText": "배우는 긍정적이지만 조건은 무겁습니다. 캐스팅 효과는 크지만 손익분기점이 올라갑니다.",
+        "effects": {
+          "casting_fit": 7,
+          "pre_release_interest": 8,
+          "cash": -300000000,
+          "budget_overrun_risk": 6,
+          "actor_network": 2
+        }
+      },
+      {
+        "id": "image_decline",
+        "conditions": {
+          "minScores": {
+            "imageRisk": 2
+          }
+        },
+        "resultText": "배우 측은 이미지 리스크가 크다고 판단했습니다. 정중하지만 사실상 거절에 가까운 답변입니다.",
+        "effects": {
+          "casting_fit": -5,
+          "actor_network": -4,
+          "schedule_delay_risk": 5,
+          "pre_release_interest": -2
+        }
+      },
+      {
+        "id": "hold_for_rewrite",
+        "default": true,
+        "resultText": "배우 측은 수정된 캐릭터 설명과 일정표를 보고 다시 결정하겠다고 했습니다. 협상은 끝나지 않았지만 시간이 필요합니다.",
+        "effects": {
+          "casting_fit": 2,
+          "actor_network": 1,
+          "delay_days": 7,
+          "scenario_quality": 1
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "출연료와 촬영 조건",
+      "priceLabel": "추가 출연료 조건",
+      "initialAmount": 100000000,
+      "stepAmount": 80000000,
+      "minAmount": 0,
+      "maxAmount": 500000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 4,
+      "effectKey": "cash",
+      "amountSign": -1,
+      "npcLine": "배우 측은 출연료와 촬영 기간을 함께 놓고 다시 조건을 제시합니다.",
+      "effectsOnAgreement": {
+        "actor_network": 1,
+        "casting_fit": 1,
+        "budget_overrun_risk": 2
+      },
+      "effectsOnStall": {
+        "delay_days": 5,
+        "actor_network": -2,
+        "casting_fit": -2,
+        "schedule_delay_risk": 4
+      },
+      "stalledText": "출연료 협상은 보류되었습니다. 배우 측은 수정 제안을 기다리겠다고만 말했습니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_press_budget_question",
+    "stage": "marketing",
+    "npcType": "journalist",
+    "npcTraits": [
+      "산업지형",
+      "공격형"
+    ],
+    "npcLine": "제작비가 과도하다는 지적도 있습니다. 실패하면 책임지실 수 있습니까?",
+    "canWalkOut": true,
+    "choices": [
+      {
+        "id": "explain_profit_structure",
+        "text": "손익 구조를 차분히 설명한다.",
+        "check": {
+          "stat": "market_analysis",
+          "difficulty": 50
+        },
+        "successText": "기자는 비교적 균형 잡힌 기사로 상황을 정리했습니다.",
+        "failureText": "설명은 길었지만 설득력은 부족했습니다.",
+        "effectsOnSuccess": {
+          "press_backlash_risk": -5,
+          "investor_reputation": 2
+        },
+        "effectsOnFailure": {
+          "press_backlash_risk": 5
+        },
+        "spokenText": "책임질 수 있는 구조로 설계했습니다. 손익 구조부터 설명드리겠습니다."
+      },
+      {
+        "id": "emphasize_quality",
+        "text": "작품의 완성도를 강조한다.",
+        "check": {
+          "stat": "commercial_sense",
+          "difficulty": 50
+        },
+        "successText": "기사의 초점이 제작비보다 작품 기대감으로 옮겨갔습니다.",
+        "failureText": "구체적 근거가 부족해 허세처럼 보였습니다.",
+        "effectsOnSuccess": {
+          "pre_release_interest": 5,
+          "public_reputation": 2
+        },
+        "effectsOnFailure": {
+          "press_backlash_risk": 5
+        },
+        "spokenText": "제작비 논란보다 완성도로 평가받겠습니다."
+      },
+      {
+        "id": "criticize_question",
+        "text": "질문 의도를 비판한다.",
+        "successText": "강한 발언이 화제가 됐습니다.",
+        "effects": {
+          "online_buzz": 8,
+          "press_backlash_risk": 8,
+          "public_reputation": 1
+        },
+        "spokenText": "그 질문은 작품보다 실패를 먼저 전제하고 있습니다."
+      },
+      {
+        "id": "avoid_answer",
+        "text": "답변을 피한다.",
+        "resultText": "기자는 의혹이 해소되지 않았다고 판단했습니다.",
+        "effects": {
+          "press_backlash_risk": 6,
+          "investor_reputation": -2
+        },
+        "spokenText": "그 부분은 아직 확정된 단계가 아니라 말씀드리기 어렵습니다."
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "인터뷰는 중단됐고, 몇 시간 뒤 '질문 도중 자리를 박차고 나간 제작자'라는 기사가 올라왔습니다.",
+        "effects": {
+          "press_backlash_risk": 20,
+          "online_buzz": 12,
+          "investor_reputation": -6,
+          "public_reputation": -3
+        }
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_open_audition_room",
+    "stage": "casting",
+    "npcType": "audition_panel",
+    "npcTraits": [
+      "신인발굴",
+      "현장형",
+      "불확실성"
+    ],
+    "npcLine": "오디션장에 여러 신인 배우가 들어왔습니다. 누구를 어떻게 시험하느냐에 따라 캐스팅의 방향이 달라집니다.",
+    "description": "오디션 이벤트는 질문, 리딩, 케미 테스트를 거치며 배우의 가능성과 리스크를 누적 판정합니다.",
+    "canWalkOut": true,
+    "weight": 85,
+    "trigger": {
+      "stage": "casting",
+      "maxActorNetwork": 45
+    },
+    "scoreLabels": {
+      "performance": "연기 반응",
+      "fit": "배역 적합",
+      "risk": "기용 리스크",
+      "team": "팀 신뢰"
+    },
+    "choices": [
+      {
+        "id": "quick_reading",
+        "text": "짧은 리딩만 보고 판단한다.",
+        "effects": {
+          "schedule_delay_risk": -2,
+          "casting_fit": -1
+        },
+        "spokenText": "짧게 읽어봅시다. 첫 인상이 중요합니다."
+      },
+      {
+        "id": "full_audition",
+        "text": "리딩과 카메라 테스트를 모두 진행한다.",
+        "effects": {
+          "casting_fit": 2,
+          "delay_days": 2,
+          "cash": -10000000
+        },
+        "spokenText": "리딩과 카메라 테스트까지 보겠습니다. 시간을 들일 가치가 있습니다."
+      }
+    ],
+    "steps": [
+      {
+        "id": "first_question",
+        "npcLine": "첫 질문입니다. 이 배우에게 무엇을 먼저 물어봅니까?",
+        "choices": [
+          {
+            "id": "ask_character",
+            "text": "인물이 어떤 사람이라고 느꼈는지 묻는다.",
+            "resultText": "배우가 캐릭터를 자기 언어로 설명하기 시작했습니다.",
+            "scoreEffects": {
+              "fit": 2,
+              "team": 1
+            },
+            "effects": {
+              "casting_fit": 1
+            },
+            "spokenText": "이 인물이 어떤 사람이라고 느꼈는지 먼저 말해볼래요?"
+          },
+          {
+            "id": "ask_experience",
+            "text": "현장 경험과 일정 가능 여부를 묻는다.",
+            "resultText": "배우의 현실적 준비 상태가 드러났습니다.",
+            "scoreEffects": {
+              "risk": -1,
+              "team": 1
+            },
+            "effects": {
+              "schedule_delay_risk": -1
+            },
+            "spokenText": "현장 경험과 가능한 일정부터 솔직히 말해주세요."
+          },
+          {
+            "id": "ask_improv",
+            "text": "즉석 상황극을 던진다.",
+            "resultText": "예상 밖의 순발력이 보이거나, 긴장으로 무너질 수 있는 질문입니다.",
+            "scoreEffects": {
+              "performance": 2,
+              "risk": 1
+            },
+            "effects": {
+              "acting_quality": 1,
+              "audience_rejection_risk": 1
+            },
+            "spokenText": "대본은 잠깐 내려놓고, 지금 이 상황으로 즉흥 연기를 해볼까요?"
+          }
+        ]
+      },
+      {
+        "id": "reading_test",
+        "npcLine": "대본 리딩을 시켜보니 장면의 온도가 아직 애매합니다. 어떻게 조정합니까?",
+        "choices": [
+          {
+            "id": "give_precise_direction",
+            "text": "정확한 감정 방향을 짚어준다.",
+            "resultText": "배우가 빠르게 수정 지시를 따라왔습니다.",
+            "scoreEffects": {
+              "performance": 2,
+              "team": 1
+            },
+            "effects": {
+              "directing_quality": 1,
+              "acting_quality": 2
+            },
+            "spokenText": "감정의 방향을 조금만 바꿔봅시다. 더 눌러서 가보세요."
+          },
+          {
+            "id": "let_actor_try",
+            "text": "배우가 해석을 바꿔보게 기다린다.",
+            "resultText": "배우의 자기 해석이 살아났지만 시간은 더 걸렸습니다.",
+            "scoreEffects": {
+              "performance": 1,
+              "fit": 2,
+              "risk": 1
+            },
+            "effects": {
+              "acting_quality": 2,
+              "delay_days": 1
+            },
+            "spokenText": "본인 해석으로 한 번 더 가보죠. 기다리겠습니다."
+          },
+          {
+            "id": "move_to_next",
+            "text": "시간을 아끼고 다음 배우로 넘어간다.",
+            "resultText": "오디션 진행은 빨라졌지만 가능성을 놓쳤을 수도 있습니다.",
+            "scoreEffects": {
+              "risk": -1,
+              "team": -1,
+              "performance": -1
+            },
+            "effects": {
+              "schedule_delay_risk": -2,
+              "casting_fit": -2
+            },
+            "spokenText": "여기까지 보겠습니다. 다음 배우 들어오세요."
+          }
+        ]
+      },
+      {
+        "id": "chemistry_test",
+        "npcLine": "마지막으로 상대 배우와 붙였을 때 케미가 생각보다 좋습니다. 어떻게 결정합니까?",
+        "choices": [
+          {
+            "id": "cast_boldly",
+            "text": "과감히 주요 배역으로 기용한다.",
+            "resultText": "팀 안에서 신인 기용에 대한 긴장과 기대가 동시에 생겼습니다.",
+            "scoreEffects": {
+              "performance": 2,
+              "fit": 2,
+              "risk": 2
+            },
+            "effects": {
+              "casting_fit": 5,
+              "pre_release_interest": -2,
+              "creative_reputation": 2
+            },
+            "spokenText": "좋습니다. 이 배역으로 과감하게 가봅시다."
+          },
+          {
+            "id": "supporting_first",
+            "text": "조연으로 기용해 리스크를 낮춘다.",
+            "resultText": "가능성을 살리되 프로젝트 전체 위험은 줄였습니다.",
+            "scoreEffects": {
+              "fit": 1,
+              "risk": -1,
+              "team": 1
+            },
+            "effects": {
+              "casting_fit": 2,
+              "actor_network": 1
+            },
+            "spokenText": "주요 배역은 아직 이릅니다. 조연으로 먼저 붙여보죠."
+          },
+          {
+            "id": "keep_on_file",
+            "text": "이번 작품은 넘기고 다음 작품 후보로 남긴다.",
+            "resultText": "좋은 관계는 남겼지만 이번 영화의 캐스팅 변화는 없습니다.",
+            "scoreEffects": {
+              "team": 1,
+              "performance": -1
+            },
+            "effects": {
+              "actor_network": 2,
+              "casting_fit": -1
+            },
+            "spokenText": "이번 작품은 어렵지만, 다음 프로젝트 후보로 꼭 남겨두겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "newcomer_breakout",
+        "conditions": {
+          "minScores": {
+            "performance": 5,
+            "fit": 4
+          }
+        },
+        "resultText": "오디션에서 발견한 배우가 작품의 결을 바꿀 만큼 강한 가능성을 보였습니다. 신인 기용이 프로젝트의 새 카드가 됩니다.",
+        "effects": {
+          "acting_quality": 6,
+          "casting_fit": 7,
+          "creative_reputation": 4,
+          "pre_release_interest": -2,
+          "cult_potential": 3
+        }
+      },
+      {
+        "id": "safe_supporting",
+        "conditions": {
+          "maxScores": {
+            "risk": 0
+          },
+          "minScores": {
+            "team": 2
+          }
+        },
+        "resultText": "주연급 모험은 피했지만 안정적인 조연 캐스팅으로 팀의 빈틈을 메웠습니다.",
+        "effects": {
+          "casting_fit": 3,
+          "acting_quality": 2,
+          "actor_network": 3,
+          "schedule_delay_risk": -2
+        }
+      },
+      {
+        "id": "audition_uncertain",
+        "default": true,
+        "resultText": "확신할 만큼 강한 발견은 아니었습니다. 그래도 오디션 경험은 캐스팅 기준을 조금 선명하게 만들었습니다.",
+        "effects": {
+          "casting_fit": 1,
+          "actor_network": 1,
+          "delay_days": 2
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "테스트 출연 계약 조건",
+      "priceLabel": "추가 테스트 계약 조건",
+      "initialAmount": 20000000,
+      "stepAmount": 20000000,
+      "minAmount": 0,
+      "maxAmount": 120000000,
+      "baseRounds": 1,
+      "minRounds": 1,
+      "maxRounds": 3,
+      "effectKey": "cash",
+      "amountSign": -1,
+      "npcLine": "오디션이 끝나자 매니지먼트가 테스트 출연 조건을 조심스럽게 꺼냅니다.",
+      "effectsOnAgreement": {
+        "actor_network": 1,
+        "creative_reputation": 1
+      },
+      "effectsOnStall": {
+        "delay_days": 3,
+        "actor_network": -1,
+        "casting_fit": -1
+      },
+      "stalledText": "신인 테스트 계약 조건은 보류되었습니다. 다른 후보와 비교해야 하는 상황이 됐습니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_netflix_global_streaming_offer",
+    "stage": "release_strategy",
+    "category": "dialogue",
+    "npcType": "ott_platform_executive",
+    "npcTraits": [
+      "글로벌지향",
+      "데이터중시",
+      "독점선호"
+    ],
+    "npcLine": "넷플릭스 쪽에서 글로벌 스트리밍 계약 가능성을 묻고 있습니다. 극장 개봉과 독점 공개 조건을 함께 논의해야 합니다.",
+    "description": "넷플릭스 계약 협상은 글로벌 노출과 선판매 안정성을 주지만, 극장 창구와 후속 권리 구조가 흔들릴 수 있습니다.",
+    "weight": 90,
+    "trigger": {
+      "eraIds": [
+        "era_2010s",
+        "era_2020s"
+      ],
+      "yearFrom": 2016,
+      "minProjectScale": "low_budget_genre",
+      "genreWeights": {
+        "crime_thriller": 1.25,
+        "horror_occult": 1.2,
+        "sf_disaster_monster": 1.2,
+        "social_true_story": 1.15,
+        "romance_melodrama": 0.75,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "network.distribution_network",
+          "min": 15,
+          "multiplier": 1.25
+        },
+        {
+          "source": "reputation.global_reputation",
+          "min": 8,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.secondary_market_fit",
+          "min": 60,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "scoreLabels": {
+      "global": "글로벌 매력",
+      "control": "권리 통제",
+      "theatrical": "극장 창구",
+      "money": "계약 안정성"
+    },
+    "choices": [
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 플랫폼 미팅을 중단하고 자리에서 일어났습니다. 협상장은 식었고, 이후 조건은 더 까다로워질 수 있습니다.",
+        "effects": {
+          "distribution_network": -6,
+          "investor_reputation": -3,
+          "press_backlash_risk": 4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "platform_fit",
+        "npcLine": "이 작품을 한국 밖 관객에게 어떻게 설명할 수 있습니까?",
+        "choices": [
+          {
+            "id": "universal_hook",
+            "text": "장르의 보편적 재미를 먼저 설명한다.",
+            "resultText": "상대는 알고리즘과 해외 시청자에게 설명 가능한 장르 hook에 반응했습니다.",
+            "scoreEffects": {
+              "global": 2,
+              "money": 1
+            },
+            "effects": {
+              "global_reputation": 1,
+              "secondary_market_fit": 2
+            },
+            "spokenText": "한국 밖 관객도 바로 이해할 장르적 재미가 있습니다."
+          },
+          {
+            "id": "korean_specificity",
+            "text": "한국적 소재와 시대성을 차별점으로 제시한다.",
+            "resultText": "상대는 독특한 로컬리티에는 관심을 보였지만 번역 가능성을 다시 물었습니다.",
+            "scoreEffects": {
+              "global": 1,
+              "control": 1
+            },
+            "effects": {
+              "critic_reputation": 1,
+              "global_reputation": 1
+            },
+            "spokenText": "한국적인 소재가 오히려 차별점입니다. 낯설지만 선명하게 보일 겁니다."
+          },
+          {
+            "id": "star_data",
+            "text": "배우와 유사 장르 성과 데이터를 앞세운다.",
+            "resultText": "상대는 패키지와 데이터 근거를 실무적으로 검토하기 시작했습니다.",
+            "scoreEffects": {
+              "money": 2,
+              "global": 1,
+              "control": 1
+            },
+            "effects": {
+              "market_analysis": 1,
+              "pre_release_interest": 2
+            },
+            "spokenText": "배우와 유사 장르 성과를 보면 플랫폼 관객과 접점이 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "windowing",
+        "npcLine": "극장 개봉을 얼마나 유지할 생각입니까? 독점 공개를 원하면 조건이 달라집니다.",
+        "choices": [
+          {
+            "id": "short_theatrical_then_global",
+            "text": "짧은 극장 개봉 후 글로벌 공개를 제안한다.",
+            "resultText": "플랫폼은 일정 예측 가능성을 좋게 봤지만 극장 쪽 반발 가능성도 남았습니다.",
+            "scoreEffects": {
+              "money": 2,
+              "theatrical": -1,
+              "control": 1
+            },
+            "effects": {
+              "secondary_market_revenue": 250000000,
+              "distribution_network": -1,
+              "theater_demand": -1
+            },
+            "spokenText": "극장은 짧게 열고, 글로벌 공개로 빠르게 확장하시죠."
+          },
+          {
+            "id": "protect_theatrical",
+            "text": "극장 1차 시장을 지킨 뒤 공개하겠다고 말한다.",
+            "resultText": "배급사와 극장에는 유리하지만 플랫폼의 선호와는 거리가 생겼습니다.",
+            "scoreEffects": {
+              "theatrical": 2,
+              "control": 1,
+              "money": -1
+            },
+            "effects": {
+              "distribution_network": 2,
+              "final_audience": 2,
+              "secondary_market_revenue": -50000000
+            },
+            "spokenText": "극장 1차 시장은 지켜야 합니다. 그 반응이 플랫폼 공개에도 힘이 됩니다."
+          },
+          {
+            "id": "platform_exclusive",
+            "text": "플랫폼 독점 공개도 검토 가능하다고 말한다.",
+            "resultText": "플랫폼 쪽 관심은 커졌지만 극장 흥행의 길은 좁아질 수 있습니다.",
+            "scoreEffects": {
+              "money": 3,
+              "global": 1,
+              "theatrical": -3
+            },
+            "effects": {
+              "secondary_market_revenue": 500000000,
+              "final_audience": -8,
+              "distribution_network": -4
+            },
+            "spokenText": "조건이 맞으면 플랫폼 독점 공개도 검토하겠습니다."
+          }
+        ]
+      },
+      {
+        "id": "rights_scope",
+        "npcLine": "후속작과 해외 리메이크 권리까지 포함할 수 있습니까?",
+        "choices": [
+          {
+            "id": "license_limited",
+            "text": "이번 작품의 스트리밍 권리만 판다.",
+            "resultText": "장기 권리는 지켰지만 계약 총액은 제한됩니다.",
+            "scoreEffects": {
+              "control": 3,
+              "money": -1
+            },
+            "effects": {
+              "ip_value": 3,
+              "secondary_market_revenue": 100000000
+            },
+            "spokenText": "이번 작품의 스트리밍 권리만 논의하겠습니다."
+          },
+          {
+            "id": "global_package",
+            "text": "해외 스트리밍과 일부 리메이크 검토권을 묶는다.",
+            "resultText": "계약 규모는 커졌지만 IP 통제권 일부가 계약서에 묶입니다.",
+            "scoreEffects": {
+              "money": 3,
+              "global": 2,
+              "control": -2
+            },
+            "effects": {
+              "secondary_market_revenue": 600000000,
+              "global_reputation": 3,
+              "ip_value": -2
+            },
+            "spokenText": "해외 스트리밍과 일부 리메이크 검토권까지 묶어보시죠."
+          },
+          {
+            "id": "first_look_only",
+            "text": "후속작은 우선협상권 정도로 제한한다.",
+            "resultText": "플랫폼은 아쉬워했지만 장기 협력 여지는 남겼습니다.",
+            "scoreEffects": {
+              "control": 1,
+              "money": 1,
+              "global": 1
+            },
+            "effects": {
+              "distribution_network": 2,
+              "secondary_market_revenue": 250000000,
+              "franchise_power": 1
+            },
+            "spokenText": "후속작은 우선협상권 정도로 제한하겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "netflix_global_deal",
+        "conditions": {
+          "minScores": {
+            "global": 4,
+            "money": 4
+          }
+        },
+        "resultText": "넷플릭스는 글로벌 공개를 전제로 강한 계약 의사를 보였습니다. 해외 노출과 안정 수익은 커졌지만, 창구 전략은 플랫폼 중심으로 기울었습니다.",
+        "effects": {
+          "secondary_market_revenue": 1000000000,
+          "global_reputation": 6,
+          "online_buzz": 5,
+          "distribution_network": 2,
+          "final_audience": -3,
+          "ip_value": -1
+        }
+      },
+      {
+        "id": "netflix_limited_license",
+        "conditions": {
+          "minScores": {
+            "control": 4
+          }
+        },
+        "resultText": "권리 통제권을 지키는 제한 계약으로 정리됐습니다. 계약금은 아주 크지 않지만 장기 IP 가치는 보존됩니다.",
+        "effects": {
+          "secondary_market_revenue": 350000000,
+          "ip_value": 4,
+          "franchise_power": 2,
+          "global_reputation": 2
+        }
+      },
+      {
+        "id": "netflix_talks_stall",
+        "conditions": {
+          "maxScores": {
+            "money": 0
+          }
+        },
+        "resultText": "플랫폼은 확신을 얻지 못했습니다. 추가 자료와 해외 반응을 본 뒤 다시 논의하기로 했습니다.",
+        "effects": {
+          "delay_days": 7,
+          "distribution_network": -1,
+          "secondary_market_revenue": -50000000
+        }
+      },
+      {
+        "id": "netflix_mixed_followup",
+        "default": true,
+        "resultText": "넷플릭스와의 논의는 후속 미팅으로 이어졌습니다. 당장 큰 계약은 아니지만 글로벌 공개 가능성은 살아 있습니다.",
+        "effects": {
+          "secondary_market_revenue": 250000000,
+          "global_reputation": 2,
+          "delay_days": 4
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "글로벌 선판매와 공개 창구",
+      "priceLabel": "추가 MG 조건",
+      "initialAmount": 300000000,
+      "stepAmount": 150000000,
+      "minAmount": 0,
+      "maxAmount": 1200000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 4,
+      "effectKey": "secondary_market_revenue",
+      "amountSign": 1,
+      "npcLine": "넷플릭스 측은 글로벌 공개 범위와 MG 조건을 놓고 다시 계산합니다.",
+      "effectsOnAgreement": {
+        "distribution_network": 1,
+        "global_reputation": 1
+      },
+      "effectsOnStall": {
+        "delay_days": 5,
+        "distribution_network": -1,
+        "secondary_market_revenue": -50000000
+      },
+      "stalledText": "넷플릭스와의 가격 협상은 보류되었습니다. 공개 범위와 창구 조건을 더 조율해야 합니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_apple_tv_premium_offer",
+    "stage": "release_strategy",
+    "category": "dialogue",
+    "npcType": "ott_platform_executive",
+    "npcTraits": [
+      "프리미엄",
+      "작가주의친화",
+      "브랜드관리"
+    ],
+    "npcLine": "Apple TV+ 측이 프리미엄 라인업 후보로 작품을 검토하고 있습니다. 완성도와 브랜드 톤이 핵심입니다.",
+    "description": "Apple TV+ 계약은 대중 화제성보다 프리미엄 브랜드, 작가주의 이미지, 해외 평판과 잘 맞을 때 유리합니다.",
+    "weight": 65,
+    "trigger": {
+      "eraIds": [
+        "era_2020s"
+      ],
+      "yearFrom": 2021,
+      "minProjectScale": "independent_film",
+      "genreWeights": {
+        "indie_art": 1.45,
+        "social_true_story": 1.25,
+        "crime_thriller": 1.15,
+        "sf_disaster_monster": 1.1,
+        "comedy": 0.75,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "reputation.critic_reputation",
+          "min": 12,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.final_quality",
+          "min": 65,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "scoreLabels": {
+      "prestige": "프리미엄 적합",
+      "control": "창작 통제",
+      "reach": "도달 범위",
+      "money": "계약 안정성"
+    },
+    "choices": [
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 플랫폼 미팅을 중단하고 자리에서 일어났습니다. 협상장은 식었고, 이후 조건은 더 까다로워질 수 있습니다.",
+        "effects": {
+          "distribution_network": -6,
+          "investor_reputation": -3,
+          "press_backlash_risk": 4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "brand_fit",
+        "npcLine": "우리 플랫폼 브랜드 안에서 이 작품은 어떤 자리에 놓일 수 있을까요?",
+        "choices": [
+          {
+            "id": "prestige_pitch",
+            "text": "작품성과 감독의 시선을 중심으로 설명한다.",
+            "resultText": "플랫폼 담당자는 작품의 톤과 브랜드 적합성을 눈여겨봤습니다.",
+            "scoreEffects": {
+              "prestige": 3,
+              "control": 1
+            },
+            "effects": {
+              "critic_reputation": 2,
+              "global_reputation": 1
+            },
+            "spokenText": "이 작품은 감독의 시선과 작품성으로 플랫폼 안에서 오래 남을 수 있습니다."
+          },
+          {
+            "id": "genre_premium",
+            "text": "장르영화지만 고급스럽게 포장할 수 있다고 말한다.",
+            "resultText": "상대는 장르성과 프리미엄 이미지의 균형을 따져보기 시작했습니다.",
+            "scoreEffects": {
+              "prestige": 2,
+              "reach": 1
+            },
+            "effects": {
+              "genre_satisfaction": 2,
+              "pre_release_interest": 1
+            },
+            "spokenText": "장르영화지만 포장은 프리미엄하게 가져갈 수 있습니다."
+          },
+          {
+            "id": "mass_pitch",
+            "text": "가입자 유입과 대중 화제성을 강조한다.",
+            "resultText": "담당자는 수치에는 관심을 보였지만 브랜드 결을 다시 확인하려 했습니다.",
+            "scoreEffects": {
+              "reach": 2,
+              "money": 1,
+              "prestige": -1
+            },
+            "effects": {
+              "online_buzz": 2,
+              "critic_reputation": -1
+            },
+            "spokenText": "가입자 유입과 대중 화제성도 충분히 만들 수 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "creative_notes",
+        "npcLine": "플랫폼이 후반 톤과 러닝타임에 의견을 낸다면 어디까지 받을 수 있습니까?",
+        "choices": [
+          {
+            "id": "accept_notes",
+            "text": "브랜드 톤에 맞춘 후반 의견을 받는다.",
+            "resultText": "협업 가능성은 커졌지만 창작진의 긴장도 생겼습니다.",
+            "scoreEffects": {
+              "money": 2,
+              "prestige": 1,
+              "control": -2
+            },
+            "effects": {
+              "secondary_market_revenue": 250000000,
+              "creative_reputation": -2,
+              "editing_quality": 1
+            },
+            "spokenText": "브랜드 톤에 맞춘 후반 의견은 듣겠습니다."
+          },
+          {
+            "id": "director_cut",
+            "text": "감독판을 지키되 별도 플랫폼 컷을 논의한다.",
+            "resultText": "창작 통제와 플랫폼 요구 사이에 절충점이 생겼습니다.",
+            "scoreEffects": {
+              "control": 2,
+              "prestige": 1,
+              "money": 1
+            },
+            "effects": {
+              "creative_reputation": 2,
+              "post_production_duration": 1
+            },
+            "spokenText": "감독판은 지키되, 플랫폼 컷은 따로 논의할 수 있습니다."
+          },
+          {
+            "id": "no_notes",
+            "text": "후반 개입은 받지 않겠다고 선을 긋는다.",
+            "resultText": "작품 중심은 지켰지만 계약 성사 가능성은 조금 낮아졌습니다.",
+            "scoreEffects": {
+              "control": 3,
+              "money": -2
+            },
+            "effects": {
+              "creative_reputation": 3,
+              "secondary_market_revenue": -100000000
+            },
+            "spokenText": "후반 개입은 어렵습니다. 작품의 결은 지켜야 합니다."
+          }
+        ]
+      },
+      {
+        "id": "release_position",
+        "npcLine": "극장 공개와 플랫폼 공개 사이에서 어떤 이미지를 원합니까?",
+        "choices": [
+          {
+            "id": "festival_then_platform",
+            "text": "영화제와 제한 개봉 후 플랫폼 공개를 제안한다.",
+            "resultText": "작품성 이미지를 먼저 만들겠다는 전략에 담당자가 반응했습니다.",
+            "scoreEffects": {
+              "prestige": 2,
+              "control": 1,
+              "reach": 1
+            },
+            "effects": {
+              "festival_network": 3,
+              "critic_reputation": 2,
+              "release_timing": 1
+            },
+            "spokenText": "영화제와 제한 개봉으로 이미지를 만든 뒤 플랫폼으로 들어가겠습니다."
+          },
+          {
+            "id": "platform_premiere",
+            "text": "플랫폼 프리미어로 고급스럽게 공개한다.",
+            "resultText": "플랫폼 집중도는 높아졌지만 극장 존재감은 줄어듭니다.",
+            "scoreEffects": {
+              "money": 2,
+              "reach": 2,
+              "control": -1
+            },
+            "effects": {
+              "secondary_market_revenue": 350000000,
+              "final_audience": -5,
+              "online_buzz": 3
+            },
+            "spokenText": "플랫폼 프리미어로 고급스럽게 공개하시죠."
+          },
+          {
+            "id": "theatrical_first",
+            "text": "극장 반응을 먼저 만든 뒤 들어가겠다고 말한다.",
+            "resultText": "극장 가치는 지켰지만 플랫폼 독점성은 약해졌습니다.",
+            "scoreEffects": {
+              "control": 1,
+              "reach": -1
+            },
+            "effects": {
+              "final_audience": 2,
+              "secondary_market_revenue": -50000000
+            },
+            "spokenText": "극장 반응을 먼저 만들고 들어가겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "apple_prestige_deal",
+        "conditions": {
+          "minScores": {
+            "prestige": 5,
+            "money": 2
+          }
+        },
+        "resultText": "Apple TV+는 프리미엄 공개 조건으로 계약 의사를 보였습니다. 큰 대중 폭발력보다 작품의 브랜드 가치와 해외 평판이 올라갑니다.",
+        "effects": {
+          "secondary_market_revenue": 700000000,
+          "critic_reputation": 5,
+          "global_reputation": 4,
+          "festival_network": 2,
+          "final_audience": -2
+        }
+      },
+      {
+        "id": "apple_director_friendly",
+        "conditions": {
+          "minScores": {
+            "control": 5
+          }
+        },
+        "resultText": "강한 창작 통제권을 지키는 조건으로 작은 계약 가능성을 남겼습니다. 돈보다 작가 브랜드를 지키는 선택입니다.",
+        "effects": {
+          "secondary_market_revenue": 250000000,
+          "creative_reputation": 5,
+          "critic_reputation": 3,
+          "delay_days": 5
+        }
+      },
+      {
+        "id": "apple_not_fit",
+        "default": true,
+        "resultText": "플랫폼은 작품을 흥미롭게 봤지만 라인업 톤과 완전히 맞지는 않는다고 판단했습니다. 후속 검토로 남았습니다.",
+        "effects": {
+          "global_reputation": 1,
+          "delay_days": 4,
+          "secondary_market_revenue": 100000000
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "프리미엄 라이선스 조건",
+      "priceLabel": "추가 라이선스 조건",
+      "initialAmount": 200000000,
+      "stepAmount": 100000000,
+      "minAmount": 0,
+      "maxAmount": 900000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 4,
+      "effectKey": "secondary_market_revenue",
+      "amountSign": 1,
+      "npcLine": "애플TV+ 측은 작품의 브랜드 포지션과 라이선스 조건을 다시 맞춰봅니다.",
+      "effectsOnAgreement": {
+        "global_reputation": 1,
+        "critic_reputation": 1
+      },
+      "effectsOnStall": {
+        "delay_days": 4,
+        "global_reputation": -1
+      },
+      "stalledText": "애플TV+와의 가격 협상은 보류되었습니다. 프리미엄 포지션은 남았지만 조건 합의가 필요합니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_tving_domestic_ott_offer",
+    "stage": "release_strategy",
+    "category": "dialogue",
+    "npcType": "ott_platform_executive",
+    "npcTraits": [
+      "국내시장",
+      "화제성중시",
+      "프로모션연계"
+    ],
+    "npcLine": "티빙 쪽에서 국내 OTT 공개와 프로모션 연계를 제안했습니다. 극장 이후 국내 화제성을 어떻게 이어갈지가 핵심입니다.",
+    "description": "티빙 계약은 국내 관객, 예능/커뮤니티 화제성, 빠른 2차 시장 회수에 강합니다. 글로벌 명성보다는 국내 유지력이 중요합니다.",
+    "weight": 85,
+    "trigger": {
+      "eraIds": [
+        "era_2020s"
+      ],
+      "yearFrom": 2020,
+      "genreWeights": {
+        "comedy": 1.3,
+        "romance_melodrama": 1.2,
+        "crime_thriller": 1.15,
+        "horror_occult": 1.1,
+        "family_human_drama": 1.15,
+        "indie_art": 0.8,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.online_buzz",
+          "min": 45,
+          "multiplier": 1.25
+        },
+        {
+          "source": "network.press_network",
+          "min": 12,
+          "multiplier": 1.15
+        }
+      ]
+    },
+    "scoreLabels": {
+      "domestic": "국내 반응",
+      "promo": "프로모션",
+      "control": "권리 통제",
+      "money": "계약 안정성"
+    },
+    "choices": [
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 플랫폼 미팅을 중단하고 자리에서 일어났습니다. 협상장은 식었고, 이후 조건은 더 까다로워질 수 있습니다.",
+        "effects": {
+          "distribution_network": -6,
+          "investor_reputation": -3,
+          "press_backlash_risk": 4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "domestic_hook",
+        "npcLine": "국내 가입자에게 이 작품을 어떤 문구로 팔 수 있을까요?",
+        "choices": [
+          {
+            "id": "actor_fandom",
+            "text": "배우와 캐릭터 중심으로 홍보 포인트를 잡는다.",
+            "resultText": "담당자는 팬덤과 클립 확산 가능성을 긍정적으로 봤습니다.",
+            "scoreEffects": {
+              "domestic": 2,
+              "promo": 2
+            },
+            "effects": {
+              "fandom_index": 3,
+              "online_buzz": 2
+            },
+            "spokenText": "배우와 캐릭터를 중심으로 국내 관객을 붙잡겠습니다."
+          },
+          {
+            "id": "genre_weekend",
+            "text": "주말에 몰아보기 좋은 장르물이라고 설명한다.",
+            "resultText": "플랫폼은 추천 알고리즘과 장르관객을 연결해보기로 했습니다.",
+            "scoreEffects": {
+              "domestic": 2,
+              "money": 1
+            },
+            "effects": {
+              "secondary_market_fit": 3,
+              "genre_satisfaction": 1
+            },
+            "spokenText": "주말에 몰아보기 좋은 장르물로 밀어볼 수 있습니다."
+          },
+          {
+            "id": "critical_value",
+            "text": "평론 호평과 GV 기록을 앞세운다.",
+            "resultText": "담당자는 의미는 인정했지만 대중 프로모션 각도는 더 고민했습니다.",
+            "scoreEffects": {
+              "control": 1,
+              "promo": -1
+            },
+            "effects": {
+              "critic_reputation": 2,
+              "pre_release_interest": -1
+            },
+            "spokenText": "평론 호평과 GV 기록을 앞세우면 작품 이미지가 살아납니다."
+          }
+        ]
+      },
+      {
+        "id": "promo_package",
+        "npcLine": "공개 주간에 예능, 숏폼, 배우 인터뷰를 묶을 수 있습니까?",
+        "choices": [
+          {
+            "id": "full_promo",
+            "text": "배우 인터뷰와 숏폼 프로모션을 모두 묶는다.",
+            "resultText": "국내 화제성은 강해지지만 배우 일정과 마케팅 부담이 커집니다.",
+            "scoreEffects": {
+              "promo": 3,
+              "domestic": 2,
+              "money": 1
+            },
+            "effects": {
+              "online_buzz": 6,
+              "marketing_budget": -70000000,
+              "actor_commitment_duration": 1
+            },
+            "spokenText": "배우 인터뷰와 숏폼 프로모션을 모두 묶겠습니다."
+          },
+          {
+            "id": "targeted_promo",
+            "text": "장르 커뮤니티와 리뷰어 중심으로 좁게 간다.",
+            "resultText": "비용은 줄이고 맞는 관객을 노리는 방향이 됐습니다.",
+            "scoreEffects": {
+              "promo": 1,
+              "control": 1
+            },
+            "effects": {
+              "word_of_mouth": 3,
+              "marketing_budget": -20000000
+            },
+            "spokenText": "장르 커뮤니티와 리뷰어 중심으로 좁고 강하게 가겠습니다."
+          },
+          {
+            "id": "minimal_promo",
+            "text": "추가 프로모션 없이 공개한다.",
+            "resultText": "비용 부담은 줄었지만 플랫폼도 크게 밀어주기는 어렵다고 봤습니다.",
+            "scoreEffects": {
+              "money": -1,
+              "promo": -2,
+              "control": 1
+            },
+            "effects": {
+              "financial_risk": -2,
+              "online_buzz": -3
+            },
+            "spokenText": "추가 프로모션 없이 작품 자체로 공개하겠습니다."
+          }
+        ]
+      },
+      {
+        "id": "domestic_rights",
+        "npcLine": "국내 OTT 독점 기간은 어느 정도까지 줄 수 있습니까?",
+        "choices": [
+          {
+            "id": "long_exclusive",
+            "text": "긴 독점 기간을 주고 계약금을 높인다.",
+            "resultText": "계약 안정성은 커졌지만 다른 2차 시장 길은 좁아졌습니다.",
+            "scoreEffects": {
+              "money": 3,
+              "control": -2
+            },
+            "effects": {
+              "secondary_market_revenue": 450000000,
+              "ip_value": -1
+            },
+            "spokenText": "긴 독점 기간을 드리겠습니다. 대신 계약금은 올려야 합니다."
+          },
+          {
+            "id": "short_exclusive",
+            "text": "짧은 독점 기간과 성과 보너스를 제안한다.",
+            "resultText": "양쪽 모두 완전히 만족하진 않지만 유연한 구조가 됐습니다.",
+            "scoreEffects": {
+              "money": 1,
+              "control": 1,
+              "domestic": 1
+            },
+            "effects": {
+              "secondary_market_revenue": 220000000,
+              "distribution_network": 1
+            },
+            "spokenText": "짧은 독점 기간에 성과 보너스를 붙이시죠."
+          },
+          {
+            "id": "nonexclusive",
+            "text": "비독점 공개만 허용한다.",
+            "resultText": "권리는 지켰지만 플랫폼의 적극성은 낮아졌습니다.",
+            "scoreEffects": {
+              "control": 3,
+              "money": -2
+            },
+            "effects": {
+              "ip_value": 2,
+              "secondary_market_revenue": 50000000
+            },
+            "spokenText": "비독점 공개만 가능합니다. 권리는 넓게 열 수 없습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "tving_domestic_hit",
+        "conditions": {
+          "minScores": {
+            "domestic": 5,
+            "promo": 4
+          }
+        },
+        "resultText": "티빙은 국내 화제성 패키지로 강하게 밀어보기로 했습니다. 극장 이후에도 온라인 회자와 2차 시장 회수가 이어집니다.",
+        "effects": {
+          "secondary_market_revenue": 650000000,
+          "online_buzz": 10,
+          "word_of_mouth": 4,
+          "public_reputation": 3,
+          "press_network": 2
+        }
+      },
+      {
+        "id": "tving_flexible_deal",
+        "conditions": {
+          "minScores": {
+            "control": 4
+          }
+        },
+        "resultText": "권리를 지키는 유연한 국내 OTT 계약으로 정리됐습니다. 계약금은 작지만 장기 선택지는 남습니다.",
+        "effects": {
+          "secondary_market_revenue": 200000000,
+          "ip_value": 3,
+          "distribution_network": 2
+        }
+      },
+      {
+        "id": "tving_light_pickup",
+        "default": true,
+        "resultText": "티빙은 작품을 공개 라인업에 넣되 대형 프로모션까지는 약속하지 않았습니다. 안정적이지만 조용한 2차 시장 진입입니다.",
+        "effects": {
+          "secondary_market_revenue": 180000000,
+          "online_buzz": 2
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "국내 OTT 공개와 프로모션 패키지",
+      "priceLabel": "추가 국내 라이선스 조건",
+      "initialAmount": 150000000,
+      "stepAmount": 80000000,
+      "minAmount": 0,
+      "maxAmount": 700000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 3,
+      "effectKey": "secondary_market_revenue",
+      "amountSign": 1,
+      "npcLine": "티빙 측은 국내 프로모션 패키지와 라이선스 조건을 함께 조정하려 합니다.",
+      "effectsOnAgreement": {
+        "press_network": 1,
+        "online_buzz": 1
+      },
+      "effectsOnStall": {
+        "delay_days": 3,
+        "press_network": -1
+      },
+      "stalledText": "티빙과의 가격 협상은 보류되었습니다. 국내 홍보 패키지를 다시 짜야 합니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "dialogue_disney_plus_ip_offer",
+    "stage": "release_strategy",
+    "category": "dialogue",
+    "npcType": "ott_platform_executive",
+    "npcTraits": [
+      "IP중시",
+      "가족시장",
+      "프랜차이즈선호"
+    ],
+    "npcLine": "디즈니+ 쪽에서 IP 확장 가능성과 가족/장르 관객 적합성을 검토하고 있습니다.",
+    "description": "디즈니+ 계약은 캐릭터, 세계관, 가족 관객, 프랜차이즈 가능성이 있을 때 강합니다. 대신 브랜드 안전성과 권리 조건이 까다롭습니다.",
+    "weight": 70,
+    "trigger": {
+      "eraIds": [
+        "era_2020s"
+      ],
+      "yearFrom": 2021,
+      "minProjectScale": "low_budget_genre",
+      "genreWeights": {
+        "fantasy": 1.45,
+        "animation": 1.5,
+        "sf_disaster_monster": 1.25,
+        "family_human_drama": 1.3,
+        "action": 1.15,
+        "horror_occult": 0.75,
+        "indie_art": 0.55,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.ip_value",
+          "min": 55,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.world_expansion",
+          "min": 55,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "scoreLabels": {
+      "ip": "IP 확장성",
+      "brand": "브랜드 안정성",
+      "control": "권리 통제",
+      "money": "계약 안정성"
+    },
+    "choices": [
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다.",
+        "fixedChoice": true,
+        "resultText": "당신은 플랫폼 미팅을 중단하고 자리에서 일어났습니다. 협상장은 식었고, 이후 조건은 더 까다로워질 수 있습니다.",
+        "effects": {
+          "distribution_network": -6,
+          "investor_reputation": -3,
+          "press_backlash_risk": 4
+        }
+      }
+    ],
+    "steps": [
+      {
+        "id": "ip_potential",
+        "npcLine": "이 작품은 한 편으로 끝납니까, 아니면 세계를 확장할 수 있습니까?",
+        "choices": [
+          {
+            "id": "world_expand",
+            "text": "캐릭터와 세계관 확장 계획을 설명한다.",
+            "resultText": "담당자는 시리즈와 스핀오프 가능성에 관심을 보였습니다.",
+            "scoreEffects": {
+              "ip": 3,
+              "money": 1
+            },
+            "effects": {
+              "ip_value": 3,
+              "world_expansion": 4,
+              "sequel_demand": 2
+            },
+            "spokenText": "이건 한 편으로 끝낼 세계가 아닙니다. 캐릭터와 세계관을 확장할 수 있습니다."
+          },
+          {
+            "id": "single_film",
+            "text": "한 편의 완결성을 먼저 강조한다.",
+            "resultText": "작품 완성도는 인정했지만 플랫폼의 IP 관심과는 거리가 생겼습니다.",
+            "scoreEffects": {
+              "brand": 1,
+              "control": 1,
+              "ip": -1
+            },
+            "effects": {
+              "final_quality": 2,
+              "ip_value": -1
+            },
+            "spokenText": "우선 한 편의 완결성이 중요합니다. 확장은 그 다음입니다."
+          },
+          {
+            "id": "character_pitch",
+            "text": "인기 캐릭터 중심의 확장을 제안한다.",
+            "resultText": "캐릭터 상품성과 후속 콘텐츠 가능성이 논의되기 시작했습니다.",
+            "scoreEffects": {
+              "ip": 2,
+              "brand": 1
+            },
+            "effects": {
+              "character_popularity": 4,
+              "franchise_power": 2
+            },
+            "spokenText": "인기 캐릭터를 중심으로 확장하면 플랫폼에서도 오래 갈 수 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "brand_safety",
+        "npcLine": "플랫폼 브랜드와 가족 관객을 고려하면 수위와 논란 요소는 어떻게 관리할 수 있습니까?",
+        "choices": [
+          {
+            "id": "soften_edges",
+            "text": "수위가 높은 장면을 일부 조정할 수 있다고 말한다.",
+            "resultText": "브랜드 안정성은 올라갔지만 장르의 날은 조금 무뎌질 수 있습니다.",
+            "scoreEffects": {
+              "brand": 3,
+              "money": 1,
+              "control": -1
+            },
+            "effects": {
+              "controversy_risk": -5,
+              "genre_satisfaction": -2
+            },
+            "spokenText": "브랜드에 부담되는 장면은 일부 조정할 수 있습니다."
+          },
+          {
+            "id": "age_gate",
+            "text": "등급과 타깃을 분명히 나눠 공개하자고 제안한다.",
+            "resultText": "작품의 결을 지키면서도 플랫폼 내 배치를 논의할 수 있게 됐습니다.",
+            "scoreEffects": {
+              "brand": 2,
+              "control": 1
+            },
+            "effects": {
+              "audience_rejection_risk": -2,
+              "distribution_network": 1
+            },
+            "spokenText": "등급과 타깃을 분명히 나눠 공개하시죠."
+          },
+          {
+            "id": "keep_edge",
+            "text": "작품의 날카로운 부분은 지켜야 한다고 말한다.",
+            "resultText": "창작 의지는 전달됐지만 브랜드 리스크가 다시 의제로 올라왔습니다.",
+            "scoreEffects": {
+              "control": 2,
+              "brand": -2
+            },
+            "effects": {
+              "creative_reputation": 2,
+              "controversy_risk": 3
+            },
+            "spokenText": "이 작품의 날카로운 부분은 지켜야 합니다."
+          }
+        ]
+      },
+      {
+        "id": "rights_future",
+        "npcLine": "후속작, 캐릭터, 해외 공개 권리를 어느 정도까지 함께 논의할 수 있습니까?",
+        "choices": [
+          {
+            "id": "bundle_franchise",
+            "text": "후속작과 캐릭터 권리 일부를 묶어 큰 계약을 노린다.",
+            "resultText": "계약 규모는 커졌지만 IP 주도권 일부가 플랫폼으로 넘어갑니다.",
+            "scoreEffects": {
+              "money": 3,
+              "ip": 2,
+              "control": -3
+            },
+            "effects": {
+              "secondary_market_revenue": 600000000,
+              "franchise_power": 4,
+              "ip_value": -3
+            },
+            "spokenText": "후속작과 캐릭터 권리 일부를 묶어 큰 계약으로 가시죠."
+          },
+          {
+            "id": "retain_ip_license_streaming",
+            "text": "스트리밍 권리만 팔고 IP 권리는 보유한다.",
+            "resultText": "계약금은 낮아지지만 장기 권리는 제작사에 남습니다.",
+            "scoreEffects": {
+              "control": 3,
+              "money": -1
+            },
+            "effects": {
+              "ip_value": 4,
+              "secondary_market_revenue": 150000000
+            },
+            "spokenText": "스트리밍 권리만 팔겠습니다. IP 권리는 저희가 보유합니다."
+          },
+          {
+            "id": "co_develop_future",
+            "text": "후속작은 공동개발 우선협상권으로 둔다.",
+            "resultText": "서로의 이해관계를 남기는 절충안이 됐습니다.",
+            "scoreEffects": {
+              "control": 1,
+              "money": 1,
+              "ip": 2
+            },
+            "effects": {
+              "franchise_power": 3,
+              "distribution_network": 2,
+              "secondary_market_revenue": 250000000
+            },
+            "spokenText": "후속작은 공동개발 우선협상권으로 두겠습니다."
+          }
+        ]
+      }
+    ],
+    "finalOutcomes": [
+      {
+        "id": "disney_ip_package",
+        "conditions": {
+          "minScores": {
+            "ip": 6,
+            "brand": 3
+          }
+        },
+        "resultText": "디즈니+는 IP 확장 가능성을 높게 보고 패키지 계약을 제안했습니다. 수익과 세계관 가치는 커지지만 권리 조건을 신중히 봐야 합니다.",
+        "effects": {
+          "secondary_market_revenue": 850000000,
+          "ip_value": 5,
+          "franchise_power": 6,
+          "world_expansion": 5,
+          "global_reputation": 3,
+          "creative_reputation": -1
+        }
+      },
+      {
+        "id": "disney_safe_streaming",
+        "conditions": {
+          "minScores": {
+            "brand": 5
+          }
+        },
+        "resultText": "브랜드 안정성을 인정받아 스트리밍 공개 계약이 성사됐습니다. 큰 프랜차이즈 계약은 아니지만 안정적입니다.",
+        "effects": {
+          "secondary_market_revenue": 400000000,
+          "audience_rejection_risk": -3,
+          "public_reputation": 2
+        }
+      },
+      {
+        "id": "disney_rights_gap",
+        "conditions": {
+          "minScores": {
+            "control": 5
+          }
+        },
+        "resultText": "권리 통제권을 지키면서 협상은 작게 정리됐습니다. 장기 IP는 남았지만 플랫폼의 공격적 지원은 받지 못했습니다.",
+        "effects": {
+          "secondary_market_revenue": 180000000,
+          "ip_value": 4,
+          "distribution_network": 1
+        }
+      },
+      {
+        "id": "disney_no_fit",
+        "default": true,
+        "resultText": "디즈니+는 작품의 가능성은 봤지만 브랜드와 권리 조건에서 확신을 얻지 못했습니다. 다른 플랫폼 루트가 더 현실적일 수 있습니다.",
+        "effects": {
+          "delay_days": 5,
+          "secondary_market_revenue": 50000000,
+          "distribution_network": -1
+        }
+      }
+    ],
+    "negotiation": {
+      "enabled": true,
+      "topic": "IP 권리와 플랫폼 공개 조건",
+      "priceLabel": "추가 IP 패키지 조건",
+      "initialAmount": 250000000,
+      "stepAmount": 120000000,
+      "minAmount": 0,
+      "maxAmount": 1000000000,
+      "baseRounds": 2,
+      "minRounds": 1,
+      "maxRounds": 4,
+      "effectKey": "secondary_market_revenue",
+      "amountSign": 1,
+      "npcLine": "디즈니+ 측은 IP 권리 범위와 공개 조건을 한 번 더 조율하자고 합니다.",
+      "effectsOnAgreement": {
+        "distribution_network": 1,
+        "ip_value": 1
+      },
+      "effectsOnStall": {
+        "delay_days": 5,
+        "distribution_network": -1,
+        "ip_value": -1
+      },
+      "stalledText": "디즈니+와의 가격 협상은 보류되었습니다. 권리 범위와 장기 IP 조건이 쟁점으로 남았습니다."
+    },
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  }
+]

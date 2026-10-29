@@ -1,0 +1,583 @@
+[
+  {
+    "id": "foreign_1993_jurassic_park",
+    "titleKo": "쥬라기 공원",
+    "titleEn": "Jurassic Park",
+    "year": 1993,
+    "month": 7,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "어드벤처", "괴수"],
+    "effects": {
+      "foreign_competition": 25,
+      "vfx_expectation": 25,
+      "family_adventure_demand": 20
+    },
+    "sameWindowPenalties": {
+      "korean_sf": -25,
+      "korean_blockbuster": -20
+    }
+  },
+  {
+    "id": "foreign_1998_titanic",
+    "titleKo": "타이타닉",
+    "titleEn": "Titanic",
+    "year": 1998,
+    "month": 2,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["멜로", "재난", "드라마"],
+    "effects": {
+      "foreign_competition": 30,
+      "romance_blockbuster_demand": 20,
+      "long_run_boxoffice_model": 20
+    },
+    "sameWindowPenalties": {
+      "korean_romance": -20,
+      "korean_blockbuster": -25
+    }
+  },
+  {
+    "id": "foreign_2001_harry_potter_sorcerers_stone",
+    "titleKo": "해리 포터와 마법사의 돌",
+    "titleEn": "Harry Potter and the Sorcerer's Stone",
+    "year": 2001,
+    "month": 12,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["판타지", "가족", "원작 IP"],
+    "effects": {
+      "foreign_competition": 18,
+      "ip_value": 20,
+      "fantasy_demand": 18,
+      "series_strategy_value": 15
+    },
+    "sameWindowPenalties": {
+      "korean_fantasy": -25,
+      "family_drama": -10
+    }
+  },
+  {
+    "id": "foreign_2001_lord_of_the_rings_fellowship",
+    "titleKo": "반지의 제왕: 반지 원정대",
+    "titleEn": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "month": 12,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["판타지", "어드벤처", "세계관"],
+    "effects": {
+      "foreign_competition": 18,
+      "world_expansion": 18,
+      "vfx_expectation": 15
+    },
+    "sameWindowPenalties": {
+      "korean_fantasy": -25,
+      "korean_blockbuster": -15
+    }
+  },
+  {
+    "id": "foreign_2002_lord_of_the_rings_two_towers",
+    "titleKo": "반지의 제왕: 두 개의 탑",
+    "titleEn": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "month": 12,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["판타지", "어드벤처", "세계관"],
+    "effects": {
+      "foreign_competition": 20,
+      "world_expansion": 20,
+      "vfx_expectation": 18
+    },
+    "sameWindowPenalties": {
+      "korean_fantasy": -25,
+      "korean_blockbuster": -18
+    }
+  },
+  {
+    "id": "foreign_2003_lord_of_the_rings_return_king",
+    "titleKo": "반지의 제왕: 왕의 귀환",
+    "titleEn": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "month": 12,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["판타지", "어드벤처", "세계관"],
+    "effects": {
+      "foreign_competition": 25,
+      "world_expansion": 25,
+      "vfx_expectation": 20
+    },
+    "sameWindowPenalties": {
+      "korean_fantasy": -30,
+      "korean_blockbuster": -20
+    }
+  },
+  {
+    "id": "foreign_2007_transformers",
+    "titleKo": "트랜스포머",
+    "titleEn": "Transformers",
+    "year": 2007,
+    "month": 6,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "액션", "VFX"],
+    "effects": {
+      "foreign_competition": 25,
+      "vfx_expectation": 25,
+      "korean_blockbuster_pressure": 15
+    },
+    "sameWindowPenalties": {
+      "korean_action": -20,
+      "korean_sf": -35
+    }
+  },
+  {
+    "id": "foreign_2008_iron_man",
+    "titleKo": "아이언맨",
+    "titleEn": "Iron Man",
+    "year": 2008,
+    "month": 4,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "세계관"],
+    "effects": {
+      "foreign_competition": 18,
+      "franchise_power": 18,
+      "hero_genre_value": 15
+    },
+    "sameWindowPenalties": {
+      "korean_action": -18,
+      "korean_blockbuster": -15
+    }
+  },
+  {
+    "id": "foreign_2008_dark_knight",
+    "titleKo": "다크 나이트",
+    "titleEn": "The Dark Knight",
+    "year": 2008,
+    "month": 8,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "범죄", "스릴러"],
+    "effects": {
+      "foreign_competition": 20,
+      "auteur_blockbuster_value": 20,
+      "crime_thriller_expectation": 12
+    },
+    "sameWindowPenalties": {
+      "korean_crime_thriller": -15,
+      "korean_blockbuster": -18
+    }
+  },
+  {
+    "id": "foreign_2009_avatar",
+    "titleKo": "아바타",
+    "titleEn": "Avatar",
+    "year": 2009,
+    "month": 12,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "판타지", "어드벤처"],
+    "effects": {
+      "foreign_competition": 35,
+      "special_format_demand": 40,
+      "vfx_expectation": 30,
+      "korean_blockbuster_pressure": 20
+    },
+    "sameWindowPenalties": {
+      "korean_sf": -40,
+      "korean_blockbuster": -30,
+      "small_drama": -5
+    }
+  },
+  {
+    "id": "foreign_2012_avengers",
+    "titleKo": "어벤져스",
+    "titleEn": "The Avengers",
+    "year": 2012,
+    "month": 4,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "팀업"],
+    "effects": {
+      "foreign_competition": 30,
+      "franchise_power": 25,
+      "team_up_strategy_value": 20
+    },
+    "sameWindowPenalties": {
+      "korean_action": -25,
+      "korean_blockbuster": -25
+    }
+  },
+  {
+    "id": "foreign_2014_frozen",
+    "titleKo": "겨울왕국",
+    "titleEn": "Frozen",
+    "year": 2014,
+    "month": 1,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "가족", "OST"],
+    "effects": {
+      "foreign_competition": 25,
+      "animation_trend": 25,
+      "ost_marketing_value": 20,
+      "rewatch_index": 15
+    },
+    "sameWindowPenalties": {
+      "family_drama": -20,
+      "korean_animation": -30
+    }
+  },
+  {
+    "id": "foreign_2014_interstellar",
+    "titleKo": "인터스텔라",
+    "titleEn": "Interstellar",
+    "year": 2014,
+    "month": 11,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "드라마", "작가주의 블록버스터"],
+    "effects": {
+      "foreign_competition": 22,
+      "auteur_blockbuster_value": 25,
+      "special_format_demand": 15,
+      "sf_expectation": 15
+    },
+    "sameWindowPenalties": {
+      "korean_sf": -28,
+      "korean_blockbuster": -18
+    }
+  },
+  {
+    "id": "foreign_2015_avengers_age_of_ultron",
+    "titleKo": "어벤져스: 에이지 오브 울트론",
+    "titleEn": "Avengers: Age of Ultron",
+    "year": 2015,
+    "month": 4,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "프랜차이즈"],
+    "effects": {
+      "foreign_competition": 35,
+      "franchise_power": 25,
+      "korean_location_marketing_value": 15
+    },
+    "sameWindowPenalties": {
+      "korean_action": -25,
+      "korean_blockbuster": -30
+    }
+  },
+  {
+    "id": "foreign_2016_captain_america_civil_war",
+    "titleKo": "캡틴 아메리카: 시빌 워",
+    "titleEn": "Captain America: Civil War",
+    "year": 2016,
+    "month": 4,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "프랜차이즈"],
+    "effects": {
+      "foreign_competition": 28,
+      "franchise_power": 22,
+      "team_up_strategy_value": 12
+    },
+    "sameWindowPenalties": {
+      "korean_action": -22,
+      "korean_blockbuster": -25
+    }
+  },
+  {
+    "id": "foreign_2018_avengers_infinity_war",
+    "titleKo": "어벤져스: 인피니티 워",
+    "titleEn": "Avengers: Infinity War",
+    "year": 2018,
+    "month": 4,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "프랜차이즈"],
+    "effects": {
+      "foreign_competition": 38,
+      "franchise_power": 30,
+      "screen_pressure": 25
+    },
+    "sameWindowPenalties": {
+      "korean_action": -28,
+      "korean_blockbuster": -35
+    }
+  },
+  {
+    "id": "foreign_2018_bohemian_rhapsody",
+    "titleKo": "보헤미안 랩소디",
+    "titleEn": "Bohemian Rhapsody",
+    "year": 2018,
+    "month": 10,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["음악", "전기", "팬덤"],
+    "effects": {
+      "foreign_competition": 18,
+      "music_film_value": 25,
+      "rewatch_index": 25,
+      "fandom_index": 20
+    },
+    "sameWindowPenalties": {
+      "small_drama": -8,
+      "music_film": -25
+    }
+  },
+  {
+    "id": "foreign_2019_avengers_endgame",
+    "titleKo": "어벤져스: 엔드게임",
+    "titleEn": "Avengers: Endgame",
+    "year": 2019,
+    "month": 4,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "프랜차이즈"],
+    "effects": {
+      "foreign_competition": 45,
+      "franchise_power": 35,
+      "screen_pressure": 35
+    },
+    "sameWindowPenalties": {
+      "korean_action": -35,
+      "korean_blockbuster": -40,
+      "small_drama": -10
+    }
+  },
+  {
+    "id": "foreign_2019_frozen_2",
+    "titleKo": "겨울왕국 2",
+    "titleEn": "Frozen II",
+    "year": 2019,
+    "month": 11,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "가족", "OST"],
+    "effects": {
+      "foreign_competition": 30,
+      "animation_trend": 25,
+      "family_audience_focus": 20
+    },
+    "sameWindowPenalties": {
+      "family_drama": -22,
+      "korean_animation": -35
+    }
+  },
+  {
+    "id": "foreign_2019_joker",
+    "titleKo": "조커",
+    "titleEn": "Joker",
+    "year": 2019,
+    "month": 10,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["범죄", "드라마", "작가주의 블록버스터"],
+    "effects": {
+      "foreign_competition": 20,
+      "auteur_blockbuster_value": 20,
+      "adult_drama_demand": 15
+    },
+    "sameWindowPenalties": {
+      "korean_crime_thriller": -16,
+      "small_drama": -8
+    }
+  },
+  {
+    "id": "foreign_2022_top_gun_maverick",
+    "titleKo": "탑건: 매버릭",
+    "titleEn": "Top Gun: Maverick",
+    "year": 2022,
+    "month": 6,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["액션", "항공", "극장 체험"],
+    "effects": {
+      "foreign_competition": 22,
+      "theater_experience_value": 25,
+      "special_format_demand": 20
+    },
+    "sameWindowPenalties": {
+      "korean_action": -18,
+      "korean_blockbuster": -18
+    }
+  },
+  {
+    "id": "foreign_2022_avatar_way_of_water",
+    "titleKo": "아바타: 물의 길",
+    "titleEn": "Avatar: The Way of Water",
+    "year": 2022,
+    "month": 12,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "판타지", "특수관"],
+    "effects": {
+      "foreign_competition": 38,
+      "special_format_demand": 40,
+      "vfx_expectation": 30
+    },
+    "sameWindowPenalties": {
+      "korean_sf": -38,
+      "korean_blockbuster": -30
+    }
+  },
+  {
+    "id": "foreign_2023_first_slam_dunk",
+    "titleKo": "더 퍼스트 슬램덩크",
+    "titleEn": "The First Slam Dunk",
+    "year": 2023,
+    "month": 1,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "스포츠", "추억"],
+    "effects": {
+      "foreign_competition": 18,
+      "animation_trend": 22,
+      "nostalgia_marketing_value": 25,
+      "rewatch_index": 20
+    },
+    "sameWindowPenalties": {
+      "korean_animation": -30,
+      "sports_drama": -12
+    }
+  },
+  {
+    "id": "foreign_2023_suzume",
+    "titleKo": "스즈메의 문단속",
+    "titleEn": "Suzume",
+    "year": 2023,
+    "month": 3,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "판타지", "재난"],
+    "effects": {
+      "foreign_competition": 18,
+      "animation_trend": 22,
+      "fantasy_demand": 12
+    },
+    "sameWindowPenalties": {
+      "korean_animation": -30,
+      "korean_fantasy": -18
+    }
+  },
+  {
+    "id": "foreign_2023_oppenheimer",
+    "titleKo": "오펜하이머",
+    "titleEn": "Oppenheimer",
+    "year": 2023,
+    "month": 8,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["전기", "드라마", "IMAX"],
+    "effects": {
+      "foreign_competition": 20,
+      "auteur_blockbuster_value": 25,
+      "special_format_demand": 18,
+      "adult_drama_demand": 12
+    },
+    "sameWindowPenalties": {
+      "small_drama": -10,
+      "korean_blockbuster": -15
+    }
+  },
+  {
+    "id": "foreign_2023_elemental",
+    "titleKo": "엘리멘탈",
+    "titleEn": "Elemental",
+    "year": 2023,
+    "month": 6,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "가족", "로맨스"],
+    "effects": {
+      "foreign_competition": 16,
+      "animation_trend": 18,
+      "family_audience_focus": 18,
+      "long_run_boxoffice_model": 12
+    },
+    "sameWindowPenalties": {
+      "family_drama": -18,
+      "korean_animation": -25
+    }
+  },
+  {
+    "id": "foreign_2024_wonka",
+    "titleKo": "웡카",
+    "titleEn": "Wonka",
+    "year": 2024,
+    "month": 1,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["뮤지컬", "가족", "판타지"],
+    "effects": {
+      "foreign_competition": 15,
+      "family_audience_focus": 18,
+      "music_film_value": 12
+    },
+    "sameWindowPenalties": {
+      "family_drama": -15,
+      "korean_fantasy": -15
+    }
+  },
+  {
+    "id": "foreign_2024_inside_out_2",
+    "titleKo": "인사이드 아웃 2",
+    "titleEn": "Inside Out 2",
+    "year": 2024,
+    "month": 6,
+    "impactGrade": "S",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["애니메이션", "가족", "감정 드라마"],
+    "effects": {
+      "foreign_competition": 25,
+      "animation_trend": 25,
+      "family_audience_focus": 25
+    },
+    "sameWindowPenalties": {
+      "family_drama": -20,
+      "korean_animation": -35
+    }
+  },
+  {
+    "id": "foreign_2024_dune_part_two",
+    "titleKo": "듄: 파트 2",
+    "titleEn": "Dune: Part Two",
+    "year": 2024,
+    "month": 2,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["SF", "세계관", "특수관"],
+    "effects": {
+      "foreign_competition": 20,
+      "world_expansion": 20,
+      "special_format_demand": 20,
+      "vfx_expectation": 18
+    },
+    "sameWindowPenalties": {
+      "korean_sf": -30,
+      "korean_blockbuster": -20
+    }
+  },
+  {
+    "id": "foreign_2024_deadpool_wolverine",
+    "titleKo": "데드풀과 울버린",
+    "titleEn": "Deadpool & Wolverine",
+    "year": 2024,
+    "month": 7,
+    "impactGrade": "A",
+    "fixedLevel": "absoluteFixed",
+    "genre": ["히어로", "액션", "프랜차이즈"],
+    "effects": {
+      "foreign_competition": 25,
+      "franchise_power": 22,
+      "fandom_index": 20
+    },
+    "sameWindowPenalties": {
+      "korean_action": -22,
+      "korean_blockbuster": -25
+    }
+  }
+]

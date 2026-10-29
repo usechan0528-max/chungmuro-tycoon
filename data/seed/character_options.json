@@ -1,0 +1,865 @@
+[
+  {
+    "category": "origin",
+    "id": "chungmuro_floor",
+    "label": "충무로 현장 주변",
+    "description": "촬영장과 제작부의 언어에 익숙하다. 현장 문제를 몸으로 먼저 이해한다.",
+    "effects": {
+      "stats": {
+        "field_control": 9,
+        "directing_ability": 4,
+        "market_analysis": -2
+      },
+      "network": {
+        "production_network": 10,
+        "actor_network": 3,
+        "investor_network": -2
+      },
+      "reputation": {
+        "industry_reputation": 3
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "regional_theater",
+    "label": "지역 극장가/비디오가게",
+    "description": "관객이 어떤 영화를 집어 드는지 오래 봐 왔다. 지방 흥행 감각이 있다.",
+    "effects": {
+      "stats": {
+        "market_analysis": 8,
+        "commercial_sense": 5,
+        "secondary_market_fit": 5
+      },
+      "network": {
+        "regional_network": 10,
+        "distribution_network": 3
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "arts_family",
+    "label": "예술계 집안",
+    "description": "미술, 연극, 문학 쪽 언어에 친숙하다. 작품성의 기준이 높다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 10,
+        "screenplay_sense": 4,
+        "financial_risk": 3
+      },
+      "network": {
+        "critic_access": 5,
+        "festival_network": 6
+      },
+      "reputation": {
+        "critic_reputation": 3,
+        "creative_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "working_class",
+    "label": "생활형 서민 출신",
+    "description": "돈의 무게와 관객의 생활 감각을 안다. 허세보다 생존 계산이 빠르다.",
+    "effects": {
+      "cashMultiplier": 0.75,
+      "stats": {
+        "commercial_sense": 8,
+        "financial_risk": -4,
+        "field_control": 3
+      },
+      "reputation": {
+        "public_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "corporate_finance",
+    "label": "대기업/금융권 주변",
+    "description": "기획서, 숫자, 투자자의 언어에 익숙하다. 대신 창작자와 거리가 있을 수 있다.",
+    "effects": {
+      "cashMultiplier": 1.25,
+      "stats": {
+        "fundraising_ability": 10,
+        "distribution_negotiation": 7,
+        "market_analysis": 6,
+        "artistic_sense": -4
+      },
+      "network": {
+        "investor_network": 9,
+        "distribution_network": 5,
+        "director_network": -2
+      },
+      "reputation": {
+        "investor_reputation": 4,
+        "creative_reputation": -2
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "press_publishing",
+    "label": "언론/출판 주변",
+    "description": "기사의 문법과 이야기의 포장 방식을 안다. 말 한 줄의 파급력을 이해한다.",
+    "effects": {
+      "stats": {
+        "screenplay_sense": 5,
+        "marketing_sense": 7,
+        "press_backlash_risk": 3
+      },
+      "network": {
+        "press_network": 10,
+        "critic_access": 3
+      },
+      "reputation": {
+        "public_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "overseas_returnee",
+    "label": "해외 체류/유학 경험",
+    "description": "해외 영화제와 장르 문법에 익숙하다. 국내 현장 관행에는 시간이 필요하다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 6,
+        "market_analysis": 4
+      },
+      "network": {
+        "festival_network": 8,
+        "production_network": -3,
+        "regional_network": -2
+      },
+      "reputation": {
+        "global_reputation": 5,
+        "critic_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "origin",
+    "id": "outsider",
+    "label": "영화계 밖에서 진입",
+    "description": "인맥은 부족하지만 업계 관성에 덜 묶인다. 기묘한 선택을 할 여지가 많다.",
+    "effects": {
+      "stats": {
+        "learning_ability": 10,
+        "screenplay_sense": 3,
+        "fundraising_ability": -5
+      },
+      "network": {
+        "actor_network": -2,
+        "director_network": -2,
+        "production_network": -3,
+        "investor_network": -3
+      },
+      "reputation": {
+        "industry_reputation": -2
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "film_directing",
+    "label": "영화연출/영상학",
+    "description": "장면, 콘티, 현장 흐름을 체계적으로 배웠다.",
+    "effects": {
+      "stats": {
+        "directing_ability": 9,
+        "field_control": 4
+      },
+      "network": {
+        "school_network": 4
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "screenwriting",
+    "label": "시나리오/문예창작",
+    "description": "인물과 구조를 오래 붙잡고 생각하는 훈련을 했다.",
+    "effects": {
+      "stats": {
+        "screenplay_sense": 10,
+        "plagiarism_risk": -2
+      },
+      "reputation": {
+        "critic_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "business_marketing",
+    "label": "경영/마케팅",
+    "description": "영화를 상품, 관객, 비용 구조로 읽는 데 익숙하다.",
+    "effects": {
+      "stats": {
+        "market_analysis": 8,
+        "marketing_sense": 7,
+        "fundraising_ability": 4
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "theater_acting",
+    "label": "연극/연기",
+    "description": "배우의 언어를 알고 리허설과 감정선을 중시한다.",
+    "effects": {
+      "stats": {
+        "directing_ability": 4,
+        "casting_fit": 5
+      },
+      "network": {
+        "actor_network": 8
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "art_design",
+    "label": "미술/디자인",
+    "description": "공간, 색, 의상, 포스터의 힘을 먼저 본다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 8,
+        "marketing_sense": 3,
+        "art_costume_prop_quality": 4
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "engineering_vfx",
+    "label": "공학/VFX",
+    "description": "기술적 구현과 제작 파이프라인에 강하다.",
+    "effects": {
+      "stats": {
+        "market_analysis": 4,
+        "vfx_quality": 5,
+        "budget_overrun_risk": -3
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "social_history",
+    "label": "사회학/역사",
+    "description": "소재의 맥락과 사회적 파장을 민감하게 읽는다.",
+    "effects": {
+      "stats": {
+        "screenplay_sense": 5,
+        "artistic_sense": 5,
+        "controversy_risk": 4
+      },
+      "reputation": {
+        "critic_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "education",
+    "id": "self_taught",
+    "label": "비전공 독학",
+    "description": "정규 교육은 없지만 빠르게 배우고 편견 없이 흡수한다.",
+    "effects": {
+      "stats": {
+        "learning_ability": 12,
+        "field_control": -2
+      },
+      "reputation": {
+        "industry_reputation": -2
+      },
+      "network": {
+        "school_network": -4
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "perfectionist",
+    "label": "완벽주의",
+    "description": "완성도를 위해 오래 붙잡는다. 좋은 영화가 나오지만 일정은 자주 흔들린다.",
+    "effects": {
+      "stats": {
+        "directing_ability": 5,
+        "artistic_sense": 5,
+        "editing_quality": 3,
+        "schedule_delay_risk": 5
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "field_leader",
+    "label": "현장형 리더",
+    "description": "현장에서 빠르게 판단하고 사람을 움직인다.",
+    "effects": {
+      "stats": {
+        "field_control": 10,
+        "schedule_delay_risk": -3
+      },
+      "network": {
+        "production_network": 4
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "relationship_builder",
+    "label": "관계중심",
+    "description": "사람을 설득하고 오래 관리하는 데 강하다.",
+    "effects": {
+      "network": {
+        "actor_network": 5,
+        "investor_network": 4,
+        "press_network": 4
+      },
+      "stats": {
+        "field_control": 2
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "numbers_strategist",
+    "label": "숫자형 전략가",
+    "description": "관객, 비용, 리스크를 표로 본다. 감정적 설득은 약할 수 있다.",
+    "effects": {
+      "stats": {
+        "market_analysis": 10,
+        "fundraising_ability": 5,
+        "distribution_negotiation": 5,
+        "artistic_sense": -2
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "auteur",
+    "label": "작가주의",
+    "description": "한 편의 영화가 자기 세계를 가져야 한다고 믿는다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 10,
+        "screenplay_sense": 4,
+        "commercial_sense": -4
+      },
+      "reputation": {
+        "critic_reputation": 4,
+        "investor_reputation": -2
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "popular_entertainer",
+    "label": "대중오락 지향",
+    "description": "관객이 돈을 내고 즐길 순간을 먼저 떠올린다.",
+    "effects": {
+      "stats": {
+        "commercial_sense": 10,
+        "marketing_sense": 5,
+        "artistic_sense": -2
+      },
+      "reputation": {
+        "critic_reputation": -1,
+        "investor_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "gambler",
+    "label": "승부사",
+    "description": "큰 판을 겁내지 않는다. 성공하면 빨리 올라가지만 실패도 크다.",
+    "effects": {
+      "stats": {
+        "fundraising_ability": 6,
+        "commercial_sense": 4,
+        "game_over_risk": 5
+      },
+      "reputation": {
+        "public_reputation": 2
+      }
+    }
+  },
+  {
+    "category": "trait",
+    "id": "careful_manager",
+    "label": "신중한 관리자",
+    "description": "작게 잃고 오래 살아남는 판단을 선호한다.",
+    "effects": {
+      "stats": {
+        "financial_risk": -6,
+        "distribution_negotiation": 4,
+        "pre_release_interest": -2
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "unknown",
+    "label": "완전 무명",
+    "description": "아무도 모른다. 대신 기대도, 선입견도 없다.",
+    "effects": {
+      "stats": {
+        "learning_ability": 3,
+        "press_backlash_risk": -2
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "short_film_buzz",
+    "label": "단편 화제",
+    "description": "작은 영화제나 학교 상영에서 이름이 한 번 돌았다.",
+    "effects": {
+      "reputation": {
+        "creative_reputation": 4,
+        "critic_reputation": 3
+      },
+      "network": {
+        "festival_network": 4,
+        "school_network": 3
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "field_reliable",
+    "label": "현장 평판 있음",
+    "description": "스태프들 사이에서 약속을 지키는 사람으로 알려져 있다.",
+    "effects": {
+      "reputation": {
+        "industry_reputation": 5
+      },
+      "network": {
+        "production_network": 5
+      },
+      "stats": {
+        "schedule_delay_risk": -2
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "press_familiar",
+    "label": "언론에 익숙함",
+    "description": "기자와 인터뷰 경험이 있고 얼굴을 아는 사람이 있다.",
+    "effects": {
+      "reputation": {
+        "public_reputation": 5
+      },
+      "network": {
+        "press_network": 6
+      },
+      "stats": {
+        "press_backlash_risk": 3
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "investor_known",
+    "label": "투자자에게 알려짐",
+    "description": "작은 기획서나 실무 경험으로 투자자 몇 명이 이름을 안다.",
+    "effects": {
+      "reputation": {
+        "investor_reputation": 6
+      },
+      "network": {
+        "investor_network": 6
+      },
+      "stats": {
+        "fundraising_ability": 2
+      }
+    }
+  },
+  {
+    "category": "reputation_seed",
+    "id": "minor_bad_blood",
+    "label": "작은 미운털",
+    "description": "전작이나 현장에서 작은 갈등이 있었다. 불리하지만 드라마는 있다.",
+    "effects": {
+      "reputation": {
+        "industry_reputation": -4,
+        "investor_reputation": -3,
+        "creative_reputation": 2
+      },
+      "stats": {
+        "press_backlash_risk": 4
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "empty_hands",
+    "label": "빈손",
+    "description": "당장 쓸 돈이 거의 없다. 작게 시작해야 하지만 실패 비용도 낮다.",
+    "effects": {
+      "cash": 20000000,
+      "stats": {
+        "learning_ability": 4,
+        "fundraising_ability": -4,
+        "financial_risk": 5
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "thin_savings",
+    "label": "빠듯한 저축",
+    "description": "단편과 초저예산 기획은 가능하지만 오래 버티기는 어렵다.",
+    "effects": {
+      "cash": 100000000,
+      "stats": {
+        "financial_risk": 3
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "normal",
+    "label": "보통",
+    "description": "독립영화 또는 작은 장르영화를 준비할 수 있는 현실적인 출발점이다.",
+    "effects": {
+      "cash": 300000000
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "family_capital",
+    "label": "가족/지인 자본",
+    "description": "초기 자본은 넉넉하지만 실패하면 사적 관계의 압박도 커진다.",
+    "effects": {
+      "cash": 1000000000,
+      "reputation": {
+        "investor_reputation": 2
+      },
+      "stats": {
+        "game_over_risk": 3
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "investment_promise",
+    "label": "투자 검토 약속",
+    "description": "돈이 확정된 건 아니지만 초기 미팅을 잡을 수 있는 사람이 있다.",
+    "effects": {
+      "cash": 500000000,
+      "stats": {
+        "fundraising_ability": 5
+      },
+      "network": {
+        "investor_network": 6
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "debt_backed",
+    "label": "빚으로 마련한 자본",
+    "description": "돈은 있지만 마음이 편하지 않다. 빠르게 결과를 내야 한다.",
+    "effects": {
+      "cash": 800000000,
+      "debt": 400000000,
+      "stats": {
+        "financial_risk": 12,
+        "commercial_sense": 3
+      }
+    }
+  },
+  {
+    "category": "wealth",
+    "id": "capitalist",
+    "label": "자본가",
+    "description": "영화계 경험은 부족해도 자기 돈으로 큰 판을 열 수 있다. 대신 업계는 당신을 창작자보다 자금줄로 먼저 본다.",
+    "effects": {
+      "largeFilmCapital": true,
+      "studioFame": 8,
+      "stats": {
+        "market_analysis": 6,
+        "fundraising_ability": 8,
+        "distribution_negotiation": 6,
+        "commercial_sense": 5,
+        "field_control": -4,
+        "financial_risk": -8,
+        "game_over_risk": 6
+      },
+      "reputation": {
+        "investor_reputation": 10,
+        "industry_reputation": 4,
+        "creative_reputation": -3
+      },
+      "network": {
+        "investor_network": 12,
+        "distribution_network": 8,
+        "press_network": 4,
+        "production_network": -2
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "festival_volunteer",
+    "label": "영화제 자원활동",
+    "description": "프로그래머와 독립영화 사람들을 가까이서 봤다.",
+    "effects": {
+      "network": {
+        "festival_network": 7,
+        "critic_access": 2
+      },
+      "reputation": {
+        "critic_reputation": 1
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "theater_part_timer",
+    "label": "극장 아르바이트",
+    "description": "관객이 언제 웃고 언제 나가는지 직접 봤다.",
+    "effects": {
+      "stats": {
+        "market_analysis": 5,
+        "commercial_sense": 4
+      },
+      "network": {
+        "regional_network": 4
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "ad_mv_set",
+    "label": "광고/뮤직비디오 현장",
+    "description": "짧은 시간 안에 이미지를 뽑아내는 현장에 익숙하다.",
+    "effects": {
+      "stats": {
+        "marketing_sense": 5,
+        "shooting_quality": 3,
+        "field_control": 3
+      },
+      "network": {
+        "production_network": 3
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "online_cinephile",
+    "label": "온라인 영화 커뮤니티",
+    "description": "말 많은 관객과 시네필의 반응을 먼저 읽는다.",
+    "effects": {
+      "stats": {
+        "online_buzz": 4,
+        "market_analysis": 3,
+        "press_backlash_risk": 3
+      },
+      "network": {
+        "critic_access": 2
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "short_film_crew",
+    "label": "단편 제작 크루",
+    "description": "적은 돈으로 어떻게든 찍는 법을 배웠다.",
+    "effects": {
+      "stats": {
+        "directing_ability": 4,
+        "learning_ability": 4,
+        "financial_risk": -2
+      },
+      "network": {
+        "production_network": 5,
+        "school_network": 3
+      }
+    }
+  },
+  {
+    "category": "first_contact",
+    "id": "location_assistant",
+    "label": "로케이션 보조",
+    "description": "장소 섭외와 지역 관계의 중요성을 몸으로 배웠다.",
+    "effects": {
+      "network": {
+        "regional_network": 7,
+        "production_network": 3
+      },
+      "stats": {
+        "schedule_delay_risk": -3
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "actor_face",
+    "label": "배우의 얼굴",
+    "description": "좋은 얼굴과 순간이 영화를 살린다고 믿는다.",
+    "effects": {
+      "network": {
+        "actor_network": 5
+      },
+      "stats": {
+        "casting_fit": 5,
+        "acting_quality": 3
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "genre_pleasure",
+    "label": "장르 쾌감",
+    "description": "관객이 원하는 장르적 보상을 정확히 주고 싶어 한다.",
+    "effects": {
+      "stats": {
+        "genre_satisfaction": 5,
+        "commercial_sense": 5
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "social_message",
+    "label": "사회적 메시지",
+    "description": "영화가 시대와 부딪혀야 한다고 믿는다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 5,
+        "controversy_risk": 5
+      },
+      "reputation": {
+        "critic_reputation": 3
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "visual_space",
+    "label": "미술과 공간",
+    "description": "장면의 설득력은 공간에서 시작된다고 본다.",
+    "effects": {
+      "stats": {
+        "art_costume_prop_quality": 6,
+        "artistic_sense": 4
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "sound_rhythm",
+    "label": "사운드와 리듬",
+    "description": "편집 리듬과 소리의 힘을 중요하게 본다.",
+    "effects": {
+      "stats": {
+        "music_sound_quality": 5,
+        "editing_quality": 5
+      }
+    }
+  },
+  {
+    "category": "obsession",
+    "id": "ip_world",
+    "label": "IP와 세계관",
+    "description": "한 편으로 끝나지 않는 세계를 만들고 싶어 한다.",
+    "effects": {
+      "stats": {
+        "ip_value": 5,
+        "world_expansion": 5,
+        "market_analysis": 3
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "bad_with_money",
+    "label": "돈 계산에 약함",
+    "description": "작품 이야기는 잘하지만 정산표 앞에서 판단이 느리다.",
+    "effects": {
+      "stats": {
+        "market_analysis": -5,
+        "fundraising_ability": -4,
+        "financial_risk": 8
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "awkward_relationships",
+    "label": "관계에 서툼",
+    "description": "진심은 있지만 말이 늦거나 직설적이다.",
+    "effects": {
+      "network": {
+        "actor_network": -3,
+        "investor_network": -3,
+        "press_network": -3
+      },
+      "reputation": {
+        "creative_reputation": 1
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "overwork",
+    "label": "과로 성향",
+    "description": "버티는 힘은 있지만 오래 가면 판단이 흐려질 수 있다.",
+    "effects": {
+      "stats": {
+        "field_control": 3,
+        "schedule_delay_risk": 4,
+        "on_set_conflict_risk": 4
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "perfection_delay",
+    "label": "완성도 강박",
+    "description": "작은 흠도 못 지나친다. 후반작업이 길어지기 쉽다.",
+    "effects": {
+      "stats": {
+        "artistic_sense": 3,
+        "schedule_delay_risk": 6,
+        "budget_overrun_risk": 5
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "press_anxiety",
+    "label": "언론 앞 긴장",
+    "description": "카메라와 기자 질문 앞에서 말이 꼬인다.",
+    "effects": {
+      "stats": {
+        "marketing_sense": -3,
+        "press_backlash_risk": 6
+      },
+      "network": {
+        "press_network": -4
+      }
+    }
+  },
+  {
+    "category": "weakness",
+    "id": "safe_choice",
+    "label": "안전한 선택에 갇힘",
+    "description": "리스크를 너무 피하다가 작품의 인상이 약해질 수 있다.",
+    "effects": {
+      "stats": {
+        "financial_risk": -5,
+        "artistic_sense": -4,
+        "pre_release_interest": -3
+      }
+    }
+  }
+]

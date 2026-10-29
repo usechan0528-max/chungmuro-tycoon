@@ -1,0 +1,30 @@
+[
+  {
+    "id": "domestic_multiplex_spread_2001",
+    "year": 2001,
+    "month": 3,
+    "title": "멀티플렉스 확산",
+    "type": "domestic_market",
+    "fixedLevel": "semiFixed",
+    "description": "극장 접근성과 상영 회차가 늘며 한국영화의 흥행 상한이 올라간다.",
+    "effects": {
+      "theater_demand": 8,
+      "distribution_network": 4
+    }
+  },
+  {
+    "id": "domestic_ott_growth_2020",
+    "year": 2020,
+    "month": 6,
+    "title": "OTT 시장 급성장",
+    "type": "domestic_market",
+    "fixedLevel": "semiFixed",
+    "description": "극장 개봉의 의미가 바뀌고 2차 시장의 힘이 커진다.",
+    "effects": {
+      "ott_power": 12,
+      "secondary_market_fit": 6,
+      "theater_demand": -8
+    }
+  }
+]
+

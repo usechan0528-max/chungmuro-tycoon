@@ -1,0 +1,75 @@
+[
+  {
+    "id": "event_fundraising_pitch_room",
+    "stage": "fundraising",
+    "title": "첫 투자 미팅",
+    "description": "작은 회의실에 투자사 실무자와 배급 담당자가 모였다. 그들은 작품의 결말보다 손익분기점과 개봉 주차를 먼저 묻는다.",
+    "trigger": {
+      "minBudget": 3000000
+    },
+    "choices": [
+      {
+        "id": "show_market_plan",
+        "text": "시장 분석과 손익 구조를 먼저 제시한다",
+        "description": "투자자의 신뢰가 오르지만 작품의 날카로움은 조금 둔해질 수 있다.",
+        "effects": {
+          "stats": {
+            "investment_amount": 8,
+            "pre_release_interest": 5,
+            "financial_risk": -5,
+            "genre_satisfaction": -2
+          },
+          "reputation": {
+            "investor_reputation": 5,
+            "creative_reputation": -1
+          },
+          "network": {
+            "investor_network": 4,
+            "distribution_network": 2
+          }
+        }
+      },
+      {
+        "id": "lead_with_vision",
+        "text": "작품의 비전과 장면 콘셉트로 설득한다",
+        "description": "창작 신뢰는 높아지지만 투자 확정까지 더 오래 걸릴 수 있다.",
+        "effects": {
+          "stats": {
+            "scenario_quality": 4,
+            "directing_quality": 4,
+            "schedule_delay_risk": 3,
+            "pre_release_interest": 2
+          },
+          "reputation": {
+            "creative_reputation": 5,
+            "investor_reputation": -1
+          },
+          "network": {
+            "director_network": 3,
+            "investor_network": 1
+          }
+        }
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다",
+        "description": "대화는 즉시 끝난다. 관계가 틀어질 수 있지만 강경한 창작자 이미지가 생길 수 있다.",
+        "effects": {
+          "stats": {
+            "production_shutdown_risk": 8,
+            "financial_risk": 6,
+            "controversy_risk": 3
+          },
+          "reputation": {
+            "investor_reputation": -8,
+            "creative_reputation": 3
+          },
+          "network": {
+            "investor_network": -6,
+            "press_network": 1
+          }
+        }
+      }
+    ]
+  }
+]

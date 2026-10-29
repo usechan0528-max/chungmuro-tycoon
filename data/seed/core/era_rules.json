@@ -1,0 +1,720 @@
+[
+  {
+    "id": "era_1980s",
+    "name": "1980년대",
+    "startYear": 1980,
+    "endYear": 1989,
+    "summary": "social_criticism_censorship, no_multiplex, no_ott",
+    "marketRules": {
+      "theaterDemand": 45,
+      "ottPower": 0,
+      "foreignCompetition": 50,
+      "middleBudgetRisk": 60,
+      "specialFormatDemand": 0,
+      "onlineSpreadPower": 0,
+      "ticketPriceBurden": 20,
+      "majorDistributorPower": 20,
+      "screenAccessDifficulty": 55
+    },
+    "productionRules": {
+      "specialRestrictions": [
+        "social_criticism_censorship",
+        "no_multiplex",
+        "no_ott",
+        "no_sns"
+      ],
+      "weakChoices": [
+        "large_blockbuster",
+        "sf_disaster",
+        "vfx_heavy_project"
+      ]
+    },
+    "distributionRules": {
+      "options": [
+        "single_screen",
+        "direct_theater_negotiation"
+      ]
+    },
+    "marketingRules": {
+      "channels": [
+        "newspaper",
+        "magazine",
+        "poster",
+        "theater_trailer"
+      ]
+    },
+    "secondaryMarketRules": {
+      "options": [
+        "early_video",
+        "tv_broadcast"
+      ]
+    },
+    "lockedSystems": [
+      "multiplex_wide_release",
+      "ott_original",
+      "sns_viral",
+      "youtube_reviewer_screening",
+      "imax_release",
+      "shortform_marketing",
+      "global_streaming_sale"
+    ],
+    "unlockedSystems": [
+      "single_screen_release",
+      "newspaper_marketing",
+      "poster_marketing",
+      "magazine_interview",
+      "early_video_market",
+      "festival_submission"
+    ],
+    "lockedChoices": [
+      "multiplex_wide_release",
+      "ott_original",
+      "sns_viral",
+      "youtube_reviewer_screening",
+      "imax_release",
+      "shortform_marketing",
+      "global_streaming_sale"
+    ],
+    "unlockedChoices": [
+      "single_screen_release",
+      "newspaper_marketing",
+      "poster_marketing",
+      "magazine_interview",
+      "early_video_market",
+      "festival_submission"
+    ],
+    "strongChoices": [
+      "single_screen_release",
+      "newspaper_marketing",
+      "poster_marketing",
+      "literary_drama_strategy"
+    ],
+    "inefficientChoices": [
+      "large_blockbuster",
+      "sf_disaster",
+      "vfx_heavy_project"
+    ],
+    "weakChoices": [
+      "large_blockbuster",
+      "sf_disaster",
+      "vfx_heavy_project"
+    ],
+    "genreModifiers": {},
+    "riskModifiers": {
+      "censorship_risk_bonus": 35,
+      "funding_difficulty_bonus": 25,
+      "distribution_difficulty_bonus": 20,
+      "technology_limit_penalty": 30
+    },
+    "gameOverRisks": [
+      "검열로 개봉 무산",
+      "자본 부족",
+      "극장 확보 실패",
+      "외화 직배 이후 흥행 실패"
+    ],
+    "futureRules": {},
+    "marketModifiers": {
+      "theater_demand": 45,
+      "ott_power": 0,
+      "foreign_competition": 50,
+      "middle_budget_risk": 60,
+      "special_format_demand": 0,
+      "online_spread_power": 0,
+      "ticket_price_burden": 20,
+      "major_distributor_power": 20,
+      "screen_access_difficulty": 55
+    },
+    "marketingChannels": [
+      "newspaper",
+      "magazine",
+      "poster",
+      "theater_trailer"
+    ],
+    "secondaryMarketOptions": [
+      "early_video",
+      "tv_broadcast"
+    ],
+    "distributionOptions": [
+      "single_screen",
+      "direct_theater_negotiation"
+    ],
+    "specialRestrictions": [
+      "social_criticism_censorship",
+      "no_multiplex",
+      "no_ott",
+      "no_sns"
+    ]
+  },
+  {
+    "id": "era_1990s",
+    "name": "1990년대",
+    "startYear": 1990,
+    "endYear": 1999,
+    "summary": "imf_investment_shock, no_ott, no_shortform",
+    "marketRules": {
+      "theaterDemand": 55,
+      "ottPower": 0,
+      "foreignCompetition": 60,
+      "middleBudgetRisk": 55,
+      "specialFormatDemand": 5,
+      "onlineSpreadPower": 5,
+      "ticketPriceBurden": 25,
+      "majorDistributorPower": 45,
+      "screenAccessDifficulty": 50
+    },
+    "productionRules": {
+      "specialRestrictions": [
+        "imf_investment_shock",
+        "no_ott",
+        "no_shortform"
+      ],
+      "weakChoices": [
+        "large_vfx_project",
+        "global_simultaneous_release"
+      ]
+    },
+    "distributionRules": {
+      "options": [
+        "single_screen",
+        "early_multiplex_after_1998",
+        "corporate_distributor"
+      ]
+    },
+    "marketingRules": {
+      "channels": [
+        "newspaper",
+        "tv",
+        "magazine",
+        "star_interview"
+      ]
+    },
+    "secondaryMarketRules": {
+      "options": [
+        "vhs",
+        "cable_tv",
+        "tv_broadcast"
+      ]
+    },
+    "lockedSystems": [
+      "ott_original",
+      "youtube_marketing",
+      "shortform_marketing",
+      "full_special_format_strategy"
+    ],
+    "unlockedSystems": [
+      "video_market",
+      "corporate_investment",
+      "tv_marketing",
+      "magazine_interview",
+      "multiplex_release_after_1998",
+      "blockbuster_investment_after_1999"
+    ],
+    "lockedChoices": [
+      "ott_original",
+      "youtube_marketing",
+      "shortform_marketing",
+      "full_special_format_strategy"
+    ],
+    "unlockedChoices": [
+      "video_market",
+      "corporate_investment",
+      "tv_marketing",
+      "magazine_interview",
+      "multiplex_release_after_1998",
+      "blockbuster_investment_after_1999"
+    ],
+    "strongChoices": [
+      "video_market",
+      "romantic_comedy_strategy",
+      "planned_film_strategy",
+      "corporate_investment"
+    ],
+    "inefficientChoices": [
+      "large_vfx_project",
+      "global_simultaneous_release"
+    ],
+    "weakChoices": [
+      "large_vfx_project",
+      "global_simultaneous_release"
+    ],
+    "genreModifiers": {},
+    "riskModifiers": {
+      "imf_investment_shock_from_1997": 30,
+      "corporate_interference_risk": 15,
+      "video_market_bonus": 20
+    },
+    "gameOverRisks": [
+      "IMF 이후 투자 철회",
+      "비디오 시장 실패",
+      "대기업 투자 조건 불이행",
+      "무리한 블록버스터 시도"
+    ],
+    "futureRules": {},
+    "marketModifiers": {
+      "theater_demand": 55,
+      "ott_power": 0,
+      "foreign_competition": 60,
+      "middle_budget_risk": 55,
+      "special_format_demand": 5,
+      "online_spread_power": 5,
+      "ticket_price_burden": 25,
+      "major_distributor_power": 45,
+      "screen_access_difficulty": 50
+    },
+    "marketingChannels": [
+      "newspaper",
+      "tv",
+      "magazine",
+      "star_interview"
+    ],
+    "secondaryMarketOptions": [
+      "vhs",
+      "cable_tv",
+      "tv_broadcast"
+    ],
+    "distributionOptions": [
+      "single_screen",
+      "early_multiplex_after_1998",
+      "corporate_distributor"
+    ],
+    "specialRestrictions": [
+      "imf_investment_shock",
+      "no_ott",
+      "no_shortform"
+    ]
+  },
+  {
+    "id": "era_2000s",
+    "name": "2000년대",
+    "startYear": 2000,
+    "endYear": 2009,
+    "summary": "no_full_ott_original, avatar_vfx_pressure_after_2009",
+    "marketRules": {
+      "theaterDemand": 80,
+      "ottPower": 0,
+      "foreignCompetition": 65,
+      "middleBudgetRisk": 45,
+      "specialFormatDemand": 25,
+      "onlineSpreadPower": 35,
+      "ticketPriceBurden": 35,
+      "majorDistributorPower": 70,
+      "screenAccessDifficulty": 55
+    },
+    "productionRules": {
+      "specialRestrictions": [
+        "no_full_ott_original",
+        "avatar_vfx_pressure_after_2009"
+      ],
+      "weakChoices": [
+        "ott_strategy",
+        "shortform_viral"
+      ]
+    },
+    "distributionRules": {
+      "options": [
+        "multiplex",
+        "wide_release",
+        "major_distributor"
+      ]
+    },
+    "marketingRules": {
+      "channels": [
+        "tv_variety",
+        "portal",
+        "press_screening",
+        "film_magazine",
+        "trailer_online"
+      ]
+    },
+    "secondaryMarketRules": {
+      "options": [
+        "dvd",
+        "cable_tv",
+        "iptv_early",
+        "overseas_rights"
+      ]
+    },
+    "lockedSystems": [
+      "ott_original",
+      "shortform_marketing",
+      "global_streaming_sale"
+    ],
+    "unlockedSystems": [
+      "multiplex_release",
+      "portal_marketing",
+      "dvd_market",
+      "wide_release",
+      "major_distributor_predeal",
+      "iptv_early"
+    ],
+    "lockedChoices": [
+      "ott_original",
+      "shortform_marketing",
+      "global_streaming_sale"
+    ],
+    "unlockedChoices": [
+      "multiplex_release",
+      "portal_marketing",
+      "dvd_market",
+      "wide_release",
+      "major_distributor_predeal",
+      "iptv_early"
+    ],
+    "strongChoices": [
+      "multiplex_wide_release",
+      "genre_film_strategy",
+      "portal_marketing",
+      "dvd_release"
+    ],
+    "inefficientChoices": [
+      "ott_strategy",
+      "shortform_viral"
+    ],
+    "weakChoices": [
+      "ott_strategy",
+      "shortform_viral"
+    ],
+    "genreModifiers": {},
+    "riskModifiers": {
+      "screen_quota_reduction_from_2006": 20,
+      "foreign_competition_after_2006": 15,
+      "vfx_expectation_after_avatar": 20,
+      "opening_weekend_pressure": 20
+    },
+    "gameOverRisks": [
+      "대형 배급사와의 관계 실패",
+      "제작비 상승",
+      "스크린쿼터 축소 이후 외화 경쟁",
+      "멀티플렉스 첫 주 흥행 실패"
+    ],
+    "futureRules": {},
+    "marketModifiers": {
+      "theater_demand": 80,
+      "ott_power": 0,
+      "foreign_competition": 65,
+      "middle_budget_risk": 45,
+      "special_format_demand": 25,
+      "online_spread_power": 35,
+      "ticket_price_burden": 35,
+      "major_distributor_power": 70,
+      "screen_access_difficulty": 55
+    },
+    "marketingChannels": [
+      "tv_variety",
+      "portal",
+      "press_screening",
+      "film_magazine",
+      "trailer_online"
+    ],
+    "secondaryMarketOptions": [
+      "dvd",
+      "cable_tv",
+      "iptv_early",
+      "overseas_rights"
+    ],
+    "distributionOptions": [
+      "multiplex",
+      "wide_release",
+      "major_distributor"
+    ],
+    "specialRestrictions": [
+      "no_full_ott_original",
+      "avatar_vfx_pressure_after_2009"
+    ]
+  },
+  {
+    "id": "era_2010s",
+    "name": "2010년대",
+    "startYear": 2010,
+    "endYear": 2019,
+    "summary": "pre_2020_no_pandemic_strategy",
+    "marketRules": {
+      "theaterDemand": 90,
+      "ottPower": 35,
+      "foreignCompetition": 75,
+      "middleBudgetRisk": 65,
+      "specialFormatDemand": 55,
+      "onlineSpreadPower": 80,
+      "ticketPriceBurden": 55,
+      "majorDistributorPower": 85,
+      "screenAccessDifficulty": 65
+    },
+    "productionRules": {
+      "specialRestrictions": [
+        "pre_2020_no_pandemic_strategy"
+      ],
+      "weakChoices": [
+        "small_no_marketing_release",
+        "mid_budget_original_without_stars"
+      ]
+    },
+    "distributionRules": {
+      "options": [
+        "wide_release",
+        "special_format",
+        "festival_then_release"
+      ]
+    },
+    "marketingRules": {
+      "channels": [
+        "sns",
+        "youtube",
+        "portal_review",
+        "star_fandom",
+        "press_screening"
+      ]
+    },
+    "secondaryMarketRules": {
+      "options": [
+        "iptv_vod",
+        "cable_tv",
+        "ott_sale",
+        "overseas_rights"
+      ]
+    },
+    "lockedSystems": [
+      "pandemic_release_delay",
+      "full_ott_original_before_late_2010s",
+      "shortform_main_strategy_before_late_2010s"
+    ],
+    "unlockedSystems": [
+      "sns_marketing",
+      "youtube_trailer",
+      "special_format_release",
+      "franchise_strategy",
+      "webtoon_ip_adaptation",
+      "iptv_vod_market",
+      "overseas_rights"
+    ],
+    "lockedChoices": [
+      "pandemic_release_delay",
+      "full_ott_original_before_late_2010s",
+      "shortform_main_strategy_before_late_2010s"
+    ],
+    "unlockedChoices": [
+      "sns_marketing",
+      "youtube_trailer",
+      "special_format_release",
+      "franchise_strategy",
+      "webtoon_ip_adaptation",
+      "iptv_vod_market",
+      "overseas_rights"
+    ],
+    "strongChoices": [
+      "wide_release",
+      "sns_word_of_mouth",
+      "franchise_strategy",
+      "special_format_release",
+      "star_casting_package"
+    ],
+    "inefficientChoices": [
+      "small_no_marketing_release",
+      "mid_budget_original_without_stars"
+    ],
+    "weakChoices": [
+      "small_no_marketing_release",
+      "mid_budget_original_without_stars"
+    ],
+    "genreModifiers": {},
+    "riskModifiers": {
+      "major_distributor_power": 25,
+      "sns_backlash_risk": 15,
+      "opening_week_pressure": 30,
+      "marketing_cost_pressure": 20,
+      "franchise_fatigue_risk": 10
+    },
+    "gameOverRisks": [
+      "대형 상업영화 참패",
+      "마케팅비 과다",
+      "SNS 혹평",
+      "천만 목표 영화의 손익분기점 실패"
+    ],
+    "futureRules": {},
+    "marketModifiers": {
+      "theater_demand": 90,
+      "ott_power": 35,
+      "foreign_competition": 75,
+      "middle_budget_risk": 65,
+      "special_format_demand": 55,
+      "online_spread_power": 80,
+      "ticket_price_burden": 55,
+      "major_distributor_power": 85,
+      "screen_access_difficulty": 65
+    },
+    "marketingChannels": [
+      "sns",
+      "youtube",
+      "portal_review",
+      "star_fandom",
+      "press_screening"
+    ],
+    "secondaryMarketOptions": [
+      "iptv_vod",
+      "cable_tv",
+      "ott_sale",
+      "overseas_rights"
+    ],
+    "distributionOptions": [
+      "wide_release",
+      "special_format",
+      "festival_then_release"
+    ],
+    "specialRestrictions": [
+      "pre_2020_no_pandemic_strategy"
+    ]
+  },
+  {
+    "id": "era_2020s",
+    "name": "2020년대",
+    "startYear": 2020,
+    "endYear": 2029,
+    "summary": "high_ticket_burden, middle_budget_crisis, audience_score_sensitive",
+    "marketRules": {
+      "theaterDemand": 55,
+      "ottPower": 95,
+      "foreignCompetition": 75,
+      "middleBudgetRisk": 85,
+      "specialFormatDemand": 70,
+      "onlineSpreadPower": 95,
+      "ticketPriceBurden": 85,
+      "majorDistributorPower": 75,
+      "screenAccessDifficulty": 75
+    },
+    "productionRules": {
+      "specialRestrictions": [
+        "high_ticket_burden",
+        "middle_budget_crisis",
+        "audience_score_sensitive"
+      ],
+      "weakChoices": [
+        "mid_budget_original_theatrical",
+        "starless_drama_theatrical",
+        "dvd_release"
+      ]
+    },
+    "distributionRules": {
+      "options": [
+        "limited_theatrical",
+        "special_format",
+        "ott_original",
+        "theatrical_plus_ott"
+      ]
+    },
+    "marketingRules": {
+      "channels": [
+        "shortform",
+        "youtube_reviewer",
+        "sns",
+        "community",
+        "ott_algorithm",
+        "fandom_goods"
+      ]
+    },
+    "secondaryMarketRules": {
+      "options": [
+        "ott",
+        "global_streaming",
+        "vod",
+        "overseas_platform",
+        "airline_rights"
+      ]
+    },
+    "lockedSystems": [
+      "vhs_release",
+      "video_rental_market"
+    ],
+    "unlockedSystems": [
+      "ott_original",
+      "global_streaming_sale",
+      "shortform_marketing",
+      "limited_theatrical_plus_ott",
+      "special_format_strategy",
+      "youtube_reviewer_screening",
+      "goods_package_screening"
+    ],
+    "lockedChoices": [
+      "vhs_release",
+      "video_rental_market"
+    ],
+    "unlockedChoices": [
+      "ott_original",
+      "global_streaming_sale",
+      "shortform_marketing",
+      "limited_theatrical_plus_ott",
+      "special_format_strategy",
+      "youtube_reviewer_screening",
+      "goods_package_screening"
+    ],
+    "strongChoices": [
+      "ott_original",
+      "shortform_viral",
+      "special_format_release",
+      "franchise_strategy",
+      "low_budget_horror",
+      "limited_theatrical_plus_ott"
+    ],
+    "inefficientChoices": [
+      "mid_budget_original_theatrical",
+      "starless_drama_theatrical",
+      "dvd_release"
+    ],
+    "weakChoices": [
+      "mid_budget_original_theatrical",
+      "starless_drama_theatrical",
+      "dvd_release"
+    ],
+    "genreModifiers": {},
+    "riskModifiers": {
+      "covid_shock_from_2020": 60,
+      "ticket_price_burden_bonus": 30,
+      "middle_budget_risk_bonus": 35,
+      "audience_score_importance_bonus": 30,
+      "second_week_drop_risk_bonus": 25
+    },
+    "gameOverRisks": [
+      "중간예산 극장영화 실패",
+      "OTT 전환 실패",
+      "티켓값 부담으로 관객 외면",
+      "2주차 급락",
+      "개봉 연기 비용 누적"
+    ],
+    "futureRules": {},
+    "marketModifiers": {
+      "theater_demand": 55,
+      "ott_power": 95,
+      "foreign_competition": 75,
+      "middle_budget_risk": 85,
+      "special_format_demand": 70,
+      "online_spread_power": 95,
+      "ticket_price_burden": 85,
+      "major_distributor_power": 75,
+      "screen_access_difficulty": 75
+    },
+    "marketingChannels": [
+      "shortform",
+      "youtube_reviewer",
+      "sns",
+      "community",
+      "ott_algorithm",
+      "fandom_goods"
+    ],
+    "secondaryMarketOptions": [
+      "ott",
+      "global_streaming",
+      "vod",
+      "overseas_platform",
+      "airline_rights"
+    ],
+    "distributionOptions": [
+      "limited_theatrical",
+      "special_format",
+      "ott_original",
+      "theatrical_plus_ott"
+    ],
+    "specialRestrictions": [
+      "high_ticket_burden",
+      "middle_budget_crisis",
+      "audience_score_sensitive"
+    ]
+  }
+]

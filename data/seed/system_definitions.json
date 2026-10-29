@@ -1,0 +1,480 @@
+[
+  {
+    "id": "character_creation",
+    "name": "캐릭터 생성 시스템",
+    "category": "core",
+    "implementationStatus": "playable",
+    "description": "이름, 성별, 나이, 시대, 포지션, 배경 선택을 통해 플레이어 상태를 만든다.",
+    "primaryTables": [
+      "player_state",
+      "studio_state",
+      "character_option_sets"
+    ],
+    "primaryServices": [
+      "character_service"
+    ]
+  },
+  {
+    "id": "era_selection",
+    "name": "시작 시대 선택 시스템",
+    "category": "world",
+    "implementationStatus": "playable",
+    "description": "시대별 시장 환경, 티켓 가격, 역사 이벤트의 출발점을 정한다.",
+    "primaryTables": [
+      "eras",
+      "ticket_prices",
+      "historical_events",
+      "market_state"
+    ],
+    "primaryServices": [
+      "character_service",
+      "world_service"
+    ]
+  },
+  {
+    "id": "position_selection",
+    "name": "포지션 선택 시스템",
+    "category": "core",
+    "implementationStatus": "foundation",
+    "description": "감독, 배급사 사장, 대학생의 초기 능력과 자본, 관계망을 분화한다.",
+    "primaryTables": [
+      "starting_positions",
+      "player_state"
+    ],
+    "primaryServices": [
+      "character_service"
+    ]
+  },
+  {
+    "id": "reputation",
+    "name": "명성 시스템",
+    "category": "state",
+    "implementationStatus": "foundation",
+    "description": "대중, 업계, 평론가, 투자자, 창작자 명성을 내부 수치와 구두 평가로 관리한다.",
+    "primaryTables": [
+      "reputation_definitions",
+      "player_state",
+      "studio_state"
+    ],
+    "primaryServices": [
+      "reputation_service"
+    ]
+  },
+  {
+    "id": "network",
+    "name": "인맥 시스템",
+    "category": "state",
+    "implementationStatus": "foundation",
+    "description": "배우, 감독, 제작, 투자, 배급, 언론, 학교 인맥을 장기 관계망으로 관리한다.",
+    "primaryTables": [
+      "network_definitions",
+      "relationships",
+      "player_state"
+    ],
+    "primaryServices": [
+      "network_service"
+    ]
+  },
+  {
+    "id": "project_scale",
+    "name": "영화 제작 규모 시스템",
+    "category": "production",
+    "implementationStatus": "playable",
+    "description": "단편부터 텐트폴까지 예산 범위, 이벤트 수, 실패 충격을 정의한다.",
+    "primaryTables": [
+      "project_scales",
+      "projects"
+    ],
+    "primaryServices": [
+      "film_service"
+    ]
+  },
+  {
+    "id": "genre_budget_allocation",
+    "name": "장르별 제작비 배분 시스템",
+    "category": "production",
+    "implementationStatus": "playable",
+    "description": "장르 가중치에 따라 예산 배분이 완성도와 리스크에 영향을 준다.",
+    "primaryTables": [
+      "genres",
+      "project_budget_allocations",
+      "projects"
+    ],
+    "primaryServices": [
+      "film_service"
+    ]
+  },
+  {
+    "id": "dialogue_choice",
+    "name": "대화형 선택지 시스템",
+    "category": "event",
+    "implementationStatus": "foundation",
+    "description": "투자, 캐스팅, 언론, 협상 상황을 선택지와 효과로 처리한다.",
+    "primaryTables": [
+      "simulation_events",
+      "event_history"
+    ],
+    "primaryServices": [
+      "event_engine"
+    ]
+  },
+  {
+    "id": "production_events",
+    "name": "제작 중간 이벤트 시스템",
+    "category": "event",
+    "implementationStatus": "playable",
+    "description": "제작 단계별 사건을 발생시키고 선택 결과를 프로젝트에 반영한다.",
+    "primaryTables": [
+      "project_stage_definitions",
+      "simulation_events",
+      "event_history"
+    ],
+    "primaryServices": [
+      "event_service",
+      "event_engine"
+    ]
+  },
+  {
+    "id": "people_database",
+    "name": "배우/감독 DB 시스템",
+    "category": "people",
+    "implementationStatus": "foundation",
+    "description": "배우, 감독, 스태프 후보의 내부 수치와 공개 프로필을 관리한다.",
+    "primaryTables": [
+      "people",
+      "project_people"
+    ],
+    "primaryServices": [
+      "people_service"
+    ]
+  },
+  {
+    "id": "people_current_potential",
+    "name": "배우/감독 현재 능력·잠재력 시스템",
+    "category": "people",
+    "implementationStatus": "foundation",
+    "description": "현재 능력과 잠재력을 분리해 저장하고 캐스팅/성장에 반영한다.",
+    "primaryTables": [
+      "people"
+    ],
+    "primaryServices": [
+      "people_service"
+    ]
+  },
+  {
+    "id": "people_verbal_profile",
+    "name": "배우/감독 구두 평가 표시 시스템",
+    "category": "people",
+    "implementationStatus": "foundation",
+    "description": "인물 숫자 스탯을 직접 노출하지 않고 문장 평가로 표시한다.",
+    "primaryTables": [
+      "people"
+    ],
+    "primaryServices": [
+      "people_service"
+    ]
+  },
+  {
+    "id": "historical_events",
+    "name": "실제 역사 이벤트 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "고정/반고정 역사 이벤트가 시장 상태와 뉴스에 영향을 준다.",
+    "primaryTables": [
+      "historical_events",
+      "market_state",
+      "news_items"
+    ],
+    "primaryServices": [
+      "world_service"
+    ]
+  },
+  {
+    "id": "foreign_fixed_events",
+    "name": "외화 고정 이벤트 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "외화 대작과 직배, 프랜차이즈 공세를 시장 경쟁 변수로 반영한다.",
+    "primaryTables": [
+      "historical_events",
+      "market_releases"
+    ],
+    "primaryServices": [
+      "world_service"
+    ]
+  },
+  {
+    "id": "ticket_price_history",
+    "name": "티켓값 고정 역사 시스템",
+    "category": "world",
+    "implementationStatus": "playable",
+    "description": "연도별 평균 티켓값을 흥행 수익과 손익분기점 계산에 사용한다.",
+    "primaryTables": [
+      "ticket_prices"
+    ],
+    "primaryServices": [
+      "boxoffice_service"
+    ]
+  },
+  {
+    "id": "awards",
+    "name": "시상식 이벤트 시스템",
+    "category": "post_release",
+    "implementationStatus": "foundation",
+    "description": "영화의 평론/흥행/작품성을 기준으로 후보와 수상 결과를 만든다.",
+    "primaryTables": [
+      "awards",
+      "award_results"
+    ],
+    "primaryServices": [
+      "awards_service"
+    ]
+  },
+  {
+    "id": "press",
+    "name": "언론 시스템",
+    "category": "post_release",
+    "implementationStatus": "foundation",
+    "description": "개봉, 논란, 역주행, 시상식 뉴스를 생성하고 명성에 영향을 준다.",
+    "primaryTables": [
+      "news_items"
+    ],
+    "primaryServices": [
+      "press_service"
+    ]
+  },
+  {
+    "id": "critics",
+    "name": "평론가 시스템",
+    "category": "post_release",
+    "implementationStatus": "foundation",
+    "description": "평론가 취향과 영향력에 따라 리뷰와 평단 반응을 생성한다.",
+    "primaryTables": [
+      "critics",
+      "film_reviews"
+    ],
+    "primaryServices": [
+      "critic_service"
+    ]
+  },
+  {
+    "id": "plagiarism_risk",
+    "name": "표절 위험 시스템",
+    "category": "risk",
+    "implementationStatus": "foundation",
+    "description": "표절 위험 수치와 이벤트 결과를 논란 케이스로 발전시킬 수 있다.",
+    "primaryTables": [
+      "projects",
+      "controversy_cases",
+      "event_history"
+    ],
+    "primaryServices": [
+      "risk_service"
+    ]
+  },
+  {
+    "id": "series_franchise",
+    "name": "시리즈화 시스템",
+    "category": "ip",
+    "implementationStatus": "foundation",
+    "description": "흥행, 캐릭터 인기, IP 가치를 기반으로 속편과 세계관 확장을 관리한다.",
+    "primaryTables": [
+      "intellectual_properties",
+      "ip_entries",
+      "story_flags"
+    ],
+    "primaryServices": [
+      "franchise_service"
+    ]
+  },
+  {
+    "id": "sleeper_reevaluation",
+    "name": "역주행/재평가 시스템",
+    "category": "post_release",
+    "implementationStatus": "foundation",
+    "description": "개봉 후 시간이 지난 작품이 입소문, OTT, 밈, 평론 재평가로 부활할 수 있다.",
+    "primaryTables": [
+      "reevaluation_events",
+      "news_items",
+      "completed_films"
+    ],
+    "primaryServices": [
+      "reevaluation_service"
+    ]
+  },
+  {
+    "id": "save_load",
+    "name": "세이브/로드 시스템",
+    "category": "core",
+    "implementationStatus": "playable",
+    "description": "현재 게임 DB 파일을 저장 슬롯으로 복사해 로컬 세이브를 제공한다.",
+    "primaryTables": [
+      "player_state",
+      "studio_state",
+      "projects",
+      "completed_films"
+    ],
+    "primaryServices": [
+      "save_service"
+    ]
+  },
+  {
+    "id": "future_generation",
+    "name": "미래 자동 생성 시스템의 기반 구조",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "역사 데이터 이후의 배우, 감독, 시장 사건, 조직을 규칙 기반으로 생성한다.",
+    "primaryTables": [
+      "future_generation_rules",
+      "generated_entities"
+    ],
+    "primaryServices": [
+      "future_generation_service"
+    ]
+  },
+  {
+    "id": "era_rules",
+    "name": "시대별 선택지 잠금 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "현재 연도에 따라 사용 가능한 선택지, 강한 선택지, 비효율 선택지, 장르/리스크 보정을 적용한다.",
+    "primaryTables": [
+      "era_rules",
+      "core_era_rules",
+      "save_market_state"
+    ],
+    "primaryServices": [
+      "era_service",
+      "game_state"
+    ]
+  },
+  {
+    "id": "flexible_history_mode",
+    "name": "유연한 역사 모드 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "큰 역사 흐름은 고정하되 플레이어 작품, 일부 시상식 결과, 일부 커리어 변화를 허용한다.",
+    "primaryTables": [
+      "historical_events",
+      "save_event_flags",
+      "market_releases"
+    ],
+    "primaryServices": [
+      "history_service",
+      "world_service"
+    ]
+  },
+  {
+    "id": "protected_history",
+    "name": "보호 역사/보호 스케줄 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "주요 감독군과 핵심 필모그래피를 실제 개봉 흐름에 맞춰 발생시키고 장기 일정 충돌을 관리한다.",
+    "primaryTables": [
+      "history_protected_director_films",
+      "people_protected_schedules"
+    ],
+    "primaryServices": [
+      "history_service",
+      "casting_service"
+    ]
+  },
+  {
+    "id": "distribution_theater_premium_events",
+    "name": "배급사·극장·특별관 사건 시스템",
+    "category": "world",
+    "implementationStatus": "foundation",
+    "description": "배급사 성장, 극장 체인, 멀티플렉스, IMAX/4DX/ScreenX/Dolby 같은 특별관 변화를 시장 변수로 반영한다.",
+    "primaryTables": [
+      "history_distribution_events",
+      "history_theater_events",
+      "history_premium_format_events"
+    ],
+    "primaryServices": [
+      "history_service",
+      "world_service"
+    ]
+  },
+  {
+    "id": "marketing_release_strategy",
+    "name": "마케팅·개봉 전략 시스템",
+    "category": "release",
+    "implementationStatus": "foundation",
+    "description": "시대별 마케팅 수단과 개봉 전략을 선택지로 관리하고 외화, 티켓값, 배급망, 온라인 반응을 반영한다.",
+    "primaryTables": [
+      "production_choices",
+      "project_distribution",
+      "save_market_state"
+    ],
+    "primaryServices": [
+      "event_engine",
+      "press_service",
+      "boxoffice_service"
+    ]
+  },
+  {
+    "id": "secondary_market",
+    "name": "2차 소비 시장 시스템",
+    "category": "post_release",
+    "implementationStatus": "foundation",
+    "description": "VHS, DVD, IPTV/VOD, OTT, 글로벌 스트리밍, 해외 판권 등 시대별 2차 수익 구조를 관리한다.",
+    "primaryTables": [
+      "movies_post_release_metrics",
+      "history_ticket_prices"
+    ],
+    "primaryServices": [
+      "post_release_service",
+      "boxoffice_service"
+    ]
+  },
+  {
+    "id": "game_over_risk",
+    "name": "위험도와 게임 오버 시스템",
+    "category": "risk",
+    "implementationStatus": "foundation",
+    "description": "재무, 배급, 표절, 논란, 시대 부적합 장르, 외화 충돌, 2주차 낙폭을 종합해 회생 또는 게임 오버로 이어지게 한다.",
+    "primaryTables": [
+      "production_projects",
+      "save_player_state",
+      "save_studio_state",
+      "systems_plagiarism"
+    ],
+    "primaryServices": [
+      "risk_service",
+      "game_state"
+    ]
+  },
+  {
+    "id": "real_data_collection",
+    "name": "실제 DB 수집 시스템",
+    "category": "data",
+    "implementationStatus": "foundation",
+    "description": "KOBIS, KMDb, KOSIS에서 영화, 박스오피스, 티켓값, 배우/감독 필모그래피 후보, 경제/인구 지표를 수집해 staging 테이블에 저장한다.",
+    "primaryTables": [
+      "staging_kobis_boxoffice",
+      "staging_kmdb_movies",
+      "staging_major_korean_movies",
+      "staging_kosis_statistics"
+    ],
+    "primaryServices": [
+      "data_collection_service"
+    ]
+  },
+  {
+    "id": "economic_population_indicators",
+    "name": "경제·인구·문화 지표 시스템",
+    "category": "data",
+    "implementationStatus": "foundation",
+    "description": "KOSIS CPI, 가계 소비, 경기, 청년/지역 인구, 문화소비 지표를 수집해 제작비 체감, 티켓값 부담, 극장 수요, 미래 경제 변수에 사용한다.",
+    "primaryTables": [
+      "staging_kosis_statistics",
+      "staging_kosis_indicator_series",
+      "staging_kosis_search_results"
+    ],
+    "primaryServices": [
+      "data_collection_service",
+      "economic_service",
+      "future_generation_service"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "public_reputation",
+    "nameKo": "대중 명성",
+    "description": "관객과 일반 대중이 플레이어와 제작사를 얼마나 신뢰하는지 나타낸다.",
+    "lowText": "대중에게 거의 알려지지 않았다.",
+    "midText": "관객 사이에서 이름이 조금씩 알려지고 있다.",
+    "highText": "관객이 이름만으로도 관심을 보이는 수준이다."
+  },
+  {
+    "id": "industry_reputation",
+    "nameKo": "업계 명성",
+    "description": "제작 현장, 투자사, 배급사, 배우가 평가하는 신뢰도다.",
+    "lowText": "업계 신뢰가 약해 중요한 제안을 받기 어렵다.",
+    "midText": "작품 단위로 판단받는 단계다.",
+    "highText": "업계에서 믿고 함께 일할 수 있는 이름으로 통한다."
+  },
+  {
+    "id": "critic_reputation",
+    "nameKo": "평론가 명성",
+    "description": "평론가와 영화제 관계자가 보는 작품적 신뢰도다.",
+    "lowText": "평단의 관심권 밖에 있다.",
+    "midText": "일부 평론가가 가능성을 언급한다.",
+    "highText": "평단이 신작을 주목하는 창작자로 평가한다."
+  },
+  {
+    "id": "investor_reputation",
+    "nameKo": "투자자 명성",
+    "description": "자본 회수 가능성과 협상 신뢰를 나타낸다.",
+    "lowText": "투자 설득이 쉽지 않다.",
+    "midText": "조건이 맞으면 투자 검토 대상이 된다.",
+    "highText": "투자자가 먼저 패키지를 문의하는 수준이다."
+  },
+  {
+    "id": "creative_reputation",
+    "nameKo": "창작자 명성",
+    "description": "감독, 작가, 배우가 느끼는 창작 파트너로서의 매력이다.",
+    "lowText": "창작팀을 모으는 데 설득이 필요하다.",
+    "midText": "흥미로운 기획이면 창작진이 모인다.",
+    "highText": "좋은 창작자가 먼저 합류 의사를 보인다."
+  }
+]
+

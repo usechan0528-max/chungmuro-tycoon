@@ -1,0 +1,142 @@
+[
+  {
+    "id": "event_2000_jsa",
+    "year": 2000,
+    "month": 9,
+    "title": "공동경비구역 JSA 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "분단 소재와 웰메이드 드라마의 상업적 가능성이 확인됩니다.",
+    "effects": {
+      "division_drama_value": 20,
+      "wellmade_drama_trust": 15,
+      "actor_ensemble_value": 10
+    }
+  },
+  {
+    "id": "event_2001_my_sassy_girl",
+    "year": 2001,
+    "month": 7,
+    "title": "엽기적인 그녀 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "로맨틱 코미디와 한류형 스타 이미지의 가능성이 커집니다.",
+    "effects": {
+      "romantic_comedy_trend": 25,
+      "hallyu_romance_value": 15,
+      "star_brand_power": 10
+    }
+  },
+  {
+    "id": "event_2003_memories_of_murder",
+    "year": 2003,
+    "month": 4,
+    "title": "살인의 추억과 웰메이드 범죄 스릴러",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "범죄 스릴러가 연출, 각본, 배우 밀도를 통해 상업성과 작품성을 동시에 얻을 수 있음을 보여줍니다.",
+    "effects": {
+      "crime_thriller_trend": 25,
+      "wellmade_genre_trust": 20,
+      "auteur_commercial_hybrid_value": 10
+    }
+  },
+  {
+    "id": "event_2003_oldboy_cannes_path",
+    "year": 2003,
+    "month": 11,
+    "title": "올드보이와 작가주의 장르영화의 해외 경로",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "복수극, 장르적 과감함, 작가주의 스타일이 해외 영화제와 장르 팬덤의 관심을 받기 시작합니다.",
+    "effects": {
+      "revenge_thriller_value": 25,
+      "festival_strategy_value": 20,
+      "global_korean_cinema_interest": 10
+    }
+  },
+  {
+    "id": "event_2003_tale_of_two_sisters",
+    "year": 2003,
+    "month": 6,
+    "title": "장화, 홍련과 한국 공포 미장센",
+    "type": "film_industry",
+    "fixedLevel": "semiFixed",
+    "description": "한국 공포영화가 미장센, 심리극, 해외 리메이크 가능성으로 주목받습니다.",
+    "effects": {
+      "horror_occult_trend": 18,
+      "art_direction_value": 15,
+      "remake_rights_interest": 10
+    }
+  },
+  {
+    "id": "event_2004_taegukgi",
+    "year": 2004,
+    "month": 2,
+    "title": "태극기 휘날리며 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "대형 전쟁영화와 한국형 블록버스터 투자의 상한이 다시 높아집니다.",
+    "effects": {
+      "war_epic_investment": 25,
+      "large_scale_budget_pressure": 15,
+      "blockbuster_confidence": 15
+    }
+  },
+  {
+    "id": "event_2006_the_host",
+    "year": 2006,
+    "month": 7,
+    "title": "괴물 흥행과 한국형 장르 블록버스터 가능성",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "한국형 괴수영화가 가족 드라마, 사회 풍자, 장르적 쾌감을 결합해 대형 흥행을 기록합니다.",
+    "effects": {
+      "monster_genre_confidence": 25,
+      "vfx_expectation": 15,
+      "auteur_commercial_hybrid_value": 15
+    }
+  },
+  {
+    "id": "event_2009_mother",
+    "year": 2009,
+    "month": 5,
+    "title": "마더와 작가주의 스릴러의 해외 비평 루트",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "작가주의 스릴러와 배우 중심 드라마가 해외 비평 시장에서 강한 신뢰를 얻습니다.",
+    "effects": {
+      "auteur_thriller_value": 20,
+      "festival_strategy_value": 15,
+      "actor_drama_value": 10
+    }
+  },
+  {
+    "id": "event_2009_haeundae",
+    "year": 2009,
+    "month": 7,
+    "title": "해운대 흥행과 한국형 재난영화 관심",
+    "type": "film_industry",
+    "fixedLevel": "semiFixed",
+    "description": "재난, 가족, 코미디를 결합한 대중 상업영화의 시장성이 커집니다.",
+    "effects": {
+      "disaster_thriller_interest": 20,
+      "family_human_drama_trend": 10,
+      "vfx_expectation": 10
+    }
+  },
+  {
+    "id": "event_2009_take_off",
+    "year": 2009,
+    "month": 7,
+    "title": "국가대표 흥행과 스포츠 휴먼드라마",
+    "type": "film_industry",
+    "fixedLevel": "semiFixed",
+    "description": "스포츠 실화와 휴먼드라마의 대중적 흥행 가능성이 주목받습니다.",
+    "effects": {
+      "sports_drama_value": 20,
+      "true_story_value": 10,
+      "word_of_mouth_power": 10
+    }
+  }
+]

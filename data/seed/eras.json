@@ -1,0 +1,77 @@
+[
+  {
+    "id": "era_1980s",
+    "name": "1980년대",
+    "startYear": 1980,
+    "endYear": 1989,
+    "description": "낭만의 시대입니다. 전설적인 배우들과 감독이 나타난 시기죠. 하지만 여러 제약이 많던 시기입니다. 해외 출국도 쉽지 않고, 국민 정서가 허락하지 않는 내용도 많습니다. 또한 정부 기관은 당신의 각본을 항상 예의주시하고 있습니다.",
+    "marketModifiers": {
+      "theaterDemand": 45,
+      "ottPower": 0,
+      "foreignCompetition": 50,
+      "middleBudgetRisk": 60,
+      "specialFormatDemand": 0,
+      "onlineSpreadPower": 0
+    }
+  },
+  {
+    "id": "era_1990s",
+    "name": "1990년대",
+    "startYear": 1990,
+    "endYear": 1999,
+    "description": "외화가 본격적으로 들어오기 시작했습니다. 이젠 우물 안 싸움이 아닙니다. 하지만 걱정하지 마세요. 또 다른 전설이 될 신예 감독과 배우들이 쏟아져 나오던 시기입니다. 우리 영화가 외국 자본 영화와도 경쟁할 수 있음을 보여주기도 했죠. 다만 경제 위기를 헤쳐 나갈 준비도 단단히 해야 할 것입니다.",
+    "marketModifiers": {
+      "theaterDemand": 55,
+      "ottPower": 0,
+      "foreignCompetition": 60,
+      "middleBudgetRisk": 55,
+      "specialFormatDemand": 5,
+      "onlineSpreadPower": 5
+    }
+  },
+  {
+    "id": "era_2000s",
+    "name": "2000년대",
+    "startYear": 2000,
+    "endYear": 2009,
+    "description": "감히 한국 영화의 르네상스라고 할 수 있습니다. 특색 있고 재능 넘치는 감독들이 그 재능을 마음껏 꽃피우던 시기입니다. 정말로 좋은 작품들이 엄청나게 쏟아지던 시기죠. 흐름만 잘 탄다면 한국 영화의 유례없는 전성기를 여는 인물은 당신이 될지도 모르겠습니다.",
+    "marketModifiers": {
+      "theaterDemand": 80,
+      "ottPower": 0,
+      "foreignCompetition": 65,
+      "middleBudgetRisk": 45,
+      "specialFormatDemand": 25,
+      "onlineSpreadPower": 35
+    }
+  },
+  {
+    "id": "era_2010s",
+    "name": "2010년대",
+    "startYear": 2010,
+    "endYear": 2019,
+    "description": "충무로는 더 이상 한국만의 무대가 아닙니다. 국민들의 영화 소비력은 유례없게 높아졌고, 막대한 자본이 영화시장에 투자되기 시작했습니다. 하지만 외국 자본도 이를 가만두지 않습니다. 다양한 할리우드 AAA급 영화들이 한국에 적극적이고 공격적인 마케팅을 실행하고, 최초 개봉까지 노리는 황금기입니다. 하지만 그 끝에는 피할 수 없는 사건이 있으니 대비를 단단히 해야 할 겁니다.",
+    "marketModifiers": {
+      "theaterDemand": 90,
+      "ottPower": 35,
+      "foreignCompetition": 75,
+      "middleBudgetRisk": 65,
+      "specialFormatDemand": 55,
+      "onlineSpreadPower": 80
+    }
+  },
+  {
+    "id": "era_2020s",
+    "name": "2020년대",
+    "startYear": 2020,
+    "endYear": 2029,
+    "description": "코로나 이후로 영화계는 완전히 바뀌었습니다. 더 이상 예전 같은 투자도, 관객동원력도 없습니다. 이젠 극장 상영이 필수가 아닙니다. OTT도 새로운 돌파구가 될 수 있겠죠. 새로운 국면에 접어든 영화시장에서 당신의 능력을 보여주십시오.",
+    "marketModifiers": {
+      "theaterDemand": 55,
+      "ottPower": 95,
+      "foreignCompetition": 75,
+      "middleBudgetRisk": 85,
+      "specialFormatDemand": 70,
+      "onlineSpreadPower": 95
+    }
+  }
+]

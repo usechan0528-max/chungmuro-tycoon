@@ -1,0 +1,602 @@
+[
+  {
+    "id": "cash",
+    "nameKo": "현금",
+    "category": "finance",
+    "description": "현재 보유한 현금 자산."
+  },
+  {
+    "id": "debt",
+    "nameKo": "부채",
+    "category": "finance",
+    "description": "상환해야 할 빚."
+  },
+  {
+    "id": "credit_limit",
+    "nameKo": "신용한도",
+    "category": "finance",
+    "description": "추가 차입 가능 한도."
+  },
+  {
+    "id": "production_budget",
+    "nameKo": "순제작비",
+    "category": "finance",
+    "description": "영화 제작에 직접 투입되는 비용."
+  },
+  {
+    "id": "marketing_budget",
+    "nameKo": "마케팅비",
+    "category": "finance",
+    "description": "홍보와 배급에 쓰는 비용."
+  },
+  {
+    "id": "total_cost",
+    "nameKo": "총비용",
+    "category": "finance",
+    "description": "순제작비와 마케팅비를 합친 총비용."
+  },
+  {
+    "id": "investment_amount",
+    "nameKo": "투자금",
+    "category": "finance",
+    "description": "외부 투자로 확보한 금액."
+  },
+  {
+    "id": "studio_recovery_rate",
+    "nameKo": "제작사 회수율",
+    "category": "finance",
+    "description": "극장 매출 중 제작사가 실질적으로 회수하는 비율."
+  },
+  {
+    "id": "break_even_audience",
+    "nameKo": "손익분기점",
+    "category": "finance",
+    "description": "흑자 전환에 필요한 관객 수."
+  },
+  {
+    "id": "secondary_market_revenue",
+    "nameKo": "2차 시장 수익",
+    "category": "finance",
+    "description": "VOD, OTT, TV, 해외판권 등 극장 이후 수익."
+  },
+  {
+    "id": "scenario_quality",
+    "nameKo": "시나리오 완성도",
+    "category": "production_quality",
+    "description": "이야기 구조, 대사, 개연성의 완성도."
+  },
+  {
+    "id": "directing_quality",
+    "nameKo": "연출 완성도",
+    "category": "production_quality",
+    "description": "감독의 장면 구성, 톤, 리듬."
+  },
+  {
+    "id": "acting_quality",
+    "nameKo": "배우 연기력",
+    "category": "production_quality",
+    "description": "출연진의 평균 연기 품질."
+  },
+  {
+    "id": "casting_fit",
+    "nameKo": "캐스팅 적합도",
+    "category": "production_quality",
+    "description": "배우와 배역·장르의 궁합."
+  },
+  {
+    "id": "shooting_quality",
+    "nameKo": "촬영 완성도",
+    "category": "production_quality",
+    "description": "영상미, 로케이션, 화면 구성."
+  },
+  {
+    "id": "art_costume_prop_quality",
+    "nameKo": "미술/의상/소품 완성도",
+    "category": "production_quality",
+    "description": "세트, 의상, 소품, 시대감의 완성도."
+  },
+  {
+    "id": "action_stunt_quality",
+    "nameKo": "액션/스턴트 완성도",
+    "category": "production_quality",
+    "description": "액션 설계, 스턴트, 안전성."
+  },
+  {
+    "id": "vfx_quality",
+    "nameKo": "VFX/CG 완성도",
+    "category": "production_quality",
+    "description": "시각효과와 CG의 품질."
+  },
+  {
+    "id": "music_sound_quality",
+    "nameKo": "음악/음향 완성도",
+    "category": "production_quality",
+    "description": "OST, 효과음, 사운드 믹싱."
+  },
+  {
+    "id": "editing_quality",
+    "nameKo": "편집 완성도",
+    "category": "production_quality",
+    "description": "러닝타임, 템포, 구조."
+  },
+  {
+    "id": "genre_satisfaction",
+    "nameKo": "장르 만족도",
+    "category": "production_quality",
+    "description": "해당 장르의 기대를 충족하는 정도."
+  },
+  {
+    "id": "final_quality",
+    "nameKo": "최종 완성도",
+    "category": "production_quality",
+    "description": "영화 전체 품질의 종합값."
+  },
+  {
+    "id": "pre_release_interest",
+    "nameKo": "사전 관심도",
+    "category": "boxoffice",
+    "description": "개봉 전 대중 관심도."
+  },
+  {
+    "id": "reservation_rate",
+    "nameKo": "예매율",
+    "category": "boxoffice",
+    "description": "개봉 전 예매 성과."
+  },
+  {
+    "id": "opening_week_audience",
+    "nameKo": "개봉 첫 주 관객 수",
+    "category": "boxoffice",
+    "description": "초반 흥행 성과."
+  },
+  {
+    "id": "audience_score",
+    "nameKo": "관객 평점",
+    "category": "boxoffice",
+    "description": "관객 만족도."
+  },
+  {
+    "id": "word_of_mouth",
+    "nameKo": "입소문 지수",
+    "category": "boxoffice",
+    "description": "개봉 후 추천과 확산 정도."
+  },
+  {
+    "id": "second_week_drop",
+    "nameKo": "2주차 낙폭",
+    "category": "boxoffice",
+    "description": "개봉 2주차 관객 감소율."
+  },
+  {
+    "id": "rewatch_index",
+    "nameKo": "N차 관람 지수",
+    "category": "boxoffice",
+    "description": "반복 관람 가능성."
+  },
+  {
+    "id": "fandom_index",
+    "nameKo": "팬덤 지수",
+    "category": "boxoffice",
+    "description": "배우, 장르, IP 팬덤의 결집력."
+  },
+  {
+    "id": "online_buzz",
+    "nameKo": "온라인 화제성",
+    "category": "boxoffice",
+    "description": "SNS, 커뮤니티, 유튜브 반응."
+  },
+  {
+    "id": "final_audience",
+    "nameKo": "최종 관객 수",
+    "category": "boxoffice",
+    "description": "극장 최종 관객 수."
+  },
+  {
+    "id": "boxoffice_revenue",
+    "nameKo": "극장 매출",
+    "category": "boxoffice",
+    "description": "극장 총매출."
+  },
+  {
+    "id": "price_sensitivity_effect",
+    "nameKo": "가격 민감도 영향",
+    "category": "boxoffice",
+    "description": "티켓값 부담에 따른 관객 감소 효과."
+  },
+  {
+    "id": "public_reputation",
+    "nameKo": "대중 명성",
+    "category": "reputation",
+    "description": "일반 관객에게 알려진 정도."
+  },
+  {
+    "id": "industry_reputation",
+    "nameKo": "업계 명성",
+    "category": "reputation",
+    "description": "영화계 내부 신뢰도."
+  },
+  {
+    "id": "critic_reputation",
+    "nameKo": "평론가 명성",
+    "category": "reputation",
+    "description": "비평계 평가."
+  },
+  {
+    "id": "investor_reputation",
+    "nameKo": "투자자 명성",
+    "category": "reputation",
+    "description": "투자자가 돈을 맡길 만하다고 보는 정도."
+  },
+  {
+    "id": "creative_reputation",
+    "nameKo": "창작자 명성",
+    "category": "reputation",
+    "description": "배우·감독·스태프가 같이 일하고 싶어 하는 정도."
+  },
+  {
+    "id": "global_reputation",
+    "nameKo": "해외 명성",
+    "category": "reputation",
+    "description": "해외 영화제, 판권 시장, 글로벌 OTT 인지도."
+  },
+  {
+    "id": "actor_network",
+    "nameKo": "배우 인맥",
+    "category": "network",
+    "description": "배우와 매니지먼트 접근성."
+  },
+  {
+    "id": "director_network",
+    "nameKo": "감독 인맥",
+    "category": "network",
+    "description": "감독과 연출자 관계망."
+  },
+  {
+    "id": "production_network",
+    "nameKo": "제작 인맥",
+    "category": "network",
+    "description": "프로듀서, 스태프, 현장 관계망."
+  },
+  {
+    "id": "investor_network",
+    "nameKo": "투자 인맥",
+    "category": "network",
+    "description": "투자사와 금융권 관계망."
+  },
+  {
+    "id": "distribution_network",
+    "nameKo": "배급 인맥",
+    "category": "network",
+    "description": "배급사, 극장, OTT와의 관계망."
+  },
+  {
+    "id": "press_network",
+    "nameKo": "언론 인맥",
+    "category": "network",
+    "description": "기자, 방송, 리뷰 채널 관계망."
+  },
+  {
+    "id": "critic_access",
+    "nameKo": "평론가 접근도",
+    "category": "network",
+    "description": "평론가 리뷰, GV, 인터뷰 기회."
+  },
+  {
+    "id": "festival_network",
+    "nameKo": "영화제 인맥",
+    "category": "network",
+    "description": "프로그래머, 심사위원, 해외 세일즈 관계망."
+  },
+  {
+    "id": "school_network",
+    "nameKo": "학교 인맥",
+    "category": "network",
+    "description": "동문, 영화학교, 동아리 네트워크."
+  },
+  {
+    "id": "regional_network",
+    "nameKo": "지역 인맥",
+    "category": "network",
+    "description": "지자체, 지방 극장, 로케이션 협조 관계."
+  },
+  {
+    "id": "financial_risk",
+    "nameKo": "재무 리스크",
+    "category": "risk",
+    "description": "파산, 부채, 현금 부족 위험."
+  },
+  {
+    "id": "production_shutdown_risk",
+    "nameKo": "제작 중단 리스크",
+    "category": "risk",
+    "description": "자금·갈등·일정 문제로 제작이 멈출 위험."
+  },
+  {
+    "id": "schedule_delay_risk",
+    "nameKo": "일정 지연 리스크",
+    "category": "risk",
+    "description": "촬영·후반·개봉 지연 가능성."
+  },
+  {
+    "id": "budget_overrun_risk",
+    "nameKo": "예산 초과 리스크",
+    "category": "risk",
+    "description": "예상보다 제작비가 늘어날 위험."
+  },
+  {
+    "id": "on_set_conflict_risk",
+    "nameKo": "현장 갈등 리스크",
+    "category": "risk",
+    "description": "감독, 배우, 제작진 간 충돌 가능성."
+  },
+  {
+    "id": "plagiarism_risk",
+    "nameKo": "표절 위험도",
+    "category": "risk",
+    "description": "기존 작품과의 유사성 논란 가능성."
+  },
+  {
+    "id": "controversy_risk",
+    "nameKo": "논란 위험도",
+    "category": "risk",
+    "description": "역사왜곡, 표현 수위, 묘사 논란 가능성."
+  },
+  {
+    "id": "press_backlash_risk",
+    "nameKo": "언론 역풍 위험",
+    "category": "risk",
+    "description": "부정 기사, 조롱, 여론 악화 가능성."
+  },
+  {
+    "id": "critic_backlash_risk",
+    "nameKo": "평론가 혹평 위험",
+    "category": "risk",
+    "description": "비평계의 강한 혹평 가능성."
+  },
+  {
+    "id": "audience_rejection_risk",
+    "nameKo": "관객 외면 위험",
+    "category": "risk",
+    "description": "관객 기대와 실제 결과가 어긋날 위험."
+  },
+  {
+    "id": "series_fatigue",
+    "nameKo": "시리즈 피로도",
+    "category": "risk",
+    "description": "후속작 반복에 대한 관객 피로."
+  },
+  {
+    "id": "game_over_risk",
+    "nameKo": "게임 오버 위험도",
+    "category": "risk",
+    "description": "파산·퇴출·커리어 붕괴 가능성."
+  },
+  {
+    "id": "production_duration",
+    "nameKo": "제작 기간",
+    "category": "time",
+    "description": "전체 프로젝트 기간."
+  },
+  {
+    "id": "pre_production_duration",
+    "nameKo": "프리프로덕션 기간",
+    "category": "time",
+    "description": "촬영 전 준비 기간."
+  },
+  {
+    "id": "shooting_duration",
+    "nameKo": "촬영 기간",
+    "category": "time",
+    "description": "실제 촬영 기간."
+  },
+  {
+    "id": "post_production_duration",
+    "nameKo": "후반작업 기간",
+    "category": "time",
+    "description": "편집, 음향, 색보정, VFX 기간."
+  },
+  {
+    "id": "marketing_duration",
+    "nameKo": "마케팅 기간",
+    "category": "time",
+    "description": "개봉 전 홍보 기간."
+  },
+  {
+    "id": "release_timing",
+    "nameKo": "개봉 시기",
+    "category": "time",
+    "description": "개봉 월과 시즌."
+  },
+  {
+    "id": "delay_days",
+    "nameKo": "지연 일수",
+    "category": "time",
+    "description": "계획 대비 늦어진 일수."
+  },
+  {
+    "id": "actor_commitment_duration",
+    "nameKo": "배우 구속 기간",
+    "category": "time",
+    "description": "배우가 프로젝트에 묶이는 기간."
+  },
+  {
+    "id": "director_commitment_duration",
+    "nameKo": "감독 구속 기간",
+    "category": "time",
+    "description": "감독이 프로젝트에 묶이는 기간."
+  },
+  {
+    "id": "theater_demand",
+    "nameKo": "극장 수요",
+    "category": "market",
+    "description": "극장 관객 전체 수요."
+  },
+  {
+    "id": "ott_power",
+    "nameKo": "OTT 영향력",
+    "category": "market",
+    "description": "OTT 판매와 플랫폼 계약 가치."
+  },
+  {
+    "id": "foreign_competition",
+    "nameKo": "외화 경쟁력",
+    "category": "market",
+    "description": "외화 대작의 시장 압박."
+  },
+  {
+    "id": "korean_film_trust",
+    "nameKo": "한국영화 신뢰도",
+    "category": "market",
+    "description": "관객이 한국영화를 기대하는 정도."
+  },
+  {
+    "id": "genre_trend",
+    "nameKo": "장르 유행도",
+    "category": "market",
+    "description": "특정 장르의 시장 선호도."
+  },
+  {
+    "id": "genre_fatigue",
+    "nameKo": "장르 피로도",
+    "category": "market",
+    "description": "특정 장르 반복에 대한 피로."
+  },
+  {
+    "id": "middle_budget_risk",
+    "nameKo": "중간예산 위험도",
+    "category": "market",
+    "description": "중간 규모 영화의 손익 위험."
+  },
+  {
+    "id": "special_format_demand",
+    "nameKo": "특수관 수요",
+    "category": "market",
+    "description": "IMAX, 4DX, Dolby 등 프리미엄 상영관 수요."
+  },
+  {
+    "id": "ticket_price_burden",
+    "nameKo": "티켓값 부담",
+    "category": "market",
+    "description": "관객이 느끼는 영화표 가격 부담."
+  },
+  {
+    "id": "online_spread_power",
+    "nameKo": "온라인 확산력",
+    "category": "market",
+    "description": "SNS, 유튜브, 숏폼, 커뮤니티 확산력."
+  },
+  {
+    "id": "ip_value",
+    "nameKo": "IP 가치",
+    "category": "ip",
+    "description": "작품 브랜드의 장기 자산 가치."
+  },
+  {
+    "id": "franchise_power",
+    "nameKo": "프랜차이즈 파워",
+    "category": "ip",
+    "description": "시리즈로 확장 가능한 힘."
+  },
+  {
+    "id": "world_expansion",
+    "nameKo": "세계관 확장성",
+    "category": "ip",
+    "description": "스핀오프, 프리퀄, 시리즈화 가능성."
+  },
+  {
+    "id": "character_popularity",
+    "nameKo": "캐릭터 인기",
+    "category": "ip",
+    "description": "특정 캐릭터의 재등장 수요."
+  },
+  {
+    "id": "sequel_demand",
+    "nameKo": "후속작 수요",
+    "category": "ip",
+    "description": "관객과 투자자의 다음 편 요구."
+  },
+  {
+    "id": "cult_potential",
+    "nameKo": "컬트 잠재력",
+    "category": "ip",
+    "description": "뒤늦게 회자될 가능성."
+  },
+  {
+    "id": "meme_potential",
+    "nameKo": "밈 잠재력",
+    "category": "ip",
+    "description": "짤, 클립, 대사 확산 가능성."
+  },
+  {
+    "id": "reevaluation_potential",
+    "nameKo": "재평가 잠재력",
+    "category": "ip",
+    "description": "시간이 지나 재평가될 가능성."
+  },
+  {
+    "id": "secondary_market_fit",
+    "nameKo": "2차 시장 적합도",
+    "category": "ip",
+    "description": "OTT, VOD, TV, DVD 등에서 살아날 가능성."
+  },
+  {
+    "id": "directing_ability",
+    "nameKo": "연출력",
+    "category": "player",
+    "description": "플레이어의 직접 연출 능력."
+  },
+  {
+    "id": "screenplay_sense",
+    "nameKo": "시나리오 감각",
+    "category": "player",
+    "description": "좋은 각본을 고르고 수정하는 능력."
+  },
+  {
+    "id": "market_analysis",
+    "nameKo": "시장 분석력",
+    "category": "player",
+    "description": "장르, 관객, 시대 흐름을 판단하는 능력."
+  },
+  {
+    "id": "fundraising_ability",
+    "nameKo": "투자 유치력",
+    "category": "player",
+    "description": "외부 자금을 끌어오는 능력."
+  },
+  {
+    "id": "distribution_negotiation",
+    "nameKo": "배급 협상력",
+    "category": "player",
+    "description": "배급사, 극장, OTT와 협상하는 능력."
+  },
+  {
+    "id": "marketing_sense",
+    "nameKo": "마케팅 감각",
+    "category": "player",
+    "description": "관객에게 영화를 알리는 감각."
+  },
+  {
+    "id": "field_control",
+    "nameKo": "현장 장악력",
+    "category": "player",
+    "description": "촬영 현장과 갈등을 통제하는 능력."
+  },
+  {
+    "id": "artistic_sense",
+    "nameKo": "예술성",
+    "category": "player",
+    "description": "작품성, 작가주의, 영화제 감각."
+  },
+  {
+    "id": "commercial_sense",
+    "nameKo": "상업 감각",
+    "category": "player",
+    "description": "흥행성, 대중성, 손익 판단 능력."
+  },
+  {
+    "id": "learning_ability",
+    "nameKo": "학습력",
+    "category": "player",
+    "description": "경험을 능력 성장으로 전환하는 속도."
+  }
+]

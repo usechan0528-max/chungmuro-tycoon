@@ -1,0 +1,185 @@
+[
+  {
+    "id": "event_2011_silenced",
+    "year": 2011,
+    "month": 9,
+    "title": "도가니 사회적 파장",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "사회고발 영화가 대중 여론과 제도 논의에 영향을 줄 수 있음을 보여줍니다.",
+    "effects": {
+      "social_true_story_trend": 25,
+      "press_network": 10,
+      "controversy_risk": 5
+    }
+  },
+  {
+    "id": "event_2012_the_thieves",
+    "year": 2012,
+    "month": 7,
+    "title": "도둑들 천만 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "앙상블 캐스팅과 케이퍼 무비의 대중성이 크게 증명됩니다.",
+    "effects": {
+      "ensemble_casting_value": 25,
+      "crime_entertainment_trend": 20,
+      "star_casting_importance": 15
+    }
+  },
+  {
+    "id": "event_2012_masquerade",
+    "year": 2012,
+    "month": 9,
+    "title": "광해, 왕이 된 남자 천만 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "사극과 대중드라마가 결합한 중대형 상업영화의 시장성이 상승합니다.",
+    "effects": {
+      "historical_drama_value": 25,
+      "period_historical_trend": 15,
+      "middle_budget_risk": -5
+    }
+  },
+  {
+    "id": "event_2013_miracle_cell_no7",
+    "year": 2013,
+    "month": 1,
+    "title": "7번방의 선물 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "가족, 휴먼드라마, 눈물 코드의 대중적 파급력이 크게 확인됩니다.",
+    "effects": {
+      "family_human_drama_trend": 25,
+      "word_of_mouth_power": 15,
+      "audience_score_importance": 10
+    }
+  },
+  {
+    "id": "event_2013_the_attorney",
+    "year": 2013,
+    "month": 12,
+    "title": "변호인 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "현대사와 사회극이 강한 배우, 여론, 입소문을 만나 큰 흥행을 만들 수 있음을 보여줍니다.",
+    "effects": {
+      "modern_history_value": 25,
+      "social_true_story_trend": 15,
+      "press_backlash_risk": 5
+    }
+  },
+  {
+    "id": "event_2014_roaring_currents",
+    "year": 2014,
+    "month": 7,
+    "title": "명량 초대형 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "역사 대작이 초대형 흥행을 기록하며 한국영화의 흥행 상한선에 대한 기대가 높아졌습니다.",
+    "effects": {
+      "historical_epic_investment": 25,
+      "boxoffice_ceiling_expectation": 30,
+      "large_scale_budget_pressure": 15
+    }
+  },
+  {
+    "id": "event_2015_veteran",
+    "year": 2015,
+    "month": 8,
+    "title": "베테랑 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "범죄오락, 사회풍자, 액션이 결합한 상업 장르영화의 가치가 높아집니다.",
+    "effects": {
+      "crime_entertainment_trend": 25,
+      "action_investment": 15,
+      "social_satire_value": 10
+    }
+  },
+  {
+    "id": "event_2015_assassination",
+    "year": 2015,
+    "month": 7,
+    "title": "암살 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "일제강점기 소재, 역사 액션, 앙상블 캐스팅의 흥행 가능성이 강화됩니다.",
+    "effects": {
+      "historical_action_value": 25,
+      "ensemble_casting_value": 15,
+      "period_historical_trend": 10
+    }
+  },
+  {
+    "id": "event_2016_train_to_busan",
+    "year": 2016,
+    "month": 7,
+    "title": "부산행 흥행과 장르영화 글로벌 가능성",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "좀비/재난 장르가 한국적 정서와 결합해 국내 흥행과 해외 판매 가능성을 동시에 얻습니다.",
+    "effects": {
+      "zombie_genre_value": 25,
+      "global_genre_sales": 20,
+      "disaster_thriller_interest": 15
+    }
+  },
+  {
+    "id": "event_2017_outlaws",
+    "year": 2017,
+    "month": 10,
+    "title": "범죄도시 흥행과 범죄액션 프랜차이즈의 씨앗",
+    "type": "film_industry",
+    "fixedLevel": "semiFixed",
+    "description": "강한 캐릭터와 범죄액션 공식이 시리즈화 가능한 IP로 읽히기 시작합니다.",
+    "effects": {
+      "crime_action_franchise_seed": 25,
+      "character_popularity": 15,
+      "franchise_power": 10
+    }
+  },
+  {
+    "id": "event_2017_taxi_driver",
+    "year": 2017,
+    "month": 8,
+    "title": "택시운전사 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "현대사 소재가 대중성과 배우 신뢰를 만나 큰 흥행을 만들 수 있음을 재확인합니다.",
+    "effects": {
+      "modern_history_value": 20,
+      "actor_trust_value": 15,
+      "social_true_story_trend": 10
+    }
+  },
+  {
+    "id": "event_2018_along_with_the_gods_series",
+    "year": 2018,
+    "month": 8,
+    "title": "신과함께 시리즈 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "웹툰/IP, VFX, 2부작 전략, 세계관 확장의 상업적 가치가 크게 상승합니다.",
+    "effects": {
+      "ip_value": 25,
+      "vfx_expectation": 20,
+      "franchise_power": 20,
+      "special_format_demand": 10
+    }
+  },
+  {
+    "id": "event_2019_korean_cinema_centennial",
+    "year": 2019,
+    "month": 10,
+    "title": "한국영화 100주년",
+    "type": "industry_memory",
+    "fixedLevel": "fixed",
+    "description": "한국영화 100주년을 맞아 회고전, 고전 재평가, 산업적 자부심이 커집니다.",
+    "effects": {
+      "korean_film_trust": 10,
+      "reevaluation_potential": 15,
+      "festival_network": 10
+    }
+  }
+]

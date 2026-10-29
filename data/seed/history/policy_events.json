@@ -1,0 +1,124 @@
+[
+  {
+    "id": "event_1984_kafa_founded",
+    "year": 1984,
+    "month": 3,
+    "title": "한국영화아카데미 KAFA 설립",
+    "type": "policy_institution",
+    "fixedLevel": "semiFixed",
+    "description": "신인 감독과 영화학교 네트워크의 기반이 생기며 독립·작가주의 루트가 조금씩 강화됩니다.",
+    "effects": {
+      "school_network": 15,
+      "festival_network": 8,
+      "new_director_pipeline": 10
+    },
+    "unlocks": [
+      "film_school_network"
+    ]
+  },
+  {
+    "id": "event_1986_film_law_revision",
+    "year": 1986,
+    "month": 12,
+    "title": "영화법 개정과 외국영화사 국내 진출 허용 흐름",
+    "type": "industry_policy",
+    "fixedLevel": "fixed",
+    "description": "영화산업 제도 변화와 함께 외국영화사의 국내 진출 가능성이 커지며 한국 제작사들의 위기감이 높아집니다.",
+    "effects": {
+      "foreign_competition": 12,
+      "distribution_difficulty": 8,
+      "korean_film_trust": -3
+    }
+  },
+  {
+    "id": "event_1988_foreign_direct_distribution",
+    "year": 1988,
+    "month": 9,
+    "title": "외화 직배 본격화",
+    "type": "industry_policy",
+    "fixedLevel": "fixed",
+    "description": "할리우드 직배 영화가 국내 극장 시장에 직접 진입하며 한국 영화계에 위기감이 커집니다.",
+    "effects": {
+      "foreign_competition": 25,
+      "distribution_difficulty": 15,
+      "korean_film_trust": -5
+    }
+  },
+  {
+    "id": "event_late_1980s_screen_quota_movement",
+    "year": 1989,
+    "month": 6,
+    "title": "직배 반대 운동과 스크린쿼터 투쟁",
+    "type": "policy_movement",
+    "fixedLevel": "semiFixed",
+    "description": "영화계가 외화 직배와 스크린쿼터 문제를 둘러싸고 연대하며 정책 이벤트가 잦아집니다.",
+    "effects": {
+      "policy_network": 15,
+      "press_network": 8,
+      "foreign_competition": 5
+    }
+  },
+  {
+    "id": "event_1993_screen_quota_debate",
+    "year": 1993,
+    "month": 6,
+    "title": "스크린쿼터 축소 논란",
+    "type": "policy",
+    "fixedLevel": "semiFixed",
+    "description": "스크린쿼터를 둘러싼 논란이 커지며 영화계 연대와 정책 대응이 중요해집니다.",
+    "effects": {
+      "policy_network": 10,
+      "distribution_difficulty": 8,
+      "press_network": 5
+    }
+  },
+  {
+    "id": "event_1996_biff_founded",
+    "year": 1996,
+    "month": 9,
+    "title": "부산국제영화제 출범",
+    "type": "festival_institution",
+    "fixedLevel": "fixed",
+    "description": "부산국제영화제가 출범하며 신인, 독립영화, 아시아 영화 네트워크 루트가 열립니다.",
+    "effects": {
+      "festival_network": 25,
+      "indie_art_trend": 10,
+      "global_korean_cinema_interest": 5
+    },
+    "unlocks": [
+      "busan_festival_route"
+    ]
+  },
+  {
+    "id": "event_1999_kofic_founded",
+    "year": 1999,
+    "month": 5,
+    "title": "영화진흥위원회 출범",
+    "type": "policy_institution",
+    "fixedLevel": "fixed",
+    "description": "영화정책과 지원사업의 제도적 기반이 강화되며 제작, 배급, 교육 지원 이벤트가 늘어납니다.",
+    "effects": {
+      "policy_support": 20,
+      "fundraising_ability": 5,
+      "school_network": 5
+    },
+    "unlocks": [
+      "policy_support_programs"
+    ]
+  },
+  {
+    "id": "event_2006_screen_quota_reduction",
+    "year": 2006,
+    "month": 7,
+    "title": "스크린쿼터 축소",
+    "type": "policy",
+    "fixedLevel": "absoluteFixed",
+    "description": "한국영화 의무상영일수가 146일에서 73일로 줄어들며 외화와의 경쟁이 더 치열해졌습니다.",
+    "effects": {
+      "foreign_competition": 20,
+      "distribution_difficulty": 15,
+      "middle_budget_risk": 10,
+      "major_distributor_power": 10
+    }
+  }
+]

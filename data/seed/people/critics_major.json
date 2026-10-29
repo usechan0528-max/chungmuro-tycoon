@@ -1,0 +1,642 @@
+[
+  {
+    "id": "critic_lee_dongjin",
+    "nameKo": "이동진",
+    "type": "critic",
+    "availableFrom": 1990,
+    "criticType": [
+      "대중영향형",
+      "시네필형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "대중영향형, 시네필형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_jung_sungil",
+    "nameKo": "정성일",
+    "type": "critic",
+    "availableFrom": 1988,
+    "criticType": [
+      "시네필형",
+      "작가주의형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "시네필형, 작가주의형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_park_pyeongsik",
+    "nameKo": "박평식",
+    "type": "critic",
+    "availableFrom": 1988,
+    "criticType": [
+      "엄격채점형",
+      "한줄평영향형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "엄격채점형, 한줄평영향형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_kim_hyeri",
+    "nameKo": "김혜리",
+    "type": "critic",
+    "availableFrom": 1995,
+    "criticType": [
+      "인터뷰심층형",
+      "서사감수성형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "인터뷰심층형, 서사감수성형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_heo_jiwoong",
+    "nameKo": "허지웅",
+    "type": "critic",
+    "availableFrom": 2000,
+    "criticType": [
+      "대중영향형",
+      "논쟁촉발형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "대중영향형, 논쟁촉발형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_djuna",
+    "nameKo": "듀나",
+    "type": "critic",
+    "availableFrom": 1994,
+    "criticType": [
+      "장르전문형",
+      "SF감수성형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "장르전문형, SF감수성형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_shim_youngseop",
+    "nameKo": "심영섭",
+    "type": "critic",
+    "availableFrom": 1995,
+    "criticType": [
+      "심리분석형",
+      "감정독해형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "심리분석형, 감정독해형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_hwang_jinmi",
+    "nameKo": "황진미",
+    "type": "critic",
+    "availableFrom": 2000,
+    "criticType": [
+      "사회비평형",
+      "젠더감수성형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "사회비평형, 젠더감수성형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_yoo_jina",
+    "nameKo": "유지나",
+    "type": "critic",
+    "availableFrom": 1990,
+    "criticType": [
+      "시네필형",
+      "사회비평형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "시네필형, 사회비평형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_lee_yongcheol",
+    "nameKo": "이용철",
+    "type": "critic",
+    "availableFrom": 1998,
+    "criticType": [
+      "장르분석형",
+      "평론지형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "장르분석형, 평론지형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_jeon_chanil",
+    "nameKo": "전찬일",
+    "type": "critic",
+    "availableFrom": 1995,
+    "criticType": [
+      "산업분석형",
+      "영화제형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "산업분석형, 영화제형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_kang_yujeong",
+    "nameKo": "강유정",
+    "type": "critic",
+    "availableFrom": 2000,
+    "criticType": [
+      "문학서사형",
+      "대중영향형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "문학서사형, 대중영향형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_song_kyungwon",
+    "nameKo": "송경원",
+    "type": "critic",
+    "availableFrom": 2008,
+    "criticType": [
+      "시네필형",
+      "장르분석형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "시네필형, 장르분석형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_kim_dohoon",
+    "nameKo": "김도훈",
+    "type": "critic",
+    "availableFrom": 2000,
+    "criticType": [
+      "대중문화형",
+      "장르친화형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "대중문화형, 장르친화형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_lee_dahye",
+    "nameKo": "이다혜",
+    "type": "critic",
+    "availableFrom": 2005,
+    "criticType": [
+      "서사감수성형",
+      "대중문화형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "서사감수성형, 대중문화형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_kim_somi",
+    "nameKo": "김소미",
+    "type": "critic",
+    "availableFrom": 2010,
+    "criticType": [
+      "인터뷰심층형",
+      "현장관찰형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "인터뷰심층형, 현장관찰형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_nam_daeun",
+    "nameKo": "남다은",
+    "type": "critic",
+    "availableFrom": 2010,
+    "criticType": [
+      "시네필형",
+      "작가주의형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "시네필형, 작가주의형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_jang_youngyeop",
+    "nameKo": "장영엽",
+    "type": "critic",
+    "availableFrom": 2010,
+    "criticType": [
+      "산업분석형",
+      "인터뷰형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "산업분석형, 인터뷰형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_bae_dongmi",
+    "nameKo": "배동미",
+    "type": "critic",
+    "availableFrom": 2010,
+    "criticType": [
+      "대중문화형",
+      "서사감수성형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "대중문화형, 서사감수성형 성향을 가진 평론가."
+  },
+  {
+    "id": "critic_kim_cheolhong",
+    "nameKo": "김철홍",
+    "type": "critic",
+    "availableFrom": 2010,
+    "criticType": [
+      "장르분석형",
+      "산업분석형"
+    ],
+    "influence": {
+      "public": 70,
+      "cinephile": 72,
+      "awards": 55,
+      "online": 68
+    },
+    "tasteProfile": {
+      "narrative": 70,
+      "directing": 70,
+      "emotion": 68,
+      "genreCraft": 68,
+      "auteurism": 66,
+      "commercialEntertainment": 62,
+      "socialMeaning": 66,
+      "technicalCraft": 64
+    },
+    "scoringStyle": {
+      "strictness": 70,
+      "oneLineImpact": 70,
+      "reviewDepth": 72
+    },
+    "publicDescription": "장르분석형, 산업분석형 성향을 가진 평론가."
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "future_actor_wave",
+    "targetType": "person",
+    "startsYear": 2030,
+    "weight": 100,
+    "description": "2030년 이후 신인 배우 후보를 자동 생성한다.",
+    "rule": {
+      "type": "actor",
+      "namePool": ["도윤", "서하", "지후", "하린", "민서", "이준"],
+      "statRange": [38, 76],
+      "potentialRange": [55, 92]
+    }
+  },
+  {
+    "id": "future_director_wave",
+    "targetType": "person",
+    "startsYear": 2030,
+    "weight": 80,
+    "description": "2030년 이후 신인 감독 후보를 자동 생성한다.",
+    "rule": {
+      "type": "director",
+      "namePool": ["강", "윤", "백", "서", "문", "한"],
+      "statRange": [35, 72],
+      "potentialRange": [60, 95]
+    }
+  },
+  {
+    "id": "future_market_shift",
+    "targetType": "market_event",
+    "startsYear": 2030,
+    "weight": 70,
+    "description": "역사 seed 이후 극장, OTT, 외화 경쟁의 변화를 만든다.",
+    "rule": {
+      "marketDeltas": {
+        "theater_demand": [-8, 10],
+        "ott_power": [-4, 8],
+        "foreign_competition": [-5, 7]
+      }
+    }
+  }
+]
+

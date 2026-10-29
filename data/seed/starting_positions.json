@@ -1,0 +1,93 @@
+[
+  {
+    "id": "director",
+    "name": "감독",
+    "description": "창작 명성과 현장 판단으로 작품을 끌고 간다.",
+    "cashMultiplier": 1.0,
+    "initialStats": {
+      "directing_ability": 62,
+      "screenplay_sense": 58,
+      "field_control": 55,
+      "artistic_sense": 60,
+      "fundraising_ability": 42,
+      "commercial_sense": 48
+    },
+    "initialReputation": {
+      "public_reputation": 10,
+      "industry_reputation": 12,
+      "critic_reputation": 8,
+      "investor_reputation": 8,
+      "creative_reputation": 14
+    },
+    "initialNetwork": {
+      "actor_network": 8,
+      "director_network": 12,
+      "production_network": 12,
+      "investor_network": 8,
+      "distribution_network": 6,
+      "press_network": 7,
+      "school_network": 6
+    }
+  },
+  {
+    "id": "distributor_owner",
+    "name": "배급사 사장",
+    "description": "자본, 배급, 투자 네트워크를 무기로 시장을 움직인다.",
+    "cashMultiplier": 1.4,
+    "initialStats": {
+      "market_analysis": 64,
+      "fundraising_ability": 60,
+      "distribution_negotiation": 66,
+      "marketing_sense": 58,
+      "field_control": 46,
+      "artistic_sense": 42
+    },
+    "initialReputation": {
+      "public_reputation": 10,
+      "industry_reputation": 12,
+      "critic_reputation": 8,
+      "investor_reputation": 14,
+      "creative_reputation": 8
+    },
+    "initialNetwork": {
+      "actor_network": 8,
+      "director_network": 7,
+      "production_network": 12,
+      "investor_network": 15,
+      "distribution_network": 16,
+      "press_network": 7,
+      "school_network": 6
+    }
+  },
+  {
+    "id": "student",
+    "name": "대학생",
+    "description": "자본은 약하지만 학습 능력과 신인 네트워크로 성장한다.",
+    "cashMultiplier": 0.55,
+    "initialStats": {
+      "learning_ability": 70,
+      "school_network": 62,
+      "screenplay_sense": 48,
+      "directing_ability": 42,
+      "fundraising_ability": 35,
+      "commercial_sense": 40
+    },
+    "initialReputation": {
+      "public_reputation": 10,
+      "industry_reputation": 6,
+      "critic_reputation": 8,
+      "investor_reputation": 8,
+      "creative_reputation": 8
+    },
+    "initialNetwork": {
+      "actor_network": 8,
+      "director_network": 7,
+      "production_network": 12,
+      "investor_network": 8,
+      "distribution_network": 6,
+      "press_network": 7,
+      "school_network": 18
+    }
+  }
+]
+

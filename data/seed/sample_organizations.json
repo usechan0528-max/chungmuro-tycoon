@@ -1,0 +1,231 @@
+[
+  {
+    "id": "org_cgv",
+    "nameKo": "CGV",
+    "nameEn": "CJ CGV",
+    "orgType": "theater_chain",
+    "availableFrom": 1998,
+    "power": 92,
+    "reputation": {
+      "distribution_network": 88,
+      "industry_reputation": 82,
+      "special_format_demand": 88
+    },
+    "strategy": {
+      "majorRank": 1,
+      "screenPower": 92,
+      "premiumFormatBias": "high",
+      "preferredReleaseTypes": ["wide_release", "special_format_release", "tentpole_release"]
+    },
+    "publicProfile": {
+      "oneLine": "한국 멀티플렉스 시대를 연 대표 극장 체인.",
+      "brandText": "와이드릴리즈, 성수기 개봉, 특별관 전략에서 강한 영향력을 가진다.",
+      "historyText": "1998년 CGV강변11을 시작으로 멀티플렉스 중심 극장 시장을 본격화했고, 2010년대 이후 대형 플래그십 극장과 IMAX·4DX·ScreenX 같은 특별관 전략을 강화했다.",
+      "businessText": "상영망, 프리미엄 포맷, 대형 개봉 이벤트에 강하다. 대형 상업영화와 외화 대작에는 강한 기회를 주지만, 독립·중간예산 영화에는 스크린 확보 경쟁이 까다로워질 수 있다.",
+      "playerImpactText": "배급 협상력이 높거나 특수관 적합도가 높은 프로젝트라면 CGV 계열 상영망을 통해 개봉 첫 주 파급력을 키울 수 있다.",
+      "aliases": ["CGV", "CJ CGV"]
+    }
+  },
+  {
+    "id": "org_lotte_cinema",
+    "nameKo": "롯데시네마",
+    "nameEn": "Lotte Cinema",
+    "orgType": "theater_chain",
+    "availableFrom": 1999,
+    "power": 84,
+    "reputation": {
+      "distribution_network": 80,
+      "industry_reputation": 76,
+      "major_distributor_power": 72
+    },
+    "strategy": {
+      "majorRank": 2,
+      "screenPower": 84,
+      "verticalIntegrationBias": "high",
+      "preferredReleaseTypes": ["wide_release", "family_release", "holiday_release"]
+    },
+    "publicProfile": {
+      "oneLine": "롯데 계열 상영망을 기반으로 성장한 메이저 멀티플렉스 체인.",
+      "brandText": "상영망과 계열 배급 루트가 함께 작동할 때 성수기 개봉 전략에서 힘을 발휘한다.",
+      "historyText": "1990년대 말부터 멀티플렉스 경쟁에 뛰어들었고, 2000년대 이후 전국 체인 확장과 대형 지점 중심 이벤트 상영으로 존재감을 키웠다.",
+      "businessText": "가족 관객, 명절 시즌, 대형 상업영화 패키지와 궁합이 좋다. 계열 배급사와의 관계가 좋으면 개봉 슬롯 협상이 쉬워질 수 있다.",
+      "playerImpactText": "상업성이 분명한 작품이나 명절 시즌을 노리는 프로젝트에서 안정적인 스크린 접근성을 기대할 수 있다.",
+      "aliases": ["롯데시네마", "Lotte Cinema"]
+    }
+  },
+  {
+    "id": "org_megabox",
+    "nameKo": "메가박스",
+    "nameEn": "Megabox",
+    "orgType": "theater_chain",
+    "availableFrom": 2000,
+    "power": 82,
+    "reputation": {
+      "distribution_network": 78,
+      "industry_reputation": 74,
+      "special_format_demand": 76
+    },
+    "strategy": {
+      "majorRank": 3,
+      "screenPower": 82,
+      "premiumFormatBias": "medium_high",
+      "preferredReleaseTypes": ["urban_release", "premium_release", "event_screening"]
+    },
+    "publicProfile": {
+      "oneLine": "도심 대형 지점과 프리미엄 관람 경험에 강점을 가진 멀티플렉스 체인.",
+      "brandText": "도심 관객, 특별 상영, 프리미엄 포맷에서 의미 있는 협상 카드가 된다.",
+      "historyText": "2000년대 초 대형 멀티플렉스 지점을 중심으로 3대 체인 구도를 형성했고, 이후 플러스엠 등 계열 배급 루트와 함께 산업 내 존재감을 넓혔다.",
+      "businessText": "도심권 개봉 이벤트, GV, 프리미엄 관람 경험과 궁합이 좋다. 중간 규모 상업영화는 배급 파트너십과 마케팅 톤이 중요하다.",
+      "playerImpactText": "시사회, GV, 팬덤형 이벤트, 도심 관객 타깃 프로젝트에서 협상 가치가 커진다.",
+      "aliases": ["메가박스", "Megabox", "Megabox Plus M", "Plus M", "플러스엠", "메가박스중앙"]
+    }
+  },
+  {
+    "id": "org_cj_enm",
+    "nameKo": "CJ ENM",
+    "nameEn": "CJ ENM",
+    "orgType": "distributor",
+    "availableFrom": 1999,
+    "power": 94,
+    "reputation": {
+      "distribution_network": 92,
+      "investor_reputation": 86,
+      "industry_reputation": 88,
+      "global_reputation": 76
+    },
+    "strategy": {
+      "majorRank": 1,
+      "screenPower": 92,
+      "marketingPower": 88,
+      "preferredScales": ["mid_commercial", "large_commercial", "tentpole_blockbuster"],
+      "preferredGenres": ["crime_thriller", "action", "historical_period", "sf_disaster_monster"]
+    },
+    "publicProfile": {
+      "oneLine": "투자·배급·상영 연계 구조에서 강한 영향력을 가진 한국영화 대표 메이저.",
+      "brandText": "대형 상업영화의 전국 개봉, 마케팅, 해외 판매 전략에서 큰 힘을 가진다.",
+      "historyText": "1990년대 말 전문 투자배급 체제를 강화하며 한국영화 산업의 메이저 구조를 이끌었다. 2000년대 이후 장르영화와 대형 상업영화의 전국 개봉 전략에서 핵심 축으로 작동했다.",
+      "businessText": "강한 라인업과 대형 마케팅을 선호한다. 작품의 상업성이 충분하면 큰 기회를 주지만, 개봉 슬롯 경쟁과 성과 압박도 크다.",
+      "playerImpactText": "중간예산 이상 상업영화에서 CJ ENM과의 관계는 투자 유치, 배급망, 개봉 첫 주 관객 동원에 직접적인 영향을 준다.",
+      "aliases": ["CJ ENM", "CJ Entertainment", "CJ엔터테인먼트", "CJ"]
+    }
+  },
+  {
+    "id": "org_lotte_entertainment",
+    "nameKo": "롯데엔터테인먼트",
+    "nameEn": "Lotte Entertainment",
+    "orgType": "distributor",
+    "availableFrom": 1999,
+    "power": 86,
+    "reputation": {
+      "distribution_network": 84,
+      "investor_reputation": 78,
+      "industry_reputation": 78
+    },
+    "strategy": {
+      "majorRank": 2,
+      "screenPower": 84,
+      "marketingPower": 78,
+      "preferredScales": ["mid_commercial", "large_commercial"],
+      "preferredGenres": ["family_human_drama", "historical_period", "comedy", "action"]
+    },
+    "publicProfile": {
+      "oneLine": "롯데 계열 상영망과 맞물려 작동하는 메이저 투자배급사.",
+      "brandText": "명절 시즌, 가족 관객, 대중 상업영화에서 안정적인 배급 파워를 기대할 수 있다.",
+      "historyText": "롯데시네마 확장과 함께 배급 루트가 형성되었고, 2000년대 이후 메이저 배급 경쟁의 한 축으로 자리 잡았다.",
+      "businessText": "상업적 타깃이 명확한 작품을 선호한다. 계열 극장망과 결합하면 개봉 규모와 마케팅 효율이 올라갈 수 있다.",
+      "playerImpactText": "대중성, 가족 관객, 명절 시즌 개봉을 노리는 프로젝트에서는 좋은 협상 상대가 될 수 있다.",
+      "aliases": ["롯데엔터테인먼트", "Lotte Entertainment", "Lotte", "롯데"]
+    }
+  },
+  {
+    "id": "org_showbox",
+    "nameKo": "쇼박스",
+    "nameEn": "Showbox",
+    "orgType": "distributor",
+    "availableFrom": 2001,
+    "power": 84,
+    "reputation": {
+      "distribution_network": 82,
+      "investor_reputation": 78,
+      "industry_reputation": 80
+    },
+    "strategy": {
+      "majorRank": 3,
+      "screenPower": 80,
+      "marketingPower": 78,
+      "preferredScales": ["mid_commercial", "large_commercial"],
+      "preferredGenres": ["crime_thriller", "action", "comedy", "social_true_story"]
+    },
+    "publicProfile": {
+      "oneLine": "강한 장르영화와 대중 상업영화 패키징에 힘을 보태는 메이저 배급사.",
+      "brandText": "범죄, 액션, 코미디, 사회극 등 관객 타깃이 선명한 프로젝트에서 존재감이 크다.",
+      "historyText": "오리온 미디어플렉스 계열의 성장과 함께 2000년대 초부터 주요 투자배급사로 부상했고, 2010년대 메이저 배급 구도에서 중요한 축을 맡았다.",
+      "businessText": "콘셉트가 명확하고 배우·장르 패키지가 강한 프로젝트와 잘 맞는다. 흥행 가능성을 설득하면 중간예산 상업영화에도 힘을 실어줄 수 있다.",
+      "playerImpactText": "장르적 한 줄 설명이 강한 영화라면 쇼박스와의 협상에서 개봉 규모와 마케팅 방향을 끌어올릴 수 있다.",
+      "aliases": ["쇼박스", "Showbox", "Mediaplex", "미디어플렉스", "오리온"]
+    }
+  },
+  {
+    "id": "org_chungmuro_investment_pool",
+    "nameKo": "충무로 투자조합",
+    "nameEn": "Chungmuro Investment Pool",
+    "orgType": "investor",
+    "availableFrom": 1990,
+    "power": 58,
+    "reputation": {
+      "investor_reputation": 62,
+      "industry_reputation": 48
+    },
+    "strategy": {
+      "riskTolerance": 45,
+      "preferredScales": ["scale_low_budget_genre", "scale_mid_commercial"],
+      "preferredGenres": ["genre_crime_thriller", "genre_romance_melodrama"]
+    },
+    "publicProfile": {
+      "oneLine": "손익 구조가 선명한 중소 규모 프로젝트를 선호하는 투자조합.",
+      "brandText": "리스크 관리는 엄격하지만 성공한 팀과는 관계를 오래 가져간다."
+    }
+  },
+  {
+    "id": "org_hangang_distribution",
+    "nameKo": "한강배급",
+    "nameEn": "Hangang Distribution",
+    "orgType": "distributor",
+    "availableFrom": 2000,
+    "power": 68,
+    "reputation": {
+      "distribution_network": 70,
+      "press_network": 55
+    },
+    "strategy": {
+      "screenPower": 64,
+      "marketingBias": "mainstream",
+      "preferredReleaseMonths": [7, 8, 12]
+    },
+    "publicProfile": {
+      "oneLine": "성수기 개봉과 장르영화 패키징에 강한 중견 배급사.",
+      "brandText": "흥행 가능성이 보이면 빠르게 스크린을 밀어주는 편이다."
+    }
+  },
+  {
+    "id": "org_streamwave_kr",
+    "nameKo": "스트림웨이브 코리아",
+    "nameEn": "Streamwave Korea",
+    "orgType": "ott",
+    "availableFrom": 2016,
+    "power": 74,
+    "reputation": {
+      "ott_power": 76,
+      "global_reputation": 52
+    },
+    "strategy": {
+      "buyoutPreference": 65,
+      "secondaryMarketFocus": 80,
+      "preferredGenres": ["genre_horror_occult", "genre_social_true_story", "genre_crime_thriller"]
+    },
+    "publicProfile": {
+      "oneLine": "극장 성과보다 장기 시청과 글로벌 카탈로그 가치를 중시하는 OTT.",
+      "brandText": "감독판과 시리즈 확장에 비교적 열려 있다."
+    }
+  }
+]

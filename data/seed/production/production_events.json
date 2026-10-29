@@ -1,0 +1,4985 @@
+[
+  {
+    "id": "event_script_weak_third_act",
+    "stage": "planning",
+    "title": "시나리오 후반부 약점 발견",
+    "description": "각본 검토 과정에서 후반부 전개가 약하다는 의견이 나왔습니다.",
+    "trigger": {
+      "minScale": [
+        "independent_film",
+        "low_budget_genre",
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ]
+    },
+    "choices": [
+      {
+        "id": "rewrite_full",
+        "text": "각본을 다시 쓴다",
+        "resultText": "후반부 구조를 다시 잡으며 시나리오 완성도가 올라갔지만 제작 일정이 늘어났습니다.",
+        "effects": {
+          "scenario_quality": 10,
+          "production_duration": 1,
+          "cash": -50000000
+        }
+      },
+      {
+        "id": "minor_fix",
+        "text": "후반부만 수정한다",
+        "resultText": "큰 틀은 유지한 채 약점을 일부 보완했습니다.",
+        "effects": {
+          "scenario_quality": 4,
+          "cash": -10000000
+        }
+      },
+      {
+        "id": "ignore",
+        "text": "그대로 진행한다",
+        "resultText": "일정은 유지됐지만 후반부 약점이 남았습니다.",
+        "effects": {
+          "critic_backlash_risk": 8,
+          "audience_rejection_risk": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_investor_ending_change",
+    "stage": "fundraising",
+    "title": "투자사 결말 변경 요구",
+    "description": "투자사가 대중성을 이유로 결말 수정을 요구합니다.",
+    "trigger": {
+      "minScale": [
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept_change",
+        "text": "결말을 수정한다",
+        "resultText": "투자사는 안심했지만 창작진 일부는 아쉬움을 드러냈습니다.",
+        "effects": {
+          "investment_amount": 500000000,
+          "investor_reputation": 4,
+          "creative_reputation": -4,
+          "scenario_quality": -3,
+          "audience_rejection_risk": -4,
+          "studio": {
+            "interference_reputation": 6,
+            "creative_freedom": -5,
+            "pay_reputation": 2
+          }
+        },
+        "spokenText": "결말 수정은 받아들이겠습니다. 대신 작품의 핵심 감정은 지켜야 합니다."
+      },
+      {
+        "id": "keep_original",
+        "text": "원안을 고수한다",
+        "resultText": "창작진은 신뢰를 보였지만 투자사는 신중한 태도로 돌아섰습니다.",
+        "effects": {
+          "creative_reputation": 6,
+          "investor_reputation": -5,
+          "investment_amount": -300000000,
+          "critic_reputation": 3,
+          "studio": {
+            "creative_freedom": 6,
+            "interference_reputation": -3
+          }
+        },
+        "spokenText": "원래 콘티를 지키겠습니다. 구조가 먼저입니다."
+      },
+      {
+        "id": "shoot_both",
+        "text": "두 가지 결말을 모두 촬영한다",
+        "resultText": "선택권은 생겼지만 비용과 일정 부담이 늘었습니다.",
+        "effects": {
+          "cash": -200000000,
+          "post_production_duration": 1,
+          "budget_overrun_risk": 8,
+          "editing_quality": 3,
+          "studio": {
+            "pay_reputation": 2,
+            "field_reputation": -2
+          }
+        },
+        "spokenText": "원안과 제안안 모두 찍겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_production_announcement_conference",
+    "stage": "production_announcement",
+    "title": "제작 발표회",
+    "description": "투자와 캐스팅이 어느 정도 정리되자 언론과 업계가 첫 공식 발표를 기다리고 있습니다. 제작 발표회는 기대를 만들 수 있지만, 한 번 던진 약속은 이후 흥행과 평가의 기준이 됩니다.",
+    "weight": 92,
+    "trigger": {
+      "requiresCastConfirmed": true,
+      "minScale": [
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ],
+      "minMarketingBudget": 100000000,
+      "scaleWeights": {
+        "scale_mid_commercial": 1.0,
+        "scale_large_commercial": 1.2,
+        "scale_tentpole": 1.35
+      }
+    },
+    "choices": [
+      {
+        "id": "star_forward_conference",
+        "text": "배우와 규모를 앞세운 발표회를 연다",
+        "resultText": "주연 배우와 제작 규모가 빠르게 기사화됐습니다. 사전 관심도는 뛰었지만, 공개 이후 기대치도 함께 올라갔습니다.",
+        "effects": {
+          "pre_release_interest": 9,
+          "fandom_index": 6,
+          "online_buzz": 6,
+          "press_network": 3,
+          "audience_rejection_risk": 3,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "production_announcement",
+              "cost": 80000000,
+              "title": "주요 캐스팅 공개, 제작 발표회에 시선 집중",
+              "body": "주연진과 제작 규모가 공개되며 투자자와 관객 모두가 프로젝트의 성패를 주목하기 시작했다.",
+              "sentimentBand": "hot",
+              "buzzScore": 78,
+              "importance": 68,
+              "pressReaction": "캐스팅 규모는 확실하다. 이제 완성도가 문제다.",
+              "audienceReaction": "배우 조합만 보면 일단 궁금하다는 반응이 많다."
+            }
+          }
+        }
+      },
+      {
+        "id": "director_vision_conference",
+        "text": "감독의 비전과 제작 의도를 중심으로 발표한다",
+        "resultText": "대중적 화제성은 제한적이었지만, 업계와 평론가 쪽에서는 작품의 방향을 진지하게 보기 시작했습니다.",
+        "effects": {
+          "critic_reputation": 4,
+          "creative_reputation": 4,
+          "industry_reputation": 2,
+          "pre_release_interest": 3,
+          "press_backlash_risk": -2,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "production_announcement",
+              "cost": 50000000,
+              "title": "감독의 제작 의도 공개, 작품성에 초점",
+              "body": "제작진은 장르적 재미보다 인물과 주제의 밀도를 먼저 설명하며 작품의 방향을 공개했다.",
+              "sentimentBand": "industry_positive",
+              "buzzScore": 58,
+              "importance": 61,
+              "pressReaction": "상업적 폭발력은 더 봐야 하지만 방향성은 분명해 보인다.",
+              "audienceReaction": "큰 화제는 아니지만 영화의 톤을 궁금해하는 반응이 생겼다."
+            }
+          }
+        }
+      },
+      {
+        "id": "controlled_press_release",
+        "text": "자료 배포 중심으로 조용히 공개한다",
+        "resultText": "불필요한 질문은 피했지만, 첫 공식 노출의 파급력도 작았습니다.",
+        "effects": {
+          "pre_release_interest": 1,
+          "press_backlash_risk": -5,
+          "investor_reputation": 2,
+          "online_buzz": -2,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "production_announcement",
+              "cost": 15000000,
+              "title": "신작 제작 소식 공식화",
+              "body": "제작사는 주요 정보만 공개하고 이후 촬영과 후반작업 단계에서 추가 홍보를 이어가겠다고 밝혔다.",
+              "sentimentBand": "quiet",
+              "buzzScore": 38,
+              "importance": 52,
+              "pressReaction": "아직 판단할 정보가 많지 않다.",
+              "audienceReaction": "제목과 캐스팅 정도만 조용히 공유됐다."
+            }
+          }
+        }
+      },
+      {
+        "id": "open_qna_aggressive",
+        "text": "공개 질의응답까지 열어 정면 돌파한다",
+        "resultText": "솔직한 답변이 화제가 됐지만, 제작비와 캐스팅에 대한 날카로운 질문도 기사 제목으로 남았습니다.",
+        "effects": {
+          "pre_release_interest": 6,
+          "press_network": 5,
+          "online_buzz": 8,
+          "press_backlash_risk": 6,
+          "investor_reputation": -2,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "production_announcement",
+              "cost": 60000000,
+              "title": "제작 발표회 질의응답, 기대와 우려가 동시에 확산",
+              "body": "제작진이 작품 방향과 제작비 질문에 직접 답하며 온라인에서 토론이 커졌다.",
+              "sentimentBand": "polarized",
+              "buzzScore": 82,
+              "importance": 66,
+              "pressReaction": "화제성은 확실하지만 발언 하나하나가 검증 대상이 됐다.",
+              "audienceReaction": "대담하다는 반응과 불안하다는 반응이 동시에 나온다."
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_first_image_reveal_strategy",
+    "stage": "production_announcement",
+    "title": "첫 이미지 공개",
+    "description": "제작 발표와 함께 첫 이미지를 공개할지 결정해야 합니다. 한 장의 이미지가 영화의 톤, 배우의 변신, 제작 규모를 먼저 설명할 수 있습니다.",
+    "weight": 86,
+    "trigger": {
+      "requiresCastConfirmed": true,
+      "minScale": [
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ],
+      "genreWeights": {
+        "genre_romance_melodrama": 1.2,
+        "genre_horror_occult": 1.25,
+        "genre_period_historical": 1.15,
+        "genre_sf_disaster_monster": 1.25,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "first_image_actor_closeup",
+        "text": "배우의 변신이 보이는 이미지를 공개한다",
+        "resultText": "배우의 얼굴과 캐릭터 이미지가 빠르게 퍼졌습니다. 팬덤 반응은 강했지만 영화의 전체 톤은 아직 베일에 싸여 있습니다.",
+        "effects": {
+          "pre_release_interest": 6,
+          "fandom_index": 6,
+          "online_buzz": 5,
+          "casting_fit": 2,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "first_image",
+              "cost": 20000000,
+              "title": "첫 이미지 공개, 배우의 변신에 시선",
+              "body": "첫 공개 이미지는 주연 배우의 캐릭터 인상을 전면에 세우며 팬덤과 온라인 커뮤니티의 반응을 끌어냈다.",
+              "sentimentBand": "fan_positive",
+              "buzzScore": 72,
+              "importance": 60,
+              "pressReaction": "배우 이미지는 선명하지만 영화 전체의 결은 아직 더 봐야 한다.",
+              "audienceReaction": "배우의 변신이 궁금하다는 반응이 먼저 나온다."
+            }
+          }
+        }
+      },
+      {
+        "id": "first_image_world_tone",
+        "text": "영화의 공간과 톤이 드러나는 이미지를 공개한다",
+        "resultText": "작품의 분위기와 미장센이 먼저 읽혔습니다. 대중적 폭발력은 작았지만, 영화의 색은 분명해졌습니다.",
+        "effects": {
+          "critic_reputation": 3,
+          "genre_satisfaction": 3,
+          "art_costume_prop_quality": 2,
+          "online_buzz": 3,
+          "pre_release_interest": 2,
+          "flags": {
+            "pressAnnouncement": {
+              "assetType": "first_image",
+              "cost": 25000000,
+              "title": "첫 이미지 공개, 영화의 톤과 세계관 부각",
+              "body": "배우보다 공간과 색감, 장르 분위기를 앞세운 이미지가 공개되며 작품의 결에 대한 해석이 붙기 시작했다.",
+              "sentimentBand": "cinephile_positive",
+              "buzzScore": 59,
+              "importance": 58,
+              "pressReaction": "상업적 훅은 덜하지만 영화의 정체성은 뚜렷해 보인다.",
+              "audienceReaction": "사진 한 장으로 분위기를 짐작해보는 반응이 이어졌다."
+            }
+          }
+        }
+      },
+      {
+        "id": "hold_first_image",
+        "text": "첫 이미지 공개를 미룬다",
+        "resultText": "초반 판단을 피하며 신비감을 유지했습니다. 대신 발표 직후 온라인 확산은 제한적이었습니다.",
+        "effects": {
+          "press_backlash_risk": -3,
+          "online_buzz": -4,
+          "pre_release_interest": -2,
+          "marketing_sense": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_actor_schedule_conflict",
+    "stage": "casting",
+    "title": "주연 배우 스케줄 충돌",
+    "description": "섭외하려던 배우가 다른 프로젝트 일정과 겹친다는 연락을 받았습니다.",
+    "trigger": {
+      "requiresActor": true
+    },
+    "choices": [
+      {
+        "id": "adjust_schedule",
+        "text": "촬영 일정을 조정한다",
+        "resultText": "배우 섭외 가능성은 유지됐지만 제작 일정이 밀렸습니다.",
+        "effects": {
+          "shooting_duration": 1,
+          "delay_days": 14,
+          "casting_fit": 3
+        },
+        "spokenText": "일정을 맞춰보겠습니다. 이 배우를 놓치고 싶지 않습니다."
+      },
+      {
+        "id": "raise_fee",
+        "text": "출연료를 올려 우선순위를 높인다",
+        "resultText": "배우 측이 다시 검토하기로 했습니다.",
+        "effects": {
+          "cash": -300000000,
+          "pre_release_interest": 5,
+          "budget_overrun_risk": 5
+        },
+        "spokenText": "조건을 올리겠습니다. 이 배역은 꼭 필요합니다."
+      },
+      {
+        "id": "find_alternative",
+        "text": "다른 배우를 찾는다",
+        "resultText": "일정은 지켰지만 캐스팅 효과는 불확실해졌습니다.",
+        "effects": {
+          "casting_fit": -4,
+          "actor_network": -2,
+          "schedule_delay_risk": -5
+        },
+        "spokenText": "무리해서 끌고 가지 않겠습니다. 다른 배우를 보죠."
+      },
+      {
+        "id": "cameo_only",
+        "text": "특별출연으로 전환한다",
+        "resultText": "짧은 출연은 가능해졌지만 주연 효과는 사라졌습니다.",
+        "effects": {
+          "pre_release_interest": 3,
+          "acting_quality": -4,
+          "actor_commitment_duration": -2
+        },
+        "spokenText": "주연은 어렵다면 특별출연으로라도 함께하시죠."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_new_actor_recommendation",
+    "stage": "casting",
+    "title": "신인 배우 강력 추천",
+    "description": "감독이 무명 신인 배우를 주연으로 강하게 추천합니다.",
+    "trigger": {
+      "hasDirector": true
+    },
+    "choices": [
+      {
+        "id": "trust_director",
+        "text": "감독 의견을 따른다",
+        "resultText": "감독은 강한 신뢰를 느꼈고, 신인 배우에게 큰 기회가 주어졌습니다.",
+        "effects": {
+          "creative_reputation": 5,
+          "pre_release_interest": -5,
+          "acting_quality": 2,
+          "growth_potential_realization": 8
+        },
+        "spokenText": "감독님의 판단을 믿겠습니다. 이 배우로 가보죠."
+      },
+      {
+        "id": "test_as_supporting",
+        "text": "조연으로 먼저 테스트한다",
+        "resultText": "리스크를 낮추면서 가능성을 확인하기로 했습니다.",
+        "effects": {
+          "casting_fit": 3,
+          "schedule_delay_risk": 2
+        },
+        "spokenText": "주연은 아직 위험합니다. 조연으로 먼저 시험해보죠."
+      },
+      {
+        "id": "ask_investor",
+        "text": "투자사 의견을 묻는다",
+        "resultText": "투자사는 더 검증된 배우를 선호했습니다.",
+        "effects": {
+          "investor_reputation": 2,
+          "creative_reputation": -2
+        },
+        "spokenText": "추가 예산을 요청해보겠습니다. 대신 조건은 더 붙을 겁니다."
+      },
+      {
+        "id": "keep_star",
+        "text": "스타 배우를 고수한다",
+        "resultText": "사전 관심도는 유지됐지만 감독은 아쉬움을 남겼습니다.",
+        "effects": {
+          "pre_release_interest": 8,
+          "creative_reputation": -4,
+          "cash": -200000000
+        },
+        "spokenText": "이번 작품은 스타 파워가 필요합니다. 기존 방향을 지키겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_location_permission_delay",
+    "stage": "pre_production",
+    "title": "로케이션 허가 지연",
+    "description": "주요 촬영지의 허가가 예상보다 늦어지고 있습니다.",
+    "trigger": {
+      "locationShooting": true,
+      "weightRules": [
+        {
+          "source": "stats.location_permit_risk",
+          "min": 10,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.location_permit_risk",
+          "min": 20,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "wait",
+        "text": "허가를 기다린다",
+        "resultText": "원하는 장소는 유지했지만 일정이 지연됐습니다.",
+        "effects": {
+          "delay_days": 7,
+          "shooting_quality": 3,
+          "schedule_delay_risk": 5
+        }
+      },
+      {
+        "id": "find_other",
+        "text": "다른 장소를 찾는다",
+        "resultText": "일정은 지켰지만 화면의 힘은 조금 약해졌습니다.",
+        "effects": {
+          "shooting_quality": -3,
+          "delay_days": 0
+        }
+      },
+      {
+        "id": "build_set",
+        "text": "세트를 짓는다",
+        "resultText": "통제력은 올라갔지만 비용이 늘었습니다.",
+        "effects": {
+          "cash": -150000000,
+          "art_costume_prop_quality": 5,
+          "budget_overrun_risk": 6
+        }
+      },
+      {
+        "id": "rewrite_scene",
+        "text": "장면을 수정한다",
+        "resultText": "제작은 간단해졌지만 원래 의도는 약해졌습니다.",
+        "effects": {
+          "scenario_quality": -3,
+          "shooting_quality": -2,
+          "schedule_delay_risk": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_set_build_detail_overrun",
+    "stage": "pre_production",
+    "title": "세트 디테일 예산 초과",
+    "description": "세트 제작 과정에서 미술팀이 더 설득력 있는 공간을 만들려면 추가 제작비와 시간이 필요하다고 보고했습니다.",
+    "weight": 72,
+    "trigger": {
+      "setBuild": true,
+      "minLocationPermitRisk": 0,
+      "genreWeights": {
+        "historical_period": 1.55,
+        "fantasy": 1.45,
+        "sf_disaster_monster": 1.35,
+        "horror_occult": 1.25,
+        "crime_thriller": 1.1,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "approve_detail_budget",
+        "text": "세트 디테일 보강비를 승인한다",
+        "resultText": "공간의 설득력은 올라갔지만 제작비와 세트 작업 기간이 늘었습니다.",
+        "effects": {
+          "cash": -120000000,
+          "art_costume_prop_quality": 7,
+          "shooting_quality": 2,
+          "budget_overrun_risk": 6,
+          "flags": {
+            "extendShootingSchedule": true,
+            "extraShootingDays": 2,
+            "scheduleReason": "세트 디테일 보강"
+          }
+        }
+      },
+      {
+        "id": "limit_to_key_rooms",
+        "text": "주요 공간만 보강한다",
+        "resultText": "가장 중요한 장면의 공간감은 살렸지만 일부 배경은 단순하게 남았습니다.",
+        "effects": {
+          "cash": -50000000,
+          "art_costume_prop_quality": 3,
+          "budget_overrun_risk": 2
+        }
+      },
+      {
+        "id": "shoot_with_current_set",
+        "text": "현재 세트 그대로 촬영한다",
+        "resultText": "예산은 지켰지만 화면에서 세트의 한계가 보일 수 있습니다.",
+        "effects": {
+          "art_costume_prop_quality": -4,
+          "critic_backlash_risk": 4,
+          "budget_overrun_risk": -3
+        }
+      },
+      {
+        "id": "hide_with_lighting",
+        "text": "조명과 촬영 동선으로 한계를 가린다",
+        "resultText": "촬영팀의 부담은 커졌지만 제한된 세트를 영리하게 감췄습니다.",
+        "effects": {
+          "shooting_quality": 3,
+          "art_costume_prop_quality": -1,
+          "field_control": 2,
+          "on_set_conflict_risk": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_regional_location_support_offer",
+    "stage": "pre_production",
+    "title": "지방 로케이션 협조 제안",
+    "description": "촬영 지역의 지자체와 지역 극장 관계자가 협조를 제안했습니다. 대신 지역 홍보와 촬영 일정 공개를 일부 요구합니다.",
+    "weight": 70,
+    "trigger": {
+      "regionalLocation": true,
+      "genreWeights": {
+        "family_human_drama": 1.3,
+        "romance_melodrama": 1.25,
+        "social_true_story": 1.2,
+        "historical_period": 1.15,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_local_support",
+        "text": "지역 협조를 받아들인다",
+        "resultText": "지역 인맥과 현장 협조는 좋아졌지만 홍보 일정과 제작 동선이 조금 공개됐습니다.",
+        "effects": {
+          "cash": 60000000,
+          "regional_network": 6,
+          "shooting_quality": 2,
+          "press_backlash_risk": 2,
+          "pre_release_interest": 2
+        }
+      },
+      {
+        "id": "keep_low_profile",
+        "text": "조용한 촬영을 위해 협조 범위를 줄인다",
+        "resultText": "현장의 통제력은 유지했지만 지원 규모는 작아졌습니다.",
+        "effects": {
+          "cash": 20000000,
+          "regional_network": 2,
+          "schedule_delay_risk": -2,
+          "pre_release_interest": -1
+        }
+      },
+      {
+        "id": "trade_for_premiere",
+        "text": "지역 시사회와 무대인사를 약속한다",
+        "resultText": "지역 협조가 강해졌고 개봉 후 현장 이벤트 루트도 열렸습니다.",
+        "effects": {
+          "regional_network": 7,
+          "distribution_network": 2,
+          "pre_release_interest": 3,
+          "marketing_budget": -30000000,
+          "flags": {
+            "stageGreeting": {
+              "city": "촬영 지역",
+              "venue": "지역 대표 극장",
+              "daysOffset": 3,
+              "estimatedCost": 30000000,
+              "castScope": "감독/주요 배우 일부",
+              "description": "지방 로케이션 협조에 따른 지역 시사회와 무대인사"
+            }
+          }
+        }
+      },
+      {
+        "id": "decline_support",
+        "text": "지원 없이 독립적으로 진행한다",
+        "resultText": "외부 요구는 피했지만 지역 협조를 얻을 기회도 줄었습니다.",
+        "effects": {
+          "regional_network": -2,
+          "schedule_delay_risk": 3,
+          "shooting_quality": 1
+        }
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_overseas_location_permit_customs",
+    "stage": "pre_production",
+    "title": "해외 촬영 허가와 장비 통관 지연",
+    "description": "해외 로케이션의 현지 촬영 허가와 장비 통관 절차가 예상보다 복잡하게 흘러갑니다.",
+    "weight": 82,
+    "trigger": {
+      "overseasLocation": true,
+      "minLocationPermitRisk": 20,
+      "scaleWeights": {
+        "scale_short": 1.5,
+        "scale_independent": 1.45,
+        "scale_low_budget_genre": 1.25,
+        "scale_mid_commercial": 1.05,
+        "scale_large_commercial": 0.95,
+        "scale_tentpole": 0.9,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "hire_local_fixers",
+        "text": "현지 코디네이터와 법무 대행을 추가 고용한다",
+        "resultText": "허가 문제는 상당히 정리됐지만 해외 촬영 비용이 더 커졌습니다.",
+        "effects": {
+          "cash": -180000000,
+          "location_permit_risk": -12,
+          "schedule_delay_risk": -5,
+          "production_network": 2
+        }
+      },
+      {
+        "id": "delay_departure",
+        "text": "출국 일정을 미루고 허가를 기다린다",
+        "resultText": "현지 촬영은 유지했지만 국내 스케줄과 배우 구속 기간이 늘어났습니다.",
+        "effects": {
+          "delay_days": 10,
+          "schedule_delay_risk": 6,
+          "actor_commitment_duration": 1,
+          "shooting_quality": 2,
+          "flags": {
+            "extendShootingSchedule": true,
+            "extraShootingDays": 4,
+            "scheduleReason": "해외 촬영 허가 대기"
+          }
+        }
+      },
+      {
+        "id": "replace_with_domestic_location",
+        "text": "국내 대체 로케이션으로 바꾼다",
+        "resultText": "일정과 허가 문제는 줄었지만 해외 촬영의 스케일과 화제성은 약해졌습니다.",
+        "effects": {
+          "location_permit_risk": -14,
+          "schedule_delay_risk": -7,
+          "shooting_quality": -4,
+          "pre_release_interest": -5,
+          "global_reputation": -1
+        }
+      },
+      {
+        "id": "force_minimal_unit",
+        "text": "최소 인원만 보내 강행한다",
+        "resultText": "비용은 줄였지만 현지 통제력과 안전 여유가 크게 떨어졌습니다.",
+        "effects": {
+          "cash": -50000000,
+          "shooting_quality": -2,
+          "on_set_conflict_risk": 6,
+          "schedule_delay_risk": 8,
+          "location_permit_risk": 8
+        }
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_historical_advisor_issue",
+    "stage": "pre_production",
+    "title": "역사 자문 문제",
+    "description": "사극/실화 소재의 고증 오류 가능성이 발견되었습니다.",
+    "trigger": {
+      "genres": [
+        "historical_period",
+        "social_true_story"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hire_expert",
+        "text": "전문가 자문을 추가한다",
+        "resultText": "고증 리스크는 낮아졌지만 비용이 증가했습니다.",
+        "effects": {
+          "controversy_risk": -12,
+          "cash": -50000000,
+          "art_costume_prop_quality": 3
+        }
+      },
+      {
+        "id": "emphasize_fiction",
+        "text": "픽션임을 강조한다",
+        "resultText": "일부 리스크는 줄었지만 근본 해결은 아닙니다.",
+        "effects": {
+          "controversy_risk": -4,
+          "press_backlash_risk": 2
+        }
+      },
+      {
+        "id": "edit_scene",
+        "text": "논란 장면을 수정한다",
+        "resultText": "논란 가능성은 줄었지만 장면의 힘도 약해졌습니다.",
+        "effects": {
+          "controversy_risk": -8,
+          "scenario_quality": -3
+        }
+      },
+      {
+        "id": "ignore",
+        "text": "그대로 진행한다",
+        "resultText": "일정은 유지됐지만 논란의 씨앗이 남았습니다.",
+        "effects": {
+          "controversy_risk": 12,
+          "critic_backlash_risk": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_action_rehearsal_shortage",
+    "stage": "pre_production",
+    "title": "액션 리허설 부족",
+    "description": "스턴트 팀이 현재 일정으로는 액션 완성도가 떨어질 수 있다고 경고합니다.",
+    "trigger": {
+      "genres": [
+        "action",
+        "crime_thriller",
+        "historical_period",
+        "sf_disaster_monster"
+      ]
+    },
+    "choices": [
+      {
+        "id": "extend_rehearsal",
+        "text": "리허설 기간을 늘린다",
+        "resultText": "액션 완성도는 올라갔지만 일정이 늘었습니다.",
+        "effects": {
+          "action_stunt_quality": 8,
+          "shooting_duration": 1,
+          "cash": -50000000
+        }
+      },
+      {
+        "id": "reduce_action",
+        "text": "액션 장면을 줄인다",
+        "resultText": "안정성은 높아졌지만 장르 만족도는 내려갔습니다.",
+        "effects": {
+          "action_stunt_quality": -4,
+          "genre_satisfaction": -5,
+          "controversy_risk": -5
+        }
+      },
+      {
+        "id": "hire_veteran_team",
+        "text": "베테랑 스턴트 팀을 추가 투입한다",
+        "resultText": "비용은 늘었지만 액션 안정성이 크게 좋아졌습니다.",
+        "effects": {
+          "cash": -120000000,
+          "action_stunt_quality": 10,
+          "controversy_risk": -8
+        }
+      },
+      {
+        "id": "proceed",
+        "text": "그대로 촬영한다",
+        "resultText": "일정은 유지됐지만 위험이 남았습니다.",
+        "effects": {
+          "action_stunt_quality": -5,
+          "controversy_risk": 10,
+          "on_set_conflict_risk": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_actor_condition_bad",
+    "stage": "shooting",
+    "title": "배우 컨디션 난조",
+    "description": "주연 배우의 컨디션이 좋지 않아 중요한 감정 장면의 완성도가 우려됩니다.",
+    "trigger": {
+      "requiresActor": true,
+      "minScheduleDelayRisk": 20
+    },
+    "choices": [
+      {
+        "id": "delay_scene",
+        "text": "촬영을 하루 미룬다",
+        "resultText": "촬영은 지연됐지만 배우의 연기를 살릴 시간을 확보했습니다.",
+        "effects": {
+          "delay_days": 1,
+          "cash": -20000000,
+          "acting_quality": 4
+        },
+        "spokenText": "오늘은 멈춥시다. 이 장면은 배우 컨디션이 올라왔을 때 찍겠습니다."
+      },
+      {
+        "id": "move_scene",
+        "text": "감정 장면을 나중으로 옮긴다",
+        "resultText": "일정 조정으로 위험을 분산했습니다.",
+        "effects": {
+          "schedule_delay_risk": 3,
+          "acting_quality": 2
+        },
+        "spokenText": "감정 장면은 뒤로 미룹시다. 지금 무리할 필요 없습니다."
+      },
+      {
+        "id": "shoot_anyway",
+        "text": "그대로 촬영한다",
+        "resultText": "일정은 지켰지만 장면의 감정 밀도가 떨어졌습니다.",
+        "effects": {
+          "acting_quality": -5,
+          "final_quality": -2
+        },
+        "spokenText": "일정이 더 밀리면 안 됩니다. 오늘 안에 찍겠습니다."
+      },
+      {
+        "id": "shorten_scene",
+        "text": "장면을 짧게 줄인다",
+        "resultText": "문제는 피했지만 장면의 힘이 줄었습니다.",
+        "effects": {
+          "scenario_quality": -2,
+          "acting_quality": -3,
+          "editing_quality": 2
+        },
+        "spokenText": "장면을 줄입시다. 배우에게 부담을 더 주지 않겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_director_producer_conflict",
+    "stage": "shooting",
+    "title": "감독과 제작자의 충돌",
+    "description": "감독이 예산을 넘기더라도 장면을 다시 찍어야 한다고 주장합니다.",
+    "trigger": {
+      "minBudgetOverrunRisk": 20
+    },
+    "choices": [
+      {
+        "id": "support_director",
+        "text": "감독 의견을 따른다",
+        "resultText": "장면의 완성도는 올라갔지만 비용이 커졌습니다.",
+        "effects": {
+          "directing_quality": 7,
+          "final_quality": 4,
+          "cash": -150000000,
+          "budget_overrun_risk": 8,
+          "creative_reputation": 4,
+          "studio": {
+            "creative_freedom": 5,
+            "field_reputation": 2,
+            "pay_reputation": -2
+          }
+        },
+        "spokenText": "감독님 판단대로 갑시다. 대신 왜 필요한지 결과로 보여주세요."
+      },
+      {
+        "id": "reject",
+        "text": "예산을 이유로 거절한다",
+        "resultText": "예산은 지켰지만 감독과의 신뢰가 흔들렸습니다.",
+        "effects": {
+          "budget_overrun_risk": -5,
+          "directing_quality": -4,
+          "creative_reputation": -5,
+          "investor_reputation": 3,
+          "studio": {
+            "interference_reputation": 7,
+            "creative_freedom": -5,
+            "pay_reputation": 2
+          }
+        },
+        "spokenText": "예산상 어렵습니다. 이건 제가 막겠습니다."
+      },
+      {
+        "id": "compromise",
+        "text": "축소 재촬영으로 타협한다",
+        "resultText": "양측이 완전히 만족하진 않았지만 최악은 피했습니다.",
+        "effects": {
+          "directing_quality": 3,
+          "cash": -60000000,
+          "on_set_conflict_risk": -3,
+          "studio": {
+            "field_reputation": 3,
+            "creative_freedom": 1
+          }
+        },
+        "spokenText": "전부 다시 찍을 수는 없습니다. 핵심 컷만 다시 가시죠."
+      },
+      {
+        "id": "ask_investor",
+        "text": "투자사에 추가 예산을 요청한다",
+        "resultText": "투자사가 조건부 추가 지원을 검토합니다.",
+        "effects": {
+          "investor_reputation": -2,
+          "investment_amount": 100000000,
+          "schedule_delay_risk": 4
+        },
+        "spokenText": "추가 예산을 요청해보겠습니다. 대신 조건은 더 붙을 겁니다."
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다",
+        "resultText": "갈등은 해결되지 않았고 현장은 더 불안정해졌습니다.",
+        "effects": {
+          "on_set_conflict_risk": 15,
+          "creative_reputation": -6,
+          "investor_reputation": -4,
+          "studio": {
+            "field_reputation": -6,
+            "interference_reputation": 4
+          }
+        }
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_on_set_safety_warning",
+    "stage": "shooting",
+    "title": "현장 사고 위험",
+    "description": "액션 장면 촬영 중 안전 문제가 발견되었습니다.",
+    "trigger": {
+      "genres": [
+        "action",
+        "crime_thriller",
+        "sf_disaster_monster",
+        "historical_period"
+      ]
+    },
+    "choices": [
+      {
+        "id": "stop_and_check",
+        "text": "촬영을 중단하고 안전 점검을 한다",
+        "resultText": "안전성은 확보했지만 일정과 비용이 늘었습니다.",
+        "effects": {
+          "controversy_risk": -12,
+          "delay_days": 2,
+          "cash": -50000000
+        }
+      },
+      {
+        "id": "simplify_action",
+        "text": "액션 장면을 간소화한다",
+        "resultText": "사고 위험은 낮아졌지만 장르 쾌감이 약해졌습니다.",
+        "effects": {
+          "action_stunt_quality": -5,
+          "controversy_risk": -8
+        }
+      },
+      {
+        "id": "add_stunt_equipment",
+        "text": "대역과 스턴트 장비를 추가한다",
+        "resultText": "비용은 늘었지만 액션 품질과 안전성이 함께 올라갔습니다.",
+        "effects": {
+          "cash": -100000000,
+          "action_stunt_quality": 6,
+          "controversy_risk": -10
+        }
+      },
+      {
+        "id": "force_shoot",
+        "text": "일정을 이유로 강행한다",
+        "resultText": "촬영은 진행됐지만 현장 불안과 논란 위험이 커졌습니다.",
+        "effects": {
+          "controversy_risk": 15,
+          "press_backlash_risk": 10,
+          "on_set_conflict_risk": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_improvised_scene_success",
+    "stage": "shooting",
+    "title": "즉흥 장면 성공",
+    "description": "감독과 배우가 현장에서 새로운 장면을 제안했습니다.",
+    "trigger": {
+      "minActingQuality": 60
+    },
+    "choices": [
+      {
+        "id": "adopt",
+        "text": "즉흥 장면을 채택한다",
+        "resultText": "장면이 살아나며 영화의 인상이 강해졌습니다.",
+        "effects": {
+          "directing_quality": 4,
+          "acting_quality": 5,
+          "meme_potential": 5,
+          "cult_potential": 3
+        },
+        "spokenText": "좋습니다. 그 즉흥 장면을 영화 안에 넣어봅시다."
+      },
+      {
+        "id": "keep_original",
+        "text": "원래 콘티를 유지한다",
+        "resultText": "전체 구조는 안정적으로 유지됐습니다.",
+        "effects": {
+          "editing_quality": 2,
+          "schedule_delay_risk": -3
+        },
+        "spokenText": "원래 콘티를 지키겠습니다. 구조가 먼저입니다."
+      },
+      {
+        "id": "shoot_both_versions",
+        "text": "두 버전을 모두 찍는다",
+        "resultText": "후반 선택지는 늘었지만 일정이 늘었습니다.",
+        "effects": {
+          "editing_quality": 4,
+          "delay_days": 1,
+          "cash": -30000000
+        },
+        "spokenText": "두 버전 다 찍어둡시다. 편집에서 판단하겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_editing_cut_weak",
+    "stage": "post_production",
+    "title": "편집본 반응 저조",
+    "description": "내부 시사에서 후반부가 늘어진다는 의견이 많습니다.",
+    "trigger": {
+      "minScale": [
+        "low_budget_genre",
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ]
+    },
+    "choices": [
+      {
+        "id": "shorten_runtime",
+        "text": "러닝타임을 줄인다",
+        "resultText": "영화가 더 간결해졌지만 일부 감정선이 약해졌습니다.",
+        "effects": {
+          "editing_quality": 6,
+          "audience_score": 4,
+          "critic_reputation": -2
+        }
+      },
+      {
+        "id": "restructure",
+        "text": "구조를 다시 짠다",
+        "resultText": "편집이 개선됐지만 후반작업 기간이 늘었습니다.",
+        "effects": {
+          "editing_quality": 8,
+          "post_production_duration": 1,
+          "cash": -60000000
+        }
+      },
+      {
+        "id": "keep_director_cut",
+        "text": "감독판을 유지한다",
+        "resultText": "감독의 의도는 지켰지만 대중 반응은 불확실합니다.",
+        "effects": {
+          "creative_reputation": 4,
+          "critic_reputation": 3,
+          "audience_rejection_risk": 6
+        }
+      },
+      {
+        "id": "test_screening",
+        "text": "관객 테스트 시사를 한 번 더 진행한다",
+        "resultText": "더 많은 피드백을 얻었습니다.",
+        "effects": {
+          "cash": -30000000,
+          "audience_rejection_risk": -4,
+          "post_production_duration": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_version_cut_branch",
+    "stage": "post_production",
+    "title": "감독판과 극장판의 갈림길",
+    "description": "후반작업 회의에서 감독판, 극장판, OTT판을 어떻게 나눌지 결정해야 합니다. 극장 회차와 관객 리듬, 감독의 의도, 2차 시장 수익이 서로 다른 방향을 가리키고 있습니다.",
+    "weight": 68,
+    "trigger": {
+      "minScale": [
+        "independent_film",
+        "low_budget_genre",
+        "mid_commercial",
+        "large_commercial",
+        "tentpole_blockbuster"
+      ]
+    },
+    "choices": [
+      {
+        "id": "lock_theatrical_cut",
+        "text": "극장판 리듬을 우선한다",
+        "resultText": "상영 회차와 관객 집중도를 의식해 극장판을 기준 판본으로 확정했습니다. 감독의 아쉬움은 남았지만 개봉 전략은 선명해졌습니다.",
+        "effects": {
+          "editing_quality": 3,
+          "pre_release_interest": 2,
+          "audience_rejection_risk": -3,
+          "creative_reputation": -1,
+          "version": {
+            "selectTheatrical": "theatrical_cut",
+            "adjustments": {
+              "theatrical_cut": {
+                "status": "selected",
+                "audienceDelta": 4,
+                "criticDelta": -1,
+                "description": "개봉 첫 주 관객과 상영 회차를 의식해 리듬을 강하게 다듬은 판본."
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "protect_director_cut",
+        "text": "감독판을 기준으로 밀어붙인다",
+        "resultText": "감독의 의도와 인물 감정선을 살린 판본을 개봉 기준으로 삼았습니다. 평론가와 창작진의 기대는 커졌지만 대중 흡수력은 더 시험대에 올랐습니다.",
+        "effects": {
+          "creative_reputation": 4,
+          "critic_reputation": 3,
+          "audience_rejection_risk": 5,
+          "pre_release_interest": -2,
+          "version": {
+            "selectTheatrical": "director_cut",
+            "adjustments": {
+              "director_cut": {
+                "status": "selected",
+                "qualityDelta": 5,
+                "criticDelta": 7,
+                "audienceDelta": -5,
+                "runtimeMinutes": 128,
+                "description": "감독의 의도와 인물 감정선을 더 오래 남기는 극장 개봉 기준 판본."
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "prepare_ott_cut",
+        "text": "극장판과 OTT판을 분리 준비한다",
+        "resultText": "극장에는 짧고 선명한 판본을, 플랫폼에는 장면과 감정선을 보강한 OTT판을 준비하기로 했습니다. 후반작업 비용은 늘었지만 2차 시장의 선택지가 넓어졌습니다.",
+        "effects": {
+          "editing_quality": 2,
+          "secondary_market_fit": 8,
+          "online_buzz": 3,
+          "marketing_budget": -50000000,
+          "post_production_duration": 1,
+          "version": {
+            "selectTheatrical": "theatrical_cut",
+            "selectOtt": "ott_cut",
+            "adjustments": {
+              "ott_cut": {
+                "status": "selected",
+                "qualityDelta": 2,
+                "criticDelta": 2,
+                "secondaryMarketDelta": 13,
+                "description": "극장 이후 플랫폼 시청 지속성과 장기 회자를 의식해 장면을 보강한 판본."
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_vfx_quality_problem",
+    "stage": "post_production",
+    "title": "VFX 완성도 부족",
+    "description": "CG 장면이 기대보다 어색하다는 의견이 나왔습니다.",
+    "trigger": {
+      "genres": [
+        "sf_disaster_monster",
+        "fantasy",
+        "animation"
+      ]
+    },
+    "choices": [
+      {
+        "id": "add_budget",
+        "text": "추가 보정 예산을 투입한다",
+        "resultText": "VFX 완성도가 개선됐지만 비용이 크게 늘었습니다.",
+        "effects": {
+          "vfx_quality": 10,
+          "cash": -300000000,
+          "post_production_duration": 1
+        }
+      },
+      {
+        "id": "reduce_cg",
+        "text": "CG 장면을 줄인다",
+        "resultText": "어색한 장면은 줄었지만 스케일감도 줄었습니다.",
+        "effects": {
+          "vfx_quality": 3,
+          "genre_satisfaction": -5,
+          "editing_quality": 2
+        }
+      },
+      {
+        "id": "delay_release",
+        "text": "개봉을 연기한다",
+        "resultText": "시간을 벌었지만 마케팅 일정이 흔들렸습니다.",
+        "effects": {
+          "release_timing": 1,
+          "vfx_quality": 6,
+          "press_backlash_risk": 4
+        }
+      },
+      {
+        "id": "proceed",
+        "text": "그대로 간다",
+        "resultText": "기술적 약점이 그대로 남았습니다.",
+        "effects": {
+          "critic_backlash_risk": 10,
+          "audience_rejection_risk": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_music_mismatch",
+    "stage": "post_production",
+    "title": "음악이 영화와 맞지 않음",
+    "description": "음악감독의 초안이 영화의 분위기와 맞지 않는다는 반응이 나왔습니다.",
+    "trigger": {
+      "minScale": [
+        "independent_film",
+        "low_budget_genre",
+        "mid_commercial",
+        "large_commercial"
+      ]
+    },
+    "choices": [
+      {
+        "id": "redo_music",
+        "text": "음악을 재작업한다",
+        "resultText": "음악과 영화의 톤이 더 잘 맞게 되었습니다.",
+        "effects": {
+          "music_sound_quality": 8,
+          "cash": -70000000,
+          "post_production_duration": 1
+        }
+      },
+      {
+        "id": "partial_fix",
+        "text": "일부 장면만 수정한다",
+        "resultText": "가장 큰 문제는 해결했습니다.",
+        "effects": {
+          "music_sound_quality": 4,
+          "cash": -20000000
+        }
+      },
+      {
+        "id": "replace_director",
+        "text": "다른 음악감독을 투입한다",
+        "resultText": "변화는 컸지만 현장 관계에 부담이 생겼습니다.",
+        "effects": {
+          "music_sound_quality": 6,
+          "cash": -100000000,
+          "creative_reputation": -2
+        }
+      },
+      {
+        "id": "keep",
+        "text": "그대로 간다",
+        "resultText": "음악의 어색함이 일부 장면에 남았습니다.",
+        "effects": {
+          "music_sound_quality": -5,
+          "audience_rejection_risk": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_trailer_positive",
+    "stage": "marketing",
+    "title": "예고편 반응 폭발",
+    "description": "1차 예고편이 온라인에서 좋은 반응을 얻고 있습니다.",
+    "trigger": {
+      "minMarketingBudget": 100000000
+    },
+    "choices": [
+      {
+        "id": "increase_marketing",
+        "text": "마케팅비를 추가 투입한다",
+        "resultText": "관심도를 흥행 동력으로 바꾸기 위해 홍보를 확대했습니다.",
+        "effects": {
+          "marketing_budget": -200000000,
+          "online_buzz": 12,
+          "pre_release_interest": 10,
+          "reservation_rate": 5,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_trailer",
+              "reactionType": "trailer_online",
+              "sentimentBand": "positive",
+              "buzzScore": 88,
+              "onlineSummary": "예고편의 톤과 배우 조합이 빠르게 공유되며 기대감이 커졌다.",
+              "audienceSummary": "장르 팬과 배우 팬덤이 개봉일을 확인하기 시작했다."
+            }
+          }
+        }
+      },
+      {
+        "id": "actor_interview",
+        "text": "배우 인터뷰를 앞당긴다",
+        "resultText": "배우 중심 화제성이 더 커졌습니다.",
+        "effects": {
+          "pre_release_interest": 6,
+          "fandom_index": 5,
+          "press_network": 2,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "still_cut",
+              "reactionType": "actor_publicity",
+              "sentimentBand": "positive",
+              "buzzScore": 72,
+              "onlineSummary": "배우 인터뷰와 스틸컷이 함께 돌며 캐릭터 호기심을 만들었다."
+            }
+          }
+        }
+      },
+      {
+        "id": "prepare_second_trailer",
+        "text": "2차 예고편을 신중히 준비한다",
+        "resultText": "과열을 피하며 기대감을 유지했습니다.",
+        "effects": {
+          "online_buzz": 5,
+          "press_backlash_risk": -3
+        }
+      },
+      {
+        "id": "keep_quiet",
+        "text": "과열을 막고 조용히 간다",
+        "resultText": "기대치를 과도하게 키우지 않았습니다.",
+        "effects": {
+          "press_backlash_risk": -5,
+          "pre_release_interest": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_trailer_negative",
+    "stage": "marketing",
+    "title": "예고편 혹평",
+    "description": "예고편 공개 후 연출이 낡아 보인다는 반응이 퍼졌습니다.",
+    "trigger": {
+      "minPressBacklashRisk": 10
+    },
+    "choices": [
+      {
+        "id": "new_trailer",
+        "text": "새 예고편을 제작한다",
+        "resultText": "마케팅 방향을 다시 잡았습니다.",
+        "effects": {
+          "marketing_budget": -150000000,
+          "pre_release_interest": 4,
+          "online_buzz": 3,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_trailer",
+              "reactionType": "revised_trailer",
+              "sentimentBand": "recovering",
+              "buzzScore": 55,
+              "onlineSummary": "새 예고편이 이전 반응을 일부 회복했지만 의심은 완전히 사라지지 않았다."
+            }
+          }
+        }
+      },
+      {
+        "id": "actor_marketing",
+        "text": "배우 중심 홍보로 전환한다",
+        "resultText": "영화보다 배우의 매력을 앞세웠습니다.",
+        "effects": {
+          "fandom_index": 6,
+          "pre_release_interest": 3
+        }
+      },
+      {
+        "id": "critic_screening",
+        "text": "평론가 시사회를 통해 반전을 노린다",
+        "resultText": "작품성으로 반전을 시도합니다.",
+        "effects": {
+          "critic_access": 5,
+          "critic_backlash_risk": 5
+        }
+      },
+      {
+        "id": "ignore",
+        "text": "무대응한다",
+        "resultText": "논란은 서서히 잦아들 수도 있지만 부정 인상이 남았습니다.",
+        "effects": {
+          "audience_rejection_risk": 6,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_trailer",
+              "reactionType": "unanswered_negative_buzz",
+              "sentimentBand": "negative",
+              "buzzScore": 68,
+              "onlineSummary": "부정적인 예고편 반응이 별다른 해명 없이 남았다."
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_foreign_blockbuster_pressure",
+    "stage": "release_strategy",
+    "title": "외화 대작 개봉 임박",
+    "description": "같은 주에 강력한 외화 대작이 개봉합니다.",
+    "trigger": {
+      "foreignEventInSameWindow": true
+    },
+    "choices": [
+      {
+        "id": "delay_release",
+        "text": "개봉을 연기한다",
+        "resultText": "외화 대작은 피했지만 마케팅비 일부가 낭비됐습니다.",
+        "effects": {
+          "release_timing": 1,
+          "marketing_budget": -100000000,
+          "foreign_competition": -10
+        }
+      },
+      {
+        "id": "direct_compete",
+        "text": "정면 승부한다",
+        "resultText": "위험한 선택이지만 성공한다면 강한 인상을 남길 수 있습니다.",
+        "effects": {
+          "foreign_competition": 20,
+          "game_over_risk": 5,
+          "public_reputation": 2
+        }
+      },
+      {
+        "id": "counter_marketing",
+        "text": "장르 차별화 마케팅을 한다",
+        "resultText": "외화와 다른 관람 이유를 강조했습니다.",
+        "effects": {
+          "pre_release_interest": 5,
+          "marketing_budget": -80000000,
+          "audience_rejection_risk": -3
+        }
+      },
+      {
+        "id": "limited_release",
+        "text": "제한 개봉으로 전환한다",
+        "resultText": "초반 손실을 줄이며 입소문을 노리기로 했습니다.",
+        "effects": {
+          "opening_week_audience": -10,
+          "word_of_mouth": 5,
+          "financial_risk": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_press_screening_positive",
+    "stage": "release_strategy",
+    "title": "언론시사회 호평",
+    "description": "언론시사회에서 예상보다 좋은 반응이 나왔습니다.",
+    "trigger": {
+      "minFinalQuality": 70
+    },
+    "choices": [
+      {
+        "id": "use_critic_quotes",
+        "text": "평론가 호평 문구를 광고에 활용한다",
+        "resultText": "작품성에 대한 기대가 커졌습니다.",
+        "effects": {
+          "pre_release_interest": 7,
+          "critic_reputation": 4,
+          "reservation_rate": 3
+        },
+        "spokenText": "평론가 반응을 광고에 쓰겠습니다. 작품성으로 밀어붙이죠."
+      },
+      {
+        "id": "boost_actor_interviews",
+        "text": "배우 인터뷰를 강화한다",
+        "resultText": "평론가 호평과 배우 관심을 함께 끌어올렸습니다.",
+        "effects": {
+          "fandom_index": 4,
+          "press_network": 3,
+          "pre_release_interest": 5
+        },
+        "spokenText": "배우 인터뷰를 더 앞세웁시다. 관객 접점을 키워야 합니다."
+      },
+      {
+        "id": "award_angle",
+        "text": "영화제·시상식 가능성을 강조한다",
+        "resultText": "작품성 영화로서의 이미지를 강화했습니다.",
+        "effects": {
+          "critic_reputation": 6,
+          "festival_network": 3
+        },
+        "spokenText": "시상식 가능성을 전면에 두겠습니다."
+      },
+      {
+        "id": "quiet_release",
+        "text": "조용히 개봉한다",
+        "resultText": "과한 기대를 만들지 않고 입소문을 기다립니다.",
+        "effects": {
+          "press_backlash_risk": -4,
+          "word_of_mouth": 3
+        },
+        "spokenText": "과열시키지 말고 조용히 입소문을 기다립시다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_press_screening_negative",
+    "stage": "release_strategy",
+    "title": "언론시사회 혹평",
+    "description": "언론시사회 후 혹평이 퍼지고 있습니다.",
+    "trigger": {
+      "minCriticBacklashRisk": 15
+    },
+    "choices": [
+      {
+        "id": "audience_preview",
+        "text": "관객 시사회 반응으로 반전시킨다",
+        "resultText": "평론가보다 관객 반응을 앞세우기로 했습니다.",
+        "effects": {
+          "audience_score": 3,
+          "marketing_budget": -50000000,
+          "online_buzz": 4
+        },
+        "spokenText": "평론보다 관객 반응으로 다시 뒤집어보겠습니다."
+      },
+      {
+        "id": "actor_centered",
+        "text": "마케팅 방향을 배우 중심으로 바꾼다",
+        "resultText": "작품보다 배우의 매력을 앞세웠습니다.",
+        "effects": {
+          "fandom_index": 6,
+          "critic_reputation": -2
+        },
+        "spokenText": "작품보다 배우의 매력을 먼저 보여주겠습니다."
+      },
+      {
+        "id": "reedit_before_release",
+        "text": "개봉 전 재편집한다",
+        "resultText": "개봉이 흔들렸지만 약점을 보완했습니다.",
+        "effects": {
+          "editing_quality": 6,
+          "release_timing": 1,
+          "cash": -100000000
+        },
+        "spokenText": "개봉 전까지 재편집하겠습니다. 약점은 지금 고쳐야 합니다."
+      },
+      {
+        "id": "release_anyway",
+        "text": "그대로 개봉한다",
+        "resultText": "일정은 지켰지만 혹평의 부담을 안고 갑니다.",
+        "effects": {
+          "audience_rejection_risk": 8,
+          "second_week_drop": 5
+        },
+        "spokenText": "일정은 지키겠습니다. 평가는 개봉 후 관객에게 맡기죠."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_word_of_mouth_rising",
+    "stage": "post_release",
+    "title": "입소문 상승",
+    "description": "첫 주 관객 평점이 높고 SNS 반응이 좋습니다.",
+    "trigger": {
+      "minAudienceScore": 80
+    },
+    "choices": [
+      {
+        "id": "expand_stage_greetings",
+        "text": "무대인사를 확대한다",
+        "resultText": "팬덤과 현장 반응이 더 강해졌습니다.",
+        "effects": {
+          "fandom_index": 6,
+          "word_of_mouth": 5,
+          "second_week_drop": -5,
+          "flags": {
+            "stageGreeting": [
+              {
+                "city": "서울",
+                "venue": "주요 멀티플렉스",
+                "eventName": "개봉주 서울 무대인사",
+                "castScope": "감독/주연 배우",
+                "expectedAttendance": 900,
+                "estimatedCost": 30000000,
+                "daysOffset": 1,
+                "resultSummary": "개봉주 핵심 관객과 직접 만나 팬덤 열기를 키운다."
+              },
+              {
+                "city": "부산",
+                "venue": "지역 대표 극장",
+                "eventName": "주말 지역 무대인사",
+                "castScope": "감독/주요 배우 일부",
+                "expectedAttendance": 700,
+                "estimatedCost": 25000000,
+                "daysOffset": 3,
+                "resultSummary": "지역 관객 반응을 끌어올리는 무대인사 일정."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "use_reviews",
+        "text": "관객 리뷰를 광고에 활용한다",
+        "resultText": "관객 반응이 새로운 홍보 문구가 됐습니다.",
+        "effects": {
+          "online_buzz": 7,
+          "pre_release_interest": 3,
+          "word_of_mouth": 4
+        }
+      },
+      {
+        "id": "ask_more_screens",
+        "text": "상영관 확대를 요청한다",
+        "resultText": "배급사와 극장에 추가 스크린을 요청했습니다.",
+        "effects": {
+          "final_audience": 5,
+          "distribution_network": 2
+        }
+      },
+      {
+        "id": "n_time_event",
+        "text": "N차 관람 이벤트를 연다",
+        "resultText": "반복 관람을 유도했습니다.",
+        "effects": {
+          "rewatch_index": 8,
+          "fandom_index": 5,
+          "marketing_budget": -50000000
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_second_week_crash",
+    "stage": "post_release",
+    "title": "2주차 급락",
+    "description": "첫 주 이후 관객 수가 크게 떨어지고 있습니다.",
+    "trigger": {
+      "minSecondWeekDrop": 50
+    },
+    "choices": [
+      {
+        "id": "cut_marketing",
+        "text": "마케팅을 줄여 손실을 방어한다",
+        "resultText": "추가 손실을 줄였지만 장기 흥행은 포기했습니다.",
+        "effects": {
+          "marketing_budget": 50000000,
+          "financial_risk": -5,
+          "final_audience": -5
+        }
+      },
+      {
+        "id": "add_interviews",
+        "text": "배우 인터뷰를 추가한다",
+        "resultText": "배우 중심으로 다시 관심을 끌어보려 합니다.",
+        "effects": {
+          "online_buzz": 4,
+          "fandom_index": 4,
+          "marketing_budget": -30000000
+        }
+      },
+      {
+        "id": "discount_promo",
+        "text": "할인 프로모션을 진행한다",
+        "resultText": "관객 유입은 늘 수 있지만 객단가는 낮아집니다.",
+        "effects": {
+          "final_audience": 5,
+          "boxoffice_revenue": -3,
+          "price_sensitivity_effect": -5
+        }
+      },
+      {
+        "id": "early_vod",
+        "text": "빠르게 VOD로 전환한다",
+        "resultText": "극장 장기 흥행 대신 2차 시장 회수를 택했습니다.",
+        "effects": {
+          "secondary_market_revenue": 200000000,
+          "final_audience": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_planning_story_dry_spell",
+    "stage": "planning",
+    "title": "스토리가 잘 안 뽑힘",
+    "description": "시놉시스는 매력적이지만 장편 구조로 확장하자 이야기의 중심이 흐려지고 있습니다.",
+    "weight": 95,
+    "trigger": {
+      "minProjectScale": "independent_film",
+      "genreWeights": {
+        "social_true_story": 1.45,
+        "indie_art": 1.35,
+        "sf_disaster_monster": 1.25,
+        "fantasy": 1.25,
+        "crime_thriller": 1.1,
+        "comedy": 0.75,
+        "action": 0.75,
+        "horror_occult": 0.9,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "writers_room",
+        "text": "작가 회의를 열어 구조를 다시 잡는다",
+        "resultText": "이야기의 뼈대가 선명해졌지만 개발 기간과 비용이 늘었습니다.",
+        "effects": {
+          "scenario_quality": 8,
+          "production_duration": 1,
+          "cash": -40000000,
+          "creative_reputation": 2
+        }
+      },
+      {
+        "id": "field_research",
+        "text": "현장 취재를 더 한다",
+        "resultText": "세부 묘사는 살아났지만 제작 착수는 늦어졌습니다.",
+        "effects": {
+          "scenario_quality": 5,
+          "genre_satisfaction": 3,
+          "delay_days": 10,
+          "cash": -15000000
+        }
+      },
+      {
+        "id": "compress_plot",
+        "text": "이야기를 작게 줄인다",
+        "resultText": "핵심 갈등만 남기며 제작 부담을 낮췄습니다.",
+        "effects": {
+          "scenario_quality": 2,
+          "production_budget": -100000000,
+          "financial_risk": -5,
+          "world_expansion": -4
+        }
+      },
+      {
+        "id": "force_start",
+        "text": "일단 제작에 들어간다",
+        "resultText": "일정은 지켰지만 이야기의 약점이 후반까지 따라붙을 수 있습니다.",
+        "effects": {
+          "scenario_quality": -5,
+          "critic_backlash_risk": 8,
+          "audience_rejection_risk": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_planning_cash_gap_side_work",
+    "stage": "planning",
+    "title": "예산 부족과 생활비 압박",
+    "description": "개발비가 바닥나며 당장 다른 일을 병행해야 할지 고민해야 하는 상황입니다.",
+    "weight": 80,
+    "trigger": {
+      "maxStudioCash": 120000000,
+      "weightRules": [
+        {
+          "source": "stats.financial_risk",
+          "min": 45,
+          "multiplier": 1.5
+        }
+      ],
+      "scaleWeights": {
+        "short_film": 1.4,
+        "independent_film": 1.35,
+        "low_budget_genre": 1.1,
+        "large_commercial": 0.65,
+        "tentpole_blockbuster": 0.45,
+        "default": 1.0
+      },
+      "genreWeights": {
+        "indie_art": 1.35,
+        "social_true_story": 1.15,
+        "animation": 1.2,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "take_commercial_job",
+        "text": "광고·외주 일을 받아 개발비를 번다",
+        "resultText": "현금 흐름은 나아졌지만 영화 개발 리듬은 끊겼습니다.",
+        "effects": {
+          "cash": 50000000,
+          "delay_days": 14,
+          "scenario_quality": -2,
+          "financial_risk": -5
+        }
+      },
+      {
+        "id": "apply_grant",
+        "text": "지원사업과 공모에 넣는다",
+        "resultText": "당장 돈은 들어오지 않았지만 영화제와 지원기관 루트가 열렸습니다.",
+        "effects": {
+          "festival_network": 4,
+          "school_network": 3,
+          "production_duration": 1,
+          "investment_amount": 30000000
+        }
+      },
+      {
+        "id": "defer_personal_pay",
+        "text": "본인 인건비를 뒤로 미룬다",
+        "resultText": "프로젝트는 지켰지만 개인 재무 부담이 커졌습니다.",
+        "effects": {
+          "cash": -10000000,
+          "financial_risk": 8,
+          "creative_reputation": 3
+        }
+      },
+      {
+        "id": "pause_project",
+        "text": "프로젝트를 잠시 멈춘다",
+        "resultText": "손실은 막았지만 팀의 긴장감이 떨어졌습니다.",
+        "effects": {
+          "production_shutdown_risk": -5,
+          "delay_days": 21,
+          "actor_network": -2,
+          "production_network": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_funding_reputation_tailwind",
+    "stage": "fundraising",
+    "title": "이전 행적이 만든 투자 순풍",
+    "description": "이전 작품과 업계 평판 덕분에 투자자가 먼저 미팅을 제안했습니다.",
+    "weight": 75,
+    "trigger": {
+      "minInvestorReputation": 18,
+      "weightProfile": "investor_tailwind",
+      "genreWeights": {
+        "crime_thriller": 1.2,
+        "action": 1.25,
+        "historical_period": 1.15,
+        "sf_disaster_monster": 1.2,
+        "fantasy": 1.15,
+        "indie_art": 0.75,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "mid_commercial": 1.15,
+        "large_commercial": 1.3,
+        "tentpole_blockbuster": 1.35,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_fast",
+        "text": "빠르게 조건을 받아들인다",
+        "resultText": "투자금은 빠르게 확보됐지만 조건은 다소 투자자에게 유리합니다.",
+        "effects": {
+          "investment_amount": 800000000,
+          "financial_risk": -10,
+          "creative_reputation": -2
+        },
+        "spokenText": "이 조건이면 바로 움직이겠습니다."
+      },
+      {
+        "id": "negotiate_terms",
+        "text": "조건을 조정하며 협상한다",
+        "resultText": "시간은 더 걸렸지만 제작 자율성을 일부 지켰습니다.",
+        "effects": {
+          "investment_amount": 550000000,
+          "investor_reputation": 3,
+          "creative_reputation": 3,
+          "delay_days": 7
+        },
+        "spokenText": "좋습니다. 다만 몇 가지 조건은 다시 맞춰보시죠."
+      },
+      {
+        "id": "bring_competitor",
+        "text": "다른 투자자도 경쟁시킨다",
+        "resultText": "조건은 좋아졌지만 투자자 간 긴장도 커졌습니다.",
+        "effects": {
+          "investment_amount": 1000000000,
+          "investor_network": 3,
+          "investor_reputation": -2,
+          "press_backlash_risk": 3
+        },
+        "spokenText": "다른 투자자도 관심이 있습니다. 조건을 조금 더 봐야겠습니다."
+      },
+      {
+        "id": "protect_final_cut",
+        "text": "최종 편집권을 최우선 조건으로 둔다",
+        "resultText": "창작진은 환영했지만 일부 투자자는 물러섰습니다.",
+        "effects": {
+          "creative_reputation": 6,
+          "investment_amount": 250000000,
+          "investor_reputation": -3
+        },
+        "spokenText": "돈보다 중요한 조건이 있습니다. 최종 편집권은 지켜야 합니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_funding_past_failure_cutoff",
+    "stage": "fundraising",
+    "title": "이전 실패작의 그림자",
+    "description": "투자사가 이전 프로젝트의 손실과 일정 지연을 거론하며 투자 중단 가능성을 꺼냈습니다.",
+    "weight": 70,
+    "trigger": {
+      "weightProfile": "investor_cutoff",
+      "weightRules": [
+        {
+          "source": "reputation.investor_reputation",
+          "max": 9,
+          "multiplier": 1.5
+        },
+        {
+          "source": "context.flop_films",
+          "min": 1,
+          "multiplier": 1.7
+        }
+      ],
+      "genreWeights": {
+        "sf_disaster_monster": 1.45,
+        "fantasy": 1.35,
+        "animation": 1.25,
+        "historical_period": 1.2,
+        "indie_art": 0.8,
+        "short_film": 0.4,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "large_commercial": 1.3,
+        "tentpole_blockbuster": 1.5,
+        "short_film": 0.4,
+        "independent_film": 0.7,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "show_recovery_plan",
+        "text": "손익 회복 계획을 제시한다",
+        "resultText": "투자사는 위험을 인정하면서도 관리 가능성을 검토하기로 했습니다.",
+        "effects": {
+          "investor_reputation": 4,
+          "financial_risk": -6,
+          "market_analysis": 2
+        },
+        "spokenText": "지난 실패는 압니다. 이번엔 회수 계획부터 다르게 가져가겠습니다."
+      },
+      {
+        "id": "reduce_scale",
+        "text": "영화 규모를 낮춘다",
+        "resultText": "투자 부담은 줄었지만 프로젝트의 야심도 줄었습니다.",
+        "effects": {
+          "production_budget": -700000000,
+          "financial_risk": -12,
+          "pre_release_interest": -4,
+          "final_quality": -2
+        },
+        "spokenText": "규모를 낮추겠습니다. 먼저 살아남는 프로젝트로 만들죠."
+      },
+      {
+        "id": "offer_more_control",
+        "text": "투자사에 더 많은 통제권을 준다",
+        "resultText": "투자 가능성은 살아났지만 창작진은 불편해졌습니다.",
+        "effects": {
+          "investment_amount": 500000000,
+          "investor_reputation": 3,
+          "creative_reputation": -6,
+          "scenario_quality": -3
+        },
+        "spokenText": "관리 권한을 더 드리겠습니다. 대신 투자는 확정해주셔야 합니다."
+      },
+      {
+        "id": "seek_new_money",
+        "text": "새 투자처를 찾는다",
+        "resultText": "기존 투자자는 멀어졌지만 새 협상 루트를 찾기 시작했습니다.",
+        "effects": {
+          "investor_network": -4,
+          "delay_days": 14,
+          "investment_amount": 200000000,
+          "financial_risk": 5
+        },
+        "spokenText": "이 조건으로는 어렵습니다. 다른 자금줄을 찾겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_funding_hard_term_sheet",
+    "stage": "fundraising",
+    "title": "투자자의 까다로운 조건표",
+    "description": "투자자가 캐스팅, 러닝타임, 개봉 시기를 조건으로 건 계약서를 내밀었습니다.",
+    "weight": 90,
+    "trigger": {
+      "minProjectScale": "low_budget_genre",
+      "genreWeights": {
+        "action": 1.25,
+        "sf_disaster_monster": 1.35,
+        "fantasy": 1.35,
+        "historical_period": 1.2,
+        "crime_thriller": 1.15,
+        "indie_art": 0.75,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "large_commercial": 1.25,
+        "tentpole_blockbuster": 1.45,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_terms",
+        "text": "조건을 받아들인다",
+        "resultText": "투자 안정성은 생겼지만 작품 운신 폭은 좁아졌습니다.",
+        "effects": {
+          "investment_amount": 700000000,
+          "financial_risk": -8,
+          "creative_reputation": -4,
+          "editing_quality": -2
+        },
+        "spokenText": "조건은 무겁지만 받아들이겠습니다."
+      },
+      {
+        "id": "counter_terms",
+        "text": "핵심 조건만 다시 협상한다",
+        "resultText": "몇 가지 조건을 덜어냈고 투자자도 체면을 지켰습니다.",
+        "effects": {
+          "investment_amount": 450000000,
+          "investor_reputation": 2,
+          "creative_reputation": 2,
+          "delay_days": 5
+        },
+        "spokenText": "핵심 조건만 다시 조정하시죠. 서로 필요한 건 알고 있습니다."
+      },
+      {
+        "id": "attach_package",
+        "text": "배우·감독 패키지를 붙여 조건을 낮춘다",
+        "resultText": "패키지의 매력이 투자 조건을 일부 완화했습니다.",
+        "effects": {
+          "pre_release_interest": 5,
+          "actor_network": 2,
+          "director_network": 2,
+          "cash": -100000000
+        },
+        "spokenText": "배우와 감독 패키지를 붙이겠습니다. 그 대신 조건을 낮춰주세요."
+      },
+      {
+        "id": "reject_terms",
+        "text": "조건표를 거절한다",
+        "resultText": "창작권은 지켰지만 투자 공백이 생겼습니다.",
+        "effects": {
+          "creative_reputation": 5,
+          "investment_amount": -300000000,
+          "financial_risk": 8
+        },
+        "spokenText": "이 조건표로는 못 갑니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_casting_actor_fee_negotiation",
+    "stage": "casting",
+    "title": "배우 출연료 협상",
+    "description": "배우 측이 예상보다 높은 출연료와 짧은 촬영 구속 기간을 요구합니다.",
+    "weight": 95,
+    "trigger": {
+      "minProjectScale": "low_budget_genre",
+      "genreWeights": {
+        "romance_melodrama": 1.35,
+        "crime_thriller": 1.2,
+        "historical_period": 1.2,
+        "family_human_drama": 1.2,
+        "animation": 0.55,
+        "sf_disaster_monster": 0.85,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "pay_full_fee",
+        "text": "요구 출연료를 맞춘다",
+        "resultText": "캐스팅 가능성이 커졌지만 예산 부담도 확실해졌습니다.",
+        "effects": {
+          "cash": -300000000,
+          "casting_fit": 5,
+          "pre_release_interest": 5,
+          "budget_overrun_risk": 6
+        },
+        "spokenText": "요구 조건을 맞추겠습니다. 이 배역은 당신이어야 합니다."
+      },
+      {
+        "id": "profit_share",
+        "text": "러닝 개런티를 제안한다",
+        "resultText": "당장 현금 부담은 줄었지만 흥행 후 정산 부담이 생겼습니다.",
+        "effects": {
+          "cash": -80000000,
+          "actor_network": 3,
+          "secondary_market_revenue": -50000000,
+          "investor_reputation": 1
+        },
+        "spokenText": "기본 출연료 대신 흥행 보너스를 붙이겠습니다."
+      },
+      {
+        "id": "short_commitment",
+        "text": "촬영 기간을 줄이는 대신 장면을 조정한다",
+        "resultText": "스케줄은 맞췄지만 연기 밀도에는 불안이 남았습니다.",
+        "effects": {
+          "actor_commitment_duration": -1,
+          "schedule_delay_risk": -3,
+          "acting_quality": -2,
+          "editing_quality": 2
+        },
+        "spokenText": "촬영 기간을 줄이겠습니다. 필요한 장면만 정확히 찍죠."
+      },
+      {
+        "id": "walk_to_second_choice",
+        "text": "2순위 배우로 전환한다",
+        "resultText": "예산은 지켰지만 캐스팅 화제성은 낮아졌습니다.",
+        "effects": {
+          "cash": -50000000,
+          "casting_fit": -3,
+          "pre_release_interest": -4,
+          "actor_network": -2
+        },
+        "spokenText": "이번 조건은 어렵습니다. 2순위 배우로 가겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_casting_open_audition_breakout",
+    "stage": "casting",
+    "title": "공개 오디션의 예상 밖 발견",
+    "description": "오디션에서 이름은 알려지지 않았지만 장면을 완전히 살리는 배우가 나타났습니다.",
+    "weight": 80,
+    "trigger": {
+      "maxActorNetwork": 35,
+      "genreWeights": {
+        "indie_art": 1.5,
+        "horror_occult": 1.25,
+        "social_true_story": 1.25,
+        "family_human_drama": 1.2,
+        "sf_disaster_monster": 0.7,
+        "fantasy": 0.75,
+        "animation": 0.65,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "short_film": 1.25,
+        "independent_film": 1.35,
+        "low_budget_genre": 1.2,
+        "large_commercial": 0.7,
+        "tentpole_blockbuster": 0.55,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "cast_newcomer",
+        "text": "신인을 과감히 캐스팅한다",
+        "resultText": "화제성은 낮지만 작품 안에서 살아날 가능성이 생겼습니다.",
+        "effects": {
+          "acting_quality": 4,
+          "casting_fit": 6,
+          "pre_release_interest": -3,
+          "creative_reputation": 4
+        },
+        "spokenText": "좋습니다. 과감하게 이 신인으로 가겠습니다."
+      },
+      {
+        "id": "pair_with_veteran",
+        "text": "베테랑 조연과 붙여 안정시킨다",
+        "resultText": "신인의 리스크를 줄이면서 장면의 균형을 잡았습니다.",
+        "effects": {
+          "acting_quality": 5,
+          "cash": -80000000,
+          "actor_network": 2
+        },
+        "spokenText": "베테랑 배우와 붙여서 안정감을 만들겠습니다."
+      },
+      {
+        "id": "keep_for_supporting",
+        "text": "조연으로 먼저 기용한다",
+        "resultText": "리스크를 낮춘 절충안이 됐습니다.",
+        "effects": {
+          "casting_fit": 4,
+          "growth_potential_realization": 5,
+          "pre_release_interest": -1
+        },
+        "spokenText": "주연은 아직 이르고, 조연으로 먼저 쓰겠습니다."
+      },
+      {
+        "id": "choose_known_face",
+        "text": "알려진 배우를 택한다",
+        "resultText": "투자자는 안심했지만 발견의 기회는 지나갔습니다.",
+        "effects": {
+          "pre_release_interest": 4,
+          "investor_reputation": 2,
+          "creative_reputation": -3
+        },
+        "spokenText": "이번 영화는 알려진 얼굴이 필요합니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_casting_agency_package_deal",
+    "stage": "casting",
+    "title": "소속사의 패키지 제안",
+    "description": "배우 소속사가 주연 배우와 신인 배우를 함께 캐스팅하는 조건을 제안했습니다.",
+    "weight": 70,
+    "trigger": {
+      "minActorNetwork": 12,
+      "genreWeights": {
+        "romance_melodrama": 1.35,
+        "action": 1.25,
+        "crime_thriller": 1.2,
+        "comedy": 1.15,
+        "indie_art": 0.65,
+        "animation": 0.55,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "mid_commercial": 1.2,
+        "large_commercial": 1.35,
+        "tentpole_blockbuster": 1.4,
+        "short_film": 0.45,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_package",
+        "text": "패키지를 받아들인다",
+        "resultText": "주연 캐스팅은 안정됐지만 일부 배역 선택권을 넘겼습니다.",
+        "effects": {
+          "pre_release_interest": 8,
+          "casting_fit": -2,
+          "actor_network": 4,
+          "cash": -200000000
+        },
+        "spokenText": "패키지 조건을 받겠습니다. 대신 현장 호흡은 맞춰야 합니다."
+      },
+      {
+        "id": "audition_package_actor",
+        "text": "신인 배우는 오디션 후 결정한다",
+        "resultText": "관계를 해치지 않으면서 작품 기준을 세웠습니다.",
+        "effects": {
+          "casting_fit": 3,
+          "actor_network": 2,
+          "delay_days": 3
+        },
+        "spokenText": "신인 배우는 오디션을 보고 결정하겠습니다."
+      },
+      {
+        "id": "reject_package",
+        "text": "패키지 조건을 거절한다",
+        "resultText": "배역 자율성은 지켰지만 주연 협상도 흔들렸습니다.",
+        "effects": {
+          "creative_reputation": 3,
+          "actor_network": -5,
+          "schedule_delay_risk": 5
+        },
+        "spokenText": "패키지로 묶는 조건은 받을 수 없습니다."
+      },
+      {
+        "id": "offer_cameo",
+        "text": "신인에게 특별출연을 제안한다",
+        "resultText": "패키지를 축소해 받아들이는 모양새를 만들었습니다.",
+        "effects": {
+          "actor_network": 2,
+          "pre_release_interest": 2,
+          "cash": -30000000
+        },
+        "spokenText": "주요 배역은 어렵지만 특별출연은 제안해보겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_shooting_actor_dropout",
+    "stage": "shooting",
+    "title": "주요 배우 중도 하차 위기",
+    "description": "낮은 확률의 악재가 현실이 됐습니다. 주요 배우가 건강과 일정 문제를 이유로 하차를 검토하고 있습니다.",
+    "weight": 35,
+    "trigger": {
+      "requiresActor": true,
+      "chancePercent": 45,
+      "weightProfile": "actor_dropout",
+      "minProjectScale": "independent_film",
+      "genreWeights": {
+        "action": 1.45,
+        "historical_period": 1.35,
+        "sf_disaster_monster": 1.35,
+        "crime_thriller": 1.2,
+        "romance_melodrama": 0.9,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "large_commercial": 1.25,
+        "tentpole_blockbuster": 1.35,
+        "short_film": 0.55,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "pause_and_recover",
+        "text": "촬영을 멈추고 회복 시간을 준다",
+        "resultText": "배우는 잔류 가능성을 열었지만 일정과 비용이 크게 늘었습니다.",
+        "effects": {
+          "delay_days": 21,
+          "cash": -150000000,
+          "acting_quality": 3,
+          "actor_network": 3
+        },
+        "spokenText": "촬영을 멈춥시다. 사람을 먼저 살려야 합니다."
+      },
+      {
+        "id": "rewrite_role",
+        "text": "배역 분량을 줄여 각본을 수정한다",
+        "resultText": "프로젝트는 살렸지만 이야기와 캐스팅의 균형이 흔들렸습니다.",
+        "effects": {
+          "scenario_quality": -5,
+          "casting_fit": -6,
+          "schedule_delay_risk": 3,
+          "production_shutdown_risk": -4
+        },
+        "spokenText": "배역 분량을 줄여서 다시 쓰겠습니다."
+      },
+      {
+        "id": "recast",
+        "text": "배우를 교체하고 재촬영한다",
+        "resultText": "강한 결단이었지만 비용과 평판 부담이 남았습니다.",
+        "effects": {
+          "cash": -500000000,
+          "delay_days": 30,
+          "acting_quality": -3,
+          "press_backlash_risk": 8,
+          "production_shutdown_risk": -6
+        },
+        "spokenText": "어쩔 수 없습니다. 배우를 교체하고 다시 찍겠습니다."
+      },
+      {
+        "id": "legal_pressure",
+        "text": "계약 조항을 근거로 압박한다",
+        "resultText": "일정은 지킬 수 있지만 현장 관계는 악화됐습니다.",
+        "effects": {
+          "schedule_delay_risk": -3,
+          "on_set_conflict_risk": 15,
+          "actor_network": -8,
+          "creative_reputation": -4
+        },
+        "spokenText": "계약 조항대로 진행하겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_shooting_actor_adlib_proposal",
+    "stage": "shooting",
+    "title": "배우의 애드리브 연출 제안",
+    "description": "배우가 장면의 감정선을 살리기 위해 대사와 동선을 바꾸자고 제안했습니다. 관계와 명성이 좋을수록 이런 제안은 더 자주 나옵니다.",
+    "weight": 85,
+    "trigger": {
+      "requiresActor": true,
+      "weightProfile": "actor_adlib",
+      "genreWeights": {
+        "comedy": 1.55,
+        "family_human_drama": 1.35,
+        "romance_melodrama": 1.3,
+        "crime_thriller": 1.15,
+        "action": 0.85,
+        "sf_disaster_monster": 0.75,
+        "animation": 0.6,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_adlib",
+        "text": "제안을 받아들인다",
+        "resultText": "장면에 생기가 돌고 배우도 프로젝트에 더 몰입했습니다.",
+        "effects": {
+          "acting_quality": 6,
+          "directing_quality": 3,
+          "meme_potential": 4,
+          "actor_network": 2
+        },
+        "spokenText": "좋습니다. 그 제안으로 한 번 가봅시다."
+      },
+      {
+        "id": "shoot_both",
+        "text": "원안과 제안안을 모두 촬영한다",
+        "resultText": "후반 선택지가 늘었지만 촬영 시간이 추가됐습니다.",
+        "effects": {
+          "editing_quality": 4,
+          "acting_quality": 3,
+          "delay_days": 1,
+          "cash": -30000000
+        },
+        "spokenText": "원안과 제안안 모두 찍겠습니다."
+      },
+      {
+        "id": "adapt_to_scene",
+        "text": "핵심만 반영한다",
+        "resultText": "배우의 제안을 살리면서 장면의 구조도 지켰습니다.",
+        "effects": {
+          "acting_quality": 4,
+          "directing_quality": 2,
+          "schedule_delay_risk": 1
+        },
+        "spokenText": "핵심만 살려서 장면에 반영합시다."
+      },
+      {
+        "id": "reject_adlib",
+        "text": "콘티를 지킨다",
+        "resultText": "일정은 안정됐지만 배우의 즉흥성은 눌렸습니다.",
+        "effects": {
+          "editing_quality": 2,
+          "acting_quality": -3,
+          "actor_network": -2
+        },
+        "spokenText": "이번 장면은 콘티대로 가겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_shooting_staff_directing_suggestion",
+    "stage": "shooting",
+    "title": "스태프의 연출 제안",
+    "description": "촬영감독과 조감독이 장면 동선과 조명에 대한 대안을 제안했습니다. 제작 인맥과 현장 신뢰가 높을수록 이런 제안이 올라옵니다.",
+    "weight": 80,
+    "trigger": {
+      "weightProfile": "staff_suggestion",
+      "genreWeights": {
+        "action": 1.35,
+        "sf_disaster_monster": 1.4,
+        "fantasy": 1.35,
+        "historical_period": 1.25,
+        "horror_occult": 1.15,
+        "romance_melodrama": 0.85,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_staff_suggestion",
+        "text": "스태프 제안을 반영한다",
+        "resultText": "현장의 자율성이 살아나며 장면 완성도가 올라갔습니다.",
+        "effects": {
+          "shooting_quality": 5,
+          "directing_quality": 3,
+          "production_network": 3,
+          "field_control": 1
+        },
+        "spokenText": "좋은 의견입니다. 그 방식으로 반영해보죠."
+      },
+      {
+        "id": "test_blocking",
+        "text": "테스트 촬영으로 확인한다",
+        "resultText": "작은 실험 끝에 안전한 개선안을 얻었습니다.",
+        "effects": {
+          "shooting_quality": 3,
+          "cash": -20000000,
+          "delay_days": 1
+        },
+        "spokenText": "말로 끝내지 말고 테스트 촬영으로 확인합시다."
+      },
+      {
+        "id": "keep_director_plan",
+        "text": "감독 계획을 유지한다",
+        "resultText": "일관성은 지켰지만 현장 제안은 묻혔습니다.",
+        "effects": {
+          "directing_quality": 1,
+          "production_network": -2
+        },
+        "spokenText": "감독 계획을 유지하겠습니다."
+      },
+      {
+        "id": "argue_authority",
+        "text": "현장 권한을 강하게 세운다",
+        "resultText": "통제력은 분명해졌지만 현장의 공기는 차가워졌습니다.",
+        "effects": {
+          "field_control": 3,
+          "on_set_conflict_risk": 8,
+          "production_network": -4
+        },
+        "spokenText": "현장 판단은 제가 정리하겠습니다. 각자 자리로 돌아갑시다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_postproduction_edit_file_loss",
+    "stage": "post_production",
+    "title": "편집본 유실",
+    "description": "후반작업 도중 일부 편집본과 프로젝트 파일이 손상됐습니다. 백업이 충분하지 않았던 것이 문제였습니다.",
+    "weight": 25,
+    "trigger": {
+      "chancePercent": 35,
+      "weightProfile": "rare",
+      "minProjectScale": "low_budget_genre",
+      "genreWeights": {
+        "sf_disaster_monster": 1.4,
+        "fantasy": 1.35,
+        "animation": 1.5,
+        "action": 1.15,
+        "indie_art": 0.85,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "large_commercial": 1.25,
+        "tentpole_blockbuster": 1.4,
+        "short_film": 0.7,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "restore_backup",
+        "text": "백업과 원본 소스로 복구한다",
+        "resultText": "대부분 복구했지만 후반 일정이 늘었습니다.",
+        "effects": {
+          "post_production_duration": 1,
+          "delay_days": 7,
+          "editing_quality": -2,
+          "cash": -50000000
+        }
+      },
+      {
+        "id": "rebuild_cut",
+        "text": "편집을 처음부터 다시 조립한다",
+        "resultText": "고통스러운 재작업 끝에 더 나은 리듬을 찾았습니다.",
+        "effects": {
+          "editing_quality": 5,
+          "post_production_duration": 2,
+          "cash": -120000000,
+          "schedule_delay_risk": 6
+        }
+      },
+      {
+        "id": "reshoot_missing",
+        "text": "유실 장면을 재촬영한다",
+        "resultText": "자료 공백은 메웠지만 제작비와 배우 일정 부담이 커졌습니다.",
+        "effects": {
+          "cash": -300000000,
+          "delay_days": 18,
+          "acting_quality": -2,
+          "shooting_quality": 2
+        }
+      },
+      {
+        "id": "patch_with_existing",
+        "text": "남은 소스로 급히 메운다",
+        "resultText": "개봉 일정은 지켰지만 편집의 매끄러움이 떨어졌습니다.",
+        "effects": {
+          "editing_quality": -8,
+          "critic_backlash_risk": 8,
+          "schedule_delay_risk": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_postproduction_reshoot_needed",
+    "stage": "post_production",
+    "title": "재촬영 필요 판정",
+    "description": "편집 과정에서 한 핵심 장면이 영화 전체를 떠받치지 못한다는 결론이 나왔습니다.",
+    "weight": 65,
+    "trigger": {
+      "minProjectScale": "independent_film",
+      "weightRules": [
+        {
+          "source": "stats.scenario_quality",
+          "max": 48,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.acting_quality",
+          "max": 48,
+          "multiplier": 1.35
+        }
+      ],
+      "genreWeights": {
+        "crime_thriller": 1.25,
+        "social_true_story": 1.25,
+        "romance_melodrama": 1.2,
+        "sf_disaster_monster": 1.15,
+        "animation": 0.65,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "full_reshoot",
+        "text": "핵심 장면을 재촬영한다",
+        "resultText": "장면의 설득력이 살아났지만 일정과 비용이 늘었습니다.",
+        "effects": {
+          "scenario_quality": 4,
+          "acting_quality": 4,
+          "cash": -200000000,
+          "delay_days": 10
+        }
+      },
+      {
+        "id": "voiceover_patch",
+        "text": "내레이션과 보충 컷으로 해결한다",
+        "resultText": "설명은 보강됐지만 약간의 땜질 느낌이 남았습니다.",
+        "effects": {
+          "editing_quality": 2,
+          "scenario_quality": -2,
+          "cash": -30000000
+        }
+      },
+      {
+        "id": "cut_scene",
+        "text": "문제 장면을 과감히 들어낸다",
+        "resultText": "영화는 간결해졌지만 감정 연결이 일부 약해졌습니다.",
+        "effects": {
+          "editing_quality": 5,
+          "audience_rejection_risk": 4,
+          "critic_backlash_risk": 2
+        }
+      },
+      {
+        "id": "ignore_reshoot",
+        "text": "재촬영 없이 간다",
+        "resultText": "개봉 일정은 지켰지만 약점은 남았습니다.",
+        "effects": {
+          "final_quality": -4,
+          "audience_rejection_risk": 7,
+          "critic_backlash_risk": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_marketing_newspaper_feature_1980s",
+    "stage": "marketing",
+    "title": "신문 문화면 특집 제안",
+    "description": "신문 문화면에서 작품을 소개하겠다는 제안이 들어왔습니다. 1980년대에는 이런 노출이 극장 인지도에 큰 영향을 줍니다.",
+    "weight": 90,
+    "trigger": {
+      "eraIds": [
+        "era_1980s"
+      ]
+    },
+    "choices": [
+      {
+        "id": "serious_interview",
+        "text": "작품의 의미를 진지하게 인터뷰한다",
+        "resultText": "문화면 독자에게 작품의 존재가 각인됐습니다.",
+        "effects": {
+          "pre_release_interest": 6,
+          "critic_reputation": 3,
+          "press_network": 2
+        },
+        "spokenText": "작품의 의미를 차분히 이야기하겠습니다."
+      },
+      {
+        "id": "star_photo_spread",
+        "text": "배우 화보와 인터뷰를 앞세운다",
+        "resultText": "대중적 관심은 올라갔지만 작품 설명은 얕아졌습니다.",
+        "effects": {
+          "pre_release_interest": 8,
+          "fandom_index": 3,
+          "critic_reputation": -1
+        },
+        "spokenText": "배우 화보와 인터뷰로 먼저 관심을 만들겠습니다."
+      },
+      {
+        "id": "avoid_sensitive_topic",
+        "text": "민감한 질문은 피한다",
+        "resultText": "논란은 줄었지만 기사 임팩트도 줄었습니다.",
+        "effects": {
+          "press_backlash_risk": -5,
+          "controversy_risk": -3,
+          "pre_release_interest": -2
+        },
+        "spokenText": "민감한 질문은 피해가겠습니다."
+      },
+      {
+        "id": "refuse_feature",
+        "text": "인터뷰를 거절한다",
+        "resultText": "홍보 기회를 놓쳤지만 불필요한 노출도 피했습니다.",
+        "effects": {
+          "press_network": -2,
+          "pre_release_interest": -4,
+          "controversy_risk": -2
+        },
+        "spokenText": "이번 인터뷰는 하지 않겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_marketing_vhs_word_1990s",
+    "stage": "marketing",
+    "title": "비디오 시장 입소문",
+    "description": "비디오 대여점과 영화 잡지 쪽에서 2차 시장 가능성을 묻고 있습니다.",
+    "weight": 80,
+    "trigger": {
+      "eraIds": [
+        "era_1990s"
+      ]
+    },
+    "choices": [
+      {
+        "id": "video_shop_promo",
+        "text": "비디오 시장용 홍보물을 미리 준비한다",
+        "resultText": "극장 이후 회수 가능성이 좋아졌습니다.",
+        "effects": {
+          "secondary_market_fit": 8,
+          "secondary_market_revenue": 50000000,
+          "cash": -20000000
+        }
+      },
+      {
+        "id": "magazine_serial",
+        "text": "영화 잡지 연재 인터뷰를 진행한다",
+        "resultText": "시네필과 젊은 관객에게 이름을 알렸습니다.",
+        "effects": {
+          "pre_release_interest": 5,
+          "critic_access": 2,
+          "press_network": 2
+        }
+      },
+      {
+        "id": "focus_theater_only",
+        "text": "극장 개봉에만 집중한다",
+        "resultText": "초반 개봉 메시지는 선명해졌지만 2차 시장 준비는 늦어졌습니다.",
+        "effects": {
+          "reservation_rate": 3,
+          "secondary_market_fit": -4
+        }
+      },
+      {
+        "id": "sell_rights_early",
+        "text": "비디오 판권을 일찍 판다",
+        "resultText": "현금은 확보했지만 장기 수익 일부를 포기했습니다.",
+        "effects": {
+          "cash": 80000000,
+          "secondary_market_revenue": -30000000,
+          "financial_risk": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_marketing_portal_score_2000s",
+    "stage": "marketing",
+    "title": "포털 평점과 예고편 댓글",
+    "description": "포털 영화 페이지와 예고편 댓글 분위기가 개봉 전 기대감을 좌우하기 시작했습니다.",
+    "weight": 85,
+    "trigger": {
+      "eraIds": [
+        "era_2000s"
+      ]
+    },
+    "choices": [
+      {
+        "id": "portal_premiere",
+        "text": "포털 단독 예고편과 이벤트를 연다",
+        "resultText": "온라인 관심이 빠르게 모였습니다.",
+        "effects": {
+          "online_buzz": 8,
+          "pre_release_interest": 6,
+          "marketing_budget": -60000000
+        }
+      },
+      {
+        "id": "manage_comments",
+        "text": "댓글 반응을 모니터링하고 소재를 조정한다",
+        "resultText": "부정 반응을 빠르게 읽고 홍보 문구를 바꿨습니다.",
+        "effects": {
+          "audience_rejection_risk": -4,
+          "press_backlash_risk": -3,
+          "marketing_sense": 1
+        }
+      },
+      {
+        "id": "offline_press",
+        "text": "언론시사회와 TV 홍보에 집중한다",
+        "resultText": "온라인 확산은 약했지만 전통 홍보는 안정적이었습니다.",
+        "effects": {
+          "press_network": 3,
+          "online_buzz": -3,
+          "pre_release_interest": 3
+        }
+      },
+      {
+        "id": "ignore_portal",
+        "text": "포털 반응을 신경 쓰지 않는다",
+        "resultText": "온라인에서 생긴 작은 불씨를 놓쳤습니다.",
+        "effects": {
+          "online_buzz": -4,
+          "audience_rejection_risk": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_marketing_sns_meme_2010s",
+    "stage": "marketing",
+    "title": "SNS 밈화 조짐",
+    "description": "예고편의 한 장면과 대사가 SNS에서 빠르게 패러디되고 있습니다.",
+    "weight": 85,
+    "trigger": {
+      "eraIds": [
+        "era_2010s"
+      ]
+    },
+    "choices": [
+      {
+        "id": "lean_into_meme",
+        "text": "밈을 공식 홍보에 일부 활용한다",
+        "resultText": "온라인 확산은 커졌지만 가벼워 보인다는 반응도 생겼습니다.",
+        "effects": {
+          "online_buzz": 12,
+          "meme_potential": 10,
+          "critic_backlash_risk": 3
+        }
+      },
+      {
+        "id": "actor_challenge",
+        "text": "배우들이 직접 짧은 영상을 찍는다",
+        "resultText": "배우 팬덤과 일반 관객 반응이 붙었습니다.",
+        "effects": {
+          "online_buzz": 9,
+          "fandom_index": 6,
+          "cash": -30000000
+        }
+      },
+      {
+        "id": "keep_tone_serious",
+        "text": "작품 톤을 지키며 거리를 둔다",
+        "resultText": "밈의 과열은 줄였지만 확산 속도도 낮아졌습니다.",
+        "effects": {
+          "press_backlash_risk": -3,
+          "critic_reputation": 2,
+          "online_buzz": -2
+        }
+      },
+      {
+        "id": "overuse_meme",
+        "text": "밈을 과하게 밀어붙인다",
+        "resultText": "인지도는 올랐지만 피로감이 빠르게 생겼습니다.",
+        "effects": {
+          "online_buzz": 14,
+          "audience_rejection_risk": 6,
+          "second_week_drop": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_marketing_shortform_clip_2020s",
+    "stage": "marketing",
+    "title": "숏폼 클립 확산",
+    "description": "짧은 영상 플랫폼에서 영화의 한 장면이 빠르게 소비되고 있습니다. 2020년대 홍보의 핵심 변수입니다.",
+    "weight": 95,
+    "trigger": {
+      "eraIds": [
+        "era_2020s"
+      ]
+    },
+    "choices": [
+      {
+        "id": "official_shortform",
+        "text": "공식 숏폼 캠페인을 연다",
+        "resultText": "젊은 관객층까지 노출이 커졌습니다.",
+        "effects": {
+          "online_buzz": 12,
+          "pre_release_interest": 8,
+          "marketing_budget": -80000000
+        }
+      },
+      {
+        "id": "reviewer_preview",
+        "text": "유튜브 리뷰어 시사회를 연다",
+        "resultText": "입소문을 노렸지만 리뷰어 반응에 더 크게 노출됩니다.",
+        "effects": {
+          "online_buzz": 8,
+          "critic_access": 3,
+          "press_backlash_risk": 4
+        }
+      },
+      {
+        "id": "fandom_goods",
+        "text": "굿즈 패키지 상영과 연결한다",
+        "resultText": "팬덤과 N차 관람을 동시에 노렸습니다.",
+        "effects": {
+          "fandom_index": 8,
+          "rewatch_index": 6,
+          "cash": -60000000
+        }
+      },
+      {
+        "id": "avoid_spoiler",
+        "text": "스포일러 방지를 우선한다",
+        "resultText": "확산은 느려졌지만 관람 경험은 지켰습니다.",
+        "effects": {
+          "online_buzz": -3,
+          "audience_score": 3,
+          "word_of_mouth": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_prerelease_internal_screening_raves",
+    "stage": "release_strategy",
+    "title": "내부 시사회 기대 이상",
+    "description": "내부 시사회에서 투자자와 배급 관계자가 예상보다 강한 반응을 보였습니다.",
+    "weight": 80,
+    "trigger": {
+      "minFinalQuality": 65,
+      "genreWeights": {
+        "crime_thriller": 1.15,
+        "horror_occult": 1.2,
+        "comedy": 1.2,
+        "family_human_drama": 1.25,
+        "indie_art": 1.15,
+        "sf_disaster_monster": 0.9,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "expand_release",
+        "text": "개봉 규모를 키운다",
+        "resultText": "배급사는 더 많은 스크린을 검토하기 시작했습니다.",
+        "effects": {
+          "reservation_rate": 5,
+          "opening_week_audience": 8,
+          "distribution_network": 3,
+          "financial_risk": 3
+        }
+      },
+      {
+        "id": "festival_premiere",
+        "text": "영화제 선공개를 노린다",
+        "resultText": "작품성 이미지를 확보하는 방향으로 전략을 틀었습니다.",
+        "effects": {
+          "critic_reputation": 5,
+          "festival_network": 4,
+          "release_timing": 1
+        }
+      },
+      {
+        "id": "keep_plan",
+        "text": "기존 개봉 전략을 유지한다",
+        "resultText": "기대치를 조절하며 안정적인 개봉을 준비했습니다.",
+        "effects": {
+          "press_backlash_risk": -3,
+          "word_of_mouth": 2
+        }
+      },
+      {
+        "id": "sell_to_ott",
+        "text": "OTT 선판매 조건을 다시 협상한다",
+        "resultText": "작품의 완성도가 협상 카드가 됐습니다.",
+        "effects": {
+          "secondary_market_revenue": 200000000,
+          "distribution_network": 2,
+          "global_reputation": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_prerelease_internal_screening_alarm",
+    "stage": "release_strategy",
+    "title": "내부 시사회 경고등",
+    "description": "내부 시사회에서 관객 이해도와 몰입도가 낮다는 경고가 나왔습니다.",
+    "weight": 85,
+    "trigger": {
+      "maxFinalQuality": 64,
+      "genreWeights": {
+        "sf_disaster_monster": 1.35,
+        "fantasy": 1.35,
+        "comedy": 1.25,
+        "romance_melodrama": 1.2,
+        "indie_art": 0.85,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "delay_and_fix",
+        "text": "개봉을 미루고 보완한다",
+        "resultText": "손실을 감수하고 약점을 고치기로 했습니다.",
+        "effects": {
+          "release_timing": 1,
+          "editing_quality": 5,
+          "cash": -120000000,
+          "audience_rejection_risk": -5
+        }
+      },
+      {
+        "id": "focus_niche",
+        "text": "타깃 관객을 좁혀 마케팅한다",
+        "resultText": "전체 흥행보다 맞는 관객을 찾는 방향으로 틀었습니다.",
+        "effects": {
+          "pre_release_interest": -3,
+          "word_of_mouth": 4,
+          "marketing_budget": -30000000
+        }
+      },
+      {
+        "id": "star_push",
+        "text": "배우 중심 홍보로 전환한다",
+        "resultText": "작품 약점을 배우 화제성으로 덮어보려 합니다.",
+        "effects": {
+          "fandom_index": 6,
+          "pre_release_interest": 4,
+          "critic_backlash_risk": 3
+        }
+      },
+      {
+        "id": "release_as_planned",
+        "text": "예정대로 개봉한다",
+        "resultText": "일정은 지켰지만 2주차 낙폭 위험이 커졌습니다.",
+        "effects": {
+          "second_week_drop": 8,
+          "audience_rejection_risk": 7,
+          "financial_risk": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_postrelease_theater_expand_offer",
+    "stage": "post_release",
+    "title": "상영관 확대 제안",
+    "description": "초반 반응을 본 극장과 배급사가 상영관 확대 가능성을 검토하고 있습니다.",
+    "weight": 75,
+    "trigger": {
+      "minWordOfMouth": 60,
+      "genreWeights": {
+        "horror_occult": 1.25,
+        "comedy": 1.2,
+        "family_human_drama": 1.2,
+        "crime_thriller": 1.15,
+        "indie_art": 0.75,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "take_more_screens",
+        "text": "상영관 확대를 받아들인다",
+        "resultText": "더 많은 관객을 만날 기회가 생겼습니다.",
+        "effects": {
+          "final_audience": 8,
+          "boxoffice_revenue": 5,
+          "distribution_network": 3,
+          "second_week_drop": -4
+        },
+        "spokenText": "상영관 확대를 받겠습니다. 지금 밀어붙일 때입니다."
+      },
+      {
+        "id": "focus_key_cities",
+        "text": "핵심 지역만 늘린다",
+        "resultText": "무리한 확대 없이 반응이 좋은 지역을 공략했습니다.",
+        "effects": {
+          "final_audience": 5,
+          "regional_network": 3,
+          "financial_risk": -2
+        },
+        "spokenText": "핵심 지역부터 늘리시죠. 무리한 확대는 피하겠습니다."
+      },
+      {
+        "id": "event_screenings",
+        "text": "GV와 무대인사를 붙인다",
+        "resultText": "상영관 확대와 현장 반응을 함께 노렸습니다.",
+        "effects": {
+          "word_of_mouth": 5,
+          "critic_access": 2,
+          "cash": -40000000
+        },
+        "spokenText": "GV와 무대인사를 붙여서 관객을 직접 만나겠습니다."
+      },
+      {
+        "id": "decline_expand",
+        "text": "확대 대신 2차 시장을 준비한다",
+        "resultText": "극장 장기전보다 회수를 안정화하는 방향을 택했습니다.",
+        "effects": {
+          "secondary_market_revenue": 100000000,
+          "final_audience": -3
+        },
+        "spokenText": "확대는 보류하겠습니다. 2차 시장 준비가 먼저입니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_postrelease_audience_backlash",
+    "stage": "post_release",
+    "title": "개봉 후 관객 반발",
+    "description": "기대와 다른 결말 또는 홍보 문구 때문에 관객 반발이 커지고 있습니다.",
+    "weight": 75,
+    "trigger": {
+      "minAudienceRejectionRisk": 45,
+      "genreWeights": {
+        "social_true_story": 1.35,
+        "historical_period": 1.35,
+        "sf_disaster_monster": 1.25,
+        "fantasy": 1.2,
+        "comedy": 1.15,
+        "indie_art": 0.9,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "director_explains",
+        "text": "감독 인터뷰로 의도를 설명한다",
+        "resultText": "일부 관객은 납득했지만 논쟁은 더 커졌습니다.",
+        "effects": {
+          "critic_reputation": 3,
+          "online_buzz": 6,
+          "press_backlash_risk": 3
+        },
+        "spokenText": "감독이 직접 의도를 설명하겠습니다."
+      },
+      {
+        "id": "audience_message",
+        "text": "관객에게 사과와 감사 메시지를 낸다",
+        "resultText": "분위기는 조금 누그러졌습니다.",
+        "effects": {
+          "press_backlash_risk": -5,
+          "public_reputation": 1,
+          "audience_rejection_risk": -4
+        },
+        "spokenText": "관객에게 사과와 감사 메시지를 내겠습니다."
+      },
+      {
+        "id": "change_ads",
+        "text": "광고 문구를 실제 톤에 맞게 바꾼다",
+        "resultText": "기대 불일치가 조금 줄었습니다.",
+        "effects": {
+          "audience_rejection_risk": -5,
+          "marketing_budget": -30000000,
+          "word_of_mouth": 2
+        },
+        "spokenText": "광고 문구를 실제 영화 톤에 맞게 바꾸겠습니다."
+      },
+      {
+        "id": "ignore_backlash",
+        "text": "무대응한다",
+        "resultText": "초기 반발이 온라인에서 계속 회자됩니다.",
+        "effects": {
+          "press_backlash_risk": 7,
+          "second_week_drop": 6,
+          "public_reputation": -2
+        },
+        "spokenText": "대응하지 않겠습니다. 시간이 지나길 보죠."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_censorship_script_review_1980s",
+    "stage": "planning",
+    "title": "제작 단계 검열 검토",
+    "description": "정부 기관의 사전 검토에서 사회비판적 대사와 설정을 문제 삼을 수 있다는 신호가 들어왔습니다.",
+    "weight": 85,
+    "trigger": {
+      "eraIds": [
+        "era_1980s"
+      ],
+      "weightRules": [
+        {
+          "source": "stats.controversy_risk",
+          "min": 35,
+          "multiplier": 1.4
+        }
+      ],
+      "genreWeights": {
+        "social_true_story": 2.0,
+        "indie_art": 1.7,
+        "historical_period": 1.55,
+        "crime_thriller": 1.25,
+        "horror_occult": 1.15,
+        "romance_melodrama": 0.65,
+        "comedy": 0.75,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "independent_film": 1.25,
+        "mid_commercial": 1.15,
+        "large_commercial": 0.9,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "soften_script",
+        "text": "문제 될 장면과 대사를 순화한다",
+        "resultText": "검열 리스크는 낮아졌지만 작품의 날카로움도 무뎌졌습니다.",
+        "effects": {
+          "controversy_risk": -12,
+          "scenario_quality": -4,
+          "critic_reputation": -2
+        }
+      },
+      {
+        "id": "use_allegory",
+        "text": "직접 표현 대신 은유로 바꾼다",
+        "resultText": "검열을 피하면서도 해석의 여지를 남겼습니다.",
+        "effects": {
+          "controversy_risk": -6,
+          "scenario_quality": 3,
+          "critic_reputation": 4,
+          "delay_days": 7
+        }
+      },
+      {
+        "id": "seek_industry_contact",
+        "text": "충무로 인맥을 통해 의견을 구한다",
+        "resultText": "어디까지 가능한지 감을 잡았지만 관계 비용이 들었습니다.",
+        "effects": {
+          "production_network": 3,
+          "distribution_network": 2,
+          "cash": -20000000,
+          "controversy_risk": -4
+        }
+      },
+      {
+        "id": "keep_original",
+        "text": "원안을 유지한다",
+        "resultText": "작품의 의도는 지켰지만 제작 후반에 더 큰 제동이 걸릴 수 있습니다.",
+        "effects": {
+          "creative_reputation": 4,
+          "controversy_risk": 12,
+          "production_shutdown_risk": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_censorship_script_review_1990s",
+    "stage": "planning",
+    "title": "제작 단계 사전 심의와 시대 정서",
+    "description": "1990년대의 완화된 분위기 속에서도 정치적 은유, 사회고발, 범죄 묘사는 사전 심의와 투자사 눈치를 동시에 자극합니다.",
+    "weight": 78,
+    "trigger": {
+      "eraIds": [
+        "era_1990s"
+      ],
+      "genreWeights": {
+        "social_true_story": 2.1,
+        "historical_period": 1.65,
+        "indie_art": 1.65,
+        "crime_thriller": 1.45,
+        "horror_occult": 1.25,
+        "romance_melodrama": 0.85,
+        "comedy": 0.8,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.political_sensitivity",
+          "min": 24,
+          "multiplier": 1.45
+        },
+        {
+          "source": "stats.controversy_risk",
+          "min": 28,
+          "multiplier": 1.25
+        }
+      ],
+      "scaleWeights": {
+        "independent_film": 1.2,
+        "low_budget_genre": 1.1,
+        "mid_commercial": 1.15,
+        "large_commercial": 0.95,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "submit_clean_revision",
+        "text": "문제가 될 설정을 정리한 수정안을 먼저 낸다",
+        "resultText": "제작 단계의 제동 가능성은 낮아졌지만 작품의 날카로운 결은 조금 흐려졌습니다.",
+        "effects": {
+          "controversy_risk": -10,
+          "political_sensitivity": -8,
+          "rating_pressure": -5,
+          "scenario_quality": -3,
+          "critic_reputation": -2
+        },
+        "spokenText": "논란이 될 지점은 먼저 정리해서 제출하겠습니다."
+      },
+      {
+        "id": "move_to_metaphor",
+        "text": "직접 표현을 은유와 장르적 장치로 바꾼다",
+        "resultText": "검토 부담은 줄었고, 오히려 해석의 여지가 생겼지만 개발 시간이 조금 늘었습니다.",
+        "effects": {
+          "political_sensitivity": -5,
+          "scenario_quality": 3,
+          "critic_reputation": 3,
+          "delay_days": 7
+        },
+        "spokenText": "직접 말하기보다 장르 안에서 우회하겠습니다."
+      },
+      {
+        "id": "secure_distributor_cover",
+        "text": "배급사와 투자사에 방어 논리를 먼저 공유한다",
+        "resultText": "개봉 단계의 방어선은 생겼지만 관계와 비용을 먼저 써야 했습니다.",
+        "effects": {
+          "cash": -40000000,
+          "distribution_network": 3,
+          "investor_reputation": 2,
+          "press_backlash_risk": -3,
+          "release_timing": 0
+        },
+        "spokenText": "나중에 흔들리지 않게 배급사와 투자사부터 설득하겠습니다."
+      },
+      {
+        "id": "keep_edge",
+        "text": "시대의 공기를 정면으로 밀어붙인다",
+        "resultText": "창작진의 신뢰와 작품의 날은 살아났지만 심의와 개봉 리스크가 커졌습니다.",
+        "effects": {
+          "creative_reputation": 4,
+          "critic_reputation": 3,
+          "controversy_risk": 10,
+          "rating_pressure": 6,
+          "production_shutdown_risk": 4
+        },
+        "spokenText": "이 이야기의 날을 무디게 만들 수는 없습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_censorship_release_cut_1980s_1990s",
+    "stage": "release_strategy",
+    "title": "상영 단계 검열과 삭제 요구",
+    "description": "개봉 전 심의 과정에서 일부 장면 삭제 또는 상영 보류 가능성이 제기됐습니다.",
+    "weight": 75,
+    "trigger": {
+      "eraIds": [
+        "era_1980s",
+        "era_1990s"
+      ],
+      "weightRules": [
+        {
+          "source": "stats.controversy_risk",
+          "min": 40,
+          "multiplier": 1.5
+        },
+        {
+          "source": "stats.press_backlash_risk",
+          "min": 35,
+          "multiplier": 1.2
+        }
+      ],
+      "genreWeights": {
+        "social_true_story": 2.1,
+        "indie_art": 1.75,
+        "historical_period": 1.6,
+        "crime_thriller": 1.3,
+        "horror_occult": 1.2,
+        "romance_melodrama": 0.65,
+        "family_human_drama": 0.75,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "scaleWeights": {
+        "independent_film": 1.25,
+        "low_budget_genre": 1.15,
+        "mid_commercial": 1.1,
+        "tentpole_blockbuster": 0.75,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "accept_cuts",
+        "text": "삭제 요구를 받아들인다",
+        "resultText": "개봉은 지켰지만 영화의 리듬과 메시지가 손상됐습니다.",
+        "effects": {
+          "release_timing": 0,
+          "editing_quality": -5,
+          "critic_reputation": -4,
+          "production_shutdown_risk": -8
+        },
+        "spokenText": "삭제 요구를 받아들이겠습니다. 개봉 자체를 지켜야 합니다."
+      },
+      {
+        "id": "appeal_review",
+        "text": "재심을 요청한다",
+        "resultText": "상영 가능성을 두고 시간을 벌었지만 개봉 일정이 흔들렸습니다.",
+        "effects": {
+          "delay_days": 14,
+          "press_backlash_risk": 4,
+          "critic_reputation": 2,
+          "distribution_network": -2
+        },
+        "spokenText": "재심을 요청하겠습니다. 그냥 물러서지는 않겠습니다."
+      },
+      {
+        "id": "limited_screening",
+        "text": "상영 규모를 줄여 개봉한다",
+        "resultText": "완전한 개봉은 아니지만 영화가 관객을 만날 길은 남겼습니다.",
+        "effects": {
+          "opening_week_audience": -8,
+          "final_audience": -6,
+          "cult_potential": 5,
+          "financial_risk": 4
+        },
+        "spokenText": "상영 규모를 줄여서라도 개봉하겠습니다."
+      },
+      {
+        "id": "publicize_pressure",
+        "text": "검열 압박을 우회적으로 알린다",
+        "resultText": "영화계의 관심은 커졌지만 당국과 언론 리스크도 커졌습니다.",
+        "effects": {
+          "online_buzz": 4,
+          "critic_reputation": 5,
+          "press_backlash_risk": 12,
+          "controversy_risk": 8
+        },
+        "spokenText": "직접 말하진 않겠습니다. 하지만 압박이 있었다는 건 알리겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_censorship_screening_pressure_1980s_1990s",
+    "stage": "post_release",
+    "title": "상영 중 민원과 상영 중단 압박",
+    "description": "상영이 시작된 뒤 특정 장면과 주제에 대한 민원이 들어오며 극장과 관계 기관이 상영 지속 여부를 묻고 있습니다.",
+    "weight": 55,
+    "trigger": {
+      "eraIds": [
+        "era_1980s",
+        "era_1990s"
+      ],
+      "genreWeights": {
+        "social_true_story": 2.2,
+        "indie_art": 1.8,
+        "historical_period": 1.6,
+        "crime_thriller": 1.25,
+        "horror_occult": 1.15,
+        "romance_melodrama": 0.6,
+        "comedy": 0.7,
+        "animation": 0.4,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.controversy_risk",
+          "min": 40,
+          "multiplier": 1.6
+        },
+        {
+          "source": "stats.press_backlash_risk",
+          "min": 35,
+          "multiplier": 1.35
+        },
+        {
+          "source": "network.distribution_network",
+          "max": 8,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "trim_after_release",
+        "text": "문제 장면을 일부 삭제한 상영본으로 교체한다",
+        "resultText": "상영은 이어졌지만 관객과 평론가 사이에서 훼손 논란이 생겼습니다.",
+        "effects": {
+          "final_audience": -4,
+          "critic_reputation": -4,
+          "controversy_risk": -8,
+          "cult_potential": 4
+        },
+        "spokenText": "문제 장면을 일부 삭제한 상영본으로 교체하겠습니다."
+      },
+      {
+        "id": "negotiate_theaters",
+        "text": "극장주와 관계 기관을 설득한다",
+        "resultText": "일부 극장은 상영을 유지했지만 배급 인맥을 크게 소모했습니다.",
+        "effects": {
+          "distribution_network": -4,
+          "final_audience": -2,
+          "press_backlash_risk": 3,
+          "industry_reputation": 2
+        },
+        "spokenText": "극장주와 관계 기관을 직접 설득하겠습니다."
+      },
+      {
+        "id": "move_to_limited_screening",
+        "text": "제한 상영과 영화제 상영으로 돌린다",
+        "resultText": "대중 흥행은 줄었지만 영화제와 시네필 쪽 관심은 살아났습니다.",
+        "effects": {
+          "final_audience": -8,
+          "festival_network": 5,
+          "critic_reputation": 5,
+          "secondary_market_fit": 4
+        },
+        "spokenText": "제한 상영과 영화제 쪽으로 돌리겠습니다."
+      },
+      {
+        "id": "fight_publicly",
+        "text": "공개적으로 문제 제기에 맞선다",
+        "resultText": "영화계의 연대와 언론의 관심이 커졌지만 상영 안정성은 더 흔들렸습니다.",
+        "effects": {
+          "press_backlash_risk": 12,
+          "critic_reputation": 6,
+          "creative_reputation": 4,
+          "distribution_network": -5,
+          "controversy_risk": 8
+        },
+        "spokenText": "공개적으로 맞서겠습니다. 이 영화는 물러설 수 없습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_rating_pre_review_notes",
+    "stage": "post_production",
+    "title": "관람등급 사전 검토 의견",
+    "description": "후반작업 중 받은 비공식 검토에서 폭력성, 공포감, 선정성, 사회적 민감성 중 일부가 최종 관람등급에 영향을 줄 수 있다는 의견이 나왔습니다.",
+    "weight": 75,
+    "trigger": {
+      "minRatingPressure": 28,
+      "genreWeights": {
+        "crime_thriller": 1.35,
+        "action": 1.25,
+        "horror_occult": 1.55,
+        "social_true_story": 1.35,
+        "historical_period": 1.2,
+        "romance_melodrama": 0.85,
+        "family_human_drama": 0.65,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.controversy_risk",
+          "min": 25,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "soften_sensitive_moments",
+        "text": "문제가 될 장면의 수위를 낮춘다",
+        "resultText": "등급 부담은 낮아졌지만 몇몇 장면의 충격과 밀도도 함께 줄었습니다.",
+        "effects": {
+          "rating_pressure": -14,
+          "violence_intensity": -8,
+          "horror_intensity": -6,
+          "sexual_content": -6,
+          "editing_quality": -2,
+          "audience_rejection_risk": -3
+        }
+      },
+      {
+        "id": "keep_strong_cut",
+        "text": "강한 장면을 유지한다",
+        "resultText": "영화의 결은 유지됐지만 더 높은 관람등급을 받을 가능성이 커졌습니다.",
+        "effects": {
+          "rating_pressure": 8,
+          "critic_reputation": 2,
+          "genre_satisfaction": 3,
+          "audience_rejection_risk": 3
+        }
+      },
+      {
+        "id": "prepare_two_cuts",
+        "text": "상업 개봉판과 감독판을 나눠 준비한다",
+        "resultText": "극장 접근성과 창작 의도를 동시에 노렸지만 후반작업 비용과 일정이 늘었습니다.",
+        "effects": {
+          "rating_pressure": -8,
+          "secondary_market_fit": 5,
+          "editing_quality": 2,
+          "post_production_duration": 1,
+          "cash": -80000000
+        }
+      },
+      {
+        "id": "request_formal_guidance",
+        "text": "정식 심의 전 법무·심의 자문을 추가한다",
+        "resultText": "위험 지점을 더 명확히 알게 됐지만 개봉 준비에는 추가 비용이 들었습니다.",
+        "effects": {
+          "rating_pressure": -6,
+          "controversy_risk": -4,
+          "cash": -30000000,
+          "delay_days": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_modern_rating_revision_request",
+    "stage": "post_production",
+    "title": "등급 심의 수정 요구",
+    "description": "영상물 등급 심의 과정에서 폭력성, 공포감, 선정성, 사회·정치적 민감성 때문에 수정 권고가 나왔습니다.",
+    "weight": 86,
+    "trigger": {
+      "eraIds": [
+        "era_2000s",
+        "era_2010s",
+        "era_2020s"
+      ],
+      "minRatingPressure": 32,
+      "genreWeights": {
+        "horror_occult": 1.75,
+        "crime_thriller": 1.55,
+        "social_true_story": 1.5,
+        "historical_period": 1.35,
+        "romance_melodrama": 1.35,
+        "action": 1.25,
+        "indie_art": 1.2,
+        "family_human_drama": 0.55,
+        "animation": 0.35,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.violence_intensity",
+          "min": 38,
+          "multiplier": 1.25
+        },
+        {
+          "source": "stats.horror_intensity",
+          "min": 38,
+          "multiplier": 1.3
+        },
+        {
+          "source": "stats.sexual_content",
+          "min": 24,
+          "multiplier": 1.25
+        },
+        {
+          "source": "stats.political_sensitivity",
+          "min": 30,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "cut_for_lower_rating",
+        "text": "극장 접근성을 위해 수위를 낮춘다",
+        "resultText": "관객 접근성은 넓어졌지만 일부 장면의 강도와 장르적 쾌감은 줄었습니다.",
+        "effects": {
+          "rating_pressure": -16,
+          "violence_intensity": -7,
+          "horror_intensity": -7,
+          "sexual_content": -6,
+          "editing_quality": 2,
+          "genre_satisfaction": -4,
+          "audience_rejection_risk": -3
+        },
+        "spokenText": "극장에서는 더 많은 관객이 볼 수 있는 선으로 낮추겠습니다."
+      },
+      {
+        "id": "accept_stronger_rating",
+        "text": "높은 등급을 감수하고 원안을 지킨다",
+        "resultText": "작품의 결은 유지됐지만 관객층과 광고 채널은 좁아졌습니다.",
+        "effects": {
+          "rating_pressure": 6,
+          "genre_satisfaction": 4,
+          "pre_release_interest": -3,
+          "audience_rejection_risk": 4,
+          "secondary_market_fit": 2
+        },
+        "spokenText": "등급은 감수하겠습니다. 이 장면은 영화의 핵심입니다."
+      },
+      {
+        "id": "appeal_with_context",
+        "text": "맥락 자료를 붙여 재심의를 요청한다",
+        "resultText": "등급 조정의 여지는 생겼지만 일정과 언론 대응 부담이 늘었습니다.",
+        "effects": {
+          "delay_days": 10,
+          "cash": -40000000,
+          "rating_pressure": -6,
+          "press_backlash_risk": 3,
+          "distribution_network": -2
+        },
+        "spokenText": "장면의 맥락을 설명해서 재심의를 요청하겠습니다."
+      },
+      {
+        "id": "separate_ott_cut",
+        "text": "극장판과 OTT판을 분리한다",
+        "resultText": "극장 개봉은 안정화하고, OTT판에는 더 강한 버전을 남기는 전략을 택했습니다.",
+        "effects": {
+          "rating_pressure": -5,
+          "secondary_market_fit": 8,
+          "post_production_duration": 1,
+          "cash": -70000000,
+          "version": {
+            "activeVersion": "theatrical_cut",
+            "openOttCut": true,
+            "notes": "등급 심의 대응으로 극장판과 OTT판을 분리했다."
+          }
+        },
+        "spokenText": "극장판은 낮추고, OTT판에는 원래 의도를 살리겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_rating_adult_only_risk",
+    "stage": "release_strategy",
+    "title": "청소년 관람불가 가능성",
+    "description": "최종 심의 과정에서 청소년 관람불가 등급 가능성이 거론됩니다. 관객층과 광고 전략을 다시 계산해야 합니다.",
+    "weight": 70,
+    "trigger": {
+      "minRatingPressure": 46,
+      "genreWeights": {
+        "crime_thriller": 1.35,
+        "action": 1.15,
+        "horror_occult": 1.45,
+        "indie_art": 1.25,
+        "social_true_story": 1.15,
+        "family_human_drama": 0.4,
+        "animation": 0.25,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.violence_intensity",
+          "min": 45,
+          "multiplier": 1.25
+        },
+        {
+          "source": "stats.horror_intensity",
+          "min": 45,
+          "multiplier": 1.25
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "accept_adult_rating",
+        "text": "성인 관객을 정조준한다",
+        "resultText": "관객층은 좁아졌지만 장르 팬과 시네필을 향한 메시지는 선명해졌습니다.",
+        "effects": {
+          "rating_pressure": 8,
+          "pre_release_interest": 4,
+          "fandom_index": 5,
+          "final_audience": -5,
+          "secondary_market_fit": 4
+        },
+        "spokenText": "이 영화는 성인 관객에게 정확히 닿게 만들겠습니다."
+      },
+      {
+        "id": "cut_for_15_rating",
+        "text": "15세 관람가를 목표로 재편집한다",
+        "resultText": "대중 접근성은 넓어졌지만 장르적 강도와 감독의 의도 일부가 약해졌습니다.",
+        "effects": {
+          "rating_pressure": -18,
+          "violence_intensity": -10,
+          "horror_intensity": -8,
+          "sexual_content": -8,
+          "genre_satisfaction": -4,
+          "final_audience": 4,
+          "cash": -60000000
+        },
+        "spokenText": "더 많은 관객이 볼 수 있는 선으로 다시 맞추겠습니다."
+      },
+      {
+        "id": "appeal_rating_result",
+        "text": "재심의를 요청한다",
+        "resultText": "등급 조정 가능성은 남겼지만 개봉일과 배급 일정이 흔들렸습니다.",
+        "effects": {
+          "rating_pressure": -5,
+          "delay_days": 10,
+          "press_backlash_risk": 3,
+          "distribution_network": -2
+        },
+        "spokenText": "재심의를 요청하겠습니다. 등급 하나로 개봉 전략을 포기하진 않겠습니다."
+      },
+      {
+        "id": "platform_after_theatrical",
+        "text": "극장 규모를 줄이고 2차 시장 회수를 강화한다",
+        "resultText": "극장 흥행 기대는 낮췄지만 VOD와 OTT 판매 가능성을 열어두었습니다.",
+        "effects": {
+          "final_audience": -7,
+          "secondary_market_fit": 8,
+          "financial_risk": -3,
+          "distribution_network": 2
+        },
+        "spokenText": "극장에서 무리하지 않고 2차 시장 회수를 설계하겠습니다."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_rating_marketing_target_conflict",
+    "stage": "marketing",
+    "title": "관람등급과 마케팅 타깃 충돌",
+    "description": "마케팅팀이 만든 홍보 문구와 실제 관람등급 전망이 어긋납니다. 가족·청소년 관객을 노린 홍보가 역풍을 맞을 수 있습니다.",
+    "weight": 62,
+    "trigger": {
+      "minRatingPressure": 34,
+      "minMarketingBudget": 50000000,
+      "genreWeights": {
+        "horror_occult": 1.4,
+        "crime_thriller": 1.25,
+        "action": 1.2,
+        "romance_melodrama": 1.05,
+        "family_human_drama": 1.25,
+        "animation": 1.3,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "retarget_campaign",
+        "text": "관람등급에 맞춰 타깃 광고를 다시 짠다",
+        "resultText": "홍보 효율은 안정됐지만 이미 집행한 광고 일부는 낭비됐습니다.",
+        "effects": {
+          "press_backlash_risk": -5,
+          "audience_rejection_risk": -4,
+          "pre_release_interest": 2,
+          "marketing_budget": -50000000
+        }
+      },
+      {
+        "id": "lean_into_edge",
+        "text": "강한 수위를 장르적 매력으로 전면에 세운다",
+        "resultText": "장르 팬의 관심은 커졌지만 일반 관객에게는 더 부담스러운 인상을 남겼습니다.",
+        "effects": {
+          "online_buzz": 7,
+          "fandom_index": 5,
+          "rating_pressure": 5,
+          "audience_rejection_risk": 4
+        }
+      },
+      {
+        "id": "family_safe_message",
+        "text": "가족 관객에게 안전한 부분만 강조한다",
+        "resultText": "초반 관심은 넓어졌지만 실제 영화 톤과의 차이가 논란이 될 수 있습니다.",
+        "effects": {
+          "pre_release_interest": 5,
+          "press_backlash_risk": 6,
+          "audience_rejection_risk": 6,
+          "second_week_drop": 3
+        }
+      },
+      {
+        "id": "quietly_correct_materials",
+        "text": "홍보물을 조용히 수정한다",
+        "resultText": "큰 논란은 피했지만 기대감을 다시 끌어올리기엔 힘이 부족했습니다.",
+        "effects": {
+          "press_backlash_risk": -4,
+          "pre_release_interest": -2,
+          "marketing_budget": -20000000,
+          "audience_rejection_risk": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_modern_sensitive_topic_backlash",
+    "stage": "release_strategy",
+    "title": "민감 소재 논란 조짐",
+    "description": "개봉 직전 온라인과 언론 일부에서 영화의 정치적 맥락, 범죄 묘사, 공포 연출 또는 선정적 이미지가 논란이 될 수 있다는 신호가 보입니다.",
+    "weight": 72,
+    "trigger": {
+      "eraIds": [
+        "era_2000s",
+        "era_2010s",
+        "era_2020s"
+      ],
+      "minControversyRisk": 30,
+      "genreWeights": {
+        "social_true_story": 1.9,
+        "historical_period": 1.55,
+        "crime_thriller": 1.45,
+        "horror_occult": 1.35,
+        "romance_melodrama": 1.25,
+        "indie_art": 1.2,
+        "action": 1.1,
+        "family_human_drama": 0.7,
+        "animation": 0.45,
+        "default": 1.0
+      },
+      "weightRules": [
+        {
+          "source": "stats.political_sensitivity",
+          "min": 30,
+          "multiplier": 1.35
+        },
+        {
+          "source": "stats.sexual_content",
+          "min": 28,
+          "multiplier": 1.25
+        },
+        {
+          "source": "stats.horror_intensity",
+          "min": 35,
+          "multiplier": 1.2
+        },
+        {
+          "source": "stats.press_backlash_risk",
+          "min": 25,
+          "multiplier": 1.2
+        }
+      ]
+    },
+    "choices": [
+      {
+        "id": "prepare_context_briefing",
+        "text": "취재진과 배급사에 맥락 자료를 먼저 공유한다",
+        "resultText": "논란이 번지기 전 해석의 방향을 잡았지만, 준비 비용과 언론 대응 시간이 늘었습니다.",
+        "effects": {
+          "press_backlash_risk": -7,
+          "controversy_risk": -5,
+          "press_network": 2,
+          "cash": -30000000,
+          "delay_days": 2
+        },
+        "spokenText": "오해가 생기기 전에 맥락 자료부터 정리해서 공유하겠습니다."
+      },
+      {
+        "id": "add_content_warning",
+        "text": "홍보물과 예고편에 관람 주의 문구를 넣는다",
+        "resultText": "기대 불일치는 줄었지만 일부 관객의 진입 장벽은 높아졌습니다.",
+        "effects": {
+          "audience_rejection_risk": -5,
+          "press_backlash_risk": -4,
+          "pre_release_interest": -2,
+          "rating_pressure": 2
+        },
+        "spokenText": "관객이 영화의 결을 알고 들어오게 하겠습니다."
+      },
+      {
+        "id": "director_statement",
+        "text": "감독의 입장문으로 창작 의도를 설명한다",
+        "resultText": "작품성 논의는 살아났지만, 감독의 발언이 다시 기사화되며 논쟁도 커졌습니다.",
+        "effects": {
+          "critic_reputation": 4,
+          "creative_reputation": 3,
+          "online_buzz": 6,
+          "press_backlash_risk": 5
+        },
+        "spokenText": "감독이 직접 이 영화가 무엇을 말하려는지 설명하겠습니다."
+      },
+      {
+        "id": "quiet_release",
+        "text": "논란에 반응하지 않고 조용히 개봉한다",
+        "resultText": "초기 대응 비용은 아꼈지만 논란의 방향을 통제하지 못할 위험이 남았습니다.",
+        "effects": {
+          "press_backlash_risk": 7,
+          "audience_rejection_risk": 4,
+          "second_week_drop": 3,
+          "marketing_budget": 20000000
+        },
+        "spokenText": "대응하지 않겠습니다. 영화가 직접 말하게 하죠."
+      }
+    ],
+    "relationshipEvent": true,
+    "choiceStyle": "dialogue"
+  },
+  {
+    "id": "event_crew_composition_gap",
+    "stage": "pre_production",
+    "title": "제작진 구성 난항",
+    "description": "촬영을 앞두고 핵심 제작진 구성이 예상보다 더디게 진행됩니다. 규모에 맞는 팀을 꾸리지 못하면 일정과 현장 통제가 흔들릴 수 있습니다.",
+    "weight": 76,
+    "trigger": {
+      "minScale": [
+        "scale_independent",
+        "scale_low_budget_genre",
+        "scale_mid_commercial",
+        "scale_large_commercial",
+        "scale_tentpole"
+      ]
+    },
+    "choices": [
+      {
+        "id": "hire_veteran_heads",
+        "text": "베테랑 부서장들을 추가 영입한다",
+        "resultText": "현장의 중심축은 단단해졌지만 계약금과 선집행 비용이 커졌습니다.",
+        "effects": {
+          "shooting_quality": 4,
+          "field_control": 3,
+          "cash": -150000000,
+          "budget_overrun_risk": 4,
+          "studio": {
+            "field_reputation": 4,
+            "pay_reputation": 3
+          },
+          "flags": {
+            "crewAdjustments": [
+              {
+                "roleId": "line_producer",
+                "filledStatus": "veteran",
+                "seniority": "lead",
+                "notes": "베테랑 라인 프로듀서가 제작 관리 부담을 흡수한다."
+              },
+              {
+                "roleId": "cinematographer",
+                "filledStatus": "veteran",
+                "seniority": "lead",
+                "notes": "경험 많은 촬영감독이 화면 설계의 중심을 잡는다."
+              },
+              {
+                "roleId": "assistant_director",
+                "filledStatus": "veteran",
+                "notes": "조감독 라인이 현장 동선을 정리한다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "lean_crew_operation",
+        "text": "소수 정예팀으로 축소 운영한다",
+        "resultText": "현금 지출은 줄였지만 한 사람이 여러 일을 떠안는 구조가 되었습니다.",
+        "effects": {
+          "financial_risk": -3,
+          "schedule_delay_risk": 5,
+          "shooting_quality": -3,
+          "on_set_conflict_risk": 3,
+          "studio": {
+            "field_reputation": -4,
+            "pay_reputation": -2
+          },
+          "flags": {
+            "crewAdjustments": [
+              {
+                "roleId": "line_producer",
+                "filledStatus": "lean",
+                "notes": "제작 관리 인력을 최소화해 운영한다."
+              },
+              {
+                "roleId": "gaffer",
+                "filledStatus": "lean",
+                "notes": "조명팀 규모를 줄여 회차별 부담이 커졌다."
+              },
+              {
+                "roleId": "sound_mixer",
+                "filledStatus": "lean",
+                "notes": "동시녹음 운영을 간소화한다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "promote_junior_staff",
+        "text": "젊은 스태프에게 책임을 맡긴다",
+        "resultText": "팀의 열기는 살아났지만 경험 부족에서 오는 시행착오가 남았습니다.",
+        "effects": {
+          "production_network": 4,
+          "learning_ability": 2,
+          "schedule_delay_risk": 3,
+          "on_set_conflict_risk": 2,
+          "creative_reputation": 2,
+          "studio": {
+            "field_reputation": 2,
+            "creative_freedom": 3
+          },
+          "flags": {
+            "crewAdjustments": [
+              {
+                "roleId": "script_supervisor",
+                "filledStatus": "filled",
+                "seniority": "junior",
+                "notes": "젊은 스크립터가 현장 기록을 맡는다."
+              },
+              {
+                "roleId": "production_designer",
+                "filledStatus": "filled",
+                "seniority": "junior",
+                "notes": "신진 미술팀이 새로운 해석을 제안한다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "delay_crew_lock",
+        "text": "제작진 확정을 미루고 더 찾아본다",
+        "resultText": "더 적합한 후보를 찾을 여지는 생겼지만 프리프로덕션 일정이 압박을 받았습니다.",
+        "effects": {
+          "delay_days": 7,
+          "production_network": 2,
+          "schedule_delay_risk": -2,
+          "cash": -30000000,
+          "flags": {
+            "crewAdjustments": [
+              {
+                "roleId": "line_producer",
+                "filledStatus": "delayed",
+                "notes": "핵심 제작진 확정이 뒤로 밀렸다."
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_shooting_schedule_overpacked",
+    "stage": "shooting",
+    "title": "촬영 일정표 과밀",
+    "description": "촬영 일정표가 너무 촘촘합니다. 지금 구조로 밀어붙이면 회차는 줄일 수 있지만 배우와 스태프의 집중력이 무너질 수 있습니다.",
+    "weight": 72,
+    "trigger": {
+      "minScheduleDelayRisk": 18,
+      "genreWeights": {
+        "genre_action": 1.35,
+        "genre_crime_thriller": 1.25,
+        "genre_period_historical": 1.25,
+        "genre_sf_disaster_monster": 1.3,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "extend_schedule",
+        "text": "촬영 일정을 며칠 늘린다",
+        "resultText": "현장은 숨을 돌렸고 중요한 장면을 더 차분히 찍을 수 있게 됐습니다.",
+        "effects": {
+          "delay_days": 5,
+          "shooting_quality": 4,
+          "cash": -70000000,
+          "schedule_delay_risk": -3,
+          "flags": {
+            "extendShootingSchedule": true,
+            "extraShootingDays": 5,
+            "scheduleReason": "과밀한 촬영표 보정"
+          }
+        }
+      },
+      {
+        "id": "split_second_unit",
+        "text": "세컨드 유닛을 꾸려 병행 촬영한다",
+        "resultText": "일부 회차를 분산했지만 제작 관리 난이도와 지출이 함께 커졌습니다.",
+        "effects": {
+          "cash": -120000000,
+          "shooting_quality": 5,
+          "field_control": -1,
+          "budget_overrun_risk": 5,
+          "flags": {
+            "extendShootingSchedule": true,
+            "extraShootingDays": 3,
+            "scheduleReason": "세컨드 유닛 병행 촬영"
+          }
+        }
+      },
+      {
+        "id": "compress_schedule",
+        "text": "일정을 압축하고 밤샘으로 맞춘다",
+        "resultText": "회차는 줄였지만 현장의 피로와 갈등이 누적됐습니다.",
+        "effects": {
+          "cash": 20000000,
+          "schedule_delay_risk": -4,
+          "acting_quality": -2,
+          "on_set_conflict_risk": 6,
+          "audience_rejection_risk": 2
+        }
+      },
+      {
+        "id": "rewrite_for_schedule",
+        "text": "촬영표에 맞게 장면을 줄인다",
+        "resultText": "촬영 난도는 낮아졌지만 몇몇 장면의 힘이 약해졌습니다.",
+        "effects": {
+          "scenario_quality": -3,
+          "shooting_quality": -2,
+          "schedule_delay_risk": -5,
+          "financial_risk": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_test_screening_mixed_reaction",
+    "stage": "post_production",
+    "title": "테스트 시사회 반응 엇갈림",
+    "description": "편집본 테스트 시사회에서 초반 몰입은 좋았지만 후반 감정선과 결말에 대한 반응이 갈렸습니다.",
+    "weight": 78,
+    "trigger": {
+      "minScale": [
+        "scale_low_budget_genre",
+        "scale_mid_commercial",
+        "scale_large_commercial",
+        "scale_tentpole"
+      ]
+    },
+    "choices": [
+      {
+        "id": "targeted_recut",
+        "text": "후반부만 표적 재편집한다",
+        "resultText": "큰 틀은 유지하면서 관객이 걸린 지점을 정리했습니다.",
+        "effects": {
+          "editing_quality": 6,
+          "post_production_duration": 1,
+          "cash": -50000000,
+          "audience_rejection_risk": -5,
+          "flags": {
+            "testScreening": true,
+            "screeningType": "test_preview",
+            "scoreBand": "mixed_positive",
+            "screeningSummary": "초반 몰입은 좋았지만 후반부 정리가 필요하다는 반응."
+          }
+        }
+      },
+      {
+        "id": "reshoot_key_scene",
+        "text": "핵심 감정 장면을 재촬영한다",
+        "resultText": "결말의 설득력은 보강됐지만 재촬영 비용과 일정 부담이 생겼습니다.",
+        "effects": {
+          "acting_quality": 3,
+          "scenario_quality": 2,
+          "delay_days": 7,
+          "budget_overrun_risk": 6,
+          "flags": {
+            "testScreening": true,
+            "screeningType": "test_preview",
+            "scoreBand": "mixed",
+            "screeningSummary": "결말 감정선이 갈렸고 보강 촬영이 필요하다는 결론.",
+            "createReshoot": true,
+            "reshootDays": 5,
+            "reshootCost": 180000000,
+            "reshootReason": "테스트 시사회 핵심 감정선 보강"
+          }
+        }
+      },
+      {
+        "id": "marketing_reframe",
+        "text": "마케팅 방향을 관객 반응에 맞춰 바꾼다",
+        "resultText": "영화의 약점을 감추기보다 관객이 좋아한 지점을 앞세우기로 했습니다.",
+        "effects": {
+          "pre_release_interest": 4,
+          "marketing_budget": -70000000,
+          "audience_rejection_risk": -3,
+          "press_backlash_risk": 2,
+          "flags": {
+            "testScreening": true,
+            "screeningType": "test_preview",
+            "scoreBand": "mixed",
+            "screeningSummary": "좋아한 지점과 부담스러운 지점이 명확히 갈렸다."
+          }
+        }
+      },
+      {
+        "id": "ignore_preview",
+        "text": "테스트 시사 반응을 크게 반영하지 않는다",
+        "resultText": "개봉 일정은 지켰지만 같은 반응이 실제 관객에게도 반복될 수 있습니다.",
+        "effects": {
+          "schedule_delay_risk": -2,
+          "audience_rejection_risk": 7,
+          "second_week_drop": 4,
+          "creative_reputation": 2,
+          "flags": {
+            "testScreening": true,
+            "screeningType": "test_preview",
+            "scoreBand": "polarized",
+            "screeningSummary": "호불호가 뚜렷했지만 제작진은 감독판을 유지했다."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_stillcut_first_reveal",
+    "stage": "marketing",
+    "title": "첫 스틸컷 공개 반응",
+    "description": "배급 홍보팀이 첫 스틸컷 공개 시점을 잡았습니다. 사진 한 장으로 영화의 톤과 배우 이미지가 먼저 판단될 수 있습니다.",
+    "weight": 72,
+    "trigger": {
+      "minMarketingBudget": 30000000,
+      "genreWeights": {
+        "genre_romance_melodrama": 1.25,
+        "genre_crime_thriller": 1.15,
+        "genre_horror_occult": 1.2,
+        "genre_period_historical": 1.2,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "release_actor_stills",
+        "text": "배우 중심 스틸컷을 공개한다",
+        "resultText": "배우의 존재감이 먼저 화제가 됐지만 영화의 장르적 색은 아직 덜 보였습니다.",
+        "effects": {
+          "pre_release_interest": 5,
+          "fandom_index": 4,
+          "online_buzz": 4,
+          "marketing_budget": -20000000,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "still_cut",
+              "reactionType": "first_still_actor",
+              "sentimentBand": "positive",
+              "buzzScore": 66,
+              "onlineSummary": "배우 비주얼과 캐릭터 분위기가 먼저 공유됐다.",
+              "audienceSummary": "팬덤은 반응했지만 일반 관객은 아직 장르를 파악하지 못했다."
+            }
+          }
+        }
+      },
+      {
+        "id": "release_mood_stills",
+        "text": "영화의 분위기를 보여주는 스틸컷을 공개한다",
+        "resultText": "작품의 결은 선명해졌지만 대중적인 화제성은 제한적이었습니다.",
+        "effects": {
+          "critic_reputation": 2,
+          "online_buzz": 3,
+          "pre_release_interest": 2,
+          "audience_rejection_risk": -2,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "still_cut",
+              "reactionType": "first_still_mood",
+              "sentimentBand": "cinephile_positive",
+              "buzzScore": 54,
+              "pressSummary": "영화의 미장센과 톤을 읽을 수 있다는 반응.",
+              "onlineSummary": "시네필 중심으로 분위기 해석이 붙었다."
+            }
+          }
+        }
+      },
+      {
+        "id": "hold_stills",
+        "text": "스틸컷 공개를 미루고 예고편에 집중한다",
+        "resultText": "섣부른 판단은 피했지만 초반 온라인 화제성은 비었습니다.",
+        "effects": {
+          "press_backlash_risk": -2,
+          "online_buzz": -3,
+          "pre_release_interest": -2,
+          "marketing_sense": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_poster_copy_reaction",
+    "stage": "marketing",
+    "title": "포스터 카피와 디자인 반응",
+    "description": "메인 포스터가 공개됐습니다. 제목보다 먼저 카피와 이미지가 관객의 기대치를 결정하고 있습니다.",
+    "weight": 70,
+    "trigger": {
+      "minMarketingBudget": 50000000
+    },
+    "choices": [
+      {
+        "id": "lean_into_genre_poster",
+        "text": "장르성을 강하게 밀어붙인다",
+        "resultText": "장르 팬의 관심은 커졌지만 넓은 관객층에게는 다소 강한 인상을 남겼습니다.",
+        "effects": {
+          "genre_satisfaction": 3,
+          "online_buzz": 6,
+          "audience_rejection_risk": 3,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_poster",
+              "reactionType": "poster_genre_push",
+              "sentimentBand": "genre_positive",
+              "buzzScore": 70,
+              "onlineSummary": "포스터의 장르적 인상이 강하게 공유됐다."
+            }
+          }
+        }
+      },
+      {
+        "id": "soften_poster_copy",
+        "text": "카피를 순화해 관객층을 넓힌다",
+        "resultText": "진입 장벽은 낮아졌지만 영화의 날카로운 인상도 함께 약해졌습니다.",
+        "effects": {
+          "audience_rejection_risk": -4,
+          "pre_release_interest": 3,
+          "genre_satisfaction": -2,
+          "marketing_budget": -30000000,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_poster",
+              "reactionType": "poster_revised_copy",
+              "sentimentBand": "stable",
+              "buzzScore": 52,
+              "pressSummary": "무난한 카피로 대중 접근성을 확보했다는 평가."
+            }
+          }
+        }
+      },
+      {
+        "id": "limited_character_posters",
+        "text": "캐릭터 포스터를 순차 공개한다",
+        "resultText": "배우별 팬덤 반응은 살아났지만 공개 일정 관리 부담이 생겼습니다.",
+        "effects": {
+          "fandom_index": 6,
+          "online_buzz": 5,
+          "marketing_budget": -60000000,
+          "press_backlash_risk": 2,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_poster",
+              "reactionType": "character_poster_rollout",
+              "sentimentBand": "fan_positive",
+              "buzzScore": 74,
+              "onlineSummary": "배우별 캐릭터 포스터가 팬덤 중심으로 확산됐다."
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_stage_greeting_route_planning",
+    "stage": "release_strategy",
+    "title": "무대인사 동선 조율",
+    "description": "개봉 첫 주 무대인사 요청이 들어왔습니다. 동선을 넓히면 관객 접점은 늘지만 배우 스케줄과 비용이 부담됩니다.",
+    "weight": 62,
+    "trigger": {
+      "minPreReleaseInterest": 35,
+      "minMarketingBudget": 70000000,
+      "minScale": [
+        "scale_low_budget_genre",
+        "scale_mid_commercial",
+        "scale_large_commercial",
+        "scale_tentpole"
+      ]
+    },
+    "choices": [
+      {
+        "id": "seoul_weekend_focus",
+        "text": "서울 개봉주 무대인사에 집중한다",
+        "resultText": "핵심 상영관 반응을 단단히 잡는 대신 지역 확산은 제한됐습니다.",
+        "effects": {
+          "fandom_index": 4,
+          "word_of_mouth": 3,
+          "marketing_budget": -30000000,
+          "flags": {
+            "stageGreeting": {
+              "city": "서울",
+              "venue": "주요 멀티플렉스",
+              "eventName": "개봉주 서울 집중 무대인사",
+              "castScope": "감독/주연 배우",
+              "expectedAttendance": 1000,
+              "estimatedCost": 30000000,
+              "daysOffset": 2,
+              "resultSummary": "서울 핵심 관객과 팬덤을 먼저 결집한다."
+            }
+          }
+        }
+      },
+      {
+        "id": "regional_route",
+        "text": "부산·대구까지 지역 동선을 넓힌다",
+        "resultText": "지역 관객 접점은 커졌지만 이동 비용과 배우 피로가 늘었습니다.",
+        "effects": {
+          "regional_network": 3,
+          "word_of_mouth": 5,
+          "fandom_index": 3,
+          "cash": -20000000,
+          "schedule_delay_risk": 2,
+          "flags": {
+            "stageGreeting": [
+              {
+                "city": "부산",
+                "venue": "지역 대표 극장",
+                "eventName": "개봉주 부산 무대인사",
+                "castScope": "감독/주연 배우 일부",
+                "expectedAttendance": 800,
+                "estimatedCost": 35000000,
+                "daysOffset": 3,
+                "resultSummary": "부산 관객 반응을 초반 입소문으로 연결한다."
+              },
+              {
+                "city": "대구",
+                "venue": "지역 대표 극장",
+                "eventName": "개봉주 대구 무대인사",
+                "castScope": "주요 배우 일부",
+                "expectedAttendance": 650,
+                "estimatedCost": 30000000,
+                "daysOffset": 4,
+                "resultSummary": "지방 관객 접점을 넓힌다."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "online_gv_instead",
+        "text": "현장 무대인사 대신 온라인 GV로 전환한다",
+        "resultText": "비용은 줄었지만 현장 팬덤의 열기는 약해졌습니다.",
+        "effects": {
+          "online_buzz": 4,
+          "fandom_index": -2,
+          "financial_risk": -3,
+          "critic_access": 2,
+          "flags": {
+            "marketingReaction": {
+              "assetType": "main_trailer",
+              "reactionType": "online_gv_notice",
+              "sentimentBand": "mixed",
+              "buzzScore": 48,
+              "onlineSummary": "온라인 GV 전환에 편하다는 반응과 아쉽다는 반응이 갈렸다."
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_reshoot_cashflow_pressure",
+    "stage": "post_production",
+    "title": "재촬영 승인과 현금흐름 압박",
+    "description": "후반작업 중 보강 촬영이 필요하다는 의견이 나왔습니다. 문제는 이미 현금흐름표가 빡빡하다는 점입니다.",
+    "weight": 58,
+    "trigger": {
+      "minBudgetOverrunRisk": 22,
+      "minScheduleDelayRisk": 18
+    },
+    "choices": [
+      {
+        "id": "approve_focused_reshoot",
+        "text": "짧고 집중적인 재촬영을 승인한다",
+        "resultText": "가장 취약한 장면은 보강됐지만 현금 유출이 즉시 발생했습니다.",
+        "effects": {
+          "directing_quality": 3,
+          "editing_quality": 2,
+          "delay_days": 4,
+          "budget_overrun_risk": 5,
+          "studio": {
+            "pay_reputation": 2,
+            "field_reputation": 1
+          },
+          "flags": {
+            "createReshoot": true,
+            "reshootDays": 3,
+            "reshootCost": 120000000,
+            "reshootReason": "후반작업 보강 재촬영"
+          }
+        }
+      },
+      {
+        "id": "solve_with_recut",
+        "text": "재촬영 대신 편집으로 해결한다",
+        "resultText": "새 비용은 막았지만 연출 의도의 일부는 편집실에서 타협됐습니다.",
+        "effects": {
+          "editing_quality": 3,
+          "cash": -20000000,
+          "directing_quality": -2,
+          "budget_overrun_risk": -4,
+          "audience_rejection_risk": 2,
+          "studio": {
+            "creative_freedom": -2,
+            "interference_reputation": 2
+          }
+        }
+      },
+      {
+        "id": "ask_investor_bridge",
+        "text": "투자사에 브리지 자금을 요청한다",
+        "resultText": "추가 자금은 열렸지만 투자사는 더 많은 조건을 붙이려 합니다.",
+        "effects": {
+          "investment_amount": 150000000,
+          "investor_reputation": -2,
+          "budget_overrun_risk": 4,
+          "flags": {
+            "createReshoot": true,
+            "reshootDays": 4,
+            "reshootCost": 150000000,
+            "reshootReason": "투자사 조건부 보강 촬영"
+          }
+        }
+      },
+      {
+        "id": "cut_scope",
+        "text": "문제 장면을 과감히 삭제한다",
+        "resultText": "현금흐름은 방어했지만 장르적 만족감이 낮아졌습니다.",
+        "effects": {
+          "genre_satisfaction": -4,
+          "budget_overrun_risk": -5,
+          "audience_rejection_risk": 3,
+          "financial_risk": -3,
+          "studio": {
+            "interference_reputation": 4,
+            "creative_freedom": -3
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_scenario_first_draft_diagnosis",
+    "stage": "screenplay_development",
+    "title": "초고 진단 회의",
+    "description": "초고가 나왔습니다. 제작진은 점수를 매기기보다 구조, 대사, 캐릭터 동기 중 어디가 먼저 흔들리는지 읽어내려 합니다.",
+    "weight": 105,
+    "trigger": {
+      "minProjectScale": "scale_independent",
+      "genreWeights": {
+        "social_true_story": 1.35,
+        "indie_art": 1.25,
+        "crime_thriller": 1.15,
+        "fantasy": 1.2,
+        "sf_disaster_monster": 1.2,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "map_structure",
+        "text": "장면 카드를 펼쳐 구조부터 다시 본다",
+        "resultText": "전체 흐름이 눈에 보이기 시작했습니다. 다만 장면을 다시 배열하며 개발 일정은 조금 길어졌습니다.",
+        "effects": {
+          "script_structure": 8,
+          "script_pacing_issue": -6,
+          "scenario_quality": 2,
+          "delay_days": 5,
+          "cash": -20000000
+        }
+      },
+      {
+        "id": "character_memo",
+        "text": "주요 인물별 동기 메모를 새로 쓴다",
+        "resultText": "캐릭터가 왜 그 선택을 하는지 조금 더 선명해졌습니다. 대신 일부 장면은 다시 써야 합니다.",
+        "effects": {
+          "script_character_motivation": 9,
+          "character_motivation_issue": -9,
+          "scenario_quality": 2,
+          "production_duration": 1,
+          "creative_reputation": 1
+        }
+      },
+      {
+        "id": "protect_tone",
+        "text": "초고의 거친 톤을 그대로 살린다",
+        "resultText": "작품의 결은 살아났지만, 투자자와 일부 배우에게는 불친절하게 보일 수 있습니다.",
+        "effects": {
+          "script_originality": 7,
+          "critic_reputation": 2,
+          "investor_package_risk": 7,
+          "audience_rejection_risk": 3
+        }
+      },
+      {
+        "id": "rush_to_package",
+        "text": "일단 투자사용 문서로 넘긴다",
+        "resultText": "일정은 지켰지만 초고의 약점이 패키지 문서까지 따라붙었습니다.",
+        "effects": {
+          "investor_package_readiness": 3,
+          "script_structure_issue": 6,
+          "character_motivation_issue": 5,
+          "investor_reputation": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_scenario_rewrite_crossroads",
+    "stage": "screenplay_development",
+    "title": "개고 방향 선택",
+    "description": "초고를 다시 읽은 뒤, 이제 무엇을 고칠지 정해야 합니다. 모든 것을 고칠 수는 없고, 어느 축을 먼저 잡느냐가 영화의 성격을 바꿉니다.",
+    "weight": 95,
+    "trigger": {
+      "minProjectScale": "scale_independent",
+      "minCharacterMotivationIssue": 35
+    },
+    "choices": [
+      {
+        "id": "character_rewrite",
+        "text": "캐릭터 동기와 감정선을 우선한다",
+        "resultText": "인물의 선택 이유가 더 또렷해졌습니다. 대신 장르적 속도감은 조금 느려졌습니다.",
+        "effects": {
+          "script_character_motivation": 10,
+          "character_motivation_issue": -10,
+          "acting_quality": 2,
+          "script_pacing_issue": 4,
+          "delay_days": 4
+        }
+      },
+      {
+        "id": "genre_engine_rewrite",
+        "text": "장르 장면과 전환 리듬을 우선한다",
+        "resultText": "읽히는 속도는 좋아졌지만 몇몇 인물의 감정은 더 얇아졌습니다.",
+        "effects": {
+          "script_pacing": 9,
+          "genre_satisfaction": 3,
+          "script_character_motivation": -4,
+          "critic_backlash_risk": 2
+        }
+      },
+      {
+        "id": "dialogue_polish",
+        "text": "대사를 배우가 말할 수 있는 언어로 다듬는다",
+        "resultText": "대사는 자연스러워졌지만 구조적 문제를 전부 해결하지는 못했습니다.",
+        "effects": {
+          "script_dialogue": 10,
+          "script_dialogue_weakness": -10,
+          "acting_quality": 2,
+          "script_structure_issue": 3,
+          "cash": -15000000
+        }
+      },
+      {
+        "id": "minimal_rewrite",
+        "text": "큰 구조는 건드리지 않고 최소 수정만 한다",
+        "resultText": "제작 착수는 빨라졌지만, 약점이 촬영장과 편집실로 넘어갈 가능성이 남았습니다.",
+        "effects": {
+          "delay_days": -2,
+          "cash": -5000000,
+          "script_structure_issue": 5,
+          "audience_rejection_risk": 3,
+          "budget_overrun_risk": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_table_reading_dialogue_gap",
+    "stage": "casting",
+    "title": "테이블 리딩에서 드러난 대사 문제",
+    "description": "배우들이 처음으로 대본을 소리 내 읽었습니다. 읽을 때는 괜찮아 보였던 장면 일부가 입 밖으로 나오자 어색하게 들립니다.",
+    "weight": 75,
+    "trigger": {
+      "requiresActor": true,
+      "minScriptDialogueWeakness": 38,
+      "genreWeights": {
+        "romance_melodrama": 1.3,
+        "comedy": 1.25,
+        "family_human_drama": 1.2,
+        "social_true_story": 1.2,
+        "action": 0.8,
+        "default": 1.0
+      }
+    },
+    "choices": [
+      {
+        "id": "rewrite_with_actor",
+        "text": "배우 의견을 받아 대사를 다시 쓴다",
+        "resultText": "대사가 배우의 호흡에 맞게 살아났습니다. 다만 현장의 즉흥성이 각본의 통제력을 조금 흔들었습니다.",
+        "effects": {
+          "script_dialogue": 9,
+          "acting_quality": 4,
+          "actor_network": 2,
+          "script_structure_issue": 3,
+          "schedule_delay_risk": 3
+        }
+      },
+      {
+        "id": "director_line_control",
+        "text": "감독의 원래 문장을 유지한다",
+        "resultText": "작가의 의도는 지켰지만 배우들은 대사의 숨 쉴 자리가 좁다고 느꼈습니다.",
+        "effects": {
+          "directing_quality": 2,
+          "script_dialogue_weakness": 6,
+          "actor_network": -2,
+          "on_set_conflict_risk": 3
+        }
+      },
+      {
+        "id": "hold_second_reading",
+        "text": "두 번째 리딩을 잡아 톤을 다시 맞춘다",
+        "resultText": "톤과 호흡은 맞아갔지만 촬영 전 준비 시간이 더 필요해졌습니다.",
+        "effects": {
+          "script_dialogue": 5,
+          "casting_fit": 3,
+          "delay_days": 3,
+          "cash": -10000000
+        }
+      },
+      {
+        "id": "cut_expository_lines",
+        "text": "설명 대사를 과감히 덜어낸다",
+        "resultText": "장면은 덜 설명적으로 변했지만 관객이 놓칠 정보도 생겼습니다.",
+        "effects": {
+          "script_dialogue": 6,
+          "editing_quality": 2,
+          "audience_rejection_risk": 3,
+          "critic_reputation": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_investor_package_logline_gap",
+    "stage": "fundraising",
+    "title": "투자사용 패키지의 빈틈",
+    "description": "투자자에게 보낼 패키지를 정리하는 중입니다. 로그라인은 흥미롭지만 비교작, 회수 구조, 관객층 설명이 아직 약하다는 지적이 나왔습니다.",
+    "weight": 80,
+    "trigger": {
+      "minInvestorPackageRisk": 35,
+      "minProjectScale": "scale_low_budget_genre"
+    },
+    "choices": [
+      {
+        "id": "build_market_deck",
+        "text": "비교작과 관객층 자료를 보강한다",
+        "resultText": "작품이 투자자 언어로 번역되기 시작했습니다. 개발비는 더 들었지만 미팅의 설득력은 올라갔습니다.",
+        "effects": {
+          "investor_package_readiness": 12,
+          "market_analysis": 2,
+          "investor_reputation": 2,
+          "cash": -30000000,
+          "delay_days": 3
+        }
+      },
+      {
+        "id": "attach_casting_teaser",
+        "text": "캐스팅 가능성과 캐릭터 이미지를 앞세운다",
+        "resultText": "투자자의 관심은 빨리 붙었지만 아직 확정되지 않은 캐스팅에 기대가 걸렸습니다.",
+        "effects": {
+          "pre_release_interest": 4,
+          "investor_package_readiness": 6,
+          "actor_network": 1,
+          "schedule_delay_risk": 3,
+          "investor_reputation": -1
+        }
+      },
+      {
+        "id": "festival_angle",
+        "text": "영화제와 평론 가능성을 강조한다",
+        "resultText": "작품의 의미는 선명해졌지만 상업 회수 질문에는 여전히 시간이 걸렸습니다.",
+        "effects": {
+          "critic_reputation": 3,
+          "festival_network": 2,
+          "investor_package_readiness": 4,
+          "investment_amount": -50000000
+        }
+      },
+      {
+        "id": "send_rough_package",
+        "text": "현재 상태로 먼저 보내 반응을 본다",
+        "resultText": "미팅은 빨리 잡혔지만, 첫인상에서 프로젝트의 약점도 함께 노출됐습니다.",
+        "effects": {
+          "delay_days": -2,
+          "investor_package_risk": 6,
+          "investor_reputation": -3,
+          "financial_risk": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_adaptation_rights_contract_pressure",
+    "stage": "screenplay_development",
+    "title": "각색권 계약 검토",
+    "description": "원작, 실화, 기사, 과거 사건에서 가져온 요소가 어디까지 안전한지 검토해야 합니다. 지금 정리하지 않으면 촬영 이후 더 비싸질 수 있습니다.",
+    "weight": 62,
+    "trigger": {
+      "minAdaptationRightsRisk": 25,
+      "genreWeights": {
+        "social_true_story": 1.7,
+        "historical_period": 1.45,
+        "fantasy": 1.35,
+        "animation": 1.25,
+        "sf_disaster_monster": 1.2,
+        "default": 0.85
+      }
+    },
+    "choices": [
+      {
+        "id": "secure_rights_now",
+        "text": "원작·기사·실화 권리를 지금 정리한다",
+        "resultText": "권리 리스크는 크게 줄었지만 개발비와 계약 시간이 늘었습니다.",
+        "effects": {
+          "adaptation_rights_clarity": 14,
+          "adaptation_rights_risk": -14,
+          "plagiarism_risk": -8,
+          "cash": -60000000,
+          "delay_days": 7
+        }
+      },
+      {
+        "id": "legal_memo_only",
+        "text": "법무 메모만 받아 제작을 이어간다",
+        "resultText": "당장은 빠르게 움직일 수 있지만, 회색지대가 완전히 사라진 것은 아닙니다.",
+        "effects": {
+          "adaptation_rights_clarity": 5,
+          "plagiarism_risk": -3,
+          "cash": -15000000,
+          "press_backlash_risk": 2
+        }
+      },
+      {
+        "id": "rewrite_away_from_source",
+        "text": "원작과 닮은 설정을 크게 바꾼다",
+        "resultText": "권리 리스크는 줄었지만 처음 끌렸던 소재의 힘도 일부 사라졌습니다.",
+        "effects": {
+          "adaptation_rights_risk": -10,
+          "plagiarism_risk": -10,
+          "script_originality": 6,
+          "scenario_quality": -2,
+          "production_duration": 1
+        }
+      },
+      {
+        "id": "ignore_rights_noise",
+        "text": "문제 없을 것이라 보고 넘어간다",
+        "resultText": "개발 일정은 지켰지만, 나중에 권리자나 언론이 문제를 제기할 여지가 남았습니다.",
+        "effects": {
+          "adaptation_rights_risk": 12,
+          "plagiarism_risk": 8,
+          "press_backlash_risk": 6,
+          "financial_risk": -1
+        }
+      }
+    ]
+  }
+]

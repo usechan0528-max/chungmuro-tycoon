@@ -1,0 +1,485 @@
+[
+  {
+    "id": "capital_application",
+    "sequence": 10,
+    "name": "자본 확보/공모 제출",
+    "description": "단편 제작비를 직접 확보하거나 지원 공모에 제출하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_short"
+    ]
+  },
+  {
+    "id": "funding_simple",
+    "sequence": 15,
+    "name": "자본 확보",
+    "description": "소규모 자본, 지원금, 개인 자금을 확보하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_short",
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "short_production",
+    "sequence": 20,
+    "name": "제작",
+    "description": "단편의 촬영과 최소 후반작업을 한 번에 밀어붙이는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_short"
+    ]
+  },
+  {
+    "id": "editing",
+    "sequence": 25,
+    "name": "편집",
+    "description": "단편과 저예산 프로젝트의 편집을 마무리하는 단계.",
+    "stageGroup": "postproduction",
+    "requiredForScales": [
+      "scale_short"
+    ]
+  },
+  {
+    "id": "public_submission",
+    "sequence": 30,
+    "name": "공개/출품",
+    "description": "온라인 공개, 학교 상영, 단편영화제 출품으로 결과를 확인하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_short"
+    ]
+  },
+  {
+    "id": "festival_or_online",
+    "sequence": 35,
+    "name": "영화제/온라인 공개",
+    "description": "단편을 영화제나 온라인으로 공개해 반응을 확인하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_short"
+    ]
+  },
+  {
+    "id": "capital_secured",
+    "sequence": 110,
+    "name": "자본 확보",
+    "description": "독립영화 제작비, 지원금, 소규모 투자, 개인 자본을 맞추는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "screenplay_development",
+    "sequence": 120,
+    "name": "시나리오 개발",
+    "description": "인물, 주제, 구조를 다듬고 제작 가능한 각본으로 끌어올리는 단계.",
+    "stageGroup": "development",
+    "requiredForScales": [
+      "scale_independent",
+      "scale_low_budget_genre",
+      "scale_mid_commercial",
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "casting_simple",
+    "sequence": 125,
+    "name": "간단 캐스팅",
+    "description": "독립영화에 맞는 배우와 핵심 스태프를 확보하는 단계.",
+    "stageGroup": "casting",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "indie_production",
+    "sequence": 130,
+    "name": "제작",
+    "description": "제한된 예산과 현장 자원을 조율해 독립영화 촬영을 진행하는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "planning",
+    "sequence": 210,
+    "name": "기획",
+    "description": "장르 콘셉트, 타깃 관객, 핵심 장면, 제작 규모를 잡는 단계.",
+    "stageGroup": "development",
+    "requiredForScales": [
+      "scale_low_budget_genre"
+    ]
+  },
+  {
+    "id": "small_investment",
+    "sequence": 220,
+    "name": "소규모 투자",
+    "description": "저예산 장르영화에 맞는 제작비와 배급 가능성을 설득하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_low_budget_genre"
+    ]
+  },
+  {
+    "id": "development",
+    "sequence": 300,
+    "name": "기획 개발",
+    "description": "아이템, 원작/IP, 시나리오, 패키징 방향을 잡는 범용 개발 단계.",
+    "stageGroup": "development"
+  },
+  {
+    "id": "fundraising",
+    "sequence": 310,
+    "name": "투자 유치",
+    "description": "투자사, 제작사, 배급사와 제작비 및 권리 구조를 협상하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_mid_commercial"
+    ]
+  },
+  {
+    "id": "production_announcement",
+    "sequence": 320,
+    "name": "제작 발표",
+    "description": "작품의 제작 사실, 핵심 스태프, 콘셉트, 시장 포지션을 공개하는 단계.",
+    "stageGroup": "press",
+    "requiredForScales": [
+      "scale_mid_commercial",
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "casting",
+    "sequence": 330,
+    "name": "캐스팅",
+    "description": "감독, 배우, 주요 스태프를 붙이고 대중성과 적합도의 균형을 맞추는 단계.",
+    "stageGroup": "casting",
+    "requiredForScales": [
+      "scale_low_budget_genre",
+      "scale_mid_commercial"
+    ]
+  },
+  {
+    "id": "pre_production",
+    "sequence": 340,
+    "name": "프리프로덕션",
+    "description": "콘티, 로케이션, 미술, 촬영 계획, 제작 일정을 확정하는 단계.",
+    "stageGroup": "production"
+  },
+  {
+    "id": "shooting",
+    "sequence": 350,
+    "name": "제작/촬영",
+    "description": "촬영 현장에서 품질, 일정, 예산, 관계 리스크를 관리하는 범용 제작 단계.",
+    "stageGroup": "production"
+  },
+  {
+    "id": "production",
+    "sequence": 360,
+    "name": "제작",
+    "description": "촬영 현장에서 품질, 일정, 예산, 관계 리스크를 관리하는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_low_budget_genre",
+      "scale_mid_commercial"
+    ]
+  },
+  {
+    "id": "post_production",
+    "sequence": 370,
+    "name": "후반",
+    "description": "편집, 음악, 사운드, VFX, 색보정으로 최종 완성도를 끌어올리는 단계.",
+    "stageGroup": "postproduction"
+  },
+  {
+    "id": "marketing",
+    "sequence": 380,
+    "name": "마케팅",
+    "description": "예고편, 언론 시사, 인터뷰, 온라인 반응을 관리하는 단계.",
+    "stageGroup": "marketing"
+  },
+  {
+    "id": "festival",
+    "sequence": 385,
+    "name": "영화제",
+    "description": "영화제 출품과 상영을 통해 평가와 인맥을 확보하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "festival_limited_release",
+    "sequence": 390,
+    "name": "영화제/제한 개봉",
+    "description": "영화제 출품, 예술영화관 제한 개봉, 2차 시장 가능성을 확인하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "limited_release",
+    "sequence": 395,
+    "name": "제한 개봉",
+    "description": "예술영화관과 소규모 스크린 중심으로 개봉하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_independent"
+    ]
+  },
+  {
+    "id": "release",
+    "sequence": 400,
+    "name": "개봉",
+    "description": "극장 개봉 결과와 관객 반응을 확인하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_low_budget_genre",
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "release_strategy",
+    "sequence": 405,
+    "name": "배급/개봉 전략",
+    "description": "개봉 월, 스크린 규모, 경쟁작 회피, 특수관 전략을 결정하는 단계.",
+    "stageGroup": "distribution",
+    "requiredForScales": [
+      "scale_mid_commercial",
+      "scale_large_commercial"
+    ]
+  },
+  {
+    "id": "distribution_release",
+    "sequence": 410,
+    "name": "배급/개봉",
+    "description": "배급 조건, 스크린 규모, 개봉 시점이 흥행 결과로 이어지는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_mid_commercial"
+    ]
+  },
+  {
+    "id": "post_release_response",
+    "sequence": 420,
+    "name": "개봉 후 대응",
+    "description": "입소문, 언론 대응, 관객 반응을 관리하며 후속 성과를 노리는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_mid_commercial"
+    ]
+  },
+  {
+    "id": "post_release",
+    "sequence": 425,
+    "name": "개봉 후 대응",
+    "description": "입소문, 언론 대응, 이벤트, 후속 마케팅을 관리하는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_mid_commercial",
+      "scale_large_commercial"
+    ]
+  },
+  {
+    "id": "secondary_market",
+    "sequence": 430,
+    "name": "2차 시장",
+    "description": "VOD, IPTV, 해외 판매, OTT, 재상영 등 추가 수익을 정산하는 단계.",
+    "stageGroup": "post_release"
+  },
+  {
+    "id": "ip_development",
+    "sequence": 510,
+    "name": "IP 개발",
+    "description": "원작, 세계관, 시리즈 가능성을 포함해 대형 프로젝트의 뼈대를 세우는 단계.",
+    "stageGroup": "development",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_fundraising",
+    "sequence": 515,
+    "name": "대형 투자 유치",
+    "description": "대규모 제작비와 공동 투자 구조를 설계하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_investment",
+    "sequence": 520,
+    "name": "대형 투자",
+    "description": "대규모 제작비, 공동 투자, 리스크 분산 구조를 설계하는 단계.",
+    "stageGroup": "funding",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "distribution_predeal",
+    "sequence": 525,
+    "name": "배급 사전 협상",
+    "description": "배급사, 극장 체인, 해외 판매 조건을 사전에 협상하는 단계.",
+    "stageGroup": "distribution",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "pre_distribution_deal",
+    "sequence": 530,
+    "name": "배급 사전 협상",
+    "description": "극장 체인, 배급사, 해외 판매, 특수관 전략을 미리 조율하는 단계.",
+    "stageGroup": "distribution",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_pre_production",
+    "sequence": 535,
+    "name": "대형 프리프로덕션",
+    "description": "대형 세트, 액션, VFX, 해외 로케이션을 준비하는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "star_casting",
+    "sequence": 540,
+    "name": "스타 캐스팅",
+    "description": "인지도, 해외 판매력, 캐릭터 적합도를 놓고 스타 캐스팅을 진행하는 단계.",
+    "stageGroup": "casting",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_shooting",
+    "sequence": 545,
+    "name": "대규모 촬영",
+    "description": "대규모 촬영 현장과 장기 스케줄을 통제하는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_scale_production",
+    "sequence": 550,
+    "name": "대규모 제작",
+    "description": "대규모 세트, 액션, VFX, 장기 촬영 일정을 통제하는 단계.",
+    "stageGroup": "production",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "vfx_post_production",
+    "sequence": 555,
+    "name": "VFX 후반",
+    "description": "VFX, 사운드, 색보정, 기술 마무리를 집중 관리하는 단계.",
+    "stageGroup": "postproduction",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "premium_format_strategy",
+    "sequence": 560,
+    "name": "특수관 전략",
+    "description": "IMAX, 4DX, 돌비 등 특수관 수요와 가격 민감도를 반영하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "large_marketing",
+    "sequence": 565,
+    "name": "대형 마케팅",
+    "description": "대규모 광고, 언론, 팬덤, 온라인 캠페인을 실행하는 단계.",
+    "stageGroup": "marketing",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "fan_event",
+    "sequence": 570,
+    "name": "팬 이벤트",
+    "description": "무대인사, 팬덤 이벤트, 굿즈, 온라인 확산을 통해 흥행 여진을 만드는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "special_format_strategy",
+    "sequence": 575,
+    "name": "특수관 전략",
+    "description": "IMAX, 4DX, 돌비 등 특수관과 프리미엄 가격 전략을 결정하는 단계.",
+    "stageGroup": "release",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "global_ott_franchise",
+    "sequence": 580,
+    "name": "해외/OTT/시리즈화",
+    "description": "해외 판매, OTT 계약, 후속작, 스핀오프 가능성을 검토하는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_large_commercial",
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "global_secondary_market",
+    "sequence": 585,
+    "name": "해외/OTT/2차 시장",
+    "description": "해외 판매, OTT, VOD, 글로벌 공개 전략을 정산하는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "franchise_decision",
+    "sequence": 595,
+    "name": "시리즈화 결정",
+    "description": "후속작, 스핀오프, 세계관 확장을 결정하는 단계.",
+    "stageGroup": "post_release",
+    "requiredForScales": [
+      "scale_tentpole"
+    ]
+  },
+  {
+    "id": "release_ready",
+    "sequence": 900,
+    "name": "개봉 준비",
+    "description": "기존 저장 데이터 호환을 위한 범용 개봉 준비 단계.",
+    "stageGroup": "release"
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "scale_short",
+    "name": "단편영화",
+    "minBudget": 1000000,
+    "maxBudget": 30000000,
+    "requiredStages": [
+      "funding_simple",
+      "shooting",
+      "editing",
+      "festival_or_online"
+    ],
+    "eventCountRange": {
+      "min": 1,
+      "max": 2
+    },
+    "failureImpact": "low"
+  },
+  {
+    "id": "scale_independent",
+    "name": "독립영화",
+    "minBudget": 30000000,
+    "maxBudget": 500000000,
+    "requiredStages": [
+      "funding_simple",
+      "planning",
+      "casting_simple",
+      "shooting",
+      "post_production",
+      "festival",
+      "limited_release",
+      "secondary_market"
+    ],
+    "eventCountRange": {
+      "min": 2,
+      "max": 4
+    },
+    "failureImpact": "low_to_medium"
+  },
+  {
+    "id": "scale_low_budget_genre",
+    "name": "저예산 장르영화",
+    "minBudget": 500000000,
+    "maxBudget": 2000000000,
+    "requiredStages": [
+      "planning",
+      "fundraising",
+      "casting",
+      "shooting",
+      "post_production",
+      "marketing",
+      "release",
+      "secondary_market"
+    ],
+    "eventCountRange": {
+      "min": 3,
+      "max": 5
+    },
+    "failureImpact": "medium"
+  },
+  {
+    "id": "scale_mid_commercial",
+    "name": "중간예산 상업영화",
+    "minBudget": 2000000000,
+    "maxBudget": 8000000000,
+    "requiredStages": [
+      "planning",
+      "fundraising",
+      "casting",
+      "production_announcement",
+      "pre_production",
+      "shooting",
+      "post_production",
+      "marketing",
+      "release_strategy",
+      "release",
+      "post_release",
+      "secondary_market"
+    ],
+    "eventCountRange": {
+      "min": 5,
+      "max": 8
+    },
+    "failureImpact": "high"
+  },
+  {
+    "id": "scale_large_commercial",
+    "name": "대형 상업영화",
+    "minBudget": 8000000000,
+    "maxBudget": 20000000000,
+    "requiredStages": [
+      "planning",
+      "large_fundraising",
+      "distribution_predeal",
+      "star_casting",
+      "production_announcement",
+      "pre_production",
+      "shooting",
+      "post_production",
+      "large_marketing",
+      "release_strategy",
+      "release",
+      "post_release",
+      "secondary_market"
+    ],
+    "eventCountRange": {
+      "min": 8,
+      "max": 12
+    },
+    "failureImpact": "very_high"
+  },
+  {
+    "id": "scale_tentpole",
+    "name": "텐트폴/블록버스터",
+    "minBudget": 20000000000,
+    "maxBudget": 50000000000,
+    "requiredStages": [
+      "ip_development",
+      "large_fundraising",
+      "distribution_predeal",
+      "star_casting",
+      "production_announcement",
+      "large_pre_production",
+      "large_shooting",
+      "vfx_post_production",
+      "large_marketing",
+      "special_format_strategy",
+      "release",
+      "fan_event",
+      "global_secondary_market",
+      "franchise_decision"
+    ],
+    "eventCountRange": {
+      "min": 10,
+      "max": 15
+    },
+    "failureImpact": "game_over_risk"
+  }
+]

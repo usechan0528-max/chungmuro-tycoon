@@ -1,0 +1,38 @@
+[
+  {
+    "id": "plagiarism_warning_similar_plot",
+    "stage": "planning",
+    "title": "기획 유사성 지적",
+    "description": "내부 검토자가 최근 흥행작과 설정이 비슷하다고 지적했습니다.",
+    "trigger": {
+      "minPlagiarismRisk": 40
+    },
+    "choices": [
+      {
+        "id": "change_setting",
+        "text": "설정을 크게 바꾼다",
+        "effects": {
+          "plagiarism_risk": -20,
+          "scenario_quality": -3,
+          "production_duration": 1
+        }
+      },
+      {
+        "id": "legal_review",
+        "text": "법무 검토를 진행한다",
+        "effects": {
+          "plagiarism_risk": -10,
+          "cash": -30000000
+        }
+      },
+      {
+        "id": "ignore",
+        "text": "그대로 간다",
+        "effects": {
+          "plagiarism_risk": 15,
+          "press_backlash_risk": 10
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "id": "theater_1998_cgv_gangbyeon11",
+    "year": 1998,
+    "month": 4,
+    "title": "CGV강변11 개관",
+    "type": "theater_opening",
+    "fixedLevel": "absoluteFixed",
+    "chain": "CGV",
+    "location": "서울 광진구 구의동 테크노마트",
+    "description": "국내 최초 본격 멀티플렉스 CGV강변11이 개관하며 한국 극장 산업이 단관 중심에서 멀티플렉스 중심으로 전환되기 시작합니다.",
+    "effects": {
+      "theater_demand": 10,
+      "distribution_power": 15,
+      "first_week_importance": 10,
+      "screen_access_for_commercial_films": 10,
+      "screen_access_for_indie_films": -3
+    },
+    "unlocks": [
+      "multiplex_release"
+    ]
+  },
+  {
+    "id": "theater_1999_lotte_cinema_launch",
+    "year": 1999,
+    "month": 10,
+    "title": "롯데시네마 브랜드 출범/확장 시작",
+    "type": "theater_chain_launch",
+    "fixedLevel": "fixed",
+    "chain": "Lotte Cinema",
+    "description": "롯데 계열 상영망이 형성되며 멀티플렉스 체인 경쟁이 본격화됩니다.",
+    "effects": {
+      "theater_demand": 5,
+      "major_distributor_power": 6,
+      "screen_access_for_commercial_films": 5,
+      "vertical_integration": 6
+    },
+    "relatedCompanies": [
+      "Lotte Cinema",
+      "Lotte Entertainment"
+    ]
+  },
+  {
+    "id": "theater_2000_megabox_coex_presence",
+    "year": 2000,
+    "month": 5,
+    "title": "메가박스 코엑스 등 대형 멀티플렉스 존재감 확대",
+    "type": "theater_opening",
+    "fixedLevel": "fixed",
+    "chain": "Megabox",
+    "location": "서울 강남권",
+    "description": "강남권 대형 멀티플렉스가 관객 동선과 개봉 이벤트의 중심지로 부상합니다.",
+    "effects": {
+      "theater_demand": 8,
+      "local_boxoffice_boost": 8,
+      "opening_week_importance": 5,
+      "date_movie_demand": 5
+    },
+    "relatedCompanies": [
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2003_three_chain_expansion",
+    "year": 2003,
+    "month": 6,
+    "title": "CGV·롯데시네마·메가박스 전국 확장",
+    "type": "multiplex_expansion",
+    "fixedLevel": "semiFixed",
+    "description": "멀티플렉스 체인이 전국으로 확산되며 와이드릴리즈와 첫 주 스크린 전략의 중요성이 커집니다.",
+    "effects": {
+      "theater_demand": 10,
+      "screen_access_for_commercial_films": 10,
+      "first_week_importance": 10,
+      "distribution_power": 8,
+      "screen_access_for_indie_films": -3
+    },
+    "unlocks": [
+      "wide_release"
+    ],
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2000s_multiplex_expansion",
+    "year": 2003,
+    "month": null,
+    "title": "멀티플렉스 전국 확산",
+    "type": "theater_expansion",
+    "fixedLevel": "semiFixed",
+    "chain": "CGV/Lotte Cinema/Megabox",
+    "description": "대형 멀티플렉스 체인이 전국적으로 확산되며 와이드릴리즈 전략이 중요해집니다.",
+    "effects": {
+      "theater_demand": 15,
+      "major_distributor_power": 10,
+      "opening_week_importance": 15
+    }
+  },
+  {
+    "id": "theater_2010_lotte_worldtower_scale",
+    "year": 2010,
+    "month": 12,
+    "title": "롯데 월드타워급 대형 지점 영향 확대",
+    "type": "flagship_theater",
+    "fixedLevel": "semiFixed",
+    "chain": "Lotte Cinema",
+    "location": "서울 잠실권",
+    "description": "대형 지점 중심의 프리미어, 시사회, 이벤트 상영이 배급 마케팅에서 더 중요해집니다.",
+    "effects": {
+      "local_boxoffice_boost": 8,
+      "marketing_efficiency": 6,
+      "premium_ticket_revenue": 5,
+      "opening_week_importance": 5
+    },
+    "relatedCompanies": [
+      "Lotte Cinema"
+    ]
+  },
+  {
+    "id": "theater_2017_cgv_yongsan_reopening",
+    "year": 2017,
+    "month": 7,
+    "title": "CGV용산아이파크몰 재개관",
+    "type": "major_theater_opening",
+    "fixedLevel": "fixed",
+    "chain": "CGV",
+    "location": "서울 용산",
+    "description": "대형 플래그십 극장과 프리미엄 특별관 전략이 강화됩니다.",
+    "effects": {
+      "special_format_demand": 20,
+      "premium_ticket_revenue": 10,
+      "large_format_competition": 15
+    },
+    "unlocks": [
+      "large_imax_strategy",
+      "premium_format_marketing"
+    ]
+  },
+  {
+    "id": "theater_2018_cgv_gangbyeon_20th_renewal",
+    "year": 2018,
+    "month": 4,
+    "title": "CGV강변 20주년 리뉴얼",
+    "type": "theater_renewal",
+    "fixedLevel": "fixed",
+    "chain": "CGV",
+    "location": "서울 광진구 구의동 테크노마트",
+    "description": "멀티플렉스 시대의 상징적 지점이 20주년을 맞아 리뉴얼되며 극장 브랜드와 공간 경험이 다시 조명됩니다.",
+    "effects": {
+      "theater_experience_value": 8,
+      "local_boxoffice_boost": 5,
+      "marketing_efficiency": 4
+    },
+    "relatedCompanies": [
+      "CJ CGV"
+    ]
+  },
+  {
+    "id": "theater_2020_covid_multiplex_crisis",
+    "year": 2020,
+    "month": 3,
+    "title": "코로나19 이후 멀티플렉스 위기",
+    "type": "theater_crisis",
+    "fixedLevel": "absoluteFixed",
+    "description": "극장 관객이 급감하며 멀티플렉스 체인들이 큰 위기를 겪습니다.",
+    "effects": {
+      "theater_demand": -60,
+      "ott_power": 35,
+      "ticket_price_burden": 20,
+      "middle_budget_risk": 25
+    }
+  },
+  {
+    "id": "theater_2020_multiplex_profitability_crisis",
+    "year": 2020,
+    "month": 5,
+    "title": "코로나19 이후 멀티플렉스 수익성 위기",
+    "type": "theater_crisis",
+    "fixedLevel": "absoluteFixed",
+    "description": "극장 관객 급감과 고정비 부담으로 멀티플렉스 체인의 수익성 위기가 본격화됩니다.",
+    "effects": {
+      "theater_demand": -30,
+      "ticket_price_burden": 10,
+      "screen_access_difficulty": 8,
+      "special_format_demand": 8
+    },
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2022_ticket_burden_premium_focus",
+    "year": 2022,
+    "month": 7,
+    "title": "극장 티켓값 부담 심화와 특별관 집중",
+    "type": "theater_market_shift",
+    "fixedLevel": "semiFixed",
+    "description": "티켓값 부담이 커지며 관객은 일반관보다 체험 가치가 높은 특별관과 대형 이벤트 영화에 더 집중합니다.",
+    "effects": {
+      "ticket_price_burden": 15,
+      "special_format_demand": 12,
+      "theater_experience_value": 10,
+      "middle_budget_risk": 10
+    },
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2024_general_screen_weakness",
+    "year": 2024,
+    "month": 6,
+    "title": "일반관 수요 약화와 특별관 중심 소비",
+    "type": "theater_market_shift",
+    "fixedLevel": "semiFixed",
+    "description": "일반관 수요가 약해지고 특별관 중심 소비가 강해지며 중간예산 드라마의 극장 경쟁력이 약해집니다.",
+    "effects": {
+      "special_format_demand": 12,
+      "middle_budget_risk": 12,
+      "foreign_blockbuster_advantage": 10,
+      "korean_blockbuster_pressure": 8
+    },
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2025_lotte_megabox_merger_discussion",
+    "year": 2025,
+    "month": 1,
+    "title": "롯데시네마·메가박스 합병 논의와 극장 재편 압력",
+    "type": "theater_restructuring",
+    "fixedLevel": "semiFixed",
+    "description": "멀티플렉스 업계의 수익성 악화와 구조조정 압력이 커지며 체인 수, 슬롯 협상, 배급 구조 재편 가능성이 떠오릅니다.",
+    "effects": {
+      "distribution_uncertainty": 15,
+      "theater_chain_restructuring": 20,
+      "screen_access_difficulty": 10,
+      "major_distributor_power": 5
+    },
+    "relatedCompanies": [
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "theater_2030_premium_restructuring_generation",
+    "year": 2030,
+    "month": 3,
+    "title": "프리미엄 특별관 중심 미래 극장 재편 자동 생성",
+    "type": "future_generation",
+    "fixedLevel": "semiFixed",
+    "description": "실제 고정 역사 이후 극장 체인은 프리미엄 특별관, 소형 고급관, 지역 거점관 중심으로 재편될 수 있습니다.",
+    "effects": {
+      "future_generation_power": 15,
+      "special_format_demand": 15,
+      "theater_chain_restructuring": 15
+    },
+    "unlocks": [
+      "future_theater_restructuring"
+    ],
+    "relatedCompanies": [
+      "Theater Chains"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "franchise_sequel_offer",
+    "title": "후속작 제안",
+    "description": "전작의 성공 이후 투자사와 배급사가 후속작을 제안했습니다.",
+    "trigger": {
+      "minFinalAudience": 2000000,
+      "minIpValue": 60
+    },
+    "choices": [
+      {
+        "id": "make_direct_sequel",
+        "text": "정식 후속작을 제작한다",
+        "effects": {
+          "franchise_power": 15,
+          "series_fatigue": 8,
+          "sequel_demand": 10
+        }
+      },
+      {
+        "id": "make_spinoff",
+        "text": "인기 조연 스핀오프를 만든다",
+        "effects": {
+          "world_expansion": 15,
+          "character_popularity": 10,
+          "series_fatigue": 4
+        }
+      },
+      {
+        "id": "preserve_ip",
+        "text": "후속작을 만들지 않고 IP를 보존한다",
+        "effects": {
+          "ip_value": 5,
+          "sequel_demand": -5
+        }
+      }
+    ]
+  }
+]

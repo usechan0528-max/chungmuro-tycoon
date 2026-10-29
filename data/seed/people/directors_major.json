@@ -1,0 +1,4596 @@
+[
+  {
+    "id": "director_bong_joon_ho",
+    "nameKo": "봉준호",
+    "nameEn": "Bong Joon-ho",
+    "type": "director",
+    "birthYear": 1969,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "legendaryProtected",
+    "tier": "global_auteur",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2019,
+        "modifiers": {
+          "directing": 1.12,
+          "commercialSense": 1.1,
+          "auteurPower": 1.14,
+          "globalRecognition": 1.2
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "black_comedy",
+      "monster",
+      "drama",
+      "sf"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 98,
+      "screenplay": 96,
+      "commercialSense": 90,
+      "auteurPower": 98,
+      "genreControl": 95,
+      "budgetControl": 82,
+      "festivalPower": 100,
+      "globalRecognition": 100,
+      "costLevel": 95,
+      "scheduleDifficulty": 92,
+      "growthPotential": 55
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "작가주의와 상업성을 동시에 성립시킨 글로벌 한국영화 대표 감독.",
+      "currentAbilityText": "장르적 재미와 사회적 메시지를 결합하는 능력이 뛰어나다.",
+      "potentialText": "이미 세계적 브랜드를 형성한 감독이다.",
+      "fameText": "한국영화를 세계 시장에 각인시킨 감독으로 평가된다.",
+      "brandText": "이름만으로도 해외 영화제와 투자자의 관심을 끌 수 있다."
+    },
+    "directorType": [
+      "작가주의",
+      "상업성",
+      "글로벌",
+      "장르혼합"
+    ],
+    "historicalFilmographyLocked": true
+  },
+  {
+    "id": "director_park_chan_wook",
+    "nameKo": "박찬욱",
+    "nameEn": "Park Chan-wook",
+    "type": "director",
+    "birthYear": 1963,
+    "availableFrom": 1992,
+    "status": "active",
+    "protectionLevel": "legendaryProtected",
+    "tier": "global_auteur",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2000,
+        "end": 2022,
+        "modifiers": {
+          "directing": 1.1,
+          "auteurPower": 1.14,
+          "festivalPower": 1.12,
+          "globalRecognition": 1.12
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "noir",
+      "romance_melodrama",
+      "period_historical"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 96,
+      "screenplay": 90,
+      "commercialSense": 78,
+      "auteurPower": 100,
+      "genreControl": 94,
+      "budgetControl": 75,
+      "festivalPower": 95,
+      "globalRecognition": 98,
+      "costLevel": 92,
+      "scheduleDifficulty": 90,
+      "growthPotential": 50
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "한국영화 제작 지형에 뚜렷한 영향을 남긴 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "작가주의",
+      "글로벌",
+      "장르혼합",
+      "미장센"
+    ],
+    "historicalFilmographyLocked": true
+  },
+  {
+    "id": "director_lee_chang_dong",
+    "nameKo": "이창동",
+    "nameEn": "Lee Chang-dong",
+    "type": "director",
+    "birthYear": 1954,
+    "availableFrom": 1997,
+    "status": "active",
+    "protectionLevel": "legendaryProtected",
+    "tier": "legend",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1997,
+        "end": 2018,
+        "modifiers": {
+          "directing": 1.1,
+          "screenplay": 1.12,
+          "auteurPower": 1.14,
+          "festivalPower": 1.1
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "social_true_story",
+      "indie_art"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 96,
+      "screenplay": 95,
+      "commercialSense": 45,
+      "auteurPower": 100,
+      "genreControl": 86,
+      "budgetControl": 70,
+      "festivalPower": 96,
+      "globalRecognition": 90,
+      "costLevel": 80,
+      "scheduleDifficulty": 75,
+      "growthPotential": 40
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "한국영화 제작 지형에 뚜렷한 영향을 남긴 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "작가주의",
+      "문학성",
+      "영화제형"
+    ],
+    "historicalFilmographyLocked": true
+  },
+  {
+    "id": "director_kim_ki_young",
+    "nameKo": "김기영",
+    "nameEn": "Kim Ki-young",
+    "type": "director",
+    "birthYear": 1919,
+    "availableFrom": 1955,
+    "status": "active",
+    "protectionLevel": "legacyProtected",
+    "tier": "legend",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1960,
+        "end": 1975,
+        "modifiers": {
+          "directing": 1.1,
+          "auteurPower": 1.14,
+          "genreControl": 1.1
+        }
+      }
+    ],
+    "genreTags": [
+      "horror_occult",
+      "melodrama",
+      "crime_thriller",
+      "cult"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 94,
+      "screenplay": 85,
+      "commercialSense": 50,
+      "auteurPower": 98,
+      "genreControl": 90,
+      "budgetControl": 70,
+      "festivalPower": 85,
+      "globalRecognition": 70,
+      "costLevel": 60,
+      "scheduleDifficulty": 50,
+      "growthPotential": 20
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "한국영화 제작 지형에 뚜렷한 영향을 남긴 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "작가주의",
+      "장르혼합",
+      "컬트"
+    ],
+    "historicalFilmographyLocked": true
+  },
+  {
+    "id": "director_choi_dong_hoon",
+    "nameKo": "최동훈",
+    "nameEn": "Choi Dong-hoon",
+    "type": "director",
+    "birthYear": 1971,
+    "availableFrom": 2004,
+    "status": "active",
+    "protectionLevel": "majorProtected",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2006,
+        "end": 2015,
+        "modifiers": {
+          "commercialSense": 1.14,
+          "genreControl": 1.1,
+          "budgetControl": 1.08
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "comedy",
+      "period_historical",
+      "fantasy"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 86,
+      "screenplay": 80,
+      "commercialSense": 100,
+      "auteurPower": 60,
+      "genreControl": 88,
+      "budgetControl": 78,
+      "festivalPower": 55,
+      "globalRecognition": 60,
+      "costLevel": 88,
+      "scheduleDifficulty": 80,
+      "growthPotential": 50
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "한국영화 제작 지형에 뚜렷한 영향을 남긴 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "상업성",
+      "앙상블",
+      "케이퍼",
+      "범죄오락"
+    ],
+    "historicalFilmographyLocked": true
+  },
+  {
+    "id": "director_lim_gwon_taek",
+    "nameKo": "임권택",
+    "nameEn": "Lim Gwon-Taek",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "legend",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_lee_jang_ho",
+    "nameKo": "이장호",
+    "nameEn": "Lee Jang-Ho",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_bae_chang_ho",
+    "nameKo": "배창호",
+    "nameEn": "Bae Chang-Ho",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_jung_ji_yeong",
+    "nameKo": "정지영",
+    "nameEn": "Jung Ji-Yeong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_ha_gil_jong",
+    "nameKo": "하길종",
+    "nameEn": "Ha Gil-Jong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_yoo_hyeon_mok",
+    "nameKo": "유현목",
+    "nameEn": "Yoo Hyeon-Mok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_lee_man_hui",
+    "nameKo": "이만희",
+    "nameEn": "Lee Man-Hui",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_go_yeong_nam",
+    "nameKo": "고영남",
+    "nameEn": "Go Yeong-Nam",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_lee_du_yong",
+    "nameKo": "이두용",
+    "nameEn": "Lee Du-Yong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_kwak_ji_gyun",
+    "nameKo": "곽지균",
+    "nameEn": "Kwak Ji-Gyun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_park_cheol_su",
+    "nameKo": "박철수",
+    "nameEn": "Park Cheol-Su",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_jang_seon_u",
+    "nameKo": "장선우",
+    "nameEn": "Jang Seon-U",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_park_gwang_su",
+    "nameKo": "박광수",
+    "nameEn": "Park Gwang-Su",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_kang_je_gyu",
+    "nameKo": "강제규",
+    "nameEn": "Kang Je-Gyu",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_kim_ui_seok",
+    "nameKo": "김의석",
+    "nameEn": "Kim Ui-Seok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1980,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "veteran",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1983,
+        "end": 1995,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "drama",
+      "period_historical",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1980~1990년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "작가주의",
+      "산업기반"
+    ]
+  },
+  {
+    "id": "director_lee_myeong_se",
+    "nameKo": "이명세",
+    "nameEn": "Lee Myeong-Se",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_kim_seong_su",
+    "nameKo": "김성수",
+    "nameEn": "Kim Seong-Su",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_park_jong_won",
+    "nameKo": "박종원",
+    "nameEn": "Park Jong-Won",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_yeo_gyun_dong",
+    "nameKo": "여균동",
+    "nameEn": "Yeo Gyun-Dong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_hong_sang_su",
+    "nameKo": "홍상수",
+    "nameEn": "Hong Sang-Su",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "auteur",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "romance_melodrama"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 86,
+      "screenplay": 88,
+      "commercialSense": 35,
+      "auteurPower": 95,
+      "genreControl": 78,
+      "budgetControl": 85,
+      "festivalPower": 90,
+      "globalRecognition": 80,
+      "costLevel": 60,
+      "scheduleDifficulty": 60,
+      "growthPotential": 35
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "작가주의",
+      "독립영화",
+      "영화제형"
+    ]
+  },
+  {
+    "id": "director_kim_ji_un",
+    "nameKo": "김지운",
+    "nameEn": "Kim Ji-Un",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "horror_occult",
+      "action",
+      "sf_disaster_monster"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 90,
+      "screenplay": 82,
+      "commercialSense": 82,
+      "auteurPower": 88,
+      "genreControl": 92,
+      "budgetControl": 75,
+      "festivalPower": 75,
+      "globalRecognition": 75,
+      "costLevel": 82,
+      "scheduleDifficulty": 78,
+      "growthPotential": 55
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "범죄스릴러",
+      "미장센"
+    ]
+  },
+  {
+    "id": "director_song_neung_han",
+    "nameKo": "송능한",
+    "nameEn": "Song Neung-Han",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_jang_jin",
+    "nameKo": "장진",
+    "nameEn": "Jang Jin",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_shim_hyeong_rae",
+    "nameKo": "심형래",
+    "nameEn": "Shim Hyeong-Rae",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_kang_u_seok",
+    "nameKo": "강우석",
+    "nameEn": "Kang U-Seok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_kwak_gyeong_taek",
+    "nameKo": "곽경택",
+    "nameEn": "Kwak Gyeong-Taek",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_lee_jun_ik",
+    "nameKo": "이준익",
+    "nameEn": "Lee Jun-Ik",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_jang_jun_hwan",
+    "nameKo": "장준환",
+    "nameEn": "Jang Jun-Hwan",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_min_gyu_dong",
+    "nameKo": "민규동",
+    "nameEn": "Min Gyu-Dong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_heo_jin_ho",
+    "nameKo": "허진호",
+    "nameEn": "Heo Jin-Ho",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 1990,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 1993,
+        "end": 2005,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "1990~2000년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합"
+    ]
+  },
+  {
+    "id": "director_lim_sang_su",
+    "nameKo": "임상수",
+    "nameEn": "Lim Sang-Su",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_gi_deok",
+    "nameKo": "김기덕",
+    "nameEn": "Kim Gi-Deok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "auteur",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_ryu_seung_wan",
+    "nameKo": "류승완",
+    "nameEn": "Ryu Seung-Wan",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "action",
+      "crime_thriller",
+      "comedy"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 86,
+      "screenplay": 78,
+      "commercialSense": 92,
+      "auteurPower": 65,
+      "genreControl": 90,
+      "budgetControl": 85,
+      "festivalPower": 60,
+      "globalRecognition": 65,
+      "costLevel": 82,
+      "scheduleDifficulty": 78,
+      "growthPotential": 55
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "상업성",
+      "액션전문",
+      "범죄스릴러"
+    ]
+  },
+  {
+    "id": "director_yoon_je_gyun",
+    "nameKo": "윤제균",
+    "nameEn": "Yoon Je-Gyun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "comedy",
+      "family_human_drama",
+      "sf_disaster_monster"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 78,
+      "screenplay": 65,
+      "commercialSense": 96,
+      "auteurPower": 40,
+      "genreControl": 75,
+      "budgetControl": 88,
+      "festivalPower": 40,
+      "globalRecognition": 55,
+      "costLevel": 82,
+      "scheduleDifficulty": 75,
+      "growthPotential": 45
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "상업성",
+      "대중오락"
+    ]
+  },
+  {
+    "id": "director_na_hong_jin",
+    "nameKo": "나홍진",
+    "nameEn": "Na Hong-Jin",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "horror_occult",
+      "drama"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 92,
+      "screenplay": 86,
+      "commercialSense": 80,
+      "auteurPower": 88,
+      "genreControl": 94,
+      "budgetControl": 70,
+      "festivalPower": 82,
+      "globalRecognition": 78,
+      "costLevel": 82,
+      "scheduleDifficulty": 82,
+      "growthPotential": 60
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "범죄스릴러",
+      "작가주의",
+      "장르통제"
+    ]
+  },
+  {
+    "id": "director_kim_yong_hwa",
+    "nameKo": "김용화",
+    "nameEn": "Kim Yong-Hwa",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_jang_hun",
+    "nameKo": "장훈",
+    "nameEn": "Jang Hun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_lee_hae_yeong",
+    "nameKo": "이해영",
+    "nameEn": "Lee Hae-Yeong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_ahn_byeong_gi",
+    "nameKo": "안병기",
+    "nameEn": "Ahn Byeong-Gi",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_tae_yong",
+    "nameKo": "김태용",
+    "nameEn": "Kim Tae-Yong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_jung_yun_cheol",
+    "nameKo": "정윤철",
+    "nameEn": "Jung Yun-Cheol",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kang_hyeong_cheol",
+    "nameKo": "강형철",
+    "nameEn": "Kang Hyeong-Cheol",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_yoon_jong_bin",
+    "nameKo": "윤종빈",
+    "nameEn": "Yoon Jong-Bin",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_han_min",
+    "nameKo": "김한민",
+    "nameEn": "Kim Han-Min",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "commercial_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "period_historical",
+      "action",
+      "war"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 80,
+      "screenplay": 70,
+      "commercialSense": 94,
+      "auteurPower": 45,
+      "genreControl": 80,
+      "budgetControl": 86,
+      "festivalPower": 45,
+      "globalRecognition": 55,
+      "costLevel": 80,
+      "scheduleDifficulty": 76,
+      "growthPotential": 45
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "상업성",
+      "사극",
+      "대형제작"
+    ]
+  },
+  {
+    "id": "director_han_jae_rim",
+    "nameKo": "한재림",
+    "nameEn": "Han Jae-Rim",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2000,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2003,
+        "end": 2015,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "drama",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2000~2010년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_yeon_sang_ho",
+    "nameKo": "연상호",
+    "nameEn": "Yeon Sang-Ho",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_jang_jae_hyeon",
+    "nameKo": "장재현",
+    "nameEn": "Jang Jae-Hyeon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "genre_master",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "horror_occult",
+      "crime_thriller",
+      "mystery"
+    ],
+    "manualOverride": true,
+    "manualStats": {
+      "directing": 84,
+      "screenplay": 82,
+      "commercialSense": 82,
+      "auteurPower": 72,
+      "genreControl": 92,
+      "budgetControl": 76,
+      "festivalPower": 65,
+      "globalRecognition": 55,
+      "costLevel": 72,
+      "scheduleDifficulty": 70,
+      "growthPotential": 72
+    },
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "오컬트",
+      "범죄스릴러",
+      "장르통제"
+    ]
+  },
+  {
+    "id": "director_yang_u_seok",
+    "nameKo": "양우석",
+    "nameEn": "Yang U-Seok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_woo_min_ho",
+    "nameKo": "우민호",
+    "nameEn": "Woo Min-Ho",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_seong_hun",
+    "nameKo": "김성훈",
+    "nameEn": "Kim Seong-Hun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_yong_hun",
+    "nameKo": "김용훈",
+    "nameEn": "Kim Yong-Hun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_lee_byeong_heon",
+    "nameKo": "이병헌",
+    "nameEn": "Lee Byeong-Heon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_byun_seong_hyeon",
+    "nameKo": "변성현",
+    "nameEn": "Byun Seong-Hyeon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_hwang_dong_hyeok",
+    "nameKo": "황동혁",
+    "nameEn": "Hwang Dong-Hyeok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_lee_won_seok",
+    "nameKo": "이원석",
+    "nameEn": "Lee Won-Seok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_cho_seong_hui",
+    "nameKo": "조성희",
+    "nameEn": "Cho Seong-Hui",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_um_tae_hwa",
+    "nameKo": "엄태화",
+    "nameEn": "Um Tae-Hwa",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_won_sin_yeon",
+    "nameKo": "원신연",
+    "nameEn": "Won Sin-Yeon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_kim_ji_hun",
+    "nameKo": "김지훈",
+    "nameEn": "Kim Ji-Hun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_lee_seok_hun",
+    "nameKo": "이석훈",
+    "nameEn": "Lee Seok-Hun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2010,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "solid_commercial",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2013,
+        "end": 2025,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "crime_thriller",
+      "action",
+      "comedy"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2010~2020년대 주요 감독 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "상업성"
+    ]
+  },
+  {
+    "id": "director_park_hun_jeong",
+    "nameKo": "박훈정",
+    "nameEn": "Park Hun-Jeong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_kang_yun_seong",
+    "nameKo": "강윤성",
+    "nameEn": "Kang Yun-Seong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_lee_sang_yong",
+    "nameKo": "이상용",
+    "nameEn": "Lee Sang-Yong",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_hong_won_chan",
+    "nameKo": "홍원찬",
+    "nameEn": "Hong Won-Chan",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_kim_bo_ra",
+    "nameKo": "김보라",
+    "nameEn": "Kim Bo-Ra",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_yoon_ga_eun",
+    "nameKo": "윤가은",
+    "nameEn": "Yoon Ga-Eun",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_jung_ju_ri",
+    "nameKo": "정주리",
+    "nameEn": "Jung Ju-Ri",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_cho_hyeon_cheol",
+    "nameKo": "조현철",
+    "nameEn": "Cho Hyeon-Cheol",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_yoo_jae_seon",
+    "nameKo": "유재선",
+    "nameEn": "Yoo Jae-Seon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_nam_dong_hyeop",
+    "nameKo": "남동협",
+    "nameEn": "Nam Dong-Hyeop",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_kim_se_hwi",
+    "nameKo": "김세휘",
+    "nameEn": "Kim Se-Hwi",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_lee_chung_hyeon",
+    "nameKo": "이충현",
+    "nameEn": "Lee Chung-Hyeon",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_jung_beom_sik",
+    "nameKo": "정범식",
+    "nameEn": "Jung Beom-Sik",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_cho_ui_seok",
+    "nameKo": "조의석",
+    "nameEn": "Cho Ui-Seok",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  },
+  {
+    "id": "director_heo_myeong_haeng",
+    "nameKo": "허명행",
+    "nameEn": "Heo Myeong-Haeng",
+    "type": "director",
+    "birthYear": null,
+    "availableFrom": 2020,
+    "status": "active",
+    "protectionLevel": "none",
+    "tier": "rising_director",
+    "currentStats": {
+      "directing_quality": 62,
+      "screenplay_sense": 60,
+      "field_control": 58,
+      "artistic_sense": 58,
+      "commercial_sense": 56
+    },
+    "potentialStats": {
+      "directing_quality": 70,
+      "screenplay_sense": 68,
+      "field_control": 66,
+      "artistic_sense": 68,
+      "commercial_sense": 66
+    },
+    "genreFit": {},
+    "peakEras": [
+      {
+        "start": 2023,
+        "end": 2035,
+        "modifiers": {
+          "directing": 1.04,
+          "commercialSense": 1.03
+        }
+      }
+    ],
+    "genreTags": [
+      "indie_art",
+      "drama",
+      "social_true_story"
+    ],
+    "manualOverride": false,
+    "manualStats": {},
+    "statEstimationNotes": "1차 빌드 자동 산정의 기초 명단. tier/type tags/genreTags를 바탕으로 자동 산정하고 주요 인물만 manualStats를 우선 적용한다.",
+    "publicProfile": {
+      "oneLine": "2020년대 및 독립/신진 계열 흐름에서 한국영화 제작 지형에 영향을 준 감독.",
+      "currentAbilityText": "연출 성향과 산업적 위치는 후속 큐레이션에서 장르별로 세분화한다.",
+      "potentialText": "작품 규모, 투자 환경, 시대 흐름에 따라 흥행성과 평단 반응이 달라질 수 있다.",
+      "fameText": "한국영화사와 산업 흐름 안에서 의미 있는 이름으로 취급한다.",
+      "brandText": "대표작, 장르 성향, 현장 평판이 감독 브랜드를 구성한다."
+    },
+    "directorType": [
+      "장르혼합",
+      "독립영화",
+      "성장형"
+    ]
+  }
+]

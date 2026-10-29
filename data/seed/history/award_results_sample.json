@@ -1,0 +1,189 @@
+[
+  {
+    "awardId": "award_venice",
+    "movieId": "film_1987_the_surrogate_mother",
+    "year": 1987,
+    "month": 9,
+    "category": "여우주연상",
+    "result": "winner",
+    "winnerName": "강수연",
+    "personName": "강수연",
+    "workTitle": "씨받이",
+    "fixedLevel": "fixed",
+    "sourceNote": "한국 배우의 해외 영화제 위상을 여는 고정 역사 기록.",
+    "effects": {
+      "actor_global_recognition": 20,
+      "global_reputation": 8
+    }
+  },
+  {
+    "awardId": "award_cannes",
+    "movieId": "film_2004_oldboy",
+    "year": 2004,
+    "month": 5,
+    "category": "심사위원대상",
+    "result": "winner",
+    "winnerName": "올드보이",
+    "workTitle": "올드보이",
+    "personName": "박찬욱",
+    "fixedLevel": "protectedFixed",
+    "sourceNote": "한국 작가주의 장르영화의 국제적 위상을 높인 고정 역사 기록.",
+    "effects": {
+      "festival_strategy_value": 25,
+      "global_korean_cinema_interest": 15
+    }
+  },
+  {
+    "awardId": "award_cannes",
+    "movieId": "film_2007_secret_sunshine",
+    "year": 2007,
+    "month": 5,
+    "category": "여우주연상",
+    "result": "winner",
+    "winnerName": "전도연",
+    "workTitle": "밀양",
+    "personName": "전도연",
+    "fixedLevel": "fixed",
+    "sourceNote": "한국 배우의 국제 영화제 경쟁력을 보여주는 고정 역사 기록.",
+    "effects": {
+      "actor_global_recognition": 25,
+      "festival_strategy_value": 20
+    }
+  },
+  {
+    "awardId": "award_blue_dragon",
+    "movieId": "film_2019_parasite",
+    "year": 2019,
+    "month": 11,
+    "category": "작품상",
+    "result": "winner",
+    "winnerName": "기생충",
+    "workTitle": "기생충",
+    "personName": "봉준호",
+    "fixedLevel": "historical",
+    "sourceNote": "국내 주요 시상식 샘플 기록.",
+    "effects": {
+      "critic_reputation": 5,
+      "public_reputation": 4
+    }
+  },
+  {
+    "awardId": "award_cannes",
+    "movieId": "film_2019_parasite",
+    "year": 2019,
+    "month": 5,
+    "category": "황금종려상",
+    "result": "winner",
+    "winnerName": "기생충",
+    "workTitle": "기생충",
+    "personName": "봉준호",
+    "fixedLevel": "absoluteProtected",
+    "sourceNote": "한국영화의 세계 영화제 위상을 바꾼 절대 보호 기록.",
+    "effects": {
+      "global_korean_cinema_interest": 30,
+      "festival_strategy_value": 25
+    }
+  },
+  {
+    "awardId": "award_academy",
+    "movieId": "film_2019_parasite",
+    "year": 2020,
+    "month": 2,
+    "category": "작품상",
+    "result": "winner",
+    "winnerName": "기생충",
+    "workTitle": "기생충",
+    "personName": "봉준호",
+    "fixedLevel": "absoluteProtected",
+    "sourceNote": "기생충 아카데미 4관왕 고정 역사 기록.",
+    "effects": {
+      "global_reputation": 20,
+      "global_streaming_sale": 25
+    }
+  },
+  {
+    "awardId": "award_academy",
+    "movieId": "film_2019_parasite",
+    "year": 2020,
+    "month": 2,
+    "category": "감독상",
+    "result": "winner",
+    "winnerName": "봉준호",
+    "workTitle": "기생충",
+    "personName": "봉준호",
+    "fixedLevel": "absoluteProtected",
+    "sourceNote": "기생충 아카데미 4관왕 고정 역사 기록.",
+    "effects": {
+      "global_reputation": 20,
+      "festival_strategy_value": 20
+    }
+  },
+  {
+    "awardId": "award_academy",
+    "movieId": "film_2019_parasite",
+    "year": 2020,
+    "month": 2,
+    "category": "각본상",
+    "result": "winner",
+    "winnerName": "봉준호·한진원",
+    "workTitle": "기생충",
+    "personName": "봉준호·한진원",
+    "fixedLevel": "absoluteProtected",
+    "sourceNote": "기생충 아카데미 4관왕 고정 역사 기록.",
+    "effects": {
+      "screenplay_value": 20,
+      "global_reputation": 12
+    }
+  },
+  {
+    "awardId": "award_academy",
+    "movieId": "film_2019_parasite",
+    "year": 2020,
+    "month": 2,
+    "category": "국제장편영화상",
+    "result": "winner",
+    "winnerName": "기생충",
+    "workTitle": "기생충",
+    "personName": "봉준호",
+    "fixedLevel": "absoluteProtected",
+    "sourceNote": "기생충 아카데미 4관왕 고정 역사 기록.",
+    "effects": {
+      "global_reputation": 18,
+      "global_korean_cinema_interest": 25
+    }
+  },
+  {
+    "awardId": "award_academy",
+    "movieId": "film_2020_minari",
+    "year": 2021,
+    "month": 4,
+    "category": "여우조연상",
+    "result": "winner",
+    "winnerName": "윤여정",
+    "workTitle": "미나리",
+    "personName": "윤여정",
+    "fixedLevel": "fixed",
+    "sourceNote": "한국 배우의 글로벌 명성을 높인 고정 역사 기록.",
+    "effects": {
+      "actor_global_recognition": 25,
+      "global_reputation": 12
+    }
+  },
+  {
+    "awardId": "award_cannes",
+    "movieId": "film_2022_decision_to_leave",
+    "year": 2022,
+    "month": 5,
+    "category": "감독상",
+    "result": "winner",
+    "winnerName": "박찬욱",
+    "workTitle": "헤어질 결심",
+    "personName": "박찬욱",
+    "fixedLevel": "protectedFixed",
+    "sourceNote": "작가주의 스릴러와 멜로의 해외 평가를 강화한 고정 역사 기록.",
+    "effects": {
+      "festival_strategy_value": 20,
+      "auteur_romance_thriller_value": 25
+    }
+  }
+]

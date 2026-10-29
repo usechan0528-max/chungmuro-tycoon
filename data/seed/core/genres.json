@@ -1,0 +1,637 @@
+[
+  {
+    "id": "genre_crime_thriller",
+    "name": "범죄 스릴러",
+    "description": "각본, 연출, 배우의 밀도가 중요한 한국영화 핵심 장르.",
+    "budgetWeights": {
+      "scenario": 8,
+      "directing": 10,
+      "actors": 25,
+      "shooting": 12,
+      "art": 6,
+      "stunt": 5,
+      "vfx": 2,
+      "sound": 5,
+      "editing": 8,
+      "contingency": 7
+    },
+    "eraFit": {
+      "1980s": 45,
+      "1990s": 65,
+      "2000s": 90,
+      "2010s": 90,
+      "2020s": 80
+    },
+    "successFactors": [
+      "scenario_quality",
+      "directing_quality",
+      "acting_quality",
+      "genre_satisfaction"
+    ],
+    "riskFactors": [
+      "plagiarism_risk",
+      "critic_backlash_risk",
+      "second_week_drop",
+      "genre_fatigue"
+    ],
+    "criticWeights": {
+      "scenario_quality": 25,
+      "directing_quality": 25,
+      "acting_quality": 20,
+      "originality": 15,
+      "social_meaning": 15
+    },
+    "audienceWeights": {
+      "genre_satisfaction": 30,
+      "acting_quality": 20,
+      "pre_release_interest": 20,
+      "word_of_mouth": 30
+    },
+    "franchiseFit": 75,
+    "secondaryMarketFit": 70,
+    "plagiarismSensitivity": 65,
+    "awardCompatibility": 70,
+    "canonicalId": "crime_thriller"
+  },
+  {
+    "id": "genre_action",
+    "name": "액션",
+    "description": "배우의 피지컬, 스턴트, 촬영, 편집이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 6,
+      "directing": 10,
+      "actors": 25,
+      "shooting": 12,
+      "art": 5,
+      "stunt": 15,
+      "vfx": 5,
+      "sound": 4,
+      "editing": 5,
+      "contingency": 3
+    },
+    "eraFit": {
+      "1980s": 60,
+      "1990s": 65,
+      "2000s": 75,
+      "2010s": 90,
+      "2020s": 85
+    },
+    "successFactors": [
+      "action_stunt_quality",
+      "shooting_quality",
+      "editing_quality",
+      "casting_fit"
+    ],
+    "riskFactors": [
+      "budget_overrun_risk",
+      "on_set_conflict_risk",
+      "safety_controversy",
+      "foreign_competition"
+    ],
+    "criticWeights": {
+      "directing_quality": 20,
+      "action_stunt_quality": 30,
+      "editing_quality": 20,
+      "scenario_quality": 15,
+      "technical_craft": 15
+    },
+    "audienceWeights": {
+      "genre_satisfaction": 35,
+      "action_stunt_quality": 30,
+      "pre_release_interest": 20,
+      "word_of_mouth": 15
+    },
+    "franchiseFit": 85,
+    "secondaryMarketFit": 75,
+    "plagiarismSensitivity": 55,
+    "awardCompatibility": 45,
+    "canonicalId": "action"
+  },
+  {
+    "id": "genre_horror_occult",
+    "name": "공포/오컬트",
+    "description": "음향, 미술, 분위기, 후반작업이 중요한 저비용 고효율 장르.",
+    "budgetWeights": {
+      "scenario": 10,
+      "directing": 10,
+      "actors": 15,
+      "shooting": 10,
+      "art": 12,
+      "stunt": 2,
+      "vfx": 8,
+      "sound": 12,
+      "editing": 8,
+      "contingency": 3
+    },
+    "eraFit": {
+      "1980s": 40,
+      "1990s": 50,
+      "2000s": 70,
+      "2010s": 65,
+      "2020s": 90
+    },
+    "successFactors": [
+      "directing_quality",
+      "music_sound_quality",
+      "art_costume_prop_quality",
+      "genre_satisfaction"
+    ],
+    "riskFactors": [
+      "genre_fatigue",
+      "audience_rejection_risk",
+      "critic_backlash_risk"
+    ],
+    "criticWeights": {
+      "directing_quality": 25,
+      "music_sound_quality": 25,
+      "genre_satisfaction": 25,
+      "scenario_quality": 15,
+      "originality": 10
+    },
+    "audienceWeights": {
+      "genre_satisfaction": 35,
+      "music_sound_quality": 25,
+      "word_of_mouth": 25,
+      "online_buzz": 15
+    },
+    "franchiseFit": 80,
+    "secondaryMarketFit": 85,
+    "plagiarismSensitivity": 60,
+    "awardCompatibility": 45,
+    "canonicalId": "horror_occult"
+  },
+  {
+    "id": "genre_romance_melodrama",
+    "name": "로맨스/멜로",
+    "description": "배우 케미, 감정선, 음악, 로케이션이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 10,
+      "directing": 8,
+      "actors": 30,
+      "shooting": 12,
+      "art": 6,
+      "stunt": 0,
+      "vfx": 1,
+      "sound": 10,
+      "editing": 8,
+      "contingency": 5
+    },
+    "eraFit": {
+      "1980s": 80,
+      "1990s": 80,
+      "2000s": 70,
+      "2010s": 50,
+      "2020s": 35
+    },
+    "successFactors": [
+      "casting_fit",
+      "acting_quality",
+      "scenario_quality",
+      "music_sound_quality"
+    ],
+    "riskFactors": [
+      "audience_rejection_risk",
+      "second_week_drop",
+      "ticket_price_burden"
+    ],
+    "criticWeights": {
+      "acting_quality": 25,
+      "scenario_quality": 25,
+      "directing_quality": 20,
+      "emotion": 30
+    },
+    "audienceWeights": {
+      "casting_fit": 35,
+      "acting_quality": 20,
+      "music_sound_quality": 20,
+      "word_of_mouth": 25
+    },
+    "franchiseFit": 35,
+    "secondaryMarketFit": 75,
+    "plagiarismSensitivity": 40,
+    "awardCompatibility": 55,
+    "canonicalId": "romance_melodrama"
+  },
+  {
+    "id": "genre_comedy",
+    "name": "코미디",
+    "description": "대사, 배우 타이밍, 편집 리듬, 관객 반응 변동성이 큰 장르.",
+    "budgetWeights": {
+      "scenario": 12,
+      "directing": 10,
+      "actors": 28,
+      "shooting": 8,
+      "art": 5,
+      "stunt": 2,
+      "vfx": 1,
+      "sound": 5,
+      "editing": 12,
+      "contingency": 7
+    },
+    "eraFit": {
+      "1980s": 50,
+      "1990s": 75,
+      "2000s": 80,
+      "2010s": 70,
+      "2020s": 55
+    },
+    "successFactors": [
+      "scenario_quality",
+      "acting_quality",
+      "editing_quality",
+      "genre_satisfaction"
+    ],
+    "riskFactors": [
+      "audience_rejection_risk",
+      "second_week_drop",
+      "online_backlash"
+    ],
+    "criticWeights": {
+      "scenario_quality": 25,
+      "editing_quality": 20,
+      "acting_quality": 20,
+      "originality": 15,
+      "commercial_entertainment": 20
+    },
+    "audienceWeights": {
+      "genre_satisfaction": 35,
+      "acting_quality": 25,
+      "word_of_mouth": 25,
+      "online_buzz": 15
+    },
+    "franchiseFit": 60,
+    "secondaryMarketFit": 70,
+    "plagiarismSensitivity": 45,
+    "awardCompatibility": 40,
+    "canonicalId": "comedy"
+  },
+  {
+    "id": "genre_family_human_drama",
+    "name": "가족/휴먼드라마",
+    "description": "세대 공감, 감정선, 명절 시즌에 강한 대중 드라마.",
+    "budgetWeights": {
+      "scenario": 12,
+      "directing": 10,
+      "actors": 25,
+      "shooting": 10,
+      "art": 5,
+      "stunt": 0,
+      "vfx": 0,
+      "sound": 8,
+      "editing": 10,
+      "contingency": 5
+    },
+    "eraFit": {
+      "1980s": 65,
+      "1990s": 65,
+      "2000s": 70,
+      "2010s": 80,
+      "2020s": 55
+    },
+    "successFactors": [
+      "scenario_quality",
+      "acting_quality",
+      "audience_score",
+      "word_of_mouth"
+    ],
+    "riskFactors": [
+      "sentimentality_backlash",
+      "ticket_price_burden",
+      "second_week_drop"
+    ],
+    "criticWeights": {
+      "scenario_quality": 25,
+      "acting_quality": 25,
+      "directing_quality": 20,
+      "emotion": 30
+    },
+    "audienceWeights": {
+      "audience_score": 35,
+      "acting_quality": 25,
+      "word_of_mouth": 30,
+      "pre_release_interest": 10
+    },
+    "franchiseFit": 30,
+    "secondaryMarketFit": 80,
+    "plagiarismSensitivity": 35,
+    "awardCompatibility": 65,
+    "canonicalId": "family_human_drama"
+  },
+  {
+    "id": "genre_period_historical",
+    "name": "사극/시대극",
+    "description": "미술, 의상, 고증, 배우, 스케일이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 7,
+      "directing": 8,
+      "actors": 20,
+      "shooting": 13,
+      "art": 18,
+      "stunt": 7,
+      "vfx": 5,
+      "sound": 4,
+      "editing": 4,
+      "contingency": 2
+    },
+    "eraFit": {
+      "1980s": 60,
+      "1990s": 60,
+      "2000s": 75,
+      "2010s": 85,
+      "2020s": 65
+    },
+    "successFactors": [
+      "art_costume_prop_quality",
+      "acting_quality",
+      "directing_quality",
+      "scenario_quality"
+    ],
+    "riskFactors": [
+      "controversy_risk",
+      "budget_overrun_risk",
+      "historical_distortion"
+    ],
+    "criticWeights": {
+      "art_costume_prop_quality": 25,
+      "scenario_quality": 20,
+      "acting_quality": 20,
+      "directing_quality": 20,
+      "social_meaning": 15
+    },
+    "audienceWeights": {
+      "pre_release_interest": 25,
+      "acting_quality": 25,
+      "genre_satisfaction": 25,
+      "word_of_mouth": 25
+    },
+    "franchiseFit": 50,
+    "secondaryMarketFit": 65,
+    "plagiarismSensitivity": 35,
+    "awardCompatibility": 75,
+    "canonicalId": "historical_period"
+  },
+  {
+    "id": "genre_social_true_story",
+    "name": "사회고발/실화극",
+    "description": "실제 사건, 사회적 의미, 언론·평론 반응에 민감한 장르.",
+    "budgetWeights": {
+      "scenario": 15,
+      "directing": 10,
+      "actors": 20,
+      "shooting": 8,
+      "art": 5,
+      "stunt": 0,
+      "vfx": 0,
+      "sound": 6,
+      "editing": 10,
+      "contingency": 6
+    },
+    "eraFit": {
+      "1980s": 35,
+      "1990s": 55,
+      "2000s": 70,
+      "2010s": 85,
+      "2020s": 70
+    },
+    "successFactors": [
+      "scenario_quality",
+      "acting_quality",
+      "critic_reputation",
+      "press_network"
+    ],
+    "riskFactors": [
+      "controversy_risk",
+      "legal_risk",
+      "press_backlash_risk"
+    ],
+    "criticWeights": {
+      "scenario_quality": 25,
+      "social_meaning": 35,
+      "acting_quality": 20,
+      "directing_quality": 20
+    },
+    "audienceWeights": {
+      "word_of_mouth": 35,
+      "audience_score": 25,
+      "press_tone": 20,
+      "acting_quality": 20
+    },
+    "franchiseFit": 20,
+    "secondaryMarketFit": 75,
+    "plagiarismSensitivity": 45,
+    "awardCompatibility": 80,
+    "canonicalId": "social_true_story"
+  },
+  {
+    "id": "genre_indie_art",
+    "name": "독립/예술영화",
+    "description": "흥행보다 작가성, 영화제, 평론가 반응이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 15,
+      "directing": 15,
+      "actors": 20,
+      "shooting": 8,
+      "art": 5,
+      "stunt": 0,
+      "vfx": 0,
+      "sound": 8,
+      "editing": 12,
+      "contingency": 5
+    },
+    "eraFit": {
+      "1980s": 45,
+      "1990s": 60,
+      "2000s": 75,
+      "2010s": 75,
+      "2020s": 70
+    },
+    "successFactors": [
+      "scenario_quality",
+      "directing_quality",
+      "acting_quality",
+      "critic_reputation"
+    ],
+    "riskFactors": [
+      "audience_rejection_risk",
+      "low_boxoffice_ceiling",
+      "funding_difficulty"
+    ],
+    "criticWeights": {
+      "directing_quality": 30,
+      "scenario_quality": 30,
+      "originality": 25,
+      "acting_quality": 15
+    },
+    "audienceWeights": {
+      "word_of_mouth": 30,
+      "critic_score": 25,
+      "festival_network": 25,
+      "online_buzz": 20
+    },
+    "franchiseFit": 15,
+    "secondaryMarketFit": 60,
+    "plagiarismSensitivity": 50,
+    "awardCompatibility": 90,
+    "canonicalId": "indie_art"
+  },
+  {
+    "id": "genre_sf_disaster_monster",
+    "name": "SF/재난/괴수",
+    "description": "VFX, 특수관, 스케일, 기술 완성도 요구가 높은 장르.",
+    "budgetWeights": {
+      "scenario": 6,
+      "directing": 8,
+      "actors": 18,
+      "shooting": 10,
+      "art": 10,
+      "stunt": 5,
+      "vfx": 20,
+      "sound": 4,
+      "editing": 6,
+      "contingency": 3
+    },
+    "eraFit": {
+      "1980s": 10,
+      "1990s": 25,
+      "2000s": 55,
+      "2010s": 65,
+      "2020s": 70
+    },
+    "successFactors": [
+      "vfx_quality",
+      "directing_quality",
+      "special_format_demand",
+      "genre_satisfaction"
+    ],
+    "riskFactors": [
+      "foreign_competition",
+      "vfx_expectation",
+      "budget_overrun_risk",
+      "critic_backlash_risk"
+    ],
+    "criticWeights": {
+      "vfx_quality": 25,
+      "scenario_quality": 20,
+      "directing_quality": 20,
+      "technical_craft": 25,
+      "originality": 10
+    },
+    "audienceWeights": {
+      "vfx_quality": 30,
+      "special_format_demand": 25,
+      "genre_satisfaction": 25,
+      "pre_release_interest": 20
+    },
+    "franchiseFit": 85,
+    "secondaryMarketFit": 80,
+    "plagiarismSensitivity": 70,
+    "awardCompatibility": 45,
+    "canonicalId": "sf_disaster_monster"
+  },
+  {
+    "id": "genre_fantasy",
+    "name": "판타지",
+    "description": "세계관, 미술, VFX, 원작 IP가 중요한 고비용 장르.",
+    "budgetWeights": {
+      "scenario": 8,
+      "directing": 8,
+      "actors": 18,
+      "shooting": 10,
+      "art": 15,
+      "stunt": 4,
+      "vfx": 18,
+      "sound": 5,
+      "editing": 6,
+      "contingency": 3
+    },
+    "eraFit": {
+      "1980s": 10,
+      "1990s": 25,
+      "2000s": 45,
+      "2010s": 70,
+      "2020s": 65
+    },
+    "successFactors": [
+      "world_expansion",
+      "vfx_quality",
+      "art_costume_prop_quality",
+      "ip_value"
+    ],
+    "riskFactors": [
+      "budget_overrun_risk",
+      "foreign_competition",
+      "worldbuilding_failure"
+    ],
+    "criticWeights": {
+      "worldbuilding": 25,
+      "vfx_quality": 20,
+      "directing_quality": 20,
+      "scenario_quality": 20,
+      "originality": 15
+    },
+    "audienceWeights": {
+      "ip_value": 30,
+      "genre_satisfaction": 25,
+      "vfx_quality": 25,
+      "pre_release_interest": 20
+    },
+    "franchiseFit": 90,
+    "secondaryMarketFit": 85,
+    "plagiarismSensitivity": 75,
+    "awardCompatibility": 40,
+    "canonicalId": "fantasy"
+  },
+  {
+    "id": "genre_animation",
+    "name": "애니메이션",
+    "description": "극장 흥행보다 가족 관객, IP, 장기 2차 시장, 굿즈에 강한 장르.",
+    "budgetWeights": {
+      "scenario": 10,
+      "directing": 10,
+      "actors": 10,
+      "shooting": 0,
+      "art": 20,
+      "stunt": 0,
+      "vfx": 20,
+      "sound": 10,
+      "editing": 10,
+      "contingency": 5
+    },
+    "eraFit": {
+      "1980s": 20,
+      "1990s": 35,
+      "2000s": 50,
+      "2010s": 65,
+      "2020s": 75
+    },
+    "successFactors": [
+      "ip_value",
+      "character_popularity",
+      "music_sound_quality",
+      "secondary_market_fit"
+    ],
+    "riskFactors": [
+      "foreign_competition",
+      "production_duration",
+      "budget_overrun_risk"
+    ],
+    "criticWeights": {
+      "art_costume_prop_quality": 25,
+      "scenario_quality": 20,
+      "music_sound_quality": 20,
+      "originality": 20,
+      "technical_craft": 15
+    },
+    "audienceWeights": {
+      "character_popularity": 30,
+      "music_sound_quality": 20,
+      "genre_satisfaction": 25,
+      "fandom_index": 25
+    },
+    "franchiseFit": 90,
+    "secondaryMarketFit": 95,
+    "plagiarismSensitivity": 60,
+    "awardCompatibility": 55,
+    "canonicalId": "animation"
+  }
+]

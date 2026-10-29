@@ -1,0 +1,29 @@
+[
+  {
+    "id": "foreign_direct_distribution_1988",
+    "year": 1988,
+    "month": 9,
+    "title": "외화 직배 충격",
+    "type": "foreign_market",
+    "fixedLevel": "semiFixed",
+    "description": "외화 배급 구조의 변화가 극장가 경쟁을 흔든다.",
+    "effects": {
+      "foreign_competition": 8,
+      "distribution_network": -2
+    }
+  },
+  {
+    "id": "foreign_superhero_wave_2012",
+    "year": 2012,
+    "month": 5,
+    "title": "할리우드 프랜차이즈 공세",
+    "type": "foreign_market",
+    "fixedLevel": "semiFixed",
+    "description": "외화 대작이 특수관과 성수기 스크린을 선점한다.",
+    "effects": {
+      "foreign_competition": 7,
+      "special_format_demand": 5
+    }
+  }
+]
+

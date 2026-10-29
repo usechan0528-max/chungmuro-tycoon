@@ -1,0 +1,207 @@
+[
+  {
+    "id": "genre_crime_thriller",
+    "name": "범죄 스릴러",
+    "description": "각본, 연출, 배우의 밀도와 편집 리듬이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 12,
+      "directing": 12,
+      "actors": 22,
+      "shooting": 12,
+      "art": 6,
+      "stunt": 5,
+      "vfx": 3,
+      "sound": 6,
+      "editing": 14,
+      "contingency": 8
+    }
+  },
+  {
+    "id": "genre_action",
+    "name": "액션",
+    "description": "스턴트, 촬영, 편집, 배우의 신체성이 흥행 체감에 크게 작용하는 장르.",
+    "budgetWeights": {
+      "scenario": 7,
+      "directing": 10,
+      "actors": 18,
+      "shooting": 12,
+      "art": 5,
+      "stunt": 20,
+      "vfx": 8,
+      "sound": 6,
+      "editing": 8,
+      "contingency": 6
+    }
+  },
+  {
+    "id": "genre_horror_occult",
+    "name": "공포/오컬트",
+    "description": "음향, 미술, 분위기, 후반작업의 정교함이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 12,
+      "directing": 12,
+      "actors": 12,
+      "shooting": 10,
+      "art": 14,
+      "stunt": 2,
+      "vfx": 8,
+      "sound": 15,
+      "editing": 10,
+      "contingency": 5
+    }
+  },
+  {
+    "id": "genre_romance_melodrama",
+    "name": "로맨스/멜로",
+    "description": "배우 케미, 시나리오, 음악, 로케이션의 감정 설계가 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 14,
+      "directing": 10,
+      "actors": 28,
+      "shooting": 10,
+      "art": 7,
+      "stunt": 0,
+      "vfx": 1,
+      "sound": 12,
+      "editing": 10,
+      "contingency": 8
+    }
+  },
+  {
+    "id": "genre_comedy",
+    "name": "코미디",
+    "description": "배우 호흡, 타이밍, 편집 리듬, 관객 친화성이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 14,
+      "directing": 10,
+      "actors": 25,
+      "shooting": 8,
+      "art": 5,
+      "stunt": 3,
+      "vfx": 1,
+      "sound": 8,
+      "editing": 18,
+      "contingency": 8
+    }
+  },
+  {
+    "id": "genre_family_human_drama",
+    "name": "가족/휴먼드라마",
+    "description": "인물 관계, 연기, 정서적 설득력과 입소문이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 16,
+      "directing": 12,
+      "actors": 24,
+      "shooting": 9,
+      "art": 8,
+      "stunt": 0,
+      "vfx": 2,
+      "sound": 10,
+      "editing": 11,
+      "contingency": 8
+    }
+  },
+  {
+    "id": "genre_period_historical",
+    "name": "사극/시대극",
+    "description": "미술, 의상, 소품, 시대 구현과 대규모 현장 통제가 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 14,
+      "directing": 12,
+      "actors": 18,
+      "shooting": 10,
+      "art": 20,
+      "stunt": 8,
+      "vfx": 5,
+      "sound": 5,
+      "editing": 4,
+      "contingency": 4
+    }
+  },
+  {
+    "id": "genre_social_true_story",
+    "name": "사회고발/실화극",
+    "description": "자료 조사, 각본의 책임감, 연기, 시대 감각과 평론 반응이 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 22,
+      "directing": 14,
+      "actors": 20,
+      "shooting": 8,
+      "art": 8,
+      "stunt": 1,
+      "vfx": 1,
+      "sound": 6,
+      "editing": 12,
+      "contingency": 8
+    }
+  },
+  {
+    "id": "genre_indie_art",
+    "name": "독립/예술영화",
+    "description": "작가성, 연출 의도, 각본, 배우의 세밀한 표현이 중심이 되는 장르.",
+    "budgetWeights": {
+      "scenario": 20,
+      "directing": 20,
+      "actors": 18,
+      "shooting": 10,
+      "art": 8,
+      "stunt": 0,
+      "vfx": 1,
+      "sound": 8,
+      "editing": 10,
+      "contingency": 5
+    }
+  },
+  {
+    "id": "genre_sf_disaster_monster",
+    "name": "SF/재난/괴수",
+    "description": "VFX, 스케일, 액션, 세계관 설계와 기술 완성도가 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 8,
+      "directing": 10,
+      "actors": 12,
+      "shooting": 9,
+      "art": 10,
+      "stunt": 10,
+      "vfx": 25,
+      "sound": 6,
+      "editing": 5,
+      "contingency": 5
+    }
+  },
+  {
+    "id": "genre_fantasy",
+    "name": "판타지",
+    "description": "세계관, 미술, VFX, 음악과 장르 몰입도가 중요한 장르.",
+    "budgetWeights": {
+      "scenario": 12,
+      "directing": 12,
+      "actors": 14,
+      "shooting": 8,
+      "art": 18,
+      "stunt": 5,
+      "vfx": 18,
+      "sound": 5,
+      "editing": 4,
+      "contingency": 4
+    }
+  },
+  {
+    "id": "genre_animation",
+    "name": "애니메이션",
+    "description": "시나리오, 미술, 연출, 음향, 후반 기술 완성도가 관객 만족을 좌우하는 장르.",
+    "budgetWeights": {
+      "scenario": 16,
+      "directing": 12,
+      "actors": 10,
+      "shooting": 0,
+      "art": 22,
+      "stunt": 0,
+      "vfx": 18,
+      "sound": 10,
+      "editing": 7,
+      "contingency": 5
+    }
+  }
+]
+

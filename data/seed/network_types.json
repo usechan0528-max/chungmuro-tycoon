@@ -1,0 +1,66 @@
+[
+  {
+    "id": "actor_network",
+    "nameKo": "배우 인맥",
+    "targetType": "person",
+    "description": "배우 및 매니지먼트와의 접근성이다.",
+    "lowText": "캐스팅 제안이 잘 닿지 않는다.",
+    "midText": "조건이 맞으면 미팅을 잡을 수 있다.",
+    "highText": "주요 배우 측과 빠르게 대화할 수 있다."
+  },
+  {
+    "id": "director_network",
+    "nameKo": "감독 인맥",
+    "targetType": "person",
+    "description": "감독, 작가, 연출부와의 관계망이다.",
+    "lowText": "창작 파트너 풀이 좁다.",
+    "midText": "실력 있는 창작자를 소개받을 수 있다.",
+    "highText": "유망 감독과 작가가 먼저 찾아온다."
+  },
+  {
+    "id": "production_network",
+    "nameKo": "제작 인맥",
+    "targetType": "industry",
+    "description": "프로듀서, 제작부, 스태프와의 현장 관계다.",
+    "lowText": "제작 현장을 꾸리기 어렵다.",
+    "midText": "기본 제작팀은 안정적으로 꾸릴 수 있다.",
+    "highText": "난도 높은 현장도 버틸 제작팀을 모을 수 있다."
+  },
+  {
+    "id": "investor_network",
+    "nameKo": "투자 인맥",
+    "targetType": "organization",
+    "description": "투자사와 금융권 접근성이다.",
+    "lowText": "투자 제안서가 검토 단계까지 가기 어렵다.",
+    "midText": "프로젝트 조건에 따라 투자 미팅이 가능하다.",
+    "highText": "주요 투자사와 직접 협상할 수 있다."
+  },
+  {
+    "id": "distribution_network",
+    "nameKo": "배급 인맥",
+    "targetType": "organization",
+    "description": "배급사와 극장 체인 접근성이다.",
+    "lowText": "개봉 조건이 불리하다.",
+    "midText": "작품 성격에 맞는 배급사를 찾을 수 있다.",
+    "highText": "성수기 배급 협상도 시도할 수 있다."
+  },
+  {
+    "id": "press_network",
+    "nameKo": "언론 인맥",
+    "targetType": "press",
+    "description": "기자, 매체, 홍보 채널과의 관계다.",
+    "lowText": "보도자료가 묻히기 쉽다.",
+    "midText": "작품 이슈는 기사화할 수 있다.",
+    "highText": "프레임을 잡아 여론을 움직일 수 있다."
+  },
+  {
+    "id": "school_network",
+    "nameKo": "학교 인맥",
+    "targetType": "school",
+    "description": "영화과, 동아리, 신인 창작자 네트워크다.",
+    "lowText": "신인 풀 접근성이 낮다.",
+    "midText": "학생 영화와 신인 인재 소식을 얻는다.",
+    "highText": "유망 신인을 빠르게 발굴한다."
+  }
+]
+

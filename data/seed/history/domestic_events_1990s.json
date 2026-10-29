@@ -1,0 +1,17 @@
+[
+  {
+    "id": "event_1999_shiri_blockbuster_boom",
+    "year": 1999,
+    "month": 2,
+    "title": "쉬리 흥행과 한국형 블록버스터 붐",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "한국형 블록버스터의 성공 가능성이 증명되며 투자자들이 대형 장르영화에 관심을 갖기 시작합니다.",
+    "effects": {
+      "action_investment": 30,
+      "blockbuster_confidence": 25,
+      "budget_inflation": 15,
+      "star_casting_importance": 10
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "personId": "director_bong_joon_ho",
+    "nameKo": "봉준호",
+    "type": "director",
+    "protectionLevel": "legendaryProtected",
+    "reason": "핵심 감독 필모그래피와 시장 영향은 실제 개봉 흐름으로 관리한다."
+  },
+  {
+    "personId": "director_park_chan_wook",
+    "nameKo": "박찬욱",
+    "type": "director",
+    "protectionLevel": "legendaryProtected",
+    "reason": "핵심 감독 필모그래피와 시장 영향은 실제 개봉 흐름으로 관리한다."
+  },
+  {
+    "personId": "director_lee_chang_dong",
+    "nameKo": "이창동",
+    "type": "director",
+    "protectionLevel": "legendaryProtected",
+    "reason": "핵심 감독 필모그래피와 시장 영향은 실제 개봉 흐름으로 관리한다."
+  },
+  {
+    "personId": "director_kim_ki_young",
+    "nameKo": "김기영",
+    "type": "director",
+    "protectionLevel": "legacyProtected",
+    "reason": "한국영화사 영향과 재평가 흐름을 별도 축으로 관리한다."
+  },
+  {
+    "personId": "director_choi_dong_hoon",
+    "nameKo": "최동훈",
+    "type": "director",
+    "protectionLevel": "majorProtected",
+    "reason": "핵심 감독 필모그래피와 시장 영향은 실제 개봉 흐름으로 관리한다."
+  }
+]

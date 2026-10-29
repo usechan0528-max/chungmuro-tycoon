@@ -1,0 +1,84 @@
+{
+  "kobisBoxoffice": {
+    "startYear": 2004,
+    "endYear": "current",
+    "scope": "daily, yearly aggregate, movie code, movie detail"
+  },
+  "kmdbMovies": {
+    "startYear": 1980,
+    "endYear": "current",
+    "scope": "Korean films first"
+  },
+  "foreignEvents": {
+    "targetCount": 100,
+    "scope": "Top foreign box office releases in Korea"
+  },
+  "people": {
+    "actorsTargetCount": 300,
+    "directorsTargetCount": 150,
+    "criticsTargetCount": 30
+  },
+  "awardSystems": [
+    "청룡영화상",
+    "백상예술대상",
+    "대종상",
+    "부산국제영화제",
+    "칸영화제",
+    "아카데미상"
+  ],
+  "annualIndustryReports": {
+    "targetTable": "industry_yearly_reports",
+    "sections": [
+      "연간 박스오피스 TOP 10",
+      "한국영화 점유율",
+      "외화 흥행작",
+      "올해의 배우",
+      "올해의 감독",
+      "주요 시상식 수상",
+      "제작사 순위",
+      "배급사 점유율",
+      "장르 트렌드 변화"
+    ],
+    "sourcePriority": [
+      "KOBIS",
+      "KMDb",
+      "KOFIC local reports",
+      "curated awards",
+      "Wikidata supplemental"
+    ]
+  },
+  "kosisIndicators": {
+    "targetFile": "data/kosis_targets.json",
+    "scope": [
+      "소비자물가지수 CPI",
+      "연도별 물가 보정",
+      "가계 소비 여건",
+      "경기 침체/호황 보정",
+      "청년 인구/연령대 인구",
+      "1980년대~2020년대 제작비 체감 보정",
+      "티켓값 부담 계산 보조",
+      "미래 자동 생성 시 경제 변수",
+      "극장 수요 보정",
+      "지역별 인구",
+      "문화소비 지표"
+    ]
+  },
+  "wikidata": {
+    "sparqlEndpoint": "https://query.wikidata.org/sparql",
+    "scope": [
+      "한국 영화 Wikidata QID/영문명/외부 식별자 보강",
+      "배우·감독·각본가·제작자 생년/영문명/직업 보강",
+      "원본 응답은 staging에 저장하고 매칭용 정규화 결과는 wikidata_movies/wikidata_people에 저장",
+      "KOBIS/KMDb와 충돌하면 KOBIS/KMDb 우선"
+    ],
+    "canonicalTables": [
+      "wikidata_movies",
+      "wikidata_people"
+    ],
+    "conflictPolicy": "supplemental_only_kobis_kmdb_priority",
+    "builtInTargets": [
+      "korean-films",
+      "korean-film-people"
+    ]
+  }
+}

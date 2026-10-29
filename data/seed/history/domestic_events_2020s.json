@@ -1,0 +1,74 @@
+[
+  {
+    "id": "event_2022_the_roundup",
+    "year": 2022,
+    "month": 5,
+    "title": "범죄도시2 흥행과 팬데믹 이후 극장 회복 신호",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "팬데믹 이후에도 강한 장르 IP와 캐릭터 프랜차이즈가 관객을 극장으로 끌어낼 수 있음을 보여줍니다.",
+    "effects": {
+      "theater_demand": 15,
+      "crime_action_franchise_seed": 25,
+      "franchise_power": 20
+    }
+  },
+  {
+    "id": "event_2022_decision_to_leave_cannes",
+    "year": 2022,
+    "month": 5,
+    "title": "헤어질 결심 칸 감독상 흐름",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "작가주의 멜로 스릴러와 정교한 미장센이 해외 평론 시장에서 강한 힘을 얻습니다.",
+    "effects": {
+      "auteur_romance_thriller_value": 25,
+      "festival_strategy_value": 20,
+      "global_korean_cinema_interest": 10
+    }
+  },
+  {
+    "id": "event_2023_12_12_the_day",
+    "year": 2023,
+    "month": 11,
+    "title": "서울의 봄 흥행",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "현대사 소재와 강한 배우 앙상블이 2020년대 극장 시장에서도 큰 흥행을 만들 수 있음을 재확인합니다.",
+    "effects": {
+      "modern_history_value": 25,
+      "actor_ensemble_value": 15,
+      "theater_demand": 8
+    }
+  },
+  {
+    "id": "event_2024_exhuma",
+    "year": 2024,
+    "month": 3,
+    "title": "파묘 천만 흥행과 오컬트 장르 대중화",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "오컬트 장르가 대중적 천만 흥행에 도달하며 장재현식 장르 통제와 민속적 공포의 가치가 상승합니다.",
+    "effects": {
+      "horror_occult_trend": 30,
+      "genre_trust": 15,
+      "occult_budget_confidence": 20,
+      "future_genre_fatigue": 5
+    }
+  },
+  {
+    "id": "event_2024_the_roundup_punishment",
+    "year": 2024,
+    "month": 4,
+    "title": "범죄도시4 흥행과 범죄액션 프랜차이즈 파워",
+    "type": "film_industry",
+    "fixedLevel": "protectedFixed",
+    "description": "반복 가능한 캐릭터 IP와 명확한 장르 약속이 극장 시장에서 강한 프랜차이즈 파워를 보여줍니다.",
+    "effects": {
+      "crime_action_franchise_seed": 20,
+      "franchise_power": 25,
+      "series_fatigue": 5,
+      "theater_demand": 8
+    }
+  }
+]

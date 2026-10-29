@@ -1,0 +1,82 @@
+[
+  {
+    "year": 2009,
+    "averageTicketPrice": 7365,
+    "perceivedTicketPrice": 8000,
+    "premiumFormatMultiplier": 1.2,
+    "audiencePriceSensitivity": 35,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2016,
+    "averageTicketPrice": 8000,
+    "perceivedTicketPrice": 10000,
+    "premiumFormatMultiplier": 1.4,
+    "audiencePriceSensitivity": 50,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2018,
+    "averageTicketPrice": 8383,
+    "perceivedTicketPrice": 12000,
+    "premiumFormatMultiplier": 1.5,
+    "audiencePriceSensitivity": 55,
+    "sourceType": "kofic_settlement_report"
+  },
+  {
+    "year": 2019,
+    "averageTicketPrice": 8444,
+    "perceivedTicketPrice": 12000,
+    "premiumFormatMultiplier": 1.5,
+    "audiencePriceSensitivity": 58,
+    "sourceType": "kofic_settlement_report"
+  },
+  {
+    "year": 2020,
+    "averageTicketPrice": 8574,
+    "perceivedTicketPrice": 13000,
+    "premiumFormatMultiplier": 1.55,
+    "audiencePriceSensitivity": 70,
+    "sourceType": "kofic_settlement_report"
+  },
+  {
+    "year": 2021,
+    "averageTicketPrice": 9656,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 78,
+    "sourceType": "kofic_settlement_report"
+  },
+  {
+    "year": 2022,
+    "averageTicketPrice": 10285,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 80,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2023,
+    "averageTicketPrice": 10080,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 78,
+    "sourceType": "kofic_settlement_report"
+  },
+  {
+    "year": 2024,
+    "averageTicketPrice": 9702,
+    "perceivedTicketPrice": 14000,
+    "premiumFormatMultiplier": 1.6,
+    "audiencePriceSensitivity": 75,
+    "sourceType": "historical"
+  },
+  {
+    "year": 2025,
+    "averageTicketPrice": 9869,
+    "perceivedTicketPrice": 15000,
+    "premiumFormatMultiplier": 1.65,
+    "audiencePriceSensitivity": 78,
+    "sourceType": "kofic_settlement_report"
+  }
+]

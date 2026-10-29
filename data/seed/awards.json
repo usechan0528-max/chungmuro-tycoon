@@ -1,0 +1,35 @@
+[
+  {
+    "id": "award_blue_dragon",
+    "name": "청룡영화상",
+    "country": "KR",
+    "foundedYear": 1963,
+    "prestige": 82,
+    "categories": ["작품상", "감독상", "남우주연상", "여우주연상", "각본상", "신인감독상"]
+  },
+  {
+    "id": "award_daejong",
+    "name": "대종상",
+    "country": "KR",
+    "foundedYear": 1962,
+    "prestige": 72,
+    "categories": ["작품상", "감독상", "연기상", "기술상"]
+  },
+  {
+    "id": "award_baeksang",
+    "name": "백상예술대상 영화부문",
+    "country": "KR",
+    "foundedYear": 1965,
+    "prestige": 78,
+    "categories": ["대상", "작품상", "감독상", "최우수연기상", "각본상"]
+  },
+  {
+    "id": "award_busanfestival",
+    "name": "부산국제영화제",
+    "country": "KR",
+    "foundedYear": 1996,
+    "prestige": 86,
+    "categories": ["뉴 커런츠", "한국영화의 오늘", "관객상"]
+  }
+]
+

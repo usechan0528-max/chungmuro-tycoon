@@ -1,0 +1,35 @@
+# critics_seed_list.txt
+# type: critic
+# target_count: 30
+# source: people/critics_major.json and current seeded DB
+# format: rank<TAB>nameKo<TAB>status
+1	강유정	seeded
+2	김도훈	seeded
+3	김소미	seeded
+4	김철홍	seeded
+5	김혜리	seeded
+6	남다은	seeded
+7	듀나	seeded
+8	박평식	seeded
+9	배동미	seeded
+10	송경원	seeded
+11	심영섭	seeded
+12	유지나	seeded
+13	이다혜	seeded
+14	이동진	seeded
+15	이용철	seeded
+16	장영엽	seeded
+17	전찬일	seeded
+18	정성일	seeded
+19	허지웅	seeded
+20	황진미	seeded
+21	TODO_CRITIC_021	needs_public_source
+22	TODO_CRITIC_022	needs_public_source
+23	TODO_CRITIC_023	needs_public_source
+24	TODO_CRITIC_024	needs_public_source
+25	TODO_CRITIC_025	needs_public_source
+26	TODO_CRITIC_026	needs_public_source
+27	TODO_CRITIC_027	needs_public_source
+28	TODO_CRITIC_028	needs_public_source
+29	TODO_CRITIC_029	needs_public_source
+30	TODO_CRITIC_030	needs_public_source

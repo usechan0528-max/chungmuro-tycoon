@@ -1,0 +1,86 @@
+[
+  {
+    "id": "actor_sample_01",
+    "nameKo": "한도윤",
+    "nameEn": "Han Do-yoon",
+    "type": "actor",
+    "birthYear": 1976,
+    "availableFrom": 2000,
+    "protectionLevel": "fictional",
+    "currentStats": {
+      "acting_quality": 78,
+      "casting_fit": 70,
+      "public_reputation": 72
+    },
+    "potentialStats": {
+      "acting_quality": 84,
+      "global_reputation": 65
+    },
+    "genreFit": {
+      "genre_crime_thriller": 76,
+      "genre_action": 68,
+      "genre_horror_occult": 58,
+      "genre_romance_melodrama": 64,
+      "genre_comedy": 56,
+      "genre_family_human_drama": 62,
+      "genre_period_historical": 60,
+      "genre_social_true_story": 70,
+      "genre_indie_art": 64,
+      "genre_sf_disaster_monster": 54,
+      "genre_fantasy": 52,
+      "genre_animation": 42
+    },
+    "publicProfile": {
+      "oneLine": "상업영화와 장르영화 모두에서 중심을 잡아주는 신뢰형 배우.",
+      "currentAbilityText": "감정선이 강한 장면과 건조한 장르 연기에서 안정적인 존재감을 보인다.",
+      "potentialText": "작품 선택이 맞으면 대표작을 갱신할 수 있다.",
+      "fameText": "관객에게 익숙한 주연급 배우로 평가된다.",
+      "brandText": "성실하고 작품 운이 좋은 배우라는 이미지가 있다.",
+      "recentTrendText": "장르영화 출연 제안이 늘고 있다.",
+      "activityStatusText": "활동 가능",
+      "informationReliabilityText": "업계 소문과 공개 인터뷰가 대체로 일치한다."
+    }
+  },
+  {
+    "id": "actor_sample_02",
+    "nameKo": "서지안",
+    "nameEn": "Seo Ji-an",
+    "type": "actor",
+    "birthYear": 1989,
+    "availableFrom": 2010,
+    "protectionLevel": "fictional",
+    "currentStats": {
+      "acting_quality": 74,
+      "casting_fit": 82,
+      "public_reputation": 68
+    },
+    "potentialStats": {
+      "acting_quality": 88,
+      "fandom_index": 76
+    },
+    "genreFit": {
+      "genre_crime_thriller": 58,
+      "genre_action": 46,
+      "genre_horror_occult": 56,
+      "genre_romance_melodrama": 82,
+      "genre_comedy": 62,
+      "genre_family_human_drama": 72,
+      "genre_period_historical": 54,
+      "genre_social_true_story": 76,
+      "genre_indie_art": 74,
+      "genre_sf_disaster_monster": 42,
+      "genre_fantasy": 52,
+      "genre_animation": 46
+    },
+    "publicProfile": {
+      "oneLine": "섬세한 감정 연기와 선명한 이미지가 강점인 배우.",
+      "currentAbilityText": "멜로와 사회 드라마에서 설득력 있는 인상을 남긴다.",
+      "potentialText": "강한 시나리오를 만나면 평론가 반응을 끌어올릴 수 있다.",
+      "fameText": "대중 인지도는 상승세다.",
+      "brandText": "젊은 관객층의 호감도가 높다.",
+      "recentTrendText": "OTT 작품 이후 캐스팅 문의가 늘었다.",
+      "activityStatusText": "활동 가능",
+      "informationReliabilityText": "소속사 자료와 현장 평판이 비슷하다."
+    }
+  }
+]

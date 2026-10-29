@@ -1,0 +1,227 @@
+[
+  {
+    "id": "award_blue_dragon",
+    "name": "청룡영화상",
+    "country": "KR",
+    "foundedYear": 1963,
+    "prestige": 82,
+    "categories": ["작품상", "감독상", "남우주연상", "여우주연상", "각본상", "신인감독상"],
+    "publicProfile": {
+      "oneLine": "한국 상업영화와 배우 중심 대중성을 함께 반영하는 대표 영화상.",
+      "statureText": "국내 주요 영화상 중 대중 인지도와 산업 파급력이 큰 축에 속한다.",
+      "characterText": "그해 관객과 업계가 함께 주목한 작품, 배우, 장르영화의 성과를 비교적 강하게 반영한다.",
+      "playerImpactText": "수상하거나 후보에 오르면 대중 명성, 배우 브랜드, 차기작 투자 유치에 힘이 붙는다."
+    }
+  },
+  {
+    "id": "award_baeksang",
+    "name": "백상예술대상 영화부문",
+    "country": "KR",
+    "foundedYear": 1965,
+    "prestige": 78,
+    "categories": ["대상", "작품상", "감독상", "최우수연기상", "각본상"],
+    "publicProfile": {
+      "oneLine": "영화와 방송을 함께 다루며 작품성과 대중성을 교차 평가하는 종합 예술상.",
+      "statureText": "영화계 안팎의 관심이 함께 몰리는 국내 주요 시상식이다.",
+      "characterText": "작품의 완성도, 배우의 당대 존재감, 사회적 화제성을 균형 있게 보는 편이다.",
+      "playerImpactText": "영화 외부 대중 인지도와 배우·감독의 브랜드 상승에 유리하다."
+    }
+  },
+  {
+    "id": "award_daejong",
+    "name": "대종상",
+    "country": "KR",
+    "foundedYear": 1962,
+    "prestige": 72,
+    "categories": ["작품상", "감독상", "연기상", "기술상"],
+    "publicProfile": {
+      "oneLine": "한국영화 시상식 역사에서 오래된 상징성을 가진 국내 영화상.",
+      "statureText": "시대에 따라 영향력의 부침은 있지만, 장기 역사 자체가 주는 권위가 있다.",
+      "characterText": "작품상과 연기상, 기술 부문을 통해 한국영화 산업 내부 평가를 남기는 성격이 강하다.",
+      "playerImpactText": "중견·원로 창작진, 기술 스태프, 전통적 영화계 평판에 영향을 준다."
+    }
+  },
+  {
+    "id": "award_busan_festival",
+    "name": "부산국제영화제",
+    "country": "KR",
+    "foundedYear": 1996,
+    "prestige": 86,
+    "categories": ["뉴 커런츠", "한국영화의 오늘", "관객상"],
+    "publicProfile": {
+      "oneLine": "아시아 영화와 신인 감독, 독립·예술영화 루트를 여는 한국 대표 국제영화제.",
+      "statureText": "한국과 아시아 영화 산업을 연결하는 핵심 영화제 플랫폼이다.",
+      "characterText": "흥행 성과보다 발견, 프로그래밍, 영화제 네트워크, 해외 세일즈 가능성을 중시한다.",
+      "playerImpactText": "독립영화, 신인 감독, 해외 영화제 진출, 세일즈 네트워크를 키우는 데 중요하다."
+    }
+  },
+  {
+    "id": "award_buil",
+    "name": "부일영화상",
+    "country": "KR",
+    "foundedYear": 1958,
+    "prestige": 68,
+    "categories": ["작품상", "감독상", "연기상", "기술상"],
+    "publicProfile": {
+      "oneLine": "오랜 지역 영화문화와 평단 감각을 함께 가진 국내 영화상.",
+      "statureText": "전국적 대중 파급력은 메이저 시상식보다 낮지만, 업계 기록성과 지역 영화문화의 의미가 있다.",
+      "characterText": "작품성과 연기, 기술 부문을 차분히 정리하는 산업 기록형 성격이 강하다.",
+      "playerImpactText": "평론가 명성, 지역 인맥, 중견 창작진의 업계 신뢰를 쌓는 데 도움이 된다."
+    }
+  },
+  {
+    "id": "award_korean_critics",
+    "name": "한국영화평론가협회상",
+    "country": "KR",
+    "foundedYear": 1980,
+    "prestige": 70,
+    "categories": ["최우수작품상", "감독상", "연기상", "신인상"],
+    "publicProfile": {
+      "oneLine": "평론가 집단의 시각으로 작품성과 영화적 성취를 정리하는 비평 중심 영화상.",
+      "statureText": "흥행보다 평론가 명성과 작품성 지표에 강하게 작동한다.",
+      "characterText": "연출, 각본, 주제의식, 영화적 형식에 민감하며 장기 재평가의 씨앗이 되기도 한다.",
+      "playerImpactText": "평론가 명성, 영화제 전략, 작가주의 노선의 차기작 투자 설득에 유리하다."
+    }
+  },
+  {
+    "id": "award_venice",
+    "name": "베니스 영화제",
+    "country": "IT",
+    "foundedYear": 1932,
+    "prestige": 96,
+    "categories": ["황금사자상", "은사자상", "감독상", "연기상", "각본상"],
+    "publicProfile": {
+      "oneLine": "세계 3대 영화제 중 하나로 작가주의와 국제 영화사적 위상을 강하게 부여하는 영화제.",
+      "statureText": "국제 영화제 전략에서 최상위권 권위를 가진다.",
+      "characterText": "예술적 성취, 시대적 감각, 배우와 감독의 국제적 발견에 강하게 반응한다.",
+      "playerImpactText": "해외 명성, 영화제 네트워크, 배우·감독의 글로벌 브랜드를 크게 끌어올린다."
+    }
+  },
+  {
+    "id": "award_cannes",
+    "name": "칸 영화제",
+    "country": "FR",
+    "foundedYear": 1946,
+    "prestige": 100,
+    "categories": ["황금종려상", "심사위원대상", "감독상", "각본상", "연기상"],
+    "publicProfile": {
+      "oneLine": "세계 영화제 전략의 정점에 가까운 권위를 가진 국제 영화제.",
+      "statureText": "작가주의, 국제 평론, 해외 세일즈를 동시에 움직이는 최상위 영화제다.",
+      "characterText": "감독의 시선, 형식적 완성도, 시대적 주제, 영화적 새로움을 강하게 본다.",
+      "playerImpactText": "초청과 수상은 해외 명성, 평론가 명성, 판권 가치, 차기작 투자 조건을 크게 바꾼다."
+    }
+  },
+  {
+    "id": "award_academy",
+    "name": "아카데미 시상식",
+    "country": "US",
+    "foundedYear": 1929,
+    "prestige": 100,
+    "categories": ["작품상", "감독상", "각본상", "국제장편영화상", "연기상"],
+    "publicProfile": {
+      "oneLine": "미국 산업과 글로벌 대중 인지도를 동시에 움직이는 세계 최고권 시상식.",
+      "statureText": "글로벌 판권, OTT, 배우 브랜드, 해외 투자 유치에 가장 직접적인 상징성을 가진다.",
+      "characterText": "작품성뿐 아니라 캠페인, 산업 네트워크, 당대 담론, 북미 시장 반응이 함께 작동한다.",
+      "playerImpactText": "수상은 해외 명성과 2차 시장 가치, 글로벌 스트리밍 협상력을 급격히 끌어올린다."
+    }
+  },
+  {
+    "id": "award_event_1987_kang_soo_yeon_venice",
+    "year": 1987,
+    "month": 9,
+    "title": "강수연 베니스 여우주연상",
+    "type": "award_global",
+    "fixedLevel": "fixed",
+    "description": "강수연의 베니스 영화제 여우주연상 수상으로 한국 배우의 해외 영화제 가능성이 커집니다.",
+    "effects": {
+      "actor_global_recognition": 20,
+      "festival_strategy_value": 15,
+      "global_korean_cinema_interest": 8
+    }
+  },
+  {
+    "id": "award_event_2004_oldboy_cannes_grand_prix",
+    "year": 2004,
+    "month": 5,
+    "title": "올드보이 칸 심사위원대상",
+    "type": "award_global",
+    "fixedLevel": "protectedFixed",
+    "description": "작가주의 장르영화와 한국 복수극의 해외 위상이 크게 올라갑니다.",
+    "effects": {
+      "festival_strategy_value": 25,
+      "auteur_commercial_hybrid_value": 20,
+      "global_korean_cinema_interest": 15
+    }
+  },
+  {
+    "id": "award_event_2007_jeon_do_yeon_cannes",
+    "year": 2007,
+    "month": 5,
+    "title": "전도연 칸 여우주연상",
+    "type": "award_global",
+    "fixedLevel": "fixed",
+    "description": "한국 배우와 작가주의 영화의 해외 위상이 강화됩니다.",
+    "effects": {
+      "actor_global_recognition": 25,
+      "festival_strategy_value": 20,
+      "auteur_drama_value": 10
+    }
+  },
+  {
+    "id": "award_event_2019_parasite_cannes",
+    "year": 2019,
+    "month": 5,
+    "title": "기생충 칸 황금종려상",
+    "type": "award_global",
+    "fixedLevel": "absoluteProtected",
+    "description": "한국영화가 칸 영화제 최고상을 수상하며 세계 영화계에서 한국영화의 위상이 크게 상승합니다.",
+    "effects": {
+      "global_korean_cinema_interest": 30,
+      "festival_strategy_value": 25,
+      "auteur_commercial_hybrid_value": 20
+    }
+  },
+  {
+    "id": "award_event_2020_parasite_academy",
+    "year": 2020,
+    "month": 2,
+    "title": "기생충 아카데미 4관왕",
+    "type": "award_global",
+    "fixedLevel": "absoluteProtected",
+    "description": "작품상, 감독상, 각본상, 국제장편영화상 성과로 한국영화의 글로벌 판권과 브랜드 가치가 급상승합니다.",
+    "effects": {
+      "global_korean_cinema_interest": 40,
+      "global_streaming_sale": 25,
+      "festival_strategy_value": 25,
+      "global_reputation": 20
+    }
+  },
+  {
+    "id": "award_event_2021_youn_yuh_jung_academy",
+    "year": 2021,
+    "month": 4,
+    "title": "윤여정 아카데미 여우조연상",
+    "type": "award_global",
+    "fixedLevel": "fixed",
+    "description": "한국 배우의 해외 명성과 글로벌 캐스팅 가치가 상승합니다.",
+    "effects": {
+      "actor_global_recognition": 25,
+      "global_reputation": 12,
+      "festival_strategy_value": 10
+    }
+  },
+  {
+    "id": "award_event_2022_park_chan_wook_cannes_director",
+    "year": 2022,
+    "month": 5,
+    "title": "박찬욱 칸 감독상 흐름",
+    "type": "award_global",
+    "fixedLevel": "protectedFixed",
+    "description": "작가주의 스릴러와 멜로의 해외 평론 가치가 다시 강해집니다.",
+    "effects": {
+      "auteur_romance_thriller_value": 25,
+      "festival_strategy_value": 20,
+      "global_korean_cinema_interest": 12
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "director_sample_01",
+    "nameKo": "강민재",
+    "nameEn": "Kang Min-jae",
+    "type": "director",
+    "birthYear": 1972,
+    "availableFrom": 1998,
+    "protectionLevel": "fictional",
+    "currentStats": {
+      "directing_quality": 76,
+      "field_control": 70,
+      "artistic_sense": 72
+    },
+    "potentialStats": {
+      "directing_quality": 84,
+      "commercial_sense": 74
+    },
+    "genreFit": {
+      "genre_crime_thriller": 74,
+      "genre_action": 68,
+      "genre_horror_occult": 58,
+      "genre_romance_melodrama": 56,
+      "genre_comedy": 52,
+      "genre_family_human_drama": 58,
+      "genre_period_historical": 62,
+      "genre_social_true_story": 66,
+      "genre_indie_art": 58,
+      "genre_sf_disaster_monster": 54,
+      "genre_fantasy": 52,
+      "genre_animation": 40
+    },
+    "publicProfile": {
+      "oneLine": "현장 장악력과 장르 감각을 겸비한 충무로형 감독.",
+      "currentAbilityText": "장면의 속도와 배우 동선을 안정적으로 설계한다.",
+      "potentialText": "큰 예산을 맡아도 무너지지 않을 가능성이 있다.",
+      "fameText": "업계에서는 믿고 맡길 수 있는 감독으로 통한다.",
+      "brandText": "제작자와 배우 모두에게 현장 평판이 좋은 편이다.",
+      "recentTrendText": "중간예산 상업영화 제안이 이어지고 있다.",
+      "activityStatusText": "활동 가능",
+      "informationReliabilityText": "현장 스태프 평가가 꽤 신뢰할 만하다."
+    }
+  }
+]

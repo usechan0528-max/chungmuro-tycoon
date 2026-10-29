@@ -1,0 +1,285 @@
+[
+  {
+    "id": "premium_2007_imax_intro_spread",
+    "year": 2007,
+    "month": 6,
+    "title": "IMAX 상영관 도입·확산",
+    "type": "premium_format_adoption",
+    "fixedLevel": "semiFixed",
+    "chain": "CGV",
+    "format": [
+      "IMAX"
+    ],
+    "description": "대형 외화, SF, 액션영화가 IMAX 상영을 통해 더 강한 극장 체험 가치를 얻기 시작합니다.",
+    "effects": {
+      "special_format_demand": 15,
+      "premium_ticket_revenue": 8,
+      "vfx_expectation": 10,
+      "foreign_competition": 5,
+      "korean_blockbuster_pressure": 5
+    },
+    "unlocks": [
+      "imax_release_strategy"
+    ],
+    "relatedCompanies": [
+      "CGV",
+      "IMAX"
+    ]
+  },
+  {
+    "id": "premium_2009_avatar_3d_imax",
+    "year": 2009,
+    "month": 12,
+    "title": "아바타 흥행과 3D/IMAX 수요 폭발",
+    "type": "premium_format_surge",
+    "fixedLevel": "absoluteFixed",
+    "format": [
+      "3D",
+      "IMAX"
+    ],
+    "description": "아바타가 3D와 대형 스크린 관람 경험을 대중화하며 특별관 수요가 급격히 상승합니다.",
+    "effects": {
+      "special_format_demand": 35,
+      "vfx_expectation": 25,
+      "foreign_competition": 15,
+      "korean_blockbuster_pressure": 15
+    },
+    "unlocks": [
+      "premium_format_strategy"
+    ]
+  },
+  {
+    "id": "premium_2009_avatar_3d_imax_boom",
+    "year": 2009,
+    "month": 12,
+    "title": "아바타 흥행과 3D/IMAX 수요 폭발",
+    "type": "premium_format_boom",
+    "fixedLevel": "absoluteFixed",
+    "format": [
+      "3D",
+      "IMAX"
+    ],
+    "description": "아바타 흥행으로 3D, IMAX, 대형 포맷 관람 수요가 폭발하며 VFX와 특수관 기대치가 급등합니다.",
+    "effects": {
+      "special_format_demand": 35,
+      "premium_ticket_revenue": 15,
+      "vfx_expectation": 25,
+      "foreign_blockbuster_advantage": 20,
+      "korean_blockbuster_pressure": 15
+    },
+    "unlocks": [
+      "special_format_pre_sales",
+      "premium_format_marketing"
+    ],
+    "relatedCompanies": [
+      "IMAX",
+      "Major Multiplex Chains"
+    ]
+  },
+  {
+    "id": "premium_2010s_4dx_spread",
+    "year": 2012,
+    "month": null,
+    "title": "4DX 확산",
+    "type": "premium_format_growth",
+    "fixedLevel": "semiFixed",
+    "format": [
+      "4DX"
+    ],
+    "description": "체험형 특별관이 확산되며 액션, 재난, SF 영화의 프리미엄 관람 가치가 올라갑니다.",
+    "effects": {
+      "special_format_demand": 10,
+      "action_genre_value": 5,
+      "premium_ticket_revenue": 5
+    }
+  },
+  {
+    "id": "premium_2010s_screenx_spread",
+    "year": 2015,
+    "month": null,
+    "title": "ScreenX 확산",
+    "type": "premium_format_growth",
+    "fixedLevel": "semiFixed",
+    "format": [
+      "ScreenX"
+    ],
+    "description": "다면 상영 포맷이 확산되며 한국 극장 기술 브랜드가 강화됩니다.",
+    "effects": {
+      "special_format_demand": 8,
+      "premium_ticket_revenue": 5,
+      "korean_theater_tech_value": 8
+    }
+  },
+  {
+    "id": "premium_2017_cgv_yongsan_imax",
+    "year": 2017,
+    "month": 7,
+    "title": "CGV용산아이파크몰 재개관과 초대형 IMAX관",
+    "type": "premium_format_opening",
+    "fixedLevel": "fixed",
+    "chain": "CGV",
+    "location": "서울 용산구",
+    "format": [
+      "IMAX",
+      "4DX with ScreenX"
+    ],
+    "description": "CGV용산아이파크몰이 20개관 3,888석 규모로 문을 열고, 초대형 IMAX관과 4DX with ScreenX를 선보입니다.",
+    "effects": {
+      "special_format_demand": 25,
+      "premium_ticket_revenue": 15,
+      "vfx_expectation": 15,
+      "large_format_competition": 20,
+      "korean_blockbuster_pressure": 10
+    },
+    "unlocks": [
+      "large_imax_strategy",
+      "premium_format_marketing"
+    ],
+    "relatedCompanies": [
+      "CGV",
+      "CJ 4DPLEX",
+      "IMAX"
+    ]
+  },
+  {
+    "id": "premium_2017_yongsan_large_imax",
+    "year": 2017,
+    "month": 7,
+    "title": "CGV용산 초대형 IMAX관",
+    "type": "premium_format_opening",
+    "fixedLevel": "fixed",
+    "format": [
+      "IMAX",
+      "4DX with ScreenX"
+    ],
+    "description": "초대형 IMAX관과 복합 특별관 전략이 대형 영화의 개봉 전략에 큰 영향을 주기 시작합니다.",
+    "effects": {
+      "special_format_demand": 25,
+      "premium_ticket_revenue": 15,
+      "vfx_expectation": 15,
+      "large_format_competition": 20
+    }
+  },
+  {
+    "id": "premium_late_2010s_premium_viewing",
+    "year": 2018,
+    "month": 10,
+    "title": "특별관 중심 프리미엄 관람 강화",
+    "type": "premium_format_market_shift",
+    "fixedLevel": "semiFixed",
+    "format": [
+      "IMAX",
+      "4DX",
+      "ScreenX",
+      "Premium Large Format"
+    ],
+    "description": "대형 영화와 외화 이벤트작 중심으로 특별관 예매, 선예매, N차 관람의 중요성이 커집니다.",
+    "effects": {
+      "special_format_demand": 18,
+      "reservation_rate_importance": 10,
+      "premium_ticket_revenue": 10,
+      "foreign_blockbuster_advantage": 8
+    },
+    "unlocks": [
+      "premium_pre_sales_strategy"
+    ],
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "premium_2020s_dolby_cinema_competition",
+    "year": 2020,
+    "month": 7,
+    "title": "Dolby Cinema와 프리미엄 상영관 경쟁",
+    "type": "premium_format_competition",
+    "fixedLevel": "semiFixed",
+    "chain": "Megabox",
+    "format": [
+      "Dolby Cinema",
+      "Premium Large Format"
+    ],
+    "description": "Dolby Cinema 등 프리미엄 상영관 경쟁이 강화되며 객단가와 특별관 중심 소비가 커집니다.",
+    "effects": {
+      "special_format_demand": 18,
+      "premium_ticket_revenue": 15,
+      "theater_experience_value": 15,
+      "large_format_competition": 12
+    },
+    "unlocks": [
+      "dolby_cinema_strategy"
+    ],
+    "relatedCompanies": [
+      "Megabox",
+      "Dolby Cinema"
+    ]
+  },
+  {
+    "id": "premium_2022_experience_movie_recovery",
+    "year": 2022,
+    "month": 6,
+    "title": "극장 체험형 영화 회복",
+    "type": "premium_format_market_shift",
+    "fixedLevel": "semiFixed",
+    "format": [
+      "IMAX",
+      "Dolby Cinema",
+      "4DX"
+    ],
+    "description": "팬데믹 이후 관객은 집에서 보기 어려운 체험형 영화와 특별관에 더 높은 지불 의사를 보입니다.",
+    "effects": {
+      "theater_experience_value": 20,
+      "special_format_demand": 18,
+      "premium_ticket_revenue": 10,
+      "middle_budget_risk": 8
+    },
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  },
+  {
+    "id": "premium_2020s_premium_format_focus",
+    "year": 2022,
+    "month": null,
+    "title": "일반관 약화와 특별관 중심 소비",
+    "type": "premium_market_shift",
+    "fixedLevel": "semiFixed",
+    "description": "티켓값 부담과 극장 관객 감소 속에서 관객은 특별관과 이벤트성 관람을 더 선호하게 됩니다.",
+    "effects": {
+      "special_format_demand": 20,
+      "ticket_price_burden": 10,
+      "middle_budget_risk": 10,
+      "large_blockbuster_advantage": 10
+    }
+  },
+  {
+    "id": "premium_2024_large_format_competition",
+    "year": 2024,
+    "month": 3,
+    "title": "대형 포맷 슬롯 경쟁 심화",
+    "type": "premium_format_competition",
+    "fixedLevel": "semiFixed",
+    "format": [
+      "IMAX",
+      "Dolby Cinema",
+      "4DX",
+      "ScreenX"
+    ],
+    "description": "대형 외화와 한국 텐트폴이 한정된 특별관 슬롯을 두고 경쟁하며 개봉 시기와 선예매 전략이 중요해집니다.",
+    "effects": {
+      "large_format_competition": 20,
+      "screen_access_difficulty": 10,
+      "reservation_rate_importance": 12,
+      "korean_blockbuster_pressure": 10
+    },
+    "relatedCompanies": [
+      "CGV",
+      "Lotte Cinema",
+      "Megabox"
+    ]
+  }
+]

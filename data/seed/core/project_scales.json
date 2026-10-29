@@ -1,0 +1,199 @@
+[
+  {
+    "id": "scale_short",
+    "canonicalId": "short_film",
+    "name": "단편영화",
+    "minBudget": 1000000,
+    "maxBudget": 30000000,
+    "requiredStages": [
+      "funding_simple",
+      "shooting",
+      "editing",
+      "festival_or_online"
+    ],
+    "optionalStages": [
+      "school_screening",
+      "online_release"
+    ],
+    "eventCountRange": {
+      "min": 1,
+      "max": 2
+    },
+    "failureImpact": "low",
+    "requiredReputation": 0,
+    "requiredNetwork": 0,
+    "gameOverRiskMultiplier": 0.2
+  },
+  {
+    "id": "scale_independent",
+    "canonicalId": "independent_film",
+    "name": "독립영화",
+    "minBudget": 30000000,
+    "maxBudget": 500000000,
+    "requiredStages": [
+      "funding_simple",
+      "planning",
+      "screenplay_development",
+      "casting_simple",
+      "shooting",
+      "post_production",
+      "festival",
+      "limited_release",
+      "secondary_market"
+    ],
+    "optionalStages": [
+      "community_screening",
+      "gv",
+      "overseas_festival"
+    ],
+    "eventCountRange": {
+      "min": 2,
+      "max": 4
+    },
+    "failureImpact": "low_to_medium",
+    "requiredReputation": 5,
+    "requiredNetwork": 5,
+    "gameOverRiskMultiplier": 0.4
+  },
+  {
+    "id": "scale_low_budget_genre",
+    "canonicalId": "low_budget_genre",
+    "name": "저예산 장르영화",
+    "minBudget": 500000000,
+    "maxBudget": 2000000000,
+    "requiredStages": [
+      "planning",
+      "screenplay_development",
+      "fundraising",
+      "casting",
+      "shooting",
+      "post_production",
+      "marketing",
+      "release",
+      "secondary_market"
+    ],
+    "optionalStages": [
+      "genre_festival",
+      "limited_release_then_expand",
+      "early_vod"
+    ],
+    "eventCountRange": {
+      "min": 3,
+      "max": 5
+    },
+    "failureImpact": "medium",
+    "requiredReputation": 10,
+    "requiredNetwork": 10,
+    "gameOverRiskMultiplier": 0.7
+  },
+  {
+    "id": "scale_mid_commercial",
+    "canonicalId": "mid_commercial",
+    "name": "중간예산 상업영화",
+    "minBudget": 2000000000,
+    "maxBudget": 8000000000,
+    "requiredStages": [
+      "planning",
+      "screenplay_development",
+      "fundraising",
+      "casting",
+      "production_announcement",
+      "pre_production",
+      "shooting",
+      "post_production",
+      "marketing",
+      "release_strategy",
+      "release",
+      "post_release",
+      "secondary_market"
+    ],
+    "optionalStages": [
+      "press_screening",
+      "gv",
+      "expanded_release",
+      "festival_premiere"
+    ],
+    "eventCountRange": {
+      "min": 5,
+      "max": 8
+    },
+    "failureImpact": "high",
+    "requiredReputation": 25,
+    "requiredNetwork": 25,
+    "gameOverRiskMultiplier": 1.0
+  },
+  {
+    "id": "scale_large_commercial",
+    "canonicalId": "large_commercial",
+    "name": "대형 상업영화",
+    "minBudget": 8000000000,
+    "maxBudget": 20000000000,
+    "requiredStages": [
+      "planning",
+      "screenplay_development",
+      "large_fundraising",
+      "distribution_predeal",
+      "star_casting",
+      "production_announcement",
+      "pre_production",
+      "shooting",
+      "post_production",
+      "large_marketing",
+      "release_strategy",
+      "release",
+      "post_release",
+      "secondary_market"
+    ],
+    "optionalStages": [
+      "special_format_strategy",
+      "overseas_presale",
+      "major_press_conference"
+    ],
+    "eventCountRange": {
+      "min": 8,
+      "max": 12
+    },
+    "failureImpact": "very_high",
+    "requiredReputation": 50,
+    "requiredNetwork": 45,
+    "gameOverRiskMultiplier": 1.5
+  },
+  {
+    "id": "scale_tentpole",
+    "canonicalId": "tentpole_blockbuster",
+    "name": "텐트폴/블록버스터",
+    "minBudget": 20000000000,
+    "maxBudget": 50000000000,
+    "requiredStages": [
+      "ip_development",
+      "screenplay_development",
+      "large_fundraising",
+      "distribution_predeal",
+      "star_casting",
+      "production_announcement",
+      "large_pre_production",
+      "large_shooting",
+      "vfx_post_production",
+      "large_marketing",
+      "special_format_strategy",
+      "release",
+      "fan_event",
+      "global_secondary_market",
+      "franchise_decision"
+    ],
+    "optionalStages": [
+      "two_part_planning",
+      "global_campaign",
+      "merchandising",
+      "imax_release"
+    ],
+    "eventCountRange": {
+      "min": 10,
+      "max": 15
+    },
+    "failureImpact": "game_over_risk",
+    "requiredReputation": 75,
+    "requiredNetwork": 70,
+    "gameOverRiskMultiplier": 2.0
+  }
+]

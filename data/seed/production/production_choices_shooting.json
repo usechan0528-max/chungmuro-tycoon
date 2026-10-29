@@ -1,0 +1,138 @@
+[
+  {
+    "id": "event_investor_last_minute",
+    "stage": "shooting",
+    "title": "투자자의 마지막 요구",
+    "description": "촬영 중반, 투자자가 흥행 안전장치를 요구한다. 유명 조연을 추가하거나 장르색을 더 선명하게 만들자는 압박이다.",
+    "trigger": {
+      "minBudget": 3000000
+    },
+    "choices": [
+      {
+        "id": "accept_investor_note",
+        "text": "투자자의 요구를 일부 받아들인다",
+        "description": "대중성은 오르지만 창작팀의 확신은 조금 흔들린다.",
+        "effects": {
+          "stats": {
+            "pre_release_interest": 8,
+            "genre_satisfaction": 5,
+            "directing_quality": -3,
+            "audience_rejection_risk": -4
+          },
+          "reputation": {
+            "investor_reputation": 4,
+            "creative_reputation": -2
+          },
+          "network": {
+            "investor_network": 3
+          }
+        }
+      },
+      {
+        "id": "protect_original_cut",
+        "text": "원안을 지키되 설득 자료를 다시 만든다",
+        "description": "일정 부담이 생기지만 작품의 방향성을 지킨다.",
+        "effects": {
+          "stats": {
+            "scenario_quality": 4,
+            "directing_quality": 5,
+            "schedule_delay_risk": 4,
+            "word_of_mouth": 4
+          },
+          "reputation": {
+            "creative_reputation": 5,
+            "investor_reputation": -1
+          },
+          "network": {
+            "director_network": 2
+          }
+        }
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다",
+        "description": "대화는 즉시 끝난다. 관계가 틀어질 수 있지만 드물게 강경한 인상을 남긴다.",
+        "effects": {
+          "stats": {
+            "production_shutdown_risk": 8,
+            "controversy_risk": 4,
+            "pre_release_interest": 3
+          },
+          "reputation": {
+            "investor_reputation": -7,
+            "creative_reputation": 3
+          },
+          "network": {
+            "investor_network": -5,
+            "press_network": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "event_lead_actor_interpretation",
+    "stage": "shooting",
+    "title": "주연 배우의 해석",
+    "description": "주연 배우가 결말의 감정선을 다르게 제안한다. 현장은 잠시 멈췄고 모두가 당신의 판단을 기다린다.",
+    "trigger": {
+      "genreIds": [
+        "genre_romance_melodrama",
+        "genre_social_true_story",
+        "genre_crime_thriller"
+      ]
+    },
+    "choices": [
+      {
+        "id": "trust_actor",
+        "text": "배우의 해석을 믿고 한 테이크 더 간다",
+        "description": "연기의 밀도가 오르지만 편집 난도가 커진다.",
+        "effects": {
+          "stats": {
+            "acting_quality": 7,
+            "casting_fit": 4,
+            "editing_quality": -2,
+            "word_of_mouth": 3
+          },
+          "network": {
+            "actor_network": 4
+          }
+        }
+      },
+      {
+        "id": "keep_storyboard",
+        "text": "콘티대로 간다",
+        "description": "일정과 장면 설계를 지키는 선택이다.",
+        "effects": {
+          "stats": {
+            "directing_quality": 4,
+            "schedule_delay_risk": -4,
+            "acting_quality": -1
+          },
+          "reputation": {
+            "industry_reputation": 2
+          }
+        }
+      },
+      {
+        "id": "walk_out",
+        "text": "자리를 박차고 나간다",
+        "description": "감정 싸움으로 번질 수 있다. 현장 장악력은 보이지만 배우와의 신뢰가 흔들린다.",
+        "effects": {
+          "stats": {
+            "on_set_conflict_risk": 10,
+            "acting_quality": -4,
+            "directing_quality": 2
+          },
+          "reputation": {
+            "industry_reputation": -3
+          },
+          "network": {
+            "actor_network": -6,
+            "production_network": -2
+          }
+        }
+      }
+    ]
+  }
+]

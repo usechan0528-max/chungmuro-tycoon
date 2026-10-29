@@ -1,0 +1,420 @@
+[
+  {
+    "id": "dist_1995_cj_multimedia_theater_team",
+    "year": 1995,
+    "month": 7,
+    "title": "CJ 멀티미디어사업부 극장팀 신설",
+    "type": "distributor_entry",
+    "fixedLevel": "semiFixed",
+    "company": "CJ",
+    "description": "대기업 자본이 영화산업 진입을 준비하며 투자, 배급, 상영 결합 구조의 씨앗이 만들어집니다.",
+    "effects": {
+      "investment_access": 10,
+      "major_distributor_power": 8,
+      "vertical_integration": 8,
+      "distribution_negotiation_importance": 5
+    },
+    "relatedCompanies": [
+      "CJ"
+    ]
+  },
+  {
+    "id": "dist_1995_cj_multimedia_film_team",
+    "year": 1995,
+    "month": null,
+    "title": "CJ 멀티미디어사업부 극장팀 신설",
+    "type": "distributor_entry",
+    "fixedLevel": "fixed",
+    "company": "CJ",
+    "description": "CJ 계열이 영화 투자·상영 사업 기반을 다지기 시작합니다.",
+    "effects": {
+      "major_distributor_power": 5,
+      "investment_access": 5
+    }
+  },
+  {
+    "id": "dist_1998_cj_cgv_multiplex_business",
+    "year": 1998,
+    "month": 4,
+    "title": "CJ CGV 멀티플렉스 사업 본격화",
+    "type": "vertical_integration",
+    "fixedLevel": "fixed",
+    "company": "CJ CGV",
+    "chain": "CGV",
+    "description": "멀티플렉스 사업이 본격화되며 투자, 배급, 상영을 함께 고려하는 산업 구조가 형성되기 시작합니다.",
+    "effects": {
+      "major_distributor_power": 15,
+      "screen_access_for_commercial_films": 10,
+      "screen_access_for_indie_films": -3,
+      "distribution_power": 10
+    },
+    "relatedCompanies": [
+      "CJ CGV",
+      "CJ Entertainment"
+    ]
+  },
+  {
+    "id": "dist_1998_cj_lotte_orion_entry",
+    "year": 1998,
+    "month": 6,
+    "title": "CJ·롯데·오리온 계열의 영화산업 진입",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "description": "IMF 이후 기존 대기업 일부가 영화 시장에서 물러나고, CJ·롯데·오리온 계열이 배급과 상영 시장에 본격 진입합니다.",
+    "effects": {
+      "major_distributor_power": 20,
+      "investment_access": 15,
+      "vertical_integration": 15,
+      "independent_distribution_difficulty": 10
+    },
+    "relatedCompanies": [
+      "CJ Entertainment",
+      "Lotte Entertainment",
+      "Showbox"
+    ]
+  },
+  {
+    "id": "dist_1999_cj_entertainment_distribution_system",
+    "year": 1999,
+    "month": 9,
+    "title": "CJ엔터테인먼트 전문 배급사 체제 강화",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "CJ Entertainment",
+    "description": "전문 투자배급사 체제가 강화되며 대형 배급사의 선계약과 라인업 전략이 중요해집니다.",
+    "effects": {
+      "major_distributor_power": 18,
+      "investment_access": 12,
+      "distribution_negotiation_importance": 10,
+      "screen_access_for_commercial_films": 8
+    },
+    "relatedCompanies": [
+      "CJ Entertainment"
+    ]
+  },
+  {
+    "id": "dist_1999_lotte_cinema_distribution_route",
+    "year": 1999,
+    "month": 10,
+    "title": "롯데시네마 브랜드 출범과 롯데 계열 루트 형성",
+    "type": "distributor_entry",
+    "fixedLevel": "fixed",
+    "company": "Lotte",
+    "chain": "Lotte Cinema",
+    "description": "롯데 계열의 상영망과 배급 루트가 형성되며 메이저 체인 경쟁이 시작됩니다.",
+    "effects": {
+      "major_distributor_power": 10,
+      "screen_access_for_commercial_films": 8,
+      "distribution_network": 8,
+      "vertical_integration": 8
+    },
+    "relatedCompanies": [
+      "Lotte Cinema",
+      "Lotte Entertainment"
+    ]
+  },
+  {
+    "id": "dist_1999_cj_entertainment_growth",
+    "year": 1999,
+    "month": null,
+    "title": "CJ엔터테인먼트 전문 배급사 체제 강화",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "CJ Entertainment",
+    "description": "CJ 계열의 영화 투자·배급 영향력이 본격적으로 커집니다.",
+    "effects": {
+      "major_distributor_power": 15,
+      "investment_access": 10,
+      "screen_access_for_commercial_films": 10
+    }
+  },
+  {
+    "id": "dist_1999_lotte_cinema_expansion",
+    "year": 1999,
+    "month": null,
+    "title": "롯데시네마 브랜드 출범과 확장",
+    "type": "theater_distributor_growth",
+    "fixedLevel": "fixed",
+    "company": "Lotte",
+    "description": "롯데 계열의 상영망이 형성되며 배급·상영 경쟁 구도가 강화됩니다.",
+    "effects": {
+      "major_distributor_power": 8,
+      "theater_demand": 5,
+      "distribution_network_value": 5
+    }
+  },
+  {
+    "id": "dist_2001_orion_mediaplex_showbox_growth",
+    "year": 2001,
+    "month": 6,
+    "title": "오리온 미디어플렉스/쇼박스 성장 기반",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "Showbox",
+    "description": "오리온 계열 미디어플렉스와 쇼박스의 성장 기반이 만들어지며 대형 상업영화 투자·배급 경쟁이 강화됩니다.",
+    "effects": {
+      "major_distributor_power": 12,
+      "investment_access": 10,
+      "commercial_film_competition": 10,
+      "screen_access_for_commercial_films": 6
+    },
+    "relatedCompanies": [
+      "Mediaplex",
+      "Showbox"
+    ]
+  },
+  {
+    "id": "dist_2002_cinema_service_peak",
+    "year": 2002,
+    "month": 6,
+    "title": "시네마서비스와 강우석 라인의 강세",
+    "type": "distributor_rise",
+    "fixedLevel": "semiFixed",
+    "company": "Cinema Service",
+    "description": "2000년대 초중반 시네마서비스와 강우석 라인이 배급, 제작, 흥행에서 강한 영향력을 보입니다.",
+    "effects": {
+      "mid_sized_distributor_power": 15,
+      "commercial_film_competition": 10,
+      "distribution_network": 10,
+      "major_distributor_power": 5
+    },
+    "relatedCompanies": [
+      "Cinema Service"
+    ]
+  },
+  {
+    "id": "dist_2000_showbox_mediaflex_growth",
+    "year": 2002,
+    "month": null,
+    "title": "오리온 미디어플렉스/쇼박스 성장",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "Showbox",
+    "description": "쇼박스 계열이 투자·배급 시장의 주요 플레이어로 성장하기 시작합니다.",
+    "effects": {
+      "major_distributor_power": 12,
+      "investment_access": 8,
+      "commercial_film_competition": 8
+    }
+  },
+  {
+    "id": "dist_2000s_cinema_service_peak",
+    "year": 2003,
+    "month": null,
+    "title": "시네마서비스 강세",
+    "type": "distributor_peak",
+    "fixedLevel": "semiFixed",
+    "company": "Cinema Service",
+    "description": "2000년대 초반 시네마서비스가 강한 배급력을 보입니다.",
+    "effects": {
+      "distribution_competition": 10,
+      "major_distributor_power": 8
+    }
+  },
+  {
+    "id": "dist_2007_cinema_service_decline",
+    "year": 2007,
+    "month": 6,
+    "title": "시네마서비스 상대적 쇠퇴와 메이저 재편",
+    "type": "distributor_decline",
+    "fixedLevel": "semiFixed",
+    "company": "Cinema Service",
+    "description": "2000년대 중후반 메이저 투자배급 구조가 재편되며 기존 중견 배급사의 영향력이 상대적으로 약해집니다.",
+    "effects": {
+      "distribution_uncertainty": 12,
+      "mid_sized_distributor_risk": 10,
+      "major_distributor_power": 8,
+      "independent_release_difficulty": 5
+    },
+    "relatedCompanies": [
+      "Cinema Service",
+      "CJ Entertainment",
+      "Showbox",
+      "Lotte Entertainment"
+    ]
+  },
+  {
+    "id": "dist_2012_new_major_distributor_rise",
+    "year": 2012,
+    "month": 8,
+    "title": "NEW의 주요 투자배급사 부상",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "NEW",
+    "description": "신흥 투자배급사 NEW가 중견·신흥 배급 루트의 중요한 선택지로 부상합니다.",
+    "effects": {
+      "alternative_major_distribution": 18,
+      "investment_access": 10,
+      "mid_budget_distribution_route": 12,
+      "distribution_negotiation_importance": 8
+    },
+    "relatedCompanies": [
+      "NEW"
+    ]
+  },
+  {
+    "id": "dist_2012_new_rise",
+    "year": 2012,
+    "month": null,
+    "title": "NEW 주요 투자배급사 부상",
+    "type": "distributor_rise",
+    "fixedLevel": "fixed",
+    "company": "NEW",
+    "description": "NEW가 한국영화 투자배급 시장에서 주요 플레이어로 부상합니다.",
+    "effects": {
+      "distribution_options": 10,
+      "mid_commercial_support": 8,
+      "major_distributor_power": 5
+    }
+  },
+  {
+    "id": "dist_2013_four_major_distributors",
+    "year": 2013,
+    "month": 1,
+    "title": "CJ·롯데·쇼박스·NEW 4대 투자배급 구도",
+    "type": "distribution_structure",
+    "fixedLevel": "fixed",
+    "description": "2010년대 한국영화 배급 시장에서 CJ, 롯데, 쇼박스, NEW 중심의 주요 투자배급 구도가 굳어집니다.",
+    "effects": {
+      "major_distributor_power": 20,
+      "distribution_negotiation_importance": 15,
+      "screen_access_for_commercial_films": 10,
+      "screen_access_for_indie_films": -5
+    },
+    "relatedCompanies": [
+      "CJ ENM",
+      "Lotte Entertainment",
+      "Showbox",
+      "NEW"
+    ]
+  },
+  {
+    "id": "dist_2010s_big_four_distribution",
+    "year": 2014,
+    "month": null,
+    "title": "CJ·롯데·쇼박스·NEW 주요 투자배급 구도",
+    "type": "market_structure",
+    "fixedLevel": "fixed",
+    "description": "한국영화 투자배급 시장이 주요 메이저 배급사 중심으로 재편됩니다.",
+    "effects": {
+      "major_distributor_power": 20,
+      "screen_access_difficulty": 10,
+      "distribution_negotiation_importance": 15
+    }
+  },
+  {
+    "id": "dist_2015_major_lineup_strategy",
+    "year": 2015,
+    "month": 6,
+    "title": "메이저 배급사의 라인업 전략 강화",
+    "type": "lineup_strategy",
+    "fixedLevel": "semiFixed",
+    "description": "성수기 개봉 슬롯을 둘러싼 메이저 배급사의 라인업 전략이 강화되며 개봉 시기 협상이 더 중요해집니다.",
+    "effects": {
+      "release_timing_importance": 15,
+      "first_week_importance": 12,
+      "screen_access_difficulty": 10,
+      "major_distributor_power": 8
+    },
+    "relatedCompanies": [
+      "CJ ENM",
+      "Lotte Entertainment",
+      "Showbox",
+      "NEW"
+    ]
+  },
+  {
+    "id": "dist_2018_plusm_megabox_distribution_expansion",
+    "year": 2018,
+    "month": 6,
+    "title": "플러스엠/메가박스중앙 배급 존재감 확대",
+    "type": "distributor_rise",
+    "fixedLevel": "semiFixed",
+    "company": "Plus M Entertainment",
+    "chain": "Megabox",
+    "description": "메가박스중앙 계열 배급 루트가 존재감을 키우며 대안 메이저 배급 경로가 늘어납니다.",
+    "effects": {
+      "alternative_major_distribution": 12,
+      "distribution_network": 8,
+      "screen_access_for_commercial_films": 5,
+      "major_distributor_power": 5
+    },
+    "relatedCompanies": [
+      "Plus M Entertainment",
+      "Megabox JoongAng"
+    ]
+  },
+  {
+    "id": "dist_2020_post_covid_distribution_risk",
+    "year": 2020,
+    "month": 4,
+    "title": "코로나19 이후 극장 배급 리스크 확대",
+    "type": "distribution_crisis",
+    "fixedLevel": "absoluteFixed",
+    "description": "개봉 연기와 관객 급감으로 극장 배급의 위험이 커지고 OTT 선판매와 플랫폼 계약의 가치가 상승합니다.",
+    "effects": {
+      "distribution_uncertainty": 20,
+      "release_delay_cost": 15,
+      "ott_power": 12,
+      "global_streaming_sale": 10
+    },
+    "relatedCompanies": [
+      "CJ ENM",
+      "Lotte Entertainment",
+      "Showbox",
+      "NEW",
+      "Plus M Entertainment"
+    ]
+  },
+  {
+    "id": "dist_2020s_ott_distribution_conflict",
+    "year": 2021,
+    "month": null,
+    "title": "OTT와 극장 배급의 병행·충돌",
+    "type": "distribution_shift",
+    "fixedLevel": "semiFixed",
+    "description": "OTT 플랫폼과 극장 개봉 전략이 충돌하거나 병행되기 시작합니다.",
+    "effects": {
+      "ott_power": 20,
+      "theater_demand": -5,
+      "distribution_uncertainty": 10
+    }
+  },
+  {
+    "id": "dist_2022_theatrical_ott_window_conflict",
+    "year": 2022,
+    "month": 6,
+    "title": "OTT와 극장 배급의 병행·충돌",
+    "type": "distribution_shift",
+    "fixedLevel": "semiFixed",
+    "description": "극장 독점 개봉의 가치와 OTT 공개 전략이 충돌하며 플랫폼 협상력이 중요한 변수가 됩니다.",
+    "effects": {
+      "ott_power": 15,
+      "distribution_uncertainty": 10,
+      "theatrical_window_value": -8,
+      "platform_negotiation_importance": 15
+    },
+    "relatedCompanies": [
+      "Theater Chains",
+      "OTT Platforms"
+    ]
+  },
+  {
+    "id": "dist_2023_indie_mid_distributor_survival_pressure",
+    "year": 2023,
+    "month": 8,
+    "title": "독립·중간배급사 개봉 난이도 상승",
+    "type": "distributor_pressure",
+    "fixedLevel": "semiFixed",
+    "description": "극장 시장 양극화와 마케팅비 상승으로 독립·중간배급사의 개봉관 확보 난이도가 높아집니다.",
+    "effects": {
+      "independent_release_difficulty": 15,
+      "mid_sized_distributor_risk": 12,
+      "screen_access_for_indie_films": -8,
+      "marketing_efficiency": -5
+    },
+    "relatedCompanies": [
+      "Independent Distributors"
+    ]
+  }
+]
