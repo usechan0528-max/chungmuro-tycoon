@@ -175,3 +175,8 @@ assets/media/logos/awards/award_cannes.png
 ```
 
 파일명이 DB ID와 다르면 `assets/media/manifest.local.json`을 만들고 `assets/media/manifest.example.json` 형식대로 매핑하면 된다. exe 빌드 후에는 `ChungmuroTycoon.exe` 옆의 `assets/media/` 폴더에 같은 구조로 넣으면 로컬 패치처럼 동작한다.
+
+
+## 라이선스
+
+이 프로젝트의 자체 소스 코드와 문서는 [MIT License](LICENSE)로 공개합니다. 외부 라이브러리·데이터·미디어에는 각 출처의 조건이 적용됩니다. [외부 자료 안내](THIRD_PARTY_NOTICES.md)를 참고하세요.
